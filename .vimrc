@@ -9,6 +9,7 @@ filetype plugin indent on
 
 "General
 set number
+set backspace=indent,eol,start
 
 "lightline
 Plugin 'itchyny/lightline.vim'
