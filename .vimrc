@@ -46,6 +46,8 @@ autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
+let g:NERDTreeDirArrowExpandable="+"
+let g:NERDTreeDirArrowCollapsible="-"
 
 "ALE
 Plugin 'dense-analysis/ale'
