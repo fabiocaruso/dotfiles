@@ -4,12 +4,8 @@ A Repository for all my workspace configuration files.
 # Usage
 Clone with
 
-```git clone https://github.com/fabiocaruso/configuration.git ~/```
+```git clone --recurse-submodules -j8 https://github.com/fabiocaruso/configuration.git ~/configuration```
 
 move files to homefolder
 
-```mv ~/configuration/{,.[^.]}* ~/; rm -R ~/configuration/```
-
-install plugins
-
-```vim +PluginInstall +qall```
+```mv -f ~/configuration/{,.[^.]}* ~/; rm -Rf ~/configuration/```
