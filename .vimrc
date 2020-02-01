@@ -9,7 +9,8 @@ filetype plugin indent on
 
 "General
 set number
-set noesckeys
+set timeoutlen=1000
+set ttimeoutlen=5
 set backspace=indent,eol,start
 
 "lightline
