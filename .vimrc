@@ -43,9 +43,14 @@ let g:lightline.colorscheme='onehalfdark'
 "autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 "autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 Plugin 'scrooloose/nerdTree'
+"Open NERDTree on startup
 autocmd VimEnter * NERDTree
-autocmd VimEnter * NERDTree
+"Open NERDTree on new tab
+autocmd BufWinEnter * NERDTreeMirror
+"Change focus to file on new tab
 autocmd VimEnter * wincmd p
+"Auto refresh NERDTree if :w executed
+autocmd BufWritePost * NERDTreeFocus | execute 'normal R' | wincmd p
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let g:NERDTreeDirArrowExpandable="+"
