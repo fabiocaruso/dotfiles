@@ -8,4 +8,4 @@ Clone with
 
 move files to homefolder
 
-```mv -f ~/configuration/{,.[^.]}* ~/; rm -Rf ~/configuration/```
+```rm -Rf ~/configuration/.git* ~/configuration/README.md; mv -f ~/configuration/{,.[^.]}* ~/; rm -Rf ~/configuration/```
