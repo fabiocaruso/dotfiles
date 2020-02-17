@@ -51,6 +51,9 @@ autocmd BufWinEnter * NERDTreeMirror
 autocmd VimEnter * wincmd p
 "Auto refresh NERDTree if :w executed
 autocmd BufWritePost * NERDTreeFocus | execute 'normal R' | wincmd p
+"Close vim if NERDTree is last buffer
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+let NERDTreeShowHidden=1
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
 let g:NERDTreeDirArrowExpandable="+"
