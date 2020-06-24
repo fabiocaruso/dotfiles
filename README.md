@@ -14,6 +14,10 @@ Move files to homefolder
 
 ```rm -Rf ~/configuration/README.md && mv -f ~/configuration/{,.[^.]}* ~/; rm -Rf ~/configuration/```
 
+Install Vundle Packages
+
+```vim +PluginInstall +qall```
+
 Init YCM Plugin with clang and rust support
 
 ```cd ~/.vim/bundle/YouCompleteMe && ./install.py --cs-completer --rust-completer```
