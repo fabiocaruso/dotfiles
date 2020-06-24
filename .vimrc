@@ -13,6 +13,9 @@ set timeoutlen=1000
 set ttimeoutlen=5
 set backspace=indent,eol,start
 
+"YouCompleteMe
+Plugin 'Valloric/YouCompleteMe'
+
 "lightline
 Plugin 'itchyny/lightline.vim'
 set laststatus=2
@@ -61,3 +64,7 @@ let g:NERDTreeDirArrowCollapsible="-"
 
 "ALE
 Plugin 'dense-analysis/ale'
+
+"Rust
+Plugin 'rust-lang/rust.vim'
+autocmd BufNewFile,BufRead *.rs set filetype=rust
