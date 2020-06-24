@@ -12,7 +12,7 @@ Clone with
 
 Move files to homefolder
 
-```rm -Rf ~/configuration/.git* ~/configuration/README.md; mv -f ~/configuration/{,.[^.]}* ~/; rm -Rf ~/configuration/```
+```rm -Rf ~/configuration/README.md && mv -f ~/configuration/{,.[^.]}* ~/; rm -Rf ~/configuration/```
 
 Init YCM Plugin with clang and rust support
 
