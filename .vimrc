@@ -4,8 +4,25 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/nerdTree'
+Plugin 'itchyny/lightline.vim'
+Bundle 'sonph/onehalf', {'rtp': 'vim/'}
+Plugin 'dense-analysis/ale'
+Plugin 'rust-lang/rust.vim'
 call vundle#end()
 filetype plugin indent on
+
+*Keymappings
+let mapleader = " "
+map <leader>h :wincmd h<CR>
+map <leader>j :wincmd j<CR>
+map <leader>k :wincmd k<CR>
+map <leader>l :wincmd l<CR>
+map <leader>t :tabnew<CR>
+map <leader>q :q<CR>
+map <leader>n :NERDTree<CR>
+nnoremap <silent><leader>gd :YcmCompleter GetDoc<CR>
 
 "General
 set number
@@ -13,11 +30,7 @@ set timeoutlen=1000
 set ttimeoutlen=5
 set backspace=indent,eol,start
 
-"YouCompleteMe
-Plugin 'Valloric/YouCompleteMe'
-
 "lightline
-Plugin 'itchyny/lightline.vim'
 set laststatus=2
 if !has('gui_running')
 	set t_Co=256
@@ -37,7 +50,6 @@ endfunction
 "OneHalf Color Scheme
 syntax on
 set t_Co=256
-Bundle 'sonph/onehalf', {'rtp': 'vim/'}
 colorscheme onehalfdark
 let g:lightline.colorscheme='onehalfdark'
 
@@ -45,7 +57,6 @@ let g:lightline.colorscheme='onehalfdark'
 "autocmd StdinReadPre * let s:std_in=1
 "autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 "autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-Plugin 'scrooloose/nerdTree'
 "Open NERDTree on startup
 autocmd VimEnter * NERDTree
 "Open NERDTree on new tab
@@ -62,9 +73,5 @@ let NERDTreeDirArrows = 1
 let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="-"
 
-"ALE
-Plugin 'dense-analysis/ale'
-
 "Rust
-Plugin 'rust-lang/rust.vim'
 autocmd BufNewFile,BufRead *.rs set filetype=rust
