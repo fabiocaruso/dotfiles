@@ -26,6 +26,10 @@ nnoremap <silent><leader>gd :YcmCompleter GetDoc<CR>
 
 "General
 set number
+set scrolloff=8
+set relativenumber
+set nu
+set signcolumn=yes
 set timeoutlen=1000
 set ttimeoutlen=5
 set backspace=indent,eol,start
