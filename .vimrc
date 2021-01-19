@@ -13,7 +13,7 @@ Plugin 'rust-lang/rust.vim'
 call vundle#end()
 filetype plugin indent on
 
-*Keymappings
+"Keymappings
 let mapleader = " "
 map <leader>h :wincmd h<CR>
 map <leader>j :wincmd j<CR>
@@ -22,6 +22,8 @@ map <leader>l :wincmd l<CR>
 map <leader>t :tabnew<CR>
 map <leader>q :q<CR>
 map <leader>n :NERDTree<CR>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
 nnoremap <silent><leader>gd :YcmCompleter GetDoc<CR>
 
 "General
