@@ -1,6 +1,8 @@
 "Vundle
 set nocompatible
 filetype off
+filetype indent off
+filetype plugin indent off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
@@ -11,7 +13,6 @@ Bundle 'sonph/onehalf', {'rtp': 'vim/'}
 Plugin 'dense-analysis/ale'
 Plugin 'rust-lang/rust.vim'
 call vundle#end()
-filetype plugin indent on
 
 "Keymappings
 let mapleader = " "
@@ -25,6 +26,15 @@ map <leader>n :NERDTree<CR>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 nnoremap <silent><leader>gd :YcmCompleter GetDoc<CR>
+""Escape insert mode by pressing
+imap § <ESC>
+""YouCompleteMe FixIt with F9 Key
+map <F9> :YcmCompleter FixIt<CR>
+""Faster scroll
+noremap <S-k> 10k
+noremap <S-j> 10j
+noremap <S-h> 10h
+noremap <S-l> 10l
 
 "General
 set number
@@ -35,6 +45,10 @@ set signcolumn=yes
 set timeoutlen=1000
 set ttimeoutlen=5
 set backspace=indent,eol,start
+set tabstop=4      " To match the sample file
+set shiftwidth=4
+set noexpandtab    " Use tabs, not spaces
+%retab!            " Retabulate the whole file
 
 "lightline
 set laststatus=2
