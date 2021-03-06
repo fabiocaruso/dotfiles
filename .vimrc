@@ -1,8 +1,7 @@
 "Vundle
 set nocompatible
 filetype off
-filetype indent off
-filetype plugin indent off
+filetype plugin indent on
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
@@ -41,6 +40,8 @@ set number
 set scrolloff=8
 set relativenumber
 set nu
+set cursorcolumn
+set cursorline
 set signcolumn=yes
 set timeoutlen=1000
 set ttimeoutlen=5
@@ -94,4 +95,5 @@ let g:NERDTreeDirArrowExpandable="+"
 let g:NERDTreeDirArrowCollapsible="-"
 
 "Rust
+let g:rust_recommended_style = 0
 autocmd BufNewFile,BufRead *.rs set filetype=rust
