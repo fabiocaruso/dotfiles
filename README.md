@@ -1,4 +1,4 @@
-# Configuration
+# Dotfiles
 A Repository for all my workspace configuration files.
 
 # Usage
@@ -8,11 +8,11 @@ You need Neovim with Python support and some dependencies for YCM Plugin
 
 Clone with
 
-```git clone --recurse-submodules -j8 https://github.com/fabiocaruso/configuration.git ~/configuration```
+```git clone --recurse-submodules -j8 https://github.com/fabiocaruso/dotfiles.git ~/dotfiles```
 
 Move files to homefolder
 
-```rm -Rf ~/configuration/README.md && mv -f ~/configuration/{,.[^.]}* ~/; rm -Rf ~/configuration/```
+```rm -Rf ~/dotfiles/README.md && mv -f ~/dotfiles/{,.[^.]}* ~/; rm -Rf ~/dotfiles/```
 
 Install Vundle Packages
 
