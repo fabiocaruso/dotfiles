@@ -1,0 +1,5 @@
+{
+	"rust.clippy_preference": "on",
+	"rust-analyzer.inlayHints.typeHints": true,
+  "rust-analyzer.inlayHints.chainingHints": true
+}
