@@ -26,8 +26,6 @@ pprint "Init.."
 if [ "$OSTYPE" = "linux-gnu" ] ; then
 	# Install dependencies
 	sudo apt-get update
-	sudo apt-get remove vim -y
-	sudo apt autoremove -y
 	sudo apt-get install git neovim python3-dev python3-pip python3-neovim curl npm fzf silversearcher-ag ripgrep bat figlet translate-shell -y
 	# Install Neovim dependencies
 	pip3 install pynvim
