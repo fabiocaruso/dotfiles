@@ -18,5 +18,8 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias vim='vim -u ~/.vimrc'
 
+# Rusty-tags to generate ctags from rust src (https://github.com/dan-t/rusty-tags)
+export RUST_SRC_PATH=$(rustc --print sysroot)/lib/rustlib/src/rust/library/
+
 export TERM=xterm-256color
 export PS1="[\[$(tput sgr0)\]\[\033[38;5;118m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\H]->{\[$(tput sgr0)\]\[\033[38;5;226m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]}:\[$(tput sgr0)\]"
