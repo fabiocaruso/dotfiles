@@ -1,5 +1,6 @@
 "Vundle
 let mapleader = " "
+source ~/.vim/vundle.vim
 
 "General
 set number
