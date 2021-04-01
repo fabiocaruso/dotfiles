@@ -111,6 +111,7 @@ let g:vimspector_install_gadgets = [ 'CodeLLDB' ]
 "let g:lightline.colorscheme='onehalfdark'
 
 "Gruvbox
+syntax on
 set termguicolors
 autocmd vimenter * ++nested colorscheme gruvbox
 set background=dark
