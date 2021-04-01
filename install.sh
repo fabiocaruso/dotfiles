@@ -27,7 +27,7 @@ if [ "$OSTYPE" = "linux-gnu" ] ; then
 	# Install dependencies
 	sudo apt-get update
 	sudo apt-get install build-essential cmake libc-dev -y
-	sudo apt-get install git neovim python3-dev python3-pip python3-neovim curl npm fzf silversearcher-ag ripgrep bat figlet translate-shell -y
+	sudo apt-get install rsync neovim python3-dev python3-pip python3-neovim curl npm fzf silversearcher-ag ripgrep bat figlet translate-shell -y
 	# Install Neovim dependencies
 	pip3 install pynvim
 	pip3 install --upgrade pynvim
@@ -35,14 +35,13 @@ if [ "$OSTYPE" = "linux-gnu" ] ; then
 	# Check if dependencies installed correctly
 	nvim +checkhealth
 	# Clone dotfiles if it's missing
-	rm -Rf ~/dotfiles/README.md && mv -f ~/dotfiles/{,.[^.]}* ~/
+	rm -Rf ~/dotfiles/README.md && rsync -va ~/dotfiles/ ~/
 	rm -Rf ~/dotfiles/
 	# Clone Vundle if it's missing
 	mkdir ~/.vim/bundle/
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 	source_files_in ~
 	# Install plugins
-	vim -u ~/.vim/vundle.vim +PluginInstall +qall
 	nvim -u ~/.vim/vundle.vim +PluginInstall +qall
 elif [ "$OSTYPE" = "darwin" ] ; then
         # Mac OSX
