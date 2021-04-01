@@ -26,13 +26,13 @@ pprint "Init.."
 if [ "$OSTYPE" = "linux-gnu" ] ; then
 	# Install dependencies
 	sudo apt-get update
-	sudo apt-get install git neovim python3-dev python3-pip python3-neovim curl npm fzf silversearcher-ag ripgrep bat figlet translate-shell -y
+	sudo apt-get install git neovim python3-dev python3-pip python3-neovim curl build-essential npm fzf silversearcher-ag ripgrep bat figlet translate-shell -y
 	# Install Neovim dependencies
 	pip3 install pynvim
 	pip3 install --upgrade pynvim
 	sudo npm install -g neovim
 	# Check if dependencies installed correctly
-	vim +checkhealth
+	nvim +checkhealth
 	# Clone dotfiles if it's missing
 	if [ ! -d "$HOME/dotfiles" ] ; then
 		git clone https://github.com/fabiocaruso/dotfiles.git ~/dotfiles
@@ -46,7 +46,7 @@ if [ "$OSTYPE" = "linux-gnu" ] ; then
 	fi
 	source_files_in ~
 	# Install plugins
-	vim -u ~/.vim/vundle.vim +PluginInstall +qall
+	nvim -u ~/.vim/vundle.vim +PluginInstall +qall
 elif [ "$OSTYPE" = "darwin" ] ; then
         # Mac OSX
 	true
@@ -80,7 +80,7 @@ rust_setup() {
 	cargo install git-delta rusty-tags
 	git config --global core.pager "delta --line-numbers --dark"
 	rustup component add clippy rust-src
-	vim "+CocInstall coc-rust-analyzer +CocInstall coc-rls +VimspectorInstall CodeLLDB --enable-rust" +qall
+	nvim "+CocInstall coc-rust-analyzer +CocInstall coc-rls +VimspectorInstall CodeLLDB --enable-rust" +qall
 }
 
 pprint "Available language support: ['Rust', 'Go', 'Python', 'JavaScript', 'TypeScript', 'Markdown']"
