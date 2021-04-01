@@ -34,16 +34,12 @@ if [ "$OSTYPE" = "linux-gnu" ] ; then
 	# Check if dependencies installed correctly
 	nvim +checkhealth
 	# Clone dotfiles if it's missing
-	if [ ! -d "$HOME/dotfiles" ] ; then
-		git clone https://github.com/fabiocaruso/dotfiles.git ~/dotfiles
-		rm -Rf ~/dotfiles/README.md && mv -f ~/dotfiles/{,.[^.]}* ~/
-		rm -Rf ~/dotfiles/
-	fi
+	git clone https://github.com/fabiocaruso/dotfiles.git ~/dotfiles
+	rm -Rf ~/dotfiles/README.md && mv -f ~/dotfiles/{,.[^.]}* ~/
+	rm -Rf ~/dotfiles/
 	# Clone Vundle if it's missing
-	if [ ! -d "$HOME/.vim/bundle/" ] ; then
-		mkdir ~/.vim/bundle/
-		[ ! -d "$HOME/.vim/bundle/" ] && git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-	fi
+	mkdir ~/.vim/bundle/
+	[ ! -d "$HOME/.vim/bundle/" ] && git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 	source_files_in ~
 	# Install plugins
 	nvim -u ~/.vim/vundle.vim +PluginInstall +qall
