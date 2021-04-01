@@ -26,7 +26,8 @@ pprint "Init.."
 if [ "$OSTYPE" = "linux-gnu" ] ; then
 	# Install dependencies
 	sudo apt-get update
-	sudo apt-get install git neovim python3-dev python3-pip python3-neovim curl libc-dev build-essential cmake npm fzf silversearcher-ag ripgrep bat figlet translate-shell -y
+	sudo apt-get install libc-dev
+	sudo apt-get install git neovim python3-dev python3-pip python3-neovim curl build-essential cmake npm fzf silversearcher-ag ripgrep bat figlet translate-shell -y
 	# Install Neovim dependencies
 	pip3 install pynvim
 	pip3 install --upgrade pynvim
@@ -39,7 +40,7 @@ if [ "$OSTYPE" = "linux-gnu" ] ; then
 	rm -Rf ~/dotfiles/
 	# Clone Vundle if it's missing
 	mkdir ~/.vim/bundle/
-	[ ! -d "$HOME/.vim/bundle/" ] && git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 	source_files_in ~
 	# Install plugins
 	nvim -u ~/.vim/vundle.vim +PluginInstall +qall
