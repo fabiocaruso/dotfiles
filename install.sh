@@ -35,7 +35,6 @@ if [ "$OSTYPE" = "linux-gnu" ] ; then
 	# Check if dependencies installed correctly
 	nvim +checkhealth
 	# Clone dotfiles if it's missing
-	git clone https://github.com/fabiocaruso/dotfiles.git ~/dotfiles
 	rm -Rf ~/dotfiles/README.md && mv -f ~/dotfiles/{,.[^.]}* ~/
 	rm -Rf ~/dotfiles/
 	# Clone Vundle if it's missing
@@ -43,6 +42,7 @@ if [ "$OSTYPE" = "linux-gnu" ] ; then
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 	source_files_in ~
 	# Install plugins
+	vim -u ~/.vim/vundle.vim +PluginInstall +qall
 	nvim -u ~/.vim/vundle.vim +PluginInstall +qall
 elif [ "$OSTYPE" = "darwin" ] ; then
         # Mac OSX
