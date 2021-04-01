@@ -76,7 +76,7 @@ rust_setup() {
 	cargo install git-delta rusty-tags
 	git config --global core.pager "delta --line-numbers --dark"
 	rustup component add clippy rust-src
-	nvim "+CocInstall coc-rust-analyzer +CocInstall coc-rls +VimspectorInstall CodeLLDB --enable-rust" +qall
+	nvim "+CocInstall coc-rust-analyzer coc-rls" "+VimspectorInstall CodeLLDB --enable-rust" +qall
 }
 
 pprint "Available language support: ['Rust', 'Go', 'Python', 'JavaScript', 'TypeScript', 'Markdown']"
