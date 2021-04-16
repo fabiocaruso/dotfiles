@@ -35,7 +35,7 @@ if [ "$OSTYPE" = "linux-gnu" ] ; then
 	# Check if dependencies installed correctly
 	nvim +checkhealth
 	# Clone dotfiles if it's missing
-	[ ! -d "~/dotfiles/" ] && git clone https://github.com/fabiocaruso/dotfiles.git
+	git clone https://github.com/fabiocaruso/dotfiles.git
 	rm -Rf ~/dotfiles/README.md && rsync -va ~/dotfiles/ ~/
 	rm -Rf ~/dotfiles/
 	# Clone Vundle if it's missing
