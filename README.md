@@ -26,6 +26,10 @@ or
 
 ```pip3 install --upgrade pynvim```
 
+or if you installed it over apt:
+
+```sudo apt install python3-neovim```
+
 Update Plugins (in vim):
 
 ```:PluginUpdate```

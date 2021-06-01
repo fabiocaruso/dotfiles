@@ -103,18 +103,6 @@ inoremap <> <>
 "Coc
 let g:coc_global_config="$HOME/.vim/coc-settings.json"
 
-"Ale
-let g:ale_rust_cargo_use_clippy = executable('cargo-clippy')
-let g:ale_linters = {'rust': ['rls', 'cargo']}
-""Error list
-let g:ale_open_list = 1
-let g:ale_keep_list_window_open = 1
-autocmd FileType qf setlocal wrap
-augroup CloseLoclistWindowGroup
-	autocmd!
-	autocmd QuitPre * if empty(&buftype) | lclose | endif
-augroup END
-
 "Obsession
 function! AirlineInit()
     let g:airline_section_z = airline#section#create(['%{ObsessionStatus(''S'', '''')}', 'windowswap', '%3p%% ', 'linenr', ':%3v '])
@@ -132,29 +120,6 @@ let g:vimspector_sidebar_width = 80
 let g:vimspector_bottombar_height = 15
 let g:vimspector_enable_mappings = 'HUMAN'
 let g:vimspector_install_gadgets = [ 'CodeLLDB' ]
-
-"lightline
-"set laststatus=2
-"if !has('gui_running')
-	"set t_Co=256
-"endif
-
-"lightline Colorpalette
-"let g:lightline = {
-      "\ 'component_function': {
-      "\   'readonly': 'LightlineReadonly',
-      "\ },
-      "\ }
-
-"function! LightlineReadonly()
-  "return &readonly && &filetype !=# 'help' ? 'RO' : ''
-"endfunction
-
-"OneHalf Color Scheme
-"syntax on
-"set t_Co=256
-"colorscheme onehalfdark
-"let g:lightline.colorscheme='onehalfdark'
 
 "Gruvbox
 set termguicolors
@@ -198,25 +163,6 @@ let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
-"NERDTree
-"autocmd StdinReadPre * let s:std_in=1
-"autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-""Open NERDTree on startup
-"autocmd VimEnter * NERDTree
-""Open NERDTree on new tab
-"autocmd BufWinEnter * NERDTreeMirror
-""Change focus to file on new tab
-"autocmd VimEnter * wincmd p
-""Auto refresh NERDTree if :w executed
-""Close vim if NERDTree is last buffer
-"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-"let NERDTreeShowHidden=1
-"let NERDTreeMinimalUI = 1
-"let NERDTreeDirArrows = 1
-"let g:NERDTreeDirArrowExpandable="+"
-"let g:NERDTreeDirArrowCollapsible="-"
-
 "Coc Explorer
 "" Disable netrw
 let g:loaded_netrw  = 1
@@ -241,7 +187,11 @@ autocmd BufNewFile,BufRead *.rs set filetype=rust
 autocmd BufRead *.rs :setlocal tags=./rusty-tags.vi;/,$RUST_SRC_PATH/rusty-tags.vi
 autocmd BufWritePost *.rs :silent! exec "!rusty-tags vi --quiet --start-dir=" . expand('%:p:h') . "&" | redraw!
 
-"Functions
+  "__                  _   _                 
+ "/ _|_   _ _ __   ___| |_(_) ___  _ __  ___ 
+"| |_| | | | '_ \ / __| __| |/ _ \| '_ \/ __|
+"|  _| |_| | | | | (__| |_| | (_) | | | \__ \
+"|_|  \__,_|_| |_|\___|\__|_|\___/|_| |_|___/
 function! WordToFiglet()
 	if executable('figlet')
 		let l:line=getline('.')
