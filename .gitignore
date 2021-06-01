@@ -1,0 +1,14 @@
+# Ignore everything
+*
+# But descend into directories
+!*/
+
+!/.vim/**
+!/.config/**
+!.bashrc
+!.tmux.config
+!.vimrc
+!README.md
+!install.sh
+
+!.gitignore
