@@ -18,8 +18,16 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias vim='vim -u ~/.vimrc'
 
+#WSL
+#export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
+export DISPLAY=$(route.exe print | grep 0.0.0.0 | head -1 | awk '{print $4}'):0.0
+export LIBGL_ALWAYS_INDIRECT=1
+
 # Rusty-tags to generate ctags from rust src (https://github.com/dan-t/rusty-tags)
 export RUST_SRC_PATH=$(rustc --print sysroot)/lib/rustlib/src/rust/library/
 
 export TERM=xterm-256color
 export PS1="[\[$(tput sgr0)\]\[\033[38;5;118m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\H]->{\[$(tput sgr0)\]\[\033[38;5;226m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]}:\[$(tput sgr0)\]"
+source "$HOME/.cargo/env"
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
