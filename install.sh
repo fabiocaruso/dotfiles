@@ -51,8 +51,8 @@ elif [ "$OSTYPE" = "darwin" ] ; then
 elif [ "$OSTYPE" = "cygwin" ] ; then
         # POSIX compatibility layer and Linux environment emulation for Windows
 
-				# Apply .gitignore_global on windows
-				# git config --global core.excludesfile %USERPROFILE%\.gitignore_global
+	# Apply .gitignore_global on windows (https://stackoverflow.com/a/7335487)
+	# git config --global core.excludesfile %USERPROFILE%\.gitignore_global
 	true
 elif [ "$OSTYPE" = "msys" ] ; then
         # Lightweight shell and GNU utilities compiled for Windows (part of MinGW)
