@@ -1,7 +1,5 @@
 # Ignore everything
 *
-# But descend into directories
-!*/
 
 !/.vim/**
 !/.config/**
@@ -11,4 +9,5 @@
 !README.md
 !install.sh
 
+!.gitignore_global
 !.gitignore

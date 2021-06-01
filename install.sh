@@ -27,7 +27,7 @@ if [ "$OSTYPE" = "linux-gnu" ] ; then
 	# Install dependencies
 	sudo apt-get update
 	sudo apt-get install build-essential cmake libc-dev -y
-	sudo apt-get install rsync neovim python3-dev python3-pip python3-neovim curl npm fzf silversearcher-ag ripgrep bat figlet translate-shell -y
+	sudo apt-get install rsync neovim python3-dev python3-pip python3-neovim curl npm fzf silversearcher-ag ripgrep bat figlet translate-shell tmux -y
 	# Install Neovim dependencies
 	pip3 install pynvim
 	pip3 install --upgrade pynvim
@@ -38,6 +38,7 @@ if [ "$OSTYPE" = "linux-gnu" ] ; then
 	git clone https://github.com/fabiocaruso/dotfiles.git
 	rsync -va ~/dotfiles/ ~/
 	rm -Rf ~/dotfiles/
+	git config --global core.excludesfile ~/.gitignore_global
 	# Clone Vundle if it's missing
 	mkdir ~/.vim/bundle/
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -49,6 +50,9 @@ elif [ "$OSTYPE" = "darwin" ] ; then
 	true
 elif [ "$OSTYPE" = "cygwin" ] ; then
         # POSIX compatibility layer and Linux environment emulation for Windows
+
+				# Apply .gitignore_global on windows
+				# git config --global core.excludesfile %USERPROFILE%\.gitignore_global
 	true
 elif [ "$OSTYPE" = "msys" ] ; then
         # Lightweight shell and GNU utilities compiled for Windows (part of MinGW)

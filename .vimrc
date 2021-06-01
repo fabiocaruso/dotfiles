@@ -26,12 +26,12 @@ set splitright
 set wildmenu
 set wildmode=longest,list,full
 
-" _  __                                      _                 
+ "_  __                                      _                 
 "| |/ /___ _   _ _ __ ___   __ _ _ __  _ __ (_)_ __   __ _ ___ 
 "| ' // _ \ | | | '_ ` _ \ / _` | '_ \| '_ \| | '_ \ / _` / __|
 "| . \  __/ |_| | | | | | | (_| | |_) | |_) | | | | | (_| \__ \
 "|_|\_\___|\__, |_| |_| |_|\__,_| .__/| .__/|_|_| |_|\__, |___/
-"					 |___/                |_|   |_|            |___/     
+          "|___/                |_|   |_|            |___/     
 "General
 ""Toggle mouse mode
 noremap <leader>m <ESC>:exec &mouse!=""? "set mouse=" : "set mouse=nv"<CR>
