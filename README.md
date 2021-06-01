@@ -14,13 +14,20 @@ delete it first before you run the install script
 
 # Installation
 Just download install.sh and run it:
+
 ```cd ~ && . <(curl -s https://raw.githubusercontent.com/fabiocaruso/dotfiles/master/install.sh)```
 
 # Update
 If you update Neovim make sure you also upgrade pynvim:
+
 ```pip2 install --upgrade pynvim```
+
+or
+
 ```pip3 install --upgrade pynvim```
+
 Update Plugins (in vim):
+
 ```:PluginUpdate```
 
 # Usage
