@@ -15,7 +15,7 @@ delete it first before you run the install script
 # Installation
 Just download install.sh and run it:
 
-```cd ~ && . <(curl -s https://raw.githubusercontent.com/fabiocaruso/dotfiles/master/install.sh)```
+```cd ~ && . <(curl -H 'Cache-Control: no-cache' -s https://raw.githubusercontent.com/fabiocaruso/dotfiles/master/install.sh)```
 
 # Update
 If you update Neovim make sure you also upgrade pynvim:
