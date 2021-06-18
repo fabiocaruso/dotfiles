@@ -1,24 +1,5 @@
 #!/bin/bash
 
-# Install script path
-path="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/$(basename "${BASH_SOURCE[0]}")"
-
-pprint() {
-	tput setaf 2;
-	echo "$1"
-	tput sgr0
-}
-source_files_in() {
-	local dir="$1"
-
-	if [[ -d "$dir" && -r "$dir" && -x "$dir" ]]; then
-		for file in "$dir"/*; do
-			if [[ "$file" != "$path" ]]; then
-				[[ -f "$file" && -r "$file" ]] && . "$file"
-			fi
-		done
-	fi
-}
 # Install dependencies based on current distribution and package managers
 fetch_distro() {
 	if [ -f /etc/os-release ]; then
@@ -84,10 +65,10 @@ if [ "$OSTYPE" = "linux-gnu" ] ; then
 	# Clone Vundle if it's missing
 	mkdir ~/.vim/bundle/
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-	#source_files_in ~
-	exec
+	bash
 	# Install plugins
 	nvim -u ~/.vim/vundle.vim +PluginInstall +qall
+	nvim "+CocInstall coc-explorer" +qall
 elif [ "$OSTYPE" = "darwin" ] ; then
         # Mac OSX
 	true

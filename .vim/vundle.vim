@@ -16,7 +16,9 @@ Plugin 'mattn/emmet-vim'
 Plugin 'lifepillar/vim-cheat40'
 Plugin 'fadein/vim-FIGlet'
 Plugin 'tpope/vim-obsession'
-Plugin 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+if has("nvim")
+	Plugin 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+endif
 Plugin 'ojroques/vim-oscyank'
 "Debugger
 Plugin 'puremourning/vimspector'
