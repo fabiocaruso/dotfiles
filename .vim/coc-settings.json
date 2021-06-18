@@ -13,8 +13,8 @@
 	"explorer.file.root.template": "[icon & 1] Project ([root])",
 	"explorer.keyMappings.global": {
 		"<cr>": ["expandable?", ["expanded?", "collapse", "expand"], "open"],
-		"J": ["wait", "normal:5j"],
-    "K": ["wait", "normal:5k"]
+		"J": ["normal:5j"],
+    "K": ["normal:5k"]
 	},
 	"explorer.openAction.for.directory": "expandOrCollapse",
 	"explorer.openAction.strategy": "sourceWindow",

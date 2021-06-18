@@ -7,6 +7,7 @@ source ~/.vim/vundle.vim
 "| |  _ / _ \ '_ \ / _ \ '__/ _` | |
 "| |_| |  __/ | | |  __/ | | (_| | |
  "\____|\___|_| |_|\___|_|  \__,_|_|
+syntax on
 set encoding=UTF-8
 set mouse=nv
 set number
