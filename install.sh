@@ -1,22 +1,48 @@
 #!/bin/bash
 
-# Install script path
-path="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/$(basename "${BASH_SOURCE[0]}")"
-
-pprint() {
-	tput setaf 2;
-	echo "$1"
-	tput sgr0
+# Install dependencies based on current distribution and package managers
+fetch_distro() {
+	if [ -f /etc/os-release ]; then
+		# freedesktop.org and systemd
+		. /etc/os-release
+		OS=$NAME
+		VER=$VERSION_ID
+	elif type lsb_release >/dev/null 2>&1; then
+		# linuxbase.org
+		OS=$(lsb_release -si)
+		VER=$(lsb_release -sr)
+	elif [ -f /etc/lsb-release ]; then
+		# For some versions of Debian/Ubuntu without lsb_release command
+		. /etc/lsb-release
+		OS=$DISTRIB_ID
+		VER=$DISTRIB_RELEASE
+	elif [ -f /etc/debian_version ]; then
+		# Older Debian/Ubuntu/etc.
+		OS=Debian
+		VER=$(cat /etc/debian_version)
+	elif [ -f /etc/SuSe-release ]; then
+		# Older SuSE/etc.
+		...
+	elif [ -f /etc/redhat-release ]; then
+		# Older Red Hat, CentOS, etc.
+		...
+	else
+		# Fall back to uname, e.g. "Linux <version>", also works for BSD, etc.
+		OS=$(uname -s)
+		VER=$(uname -r)
+	fi
 }
-source_files_in() {
-	local dir="$1"
-
-	if [[ -d "$dir" && -r "$dir" && -x "$dir" ]]; then
-		for file in "$dir"/*; do
-			if [[ "$file" != "$path" ]]; then
-				[[ -f "$file" && -r "$file" ]] && . "$file"
-			fi
-		done
+install_deps() {
+	fetch_distro
+	# Install dependencies
+	if [ "$OS" = "Solus" ]; then
+		sudo eopkg it -c system.devel
+		sudo eopkg it cmake rsync tmux vim neovim python3 python3-devel curl nodejs fzf ripgrep bat rlwrap translate-shell
+		sudo snap install figlet
+	elif [ "$OS" = "Ubuntu" ]; then
+		sudo apt-get update
+		sudo apt-get install build-essential cmake libc-dev -y
+		sudo apt-get install rsync neovim python3-dev python3-pip python3-neovim curl npm fzf silversearcher-ag ripgrep bat figlet translate-shell tmux -y
 	fi
 }
 
@@ -24,10 +50,7 @@ pprint "Installation script for linux work environment"
 pprint "Init.."
 
 if [ "$OSTYPE" = "linux-gnu" ] ; then
-	# Install dependencies
-	sudo apt-get update
-	sudo apt-get install build-essential cmake libc-dev -y
-	sudo apt-get install rsync neovim python3-dev python3-pip python3-neovim curl npm fzf silversearcher-ag ripgrep bat figlet translate-shell tmux -y
+	install_deps
 	# Install Neovim dependencies
 	pip3 install pynvim
 	pip3 install --upgrade pynvim
@@ -42,9 +65,10 @@ if [ "$OSTYPE" = "linux-gnu" ] ; then
 	# Clone Vundle if it's missing
 	mkdir ~/.vim/bundle/
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-	source_files_in ~
+	bash
 	# Install plugins
 	nvim -u ~/.vim/vundle.vim +PluginInstall +qall
+	nvim "+CocInstall coc-explorer" +qall
 elif [ "$OSTYPE" = "darwin" ] ; then
         # Mac OSX
 	true
