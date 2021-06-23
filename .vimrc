@@ -92,6 +92,8 @@ inoremap [ []<Left>
 inoremap [] []
 autocmd FileType html          inoremap <buffer> < <
 inoremap < <><Left>
+inoremap <<space> <<space>
+inoremap <= <=
 inoremap <> <>
 
  "____  _             _           

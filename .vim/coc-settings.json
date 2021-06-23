@@ -19,11 +19,11 @@
 	"explorer.sources": [
 		{
 			"name": "bookmark",
-			"expand": true
+			"expand": false
 		},
 		{
 			"name": "buffer",
-			"expand": true
+			"expand": false
 		},
 		{
 			"name": "file",
