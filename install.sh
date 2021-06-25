@@ -1,5 +1,11 @@
 #!/bin/bash
 
+pprint() {
+	tput setaf 2;
+	echo "$1"
+	tput sgr0
+}
+
 # Install dependencies based on current distribution and package managers
 fetch_distro() {
 	if [ -f /etc/os-release ]; then
@@ -39,7 +45,7 @@ install_deps() {
 		sudo eopkg it -c system.devel
 		sudo eopkg it cmake rsync tmux vim neovim python3 python3-devel curl nodejs fzf ripgrep bat rlwrap translate-shell
 		sudo snap install figlet
-	elif [ "$OS" = "Ubuntu" ]; then
+	elif [ "$OS" = "Ubuntu" ] || [ "$OS" = "Linux Mint" ]; then
 		sudo apt-get update
 		sudo apt-get install build-essential cmake libc-dev -y
 		sudo apt-get install rsync neovim python3-dev python3-pip python3-neovim curl npm fzf silversearcher-ag ripgrep bat figlet translate-shell tmux -y
@@ -65,7 +71,6 @@ if [ "$OSTYPE" = "linux-gnu" ] ; then
 	# Clone Vundle if it's missing
 	mkdir ~/.vim/bundle/
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-	bash
 	# Install plugins
 	nvim -u ~/.vim/vundle.vim +PluginInstall +qall
 	nvim "+CocInstall coc-explorer" +qall
@@ -131,3 +136,4 @@ else
 	done
 fi
 
+bash
