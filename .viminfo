@@ -11,18 +11,38 @@
 # hlsearch on (H) or off (h):
 ~h
 # Letztes Suchmuster:
-~MSle0~/command
+~MSle0~/color
 
 # Letzte ersetzte Zeichenkette:
 $
 
 # Befehlszeile Geschichte (neueste bis älteste):
 :qa
-|2,0,1624036685,,"qa"
-:q
-|2,0,1624036589,,"q"
+|2,0,1624747008,,"qa"
 :w
-|2,0,1624036588,,"w"
+|2,0,1624746754,,"w"
+:tabnew .vimrc
+|2,0,1624746714,,"tabnew .vimrc"
+:q
+|2,0,1624746764,,"q"
+:set t_Co=256
+|2,0,1624746588,,"set t_Co=256"
+:set term=xterm
+|2,0,1624746565,,"set term=xterm"
+:colorscheme gruvbox
+|2,0,1624746445,,"colorscheme gruvbox"
+:set termguicolors
+|2,0,1624746435,,"set termguicolors"
+:set background=dark
+|2,0,1624746416,,"set background=dark"
+:set t_AF=^[[38;5;%dm
+|2,0,1624746299,,"set t_AF=^[[38;5;%dm"
+:set t_AB=^[[48;5;%dm
+|2,0,1624746280,,"set t_AB=^[[48;5;%dm"
+:332
+|2,0,1624041531,,"332"
+:329
+|2,0,1624037266,,"329"
 :tabnew ~/.vimrc
 |2,0,1624036540,,"tabnew ~/.vimrc"
 :syntax on
@@ -97,28 +117,18 @@ $
 |2,0,1616871471,,"q!"
 :verbose set conceallevel? concealcursor?
 |2,0,1616871351,,"verbose set conceallevel? concealcursor?"
-:tabnew .vimspector.json
-|2,0,1616871245,,"tabnew .vimspector.json"
-:tabnew .vimspector.log
-|2,0,1616871223,,"tabnew .vimspector.log"
-:CocInstall coc-rls
-|2,0,1616858553,,"CocInstall coc-rls"
-:ALEInfo
-|2,0,1616856237,,"ALEInfo"
-:lopen
-|2,0,1616856195,,"lopen"
-:Git status
-|2,0,1616855730,,"Git status"
-:W
-|2,0,1616855291,,"W"
-:Git log
-|2,0,1616855028,,"Git log"
-:Ggit diff
-|2,0,1616854974,,"Ggit diff"
-:Gdiff
-|2,0,1616854967,,"Gdiff"
 
 # Suchausdruck Geschichte (neueste bis älteste):
+??color
+|2,1,1624746630,63,"color"
+??colorsc
+|2,1,1624746333,63,"colorsc"
+??set
+|2,1,1624037959,63,"set"
+??cmake
+|2,1,1624037760,63,"cmake"
+??cmake_minimum
+|2,1,1624037500,63,"cmake_minimum"
 ??VimCloseCallback
 |2,1,1616857114,63,"VimCloseCallback"
 
@@ -137,43 +147,42 @@ $
 # Debug-Zeile Geschichte (neueste bis älteste):
 
 # Register:
-""0	LINE	0
+"0	LINE	0
+	if has("nvim")
+|3,0,0,1,1,0,1624746721,"if has(\"nvim\")"
+""1	LINE	0
 	
-	[ModifierOnlyShortcuts]
-	Meta=
-|3,1,0,1,3,0,1624036353,"","[ModifierOnlyShortcuts]","Meta="
-"1	LINE	0
-	
-|3,0,1,1,1,0,1624036353,""
+|3,1,1,1,1,0,1624746722,""
 "2	LINE	0
+	      .vim                                                                                                                                                                                                        
+|3,0,2,1,1,0,1624746703,"      .vim                                                                                                                                                                                                        "
+"3	LINE	0
+	async fn get_music(session: web::Data<Session>, _playlist: web::Path<String>) -> Result<HttpResponse> {
+		let user = session.get_user().unwrap();
+|3,0,3,1,2,0,1624045792,"async fn get_music(session: web::Data<Session>, _playlist: web::Path<String>) -> Result<HttpResponse> {","	let user = session.get_user().unwrap();"
+"4	LINE	0
+	cmake_minimum_required(VERSION 2.8...3.13)
+|3,0,4,1,1,0,1624037654,"cmake_minimum_required(VERSION 2.8...3.13)"
+"5	LINE	0
+	
+|3,0,5,1,1,0,1624036353,""
+"6	LINE	0
 	
 	[ModifierOnlyShortcuts]
 	Meta=
-|3,0,2,1,3,0,1624034605,"","[ModifierOnlyShortcuts]","Meta="
-"3	LINE	0
+|3,0,6,1,3,0,1624034605,"","[ModifierOnlyShortcuts]","Meta="
+"7	LINE	0
 	
 	[TabBox]
 	LayoutName=org.kde.breeze.desktop
-|3,0,3,1,3,0,1624034599,"","[TabBox]","LayoutName=org.kde.breeze.desktop"
-"4	LINE	0
-	
-|3,0,4,1,1,0,1624034400,""
-"5	LINE	0
-	#export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
-	export DISPLAY=$(route.exe print | grep 0.0.0.0 | head -1 | awk '{print $4}'):0.0
-|3,0,5,1,2,0,1624033881,"#export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0","export DISPLAY=$(route.exe print | grep 0.0.0.0 | head -1 | awk '{print $4}'):0.0"
-"6	LINE	0
-		echo "$OS"
-|3,0,6,1,1,0,1624012864,"	echo \"$OS\""
-"7	LINE	0
-			V
-|3,0,7,1,1,0,1624012862,"		V"
+|3,0,7,1,3,0,1624034599,"","[TabBox]","LayoutName=org.kde.breeze.desktop"
 "8	LINE	0
 	
-|3,0,8,1,1,0,1624012855,""
+|3,0,8,1,1,0,1624034400,""
 "9	LINE	0
-	[M!?0
-|3,0,9,1,1,0,1624012615,"[M!?0"
+	#export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
+	export DISPLAY=$(route.exe print | grep 0.0.0.0 | head -1 | awk '{print $4}'):0.0
+|3,0,9,1,2,0,1624033881,"#export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0","export DISPLAY=$(route.exe print | grep 0.0.0.0 | head -1 | awk '{print $4}'):0.0"
 "e	LINE	0
 	TEST
 |3,0,14,1,1,0,1616848169,"TEST"
@@ -185,252 +194,236 @@ $
 |3,0,36,0,1,0,1616887815,"/"
 
 # Datei-Markierungen:
-'0  1  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/db_2.rs
-|4,48,1,0,1624036685,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/db_2.rs"
-'1  67  70  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs
-|4,49,67,70,1624036592,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs"
-'2  58  5  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs
-|4,50,58,5,1624036464,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs"
-'3  58  5  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs
-|4,51,58,5,1624036464,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs"
-'4  12  0  ~/.config/kwinrc
-|4,52,12,0,1624034608,"~/.config/kwinrc"
-'5  29  0  ~/.config/kwinrc
-|4,53,29,0,1624034401,"~/.config/kwinrc"
-'6  31  0  ~/.config/kwinrc
-|4,54,31,0,1624034401,"~/.config/kwinrc"
-'7  22  0  ~/.bashrc
-|4,55,22,0,1624033886,"~/.bashrc"
-'8  381  0  ~/[coc-explorer]-1
-|4,56,381,0,1624016075,"~/[coc-explorer]-1"
-'9  331  0  ~/[coc-explorer]-1
-|4,57,331,0,1624016075,"~/[coc-explorer]-1"
+'0  128  3  ~/.vimrc
+|4,48,128,3,1624747008,"~/.vimrc"
+'1  2  0  ~/[coc-explorer]-1
+|4,49,2,0,1624746764,"~/[coc-explorer]-1"
+'2  136  18  ~/.vimrc
+|4,50,136,18,1624746683,"~/.vimrc"
+'3  134  18  ~/.vimrc
+|4,51,134,18,1624746683,"~/.vimrc"
+'4  26  6  ~/.vimrc
+|4,52,26,6,1624746492,"~/.vimrc"
+'5  26  6  ~/.vimrc
+|4,53,26,6,1624746492,"~/.vimrc"
+'6  26  6  ~/.vimrc
+|4,54,26,6,1624746492,"~/.vimrc"
+'7  26  6  ~/.vimrc
+|4,55,26,6,1624746492,"~/.vimrc"
+'8  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,56,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+'9  38  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs
+|4,57,38,0,1624043809,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs"
 
 # Jumplist (neueste zuerst):
--'  1  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/db_2.rs
-|4,39,1,0,1624036685,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/db_2.rs"
--'  67  70  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs
-|4,39,67,70,1624036592,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs"
--'  67  70  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs
-|4,39,67,70,1624036592,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs"
--'  1  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs
-|4,39,1,0,1624036467,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs"
--'  1  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs
-|4,39,1,0,1624036467,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs"
--'  58  5  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs
-|4,39,58,5,1624036464,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs"
--'  58  5  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs
-|4,39,58,5,1624036464,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs"
--'  58  5  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs
-|4,39,58,5,1624036464,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs"
--'  58  5  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs
-|4,39,58,5,1624036464,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs"
--'  1  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs
-|4,39,1,0,1624036284,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs"
--'  1  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs
-|4,39,1,0,1624036284,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs"
--'  12  0  ~/.config/kwinrc
-|4,39,12,0,1624034608,"~/.config/kwinrc"
--'  12  0  ~/.config/kwinrc
-|4,39,12,0,1624034608,"~/.config/kwinrc"
--'  12  0  ~/.config/kwinrc
-|4,39,12,0,1624034608,"~/.config/kwinrc"
--'  12  0  ~/.config/kwinrc
-|4,39,12,0,1624034608,"~/.config/kwinrc"
--'  12  0  ~/.config/kwinrc
-|4,39,12,0,1624034608,"~/.config/kwinrc"
--'  12  0  ~/.config/kwinrc
-|4,39,12,0,1624034608,"~/.config/kwinrc"
--'  12  0  ~/.config/kwinrc
-|4,39,12,0,1624034608,"~/.config/kwinrc"
--'  12  0  ~/.config/kwinrc
-|4,39,12,0,1624034608,"~/.config/kwinrc"
--'  25  0  ~/.config/kwinrc
-|4,39,25,0,1624034600,"~/.config/kwinrc"
--'  25  0  ~/.config/kwinrc
-|4,39,25,0,1624034600,"~/.config/kwinrc"
--'  25  0  ~/.config/kwinrc
-|4,39,25,0,1624034600,"~/.config/kwinrc"
--'  25  0  ~/.config/kwinrc
-|4,39,25,0,1624034600,"~/.config/kwinrc"
--'  25  0  ~/.config/kwinrc
-|4,39,25,0,1624034600,"~/.config/kwinrc"
--'  25  0  ~/.config/kwinrc
-|4,39,25,0,1624034600,"~/.config/kwinrc"
--'  25  0  ~/.config/kwinrc
-|4,39,25,0,1624034600,"~/.config/kwinrc"
--'  25  0  ~/.config/kwinrc
-|4,39,25,0,1624034600,"~/.config/kwinrc"
--'  1  0  ~/.config/kwinrc
-|4,39,1,0,1624034598,"~/.config/kwinrc"
--'  1  0  ~/.config/kwinrc
-|4,39,1,0,1624034598,"~/.config/kwinrc"
--'  1  0  ~/.config/kwinrc
-|4,39,1,0,1624034598,"~/.config/kwinrc"
--'  1  0  ~/.config/kwinrc
-|4,39,1,0,1624034598,"~/.config/kwinrc"
--'  1  0  ~/.config/kwinrc
-|4,39,1,0,1624034598,"~/.config/kwinrc"
--'  1  0  ~/.config/kwinrc
-|4,39,1,0,1624034598,"~/.config/kwinrc"
--'  1  0  ~/.config/kwinrc
-|4,39,1,0,1624034598,"~/.config/kwinrc"
--'  1  0  ~/.config/kwinrc
-|4,39,1,0,1624034598,"~/.config/kwinrc"
--'  29  0  ~/.config/kwinrc
-|4,39,29,0,1624034401,"~/.config/kwinrc"
--'  31  0  ~/.config/kwinrc
-|4,39,31,0,1624034401,"~/.config/kwinrc"
--'  29  0  ~/.config/kwinrc
-|4,39,29,0,1624034401,"~/.config/kwinrc"
--'  31  0  ~/.config/kwinrc
-|4,39,31,0,1624034401,"~/.config/kwinrc"
--'  29  0  ~/.config/kwinrc
-|4,39,29,0,1624034401,"~/.config/kwinrc"
--'  31  0  ~/.config/kwinrc
-|4,39,31,0,1624034401,"~/.config/kwinrc"
--'  29  0  ~/.config/kwinrc
-|4,39,29,0,1624034401,"~/.config/kwinrc"
--'  31  0  ~/.config/kwinrc
-|4,39,31,0,1624034401,"~/.config/kwinrc"
--'  29  0  ~/.config/kwinrc
-|4,39,29,0,1624034401,"~/.config/kwinrc"
--'  31  0  ~/.config/kwinrc
-|4,39,31,0,1624034401,"~/.config/kwinrc"
--'  29  0  ~/.config/kwinrc
-|4,39,29,0,1624034401,"~/.config/kwinrc"
--'  31  0  ~/.config/kwinrc
-|4,39,31,0,1624034401,"~/.config/kwinrc"
--'  29  0  ~/.config/kwinrc
-|4,39,29,0,1624034401,"~/.config/kwinrc"
--'  31  0  ~/.config/kwinrc
-|4,39,31,0,1624034401,"~/.config/kwinrc"
--'  29  0  ~/.config/kwinrc
-|4,39,29,0,1624034401,"~/.config/kwinrc"
--'  31  0  ~/.config/kwinrc
-|4,39,31,0,1624034401,"~/.config/kwinrc"
--'  1  0  ~/.config/kwinrc
-|4,39,1,0,1624034384,"~/.config/kwinrc"
--'  1  0  ~/.config/kwinrc
-|4,39,1,0,1624034384,"~/.config/kwinrc"
--'  1  0  ~/.config/kwinrc
-|4,39,1,0,1624034384,"~/.config/kwinrc"
--'  1  0  ~/.config/kwinrc
-|4,39,1,0,1624034384,"~/.config/kwinrc"
--'  1  0  ~/.config/kwinrc
-|4,39,1,0,1624034384,"~/.config/kwinrc"
--'  1  0  ~/.config/kwinrc
-|4,39,1,0,1624034384,"~/.config/kwinrc"
--'  1  0  ~/.config/kwinrc
-|4,39,1,0,1624034384,"~/.config/kwinrc"
--'  1  0  ~/.config/kwinrc
-|4,39,1,0,1624034384,"~/.config/kwinrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  22  0  ~/.bashrc
-|4,39,22,0,1624033886,"~/.bashrc"
--'  24  0  ~/.bashrc
-|4,39,24,0,1624033884,"~/.bashrc"
--'  24  0  ~/.bashrc
-|4,39,24,0,1624033884,"~/.bashrc"
--'  24  0  ~/.bashrc
-|4,39,24,0,1624033884,"~/.bashrc"
--'  24  0  ~/.bashrc
-|4,39,24,0,1624033884,"~/.bashrc"
--'  24  0  ~/.bashrc
-|4,39,24,0,1624033884,"~/.bashrc"
--'  24  0  ~/.bashrc
-|4,39,24,0,1624033884,"~/.bashrc"
--'  24  0  ~/.bashrc
-|4,39,24,0,1624033884,"~/.bashrc"
--'  24  0  ~/.bashrc
-|4,39,24,0,1624033884,"~/.bashrc"
--'  24  0  ~/.bashrc
-|4,39,24,0,1624033884,"~/.bashrc"
+-'  128  3  ~/.vimrc
+|4,39,128,3,1624747008,"~/.vimrc"
+-'  2  0  ~/[coc-explorer]-1
+|4,39,2,0,1624746764,"~/[coc-explorer]-1"
+-'  19  0  ~/.vim/vundle.vim
+|4,39,19,0,1624746714,"~/.vim/vundle.vim"
+-'  1  0  ~/.vim/vundle.vim
+|4,39,1,0,1624746704,"~/.vim/vundle.vim"
+-'  136  18  ~/.vimrc
+|4,39,136,18,1624746683,"~/.vimrc"
+-'  134  18  ~/.vimrc
+|4,39,134,18,1624746683,"~/.vimrc"
+-'  134  18  ~/.vimrc
+|4,39,134,18,1624746683,"~/.vimrc"
+-'  25  4  ~/.vimrc
+|4,39,25,4,1624746630,"~/.vimrc"
+-'  27  6  ~/.vimrc
+|4,39,27,6,1624746630,"~/.vimrc"
+-'  25  4  ~/.vimrc
+|4,39,25,4,1624746630,"~/.vimrc"
+-'  27  6  ~/.vimrc
+|4,39,27,6,1624746630,"~/.vimrc"
+-'  25  4  ~/.vimrc
+|4,39,25,4,1624746630,"~/.vimrc"
+-'  27  6  ~/.vimrc
+|4,39,27,6,1624746630,"~/.vimrc"
+-'  1  0  ~/1
+|4,39,1,0,1624746605,"~/1"
+-'  1  0  ~/1
+|4,39,1,0,1624746605,"~/1"
+-'  1  0  ~/1
+|4,39,1,0,1624746605,"~/1"
+-'  26  6  ~/.vimrc
+|4,39,26,6,1624746492,"~/.vimrc"
+-'  26  6  ~/.vimrc
+|4,39,26,6,1624746492,"~/.vimrc"
+-'  26  6  ~/.vimrc
+|4,39,26,6,1624746492,"~/.vimrc"
+-'  26  6  ~/.vimrc
+|4,39,26,6,1624746492,"~/.vimrc"
+-'  26  6  ~/.vimrc
+|4,39,26,6,1624746492,"~/.vimrc"
+-'  26  6  ~/.vimrc
+|4,39,26,6,1624746492,"~/.vimrc"
+-'  26  6  ~/.vimrc
+|4,39,26,6,1624746492,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1624745836,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1624745836,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1624745836,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1624745836,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1624745836,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1624745836,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1624745836,"~/.vimrc"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
+-'  3  0  /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+|4,39,3,0,1624045802,"/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1"
 
 # Geschichte der Markierungen innerhalb von Dateien (neueste zuerst):
 
-> /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/db_2.rs
-	*	1624036682	0
-	"	1	0
-
-> /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
-	*	1624036674	0
-	"	3	0
-	.	2	0
-	+	37	0
-	+	19	0
-	+	2	0
-
-> /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs
-	*	1624036589	0
-	"	67	70
-
 > ~/.vimrc
-	*	1624036588	0
-	"	10	8
-	^	10	9
-	.	10	8
+	*	1624747007	0
+	"	128	3
+	^	128	4
+	.	128	3
 	+	6	0
 	+	5	4
 	+	20	85
@@ -457,34 +450,34 @@ $
 	+	26	0
 	+	55	22
 	+	56	10
-	+	162	10
-	+	163	0
-	+	162	0
-	+	163	0
-	+	161	0
-	+	163	77
-	+	163	0
+	+	166	10
+	+	167	0
+	+	166	0
+	+	167	0
+	+	165	0
+	+	167	77
+	+	167	0
 	+	56	10
+	+	172	0
 	+	168	0
-	+	164	0
 	+	26	0
 	+	24	24
-	+	169	0
+	+	173	0
 	+	56	0
-	+	163	0
+	+	167	0
 	+	58	54
 	+	57	10
 	+	58	10
 	+	26	0
-	+	184	0
-	+	170	0
-	+	169	0
-	+	177	0
+	+	188	0
+	+	174	0
+	+	173	0
+	+	181	0
 	+	58	0
 	+	59	0
 	+	60	0
-	+	173	20
-	+	181	20
+	+	177	20
+	+	185	20
 	+	91	41
 	+	13	0
 	+	91	30
@@ -499,14 +492,14 @@ $
 	+	43	0
 	+	41	0
 	+	43	0
-	+	153	0
+	+	157	0
 	+	100	4
 	+	100	0
 	+	100	23
 	+	100	35
 	+	100	0
 	+	8	0
-	+	153	0
+	+	157	0
 	+	8	32
 	+	43	0
 	+	6	0
@@ -514,20 +507,111 @@ $
 	+	8	0
 	+	42	17
 	+	10	8
+	+	132	0
+	+	128	0
+	+	129	0
+	+	131	4
+	+	128	3
 
 > ~/.vim/vundle.vim
-	*	1624036568	0
+	*	1624747005	0
+	"	19	0
+
+> ~/[coc-explorer]-2
+	*	1624746714	0
+	"	49	0
+	.	49	0
+	+	65	0
+	+	49	0
+
+> ~/[coc-explorer]-1
+	*	1624746704	0
+	"	27	0
+	.	52	0
+	+	923	0
+	+	873	0
+	+	823	0
+	+	773	0
+	+	772	0
+	+	723	0
+	+	744	0
+	+	751	0
+	+	738	0
+	+	673	0
+	+	623	0
+	+	651	0
+	+	650	0
+	+	651	0
+	+	640	0
+	+	601	0
+	+	502	0
+	+	370	0
+	+	247	0
+	+	187	0
+	+	127	0
+	+	67	0
+	+	113	0
+	+	1	0
+	+	24	0
+	+	52	0
+
+> /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/vvm/[coc-explorer]-1
+	*	1624125366	0
 	"	3	0
+	.	2	0
+	+	2	0
+
+> /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/main.rs
+	*	1624045801	0
+	"	36	13
+	.	53	0
+	+	53	0
+
+> /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/[coc-explorer]-1
+	*	1624045760	0
+	"	3	0
+	.	2	0
+	+	85	0
+	+	67	0
+	+	51	0
+	+	35	0
+	+	19	0
+	+	2	0
+
+> ~/libcouchbase/cmake/configure
+	*	1624041625	0
+	"	308	41
+	^	308	42
+	.	308	41
+	+	13	0
+	+	309	30
+	+	310	40
+	+	311	48
+	+	308	41
+
+> ~/libcouchbase/[coc-explorer]-1
+	*	1624041529	0
+	"	11	0
+	.	11	0
+	+	183	0
+	+	153	0
+	+	131	0
+	+	101	0
+	+	63	0
+	+	41	0
+	+	11	0
+
+> ~/libcouchbase/build/CMakeFiles/CMakeOutput.log
+	*	1624037288	0
+	"	475	0
+
+> /run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/soundloop/src/db_2.rs
+	*	1624036682	0
+	"	1	0
 
 > ~/[coc-explorer]-3
 	*	1624036566	0
 	"	26	0
-	.	2	0
-	+	2	0
-
-> ~/[coc-explorer]-2
-	*	1624036540	0
-	"	46	0
 	.	2	0
 	+	2	0
 
@@ -539,29 +623,6 @@ $
 	+	29	0
 	+	26	0
 	+	12	0
-
-> ~/[coc-explorer]-1
-	*	1624034596	0
-	"	66	0
-	.	66	0
-	+	619	0
-	+	569	0
-	+	519	0
-	+	469	0
-	+	468	0
-	+	419	0
-	+	440	0
-	+	447	0
-	+	434	0
-	+	369	0
-	+	319	0
-	+	347	0
-	+	346	0
-	+	347	0
-	+	336	0
-	+	297	0
-	+	198	0
-	+	66	0
 
 > ~/.bashrc
 	*	1624033885	0

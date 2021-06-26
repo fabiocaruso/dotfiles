@@ -125,6 +125,10 @@ let g:vimspector_enable_mappings = 'HUMAN'
 let g:vimspector_install_gadgets = [ 'CodeLLDB' ]
 
 "Gruvbox
+if !has("nvim")
+	set term=xterm
+	set t_Co=256
+endif
 set termguicolors
 autocmd vimenter * ++nested colorscheme gruvbox
 set background=dark
