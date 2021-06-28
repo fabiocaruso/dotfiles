@@ -1,0 +1,8 @@
+[$Version]
+update_info=spectacle_newConfig.upd:spectacle-new-config
+
+[GuiConfig]
+lastUsedSaveMode[$d]
+
+[Save]
+lastUsedSaveMode=1

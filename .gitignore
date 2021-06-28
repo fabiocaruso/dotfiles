@@ -1,9 +1,13 @@
 # Ignore everything
 *
 
-!/.vim/**
-!/.config/**
+# Except these
+!.vim/**/*
+!.config/
+!.config/*/
+!.config/**/*
 !.bashrc
+!.bash_profile
 !.tmux.config
 !.vimrc
 !README.md

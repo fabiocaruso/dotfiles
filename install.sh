@@ -71,9 +71,12 @@ if [ "$OSTYPE" = "linux-gnu" ] ; then
 	# Clone Vundle if it's missing
 	mkdir ~/.vim/bundle/
 	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+	# Clone tmux plugin manager (tpm)
+	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 	# Install plugins
 	nvim -u ~/.vim/vundle.vim +PluginInstall +qall
 	nvim "+CocInstall coc-explorer" +qall
+	~/.tmux/plugins/tpm/scripts/install_plugins.sh
 elif [ "$OSTYPE" = "darwin" ] ; then
         # Mac OSX
 	true

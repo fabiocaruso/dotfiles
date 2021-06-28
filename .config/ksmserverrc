@@ -1,0 +1,27 @@
+[$Version]
+update_info=ksmserver_update_loginMode_value.upd:ksmserver_update_loginMode_value_default_enum
+
+[General]
+loginMode=restorePreviousLogout
+
+[LegacySession: saved at previous logout]
+count=0
+
+[Session: saved at previous logout]
+clientId1=102301a619e17d000162479338100000012710009
+clientId2=102301a619e17d000162481922800000012710041
+clientId3=102301a619e17d000162486987700000012710049
+count=3
+discardCommand2[$e]=rm,$HOME/.config/session/dolphin_102301a619e17d000162481922800000012710041_1624870366_704118
+program1=/usr/bin/flameshot
+program2=/usr/bin/dolphin
+program3=firefox
+restartCommand1=/usr/bin/flameshot,-session,102301a619e17d000162479338100000012710009_1624870366_704068
+restartCommand2=/usr/bin/dolphin,-session,102301a619e17d000162481922800000012710041_1624870366_704118
+restartCommand3=/usr/lib64/firefox/firefox,--sm-client-id,102301a619e17d000162486987700000012710049
+restartStyleHint1=0
+restartStyleHint2=0
+restartStyleHint3=0
+userId1=fabiocaruso
+userId2=fabiocaruso
+userId3=fabiocaruso

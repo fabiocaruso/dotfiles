@@ -1,0 +1,1599 @@
+{
+   "checksum": "208da9ca09bc0d03e79c764634732a45",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13268686732703798",
+               "guid": "68fc9516-59ac-447e-a8a6-ff27d558da91",
+               "id": "7",
+               "meta_info": {
+                  "Description": "travel, airfare",
+                  "Partner": "68fc9516-59ac-447e-a8a6-ff27d558da91",
+                  "Thumbnail": "/resources/sd_booking.com.png"
+               },
+               "name": "Booking.com",
+               "type": "url",
+               "url": "https://vivaldi.com/bk/booking-ch"
+            }, {
+               "date_added": "13268686732703868",
+               "guid": "a4d0c752-2bf7-470d-85cd-8b2ddd1ec82b",
+               "id": "8",
+               "meta_info": {
+                  "Partner": "a4d0c752-2bf7-470d-85cd-8b2ddd1ec82b",
+                  "Thumbnail": "/resources/sd_youtube.png"
+               },
+               "name": "YouTube",
+               "type": "url",
+               "url": "https://www.youtube.com/"
+            }, {
+               "date_added": "13268686732703880",
+               "guid": "44d32981-5dcf-4a1f-be5b-3c0d03c7a0a1",
+               "id": "9",
+               "meta_info": {
+                  "Description": "shopping",
+                  "Partner": "44d32981-5dcf-4a1f-be5b-3c0d03c7a0a1",
+                  "Thumbnail": "/resources/sd_ebay.png"
+               },
+               "name": "eBay",
+               "type": "url",
+               "url": "https://vivaldi.com/bk/ebay-ch"
+            }, {
+               "date_added": "13268686732703891",
+               "guid": "0efbb5fb-d366-4a91-95b1-b5690a0cf0ef",
+               "id": "10",
+               "meta_info": {
+                  "Description": "shopping",
+                  "Partner": "0efbb5fb-d366-4a91-95b1-b5690a0cf0ef",
+                  "Thumbnail": "/resources/sd_aliexpress.png"
+               },
+               "name": "AliExpress",
+               "type": "url",
+               "url": "https://vivaldi.com/bk/aliexpress-ch"
+            }, {
+               "date_added": "13268686732703902",
+               "guid": "e57fc690-8a8a-4e02-b609-d8d4e1e6bb3d",
+               "id": "11",
+               "meta_info": {
+                  "Partner": "e57fc690-8a8a-4e02-b609-d8d4e1e6bb3d",
+                  "Thumbnail": "/resources/sd_startpage.png"
+               },
+               "name": "Startpage",
+               "type": "url",
+               "url": "https://vivaldi.com/bk/sd-startpage-de-ch"
+            }, {
+               "date_added": "13268686732703914",
+               "guid": "4e1fc0cf-08f4-40d9-acc9-dc79ea44cf82",
+               "id": "12",
+               "meta_info": {
+                  "Partner": "4e1fc0cf-08f4-40d9-acc9-dc79ea44cf82",
+                  "Thumbnail": "/resources/sd_accuweather.png"
+               },
+               "name": "AccuWeather",
+               "type": "url",
+               "url": "https://vivaldi.com/bk/sd-accuweather"
+            }, {
+               "children": [ {
+                  "date_added": "13268686732703931",
+                  "guid": "4384d754-0aa9-467f-9066-a2f6443cde7d",
+                  "id": "14",
+                  "meta_info": {
+                     "Description": "technology",
+                     "Partner": "4384d754-0aa9-467f-9066-a2f6443cde7d",
+                     "Thumbnail": "/resources/sd_vivaldi.png"
+                  },
+                  "name": "Vivaldi Features",
+                  "type": "url",
+                  "url": "https://vivaldi.com/bk/sd-browser-features"
+               }, {
+                  "date_added": "13268686732703943",
+                  "guid": "4e03018e-a197-4b80-9b6e-55caa5028c64",
+                  "id": "15",
+                  "meta_info": {
+                     "Description": "technology, social",
+                     "Partner": "4e03018e-a197-4b80-9b6e-55caa5028c64",
+                     "Thumbnail": "/resources/sd_vivaldi_community.gif"
+                  },
+                  "name": "Vivaldi Community",
+                  "type": "url",
+                  "url": "https://vivaldi.com/bk/sd-community"
+               }, {
+                  "date_added": "13268686732703955",
+                  "guid": "a4715241-d0fd-4d0f-b2ca-6e4267d644b3",
+                  "id": "16",
+                  "meta_info": {
+                     "Partner": "a4715241-d0fd-4d0f-b2ca-6e4267d644b3",
+                     "Thumbnail": "/resources/sd_webmail.png"
+                  },
+                  "name": "Vivaldi Webmail",
+                  "type": "url",
+                  "url": "https://vivaldi.com/bk/sd-webmail"
+               } ],
+               "date_added": "13268686732703926",
+               "date_modified": "13268686732703955",
+               "guid": "04f107b7-203e-49e6-ab97-d6b9e613cc4a",
+               "id": "13",
+               "meta_info": {
+                  "Partner": "04f107b7-203e-49e6-ab97-d6b9e613cc4a"
+               },
+               "name": "Vivaldi",
+               "type": "folder"
+            }, {
+               "date_added": "13268686732703965",
+               "guid": "10415f5d-2e0c-4f08-8e49-23fcd2de0943",
+               "id": "17",
+               "meta_info": {
+                  "Partner": "10415f5d-2e0c-4f08-8e49-23fcd2de0943",
+                  "Thumbnail": "/resources/sd_vivaldi_game.png"
+               },
+               "name": "Vivaldi Game",
+               "type": "url",
+               "url": "vivaldi://game/"
+            } ],
+            "date_added": "13268686732703776",
+            "date_modified": "13268686732703965",
+            "guid": "44641543-f123-438f-bc5c-8da7bb7c6819",
+            "id": "6",
+            "meta_info": {
+               "Partner": "44641543-f123-438f-bc5c-8da7bb7c6819",
+               "Speeddial": "true"
+            },
+            "name": "Speed Dial",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13268686732703981",
+               "guid": "f56c1a38-3e9e-48fc-8d6c-b800f226dbfb",
+               "id": "19",
+               "meta_info": {
+                  "Partner": "f56c1a38-3e9e-48fc-8d6c-b800f226dbfb",
+                  "Thumbnail": "/resources/sd_booking.com.png"
+               },
+               "name": "Booking.com",
+               "type": "url",
+               "url": "https://vivaldi.com/bk/booking-ch-bk"
+            }, {
+               "date_added": "13268686732703992",
+               "guid": "f79cd6e8-ebc0-444d-ac96-00da456dcb59",
+               "id": "20",
+               "meta_info": {
+                  "Partner": "f79cd6e8-ebc0-444d-ac96-00da456dcb59",
+                  "Thumbnail": "/resources/sd_aliexpress.png"
+               },
+               "name": "AliExpress",
+               "type": "url",
+               "url": "https://vivaldi.com/bk/ali-ch-bk"
+            }, {
+               "date_added": "13268686732704003",
+               "guid": "4ac3d5a6-bbdd-4b1d-92a1-eaea6df81e84",
+               "id": "21",
+               "meta_info": {
+                  "Partner": "4ac3d5a6-bbdd-4b1d-92a1-eaea6df81e84",
+                  "Thumbnail": "/resources/sd_amazon.png"
+               },
+               "name": "Amazon",
+               "type": "url",
+               "url": "https://vivaldi.com/bk/amazon-ch-bk"
+            }, {
+               "date_added": "13268686732704013",
+               "guid": "930d9804-4a0f-45ee-9317-b78ed2b548fd",
+               "id": "22",
+               "meta_info": {
+                  "Partner": "930d9804-4a0f-45ee-9317-b78ed2b548fd",
+                  "Thumbnail": "/resources/sd_ebay.png"
+               },
+               "name": "eBay",
+               "type": "url",
+               "url": "https://vivaldi.com/bk/ebay-ch-bk"
+            } ],
+            "date_added": "13268686732703975",
+            "date_modified": "13268686732704013",
+            "guid": "12c04539-d01e-4fd3-9fbf-aa09a91e91ba",
+            "id": "18",
+            "meta_info": {
+               "Partner": "12c04539-d01e-4fd3-9fbf-aa09a91e91ba"
+            },
+            "name": "Bookmarks",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "children": [ {
+                  "date_added": "13268238455000000",
+                  "guid": "cf2c4b12-8a96-44a6-8af5-33156c4ac8d9",
+                  "id": "25",
+                  "name": "Getting Started",
+                  "type": "url",
+                  "url": "https://www.mozilla.org/en-US/firefox/central/"
+               }, {
+                  "date_added": "13216160095000000",
+                  "guid": "2e6d2f2a-4f4e-417d-92b1-ccd6e475eff4",
+                  "id": "26",
+                  "name": "Erste Schritte",
+                  "type": "url",
+                  "url": "https://www.mozilla.org/de/firefox/central/"
+               }, {
+                  "date_added": "13088374052000000",
+                  "guid": "a924b33e-9a5c-4c1d-bb0f-9237d8fcb151",
+                  "id": "27",
+                  "name": "TS Musikbot Panel",
+                  "type": "url",
+                  "url": "http://mafioso.biz:8087/play/files"
+               }, {
+                  "date_added": "13088374052000000",
+                  "guid": "58dec550-b326-419e-b0ca-71efe7bf8c7d",
+                  "id": "28",
+                  "name": "Facebook",
+                  "type": "url",
+                  "url": "http://www.facebook.com/"
+               }, {
+                  "date_added": "13140539586000000",
+                  "guid": "0b86900e-63e7-4f0b-b9e6-983c63c2b096",
+                  "id": "29",
+                  "name": "E-Mail – fabio.caruso@hotmail.com",
+                  "type": "url",
+                  "url": "https://outlook.live.com/owa/?path=/mail/inbox"
+               }, {
+                  "date_added": "13088374052000000",
+                  "guid": "bcbbc963-6b0a-4d27-ae94-82f03937a6b5",
+                  "id": "30",
+                  "name": "heise online - IT-News, Nachrichten und Hintergründe",
+                  "type": "url",
+                  "url": "http://www.heise.de/"
+               }, {
+                  "date_added": "13114804434000000",
+                  "guid": "8a11c4cd-8e54-4cdf-81f2-8869dfe6fecf",
+                  "id": "31",
+                  "name": "Golem.de: IT-News für Profis",
+                  "type": "url",
+                  "url": "http://www.golem.de/"
+               }, {
+                  "date_added": "13203422978000000",
+                  "guid": "811d70d5-e372-415f-b97e-d80757d9ff5f",
+                  "id": "32",
+                  "meta_info": {
+                     "Description": "Method 1 - Revere with For Loop and print     public class ReverseArray { public static void main(St... Tagged with java, javascript, oop, webdev."
+                  },
+                  "name": "DEV Community 👩‍💻👨‍💻",
+                  "type": "url",
+                  "url": "https://dev.to/"
+               }, {
+                  "date_added": "13255290944000000",
+                  "guid": "b65ac650-51ee-47d7-a3a9-943eae051e97",
+                  "id": "33",
+                  "name": "TV neo",
+                  "type": "url",
+                  "url": "https://tvneo.sunrise.ch/Videorelease/index.html#/home"
+               }, {
+                  "date_added": "13175182230000000",
+                  "guid": "1d4353d0-b881-45fd-8a89-00e3f2f6e2cc",
+                  "id": "34",
+                  "name": "Schooltas",
+                  "type": "url",
+                  "url": "https://mijn.schooltas.net/"
+               }, {
+                  "children": [ {
+                     "date_added": "13213619030000000",
+                     "guid": "1770e447-5f4f-489c-aba0-2fa174490eb1",
+                     "id": "36",
+                     "name": "Studium | Zenkit",
+                     "type": "url",
+                     "url": "https://zenkit.com/collections/a1SY1Ugu4/views/h2zQVq_ONw"
+                  }, {
+                     "date_added": "13261584319000000",
+                     "guid": "189819fe-1df8-45a7-b72d-fcef8f72a88d",
+                     "id": "37",
+                     "name": "Dashboard",
+                     "type": "url",
+                     "url": "https://moodle2.zhaw.ch/my/"
+                  }, {
+                     "date_added": "13259965442000000",
+                     "guid": "7209654e-0c7e-4c7f-a5b2-f47d304825e0",
+                     "id": "38",
+                     "meta_info": {
+                        "Description": "Project Management and Software Development with GitHub | ZenHub"
+                     },
+                     "name": "Board · Website-Adoptium",
+                     "type": "url",
+                     "url": "https://app.zenhub.com/workspaces/website-adoptium-604a6f1ac842af000e37df07/board?repos=346742221"
+                  }, {
+                     "date_added": "13259432576000000",
+                     "guid": "1a9f61ca-0194-4fbd-a932-f36ed334b2db",
+                     "id": "39",
+                     "name": "Login - OpenStack Dashboard",
+                     "type": "url",
+                     "url": "https://ned.cloudlab.zhaw.ch/auth/login/"
+                  }, {
+                     "date_added": "13259958033000000",
+                     "guid": "74978e8a-0956-4006-89ac-f68590bd6d8f",
+                     "id": "40",
+                     "meta_info": {
+                        "Description": "Benutze diesen kostenlosen Online-Rechner, um Integrale und Stammfunktionen von mathematischen Funktionen zu bestimmen. Der vollständige Rechenweg wird angezeigt."
+                     },
+                     "name": "Integralrechner • Mit Rechenweg!",
+                     "type": "url",
+                     "url": "https://www.integralrechner.de/"
+                  }, {
+                     "date_added": "13259150789000000",
+                     "guid": "1b7fd8bc-ea3b-4dbd-b766-e36680700339",
+                     "id": "41",
+                     "name": "Informatik - IT Security",
+                     "type": "url",
+                     "url": "https://tube.switch.ch/channels/d3d91958"
+                  }, {
+                     "date_added": "13263746339000000",
+                     "guid": "f3274bd9-a64e-4e92-8994-0c909ce49efa",
+                     "id": "42",
+                     "meta_info": {
+                        "Description": "Contribute to huberpa4/CTIT2 development by creating an account on GitHub."
+                     },
+                     "name": "CTIT2/CTIT2_SEP_Moodle_Jan-2021.png at master · huberpa4/CTIT2",
+                     "type": "url",
+                     "url": "https://github.zhaw.ch/huberpa4/CTIT2/blob/master/SEP/CTIT2_SEP_Moodle_Jan-2021.png"
+                  } ],
+                  "date_added": "13268688189163703",
+                  "date_modified": "0",
+                  "guid": "8cb59982-1cfc-4dc8-966d-cced240cdd1d",
+                  "id": "35",
+                  "name": "Studium",
+                  "type": "folder"
+               }, {
+                  "date_added": "13263695115000000",
+                  "guid": "62203947-aa91-4df4-8736-40ba1e991e91",
+                  "id": "43",
+                  "meta_info": {
+                     "Description": "Collaborative doc app that brings you to Uranus"
+                  },
+                  "name": "Slite",
+                  "type": "url",
+                  "url": "https://fabiocaruso.slite.com/app/channels/TwhTg~2ito"
+               }, {
+                  "date_added": "13267805808000000",
+                  "guid": "9e796f22-6093-430d-a47d-237e8290eec3",
+                  "id": "44",
+                  "meta_info": {
+                     "Description": "Und deine gesamte Musikmediathek auf all deinen Geräten."
+                  },
+                  "name": "‎Apple Music",
+                  "type": "url",
+                  "url": "https://music.apple.com/ch/listen-now"
+               }, {
+                  "date_added": "13186132881000000",
+                  "guid": "b2b82a7c-2e60-44ad-a933-bb1f55c97f02",
+                  "id": "45",
+                  "meta_info": {
+                     "Description": "Dropbox ist ein kostenloser Service, mit dem Sie Ihre Fotos, Dokumente und Videos überall dabei haben und leicht mit anderen gemeinsam nutzen können. Sie brauchen nie wieder eine Datei per E-Mail an sich selbst zu schicken."
+                  },
+                  "name": "Dropbox – BM 4TA – Machen Sie sich das Leben leichter",
+                  "type": "url",
+                  "url": "https://www.dropbox.com/sh/j9rly1p8u5goixa/AAAkPYuV1JUSpo4sNsZwe6zNa?dl=0"
+               }, {
+                  "date_added": "13123888844000000",
+                  "guid": "27f2a62e-9833-4476-ac6b-0b7394630c73",
+                  "id": "46",
+                  "name": "OctoPrint",
+                  "type": "url",
+                  "url": "http://192.168.1.139/"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "08b8f8a5-e607-4995-b1bf-ecfaf1d925fa",
+                  "id": "47",
+                  "name": "Table Drag and Drop JQuery plugin | Isocra",
+                  "type": "url",
+                  "url": "http://www.isocra.com/2008/02/table-drag-and-drop-jquery-plugin/"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "0a34c430-5289-4106-8420-4267c72f6b7e",
+                  "id": "48",
+                  "name": "Hulkshare - Listen to Free Songs & Music Online",
+                  "type": "url",
+                  "url": "http://www.hulkshare.com/"
+               }, {
+                  "date_added": "13088374052000000",
+                  "guid": "cc0426ed-77b7-46d1-b464-5e5fd1da31f7",
+                  "id": "49",
+                  "meta_info": {
+                     "Description": "Günstige vServer mieten mit SSD und DDoS Schutz anonym bezahlen mit paysafecard und Bitcoin. Traffic Flatrate und sofort online. VPS, Webhosting, Domains."
+                  },
+                  "name": "vServer, Webhosting, TS3 Server, Gameserver mieten / ServerBiz",
+                  "type": "url",
+                  "url": "https://www.serverbiz.de/"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "46cbd5e8-426d-4a03-99e6-ae407cd68519",
+                  "id": "50",
+                  "name": "Install and Configure rTorrent and ruTorrent",
+                  "type": "url",
+                  "url": "http://randystech.com/index.php?option=com_content&view=article&id=68:install-and-configure-rtorrent-and-rutorrent&catid=4:linux-server&Itemid=8"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "dee10689-7047-497b-af7e-5e0bfa4f32d6",
+                  "id": "51",
+                  "name": "Vhannibal – I migliori setting per Dreambox! – Setting",
+                  "type": "url",
+                  "url": "http://www.vhannibal.net/"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "a879f997-6ebf-410e-9083-2bf6ad0dacfd",
+                  "id": "52",
+                  "name": "Edit this Fiddle - jsFiddle",
+                  "type": "url",
+                  "url": "http://jsfiddle.net/pmw57/tzYbU/205/"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "4b2cd182-1c3c-4474-a2b6-45784c90e662",
+                  "id": "53",
+                  "name": "Online TV Database - An open directory of television shows for HTPC software",
+                  "type": "url",
+                  "url": "http://thetvdb.com/"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "54444c38-c0e8-4084-8a96-8828116ca59b",
+                  "id": "54",
+                  "name": "How to create a bootable Windows 7 USB flash drive | Ars Technica",
+                  "type": "url",
+                  "url": "http://arstechnica.com/business/2009/12/the-usb-flash-drive/"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "a468304e-f968-403c-89da-56c35bd9043f",
+                  "id": "55",
+                  "name": "Isgenug - Ihr dedicated Server ab 14,99 Euro / Monat!",
+                  "type": "url",
+                  "url": "https://www.ovh.de/dedicated_server/isgenug.xml"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "124d5b55-0043-4d60-a4bc-680dc4fd804e",
+                  "id": "56",
+                  "name": "Grau als Trendfarbe im Webdesign | Elmastudio",
+                  "type": "url",
+                  "url": "http://www.elmastudio.de/webdesign/inspiration/grau-als-trendfarbe-im-webdesign/"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "f1e70dda-8db1-48ad-b3bc-a07033c8bec6",
+                  "id": "57",
+                  "name": "HTML Farbencodes",
+                  "type": "url",
+                  "url": "http://html-color-codes.info/webfarben_hexcodes/"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "7d52e46e-5acc-4fc0-9384-542a2bfa7c60",
+                  "id": "58",
+                  "name": "jQuery Table Sort | The Stupid Table Plugin by JoeQuery",
+                  "type": "url",
+                  "url": "http://joequery.github.io/Stupid-Table-Plugin/"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "b80205fa-7e6c-44f0-9ead-270e307fbbea",
+                  "id": "59",
+                  "name": "http://ganz-sicher.net/chlange/dlc.txt",
+                  "type": "url",
+                  "url": "http://ganz-sicher.net/chlange/dlc.txt"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "6bdf8e9a-eb74-4d51-a06a-4e0655f8093b",
+                  "id": "60",
+                  "name": "Plex-Mediaserver auf einem Server und der Dreambox einrichten und benutzen » Dreambox-Blog » Android, Dreambox, Enigma2, iOS, Linux, Mediaserver, Plex, PlugIn, Windows Phone",
+                  "type": "url",
+                  "url": "http://www.dreambox-blog.com/index.php/7463/plex-mediaserver-auf-einem-server-und-der-dreambox-einrichten-und-benutzen"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "d668e2c7-759b-4863-b32a-acd5e8126082",
+                  "id": "61",
+                  "name": "Zürich Airport (Zurich CH) LSZH / ZRH Flug-Tracker ✈ FlightAware",
+                  "type": "url",
+                  "url": "http://de.flightaware.com/live/airport/LSZH"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "a0e54475-018b-43ea-a17d-3c04ee5d2815",
+                  "id": "62",
+                  "name": "betrayed der preis der wahrheit - Google-Suche",
+                  "type": "url",
+                  "url": "https://www.google.ch/search?q=der+preis+der+wahrheit&ie=utf-8&oe=utf-8&rls=org.mozilla:de:official&client=firefox-a&gws_rd=cr&ei=VcTRUq_KMceQswa1woGoAg#q=betrayed%20der%20preis%20der%20wahrheit&rls=org.mozilla:de:official"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "636b6510-43fd-4fcf-902b-0e9f7343d44a",
+                  "id": "63",
+                  "name": "Design- und Layoutkonzept » TYPO3 Diplom",
+                  "type": "url",
+                  "url": "http://www.typo3diplom.de/category/design-und-layoutkonzept/"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "5763c86d-5929-4e72-91c6-993fd9c5725f",
+                  "id": "64",
+                  "name": "Sportfilm-Woche : Top 10 der besten Kampfsport-Filme | News | moviepilot.de",
+                  "type": "url",
+                  "url": "http://www.moviepilot.de/news/top-10-der-besten-kampfsport-filme-130560?utm_campaign=top-10-der-besten-kampfsport-filme&utm_medium=post&utm_source=facebook"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "0cbec2c7-b48e-430b-9166-e3271ebe9e18",
+                  "id": "65",
+                  "name": "Raspberry Pi GPIO How-To \u003C\u003C Raspberry Pi Guide",
+                  "type": "url",
+                  "url": "http://raspberrypiguide.de/howtos/raspberry-pi-gpio-how-to/"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "8476e2a5-2712-4942-b9c1-073bdbe5fc72",
+                  "id": "66",
+                  "name": "Software PWM on a Raspberry Pi | ozzmaker.com",
+                  "type": "url",
+                  "url": "http://ozzmaker.com/2013/09/23/software-pwm-on-a-raspberry-pi/"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "2748acbc-96e2-49dd-a2f6-d42c8a0f2f7e",
+                  "id": "67",
+                  "name": "Armani Jeans T-Shirt print - white - Zalando.ch",
+                  "type": "url",
+                  "url": "http://www.zalando.ch/armani-jeans-t-shirt-print-white-aj122o001-a11.html"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "e5152433-6710-496d-97df-8cd27d3b8c6f",
+                  "id": "68",
+                  "name": "[ROM/AOSP] CyanogenMod official builds - Android-Hilfe.de",
+                  "type": "url",
+                  "url": "http://www.android-hilfe.de/custom-roms-fuer-sony-xperia-z-ultra/492882-rom-aosp-cyanogenmod-official-builds.html"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "d7fa8426-9777-489b-8cd9-c775875492f8",
+                  "id": "69",
+                  "name": "Reimende Nazis - Enissa Amani - TV total - YouTube",
+                  "type": "url",
+                  "url": "https://www.youtube.com/watch?v=ywjyCjE8Dvg&list=FLx9XaopTrbbBkuYVVSD_R1g&index=3"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "7e1a68dd-ff20-4f92-8923-13283de98e9e",
+                  "id": "70",
+                  "name": "Kevin Delaney Makes a Cloud - YouTube",
+                  "type": "url",
+                  "url": "https://www.youtube.com/watch?v=iQWtZd8jM3g"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "2182e5aa-bd48-45dd-8072-3d3948c0c889",
+                  "id": "71",
+                  "name": "Amazon.de Hilfe: Umsatzsteuererstattung bei Ausfuhr im persönlichen Reisegepäck",
+                  "type": "url",
+                  "url": "http://www.amazon.de/gp/help/customer/display.html/ref=help_search_1-1?ie=UTF8&nodeId=201248730&qid=1383906230&sr=1-1"
+               }, {
+                  "date_added": "13088374052000000",
+                  "guid": "07375eba-2fc5-42a9-9595-906ef1fb2458",
+                  "id": "72",
+                  "name": "CMUSphinx Tutorial For Developers [CMUSphinx Wiki]",
+                  "type": "url",
+                  "url": "http://cmusphinx.sourceforge.net/wiki/tutorial"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "670470d2-6719-46ca-9416-6b764c27c602",
+                  "id": "73",
+                  "name": "Mailserver mit Dovecot, Postfix und MySQL auf Ubuntu 14.04 Server einrichten",
+                  "type": "url",
+                  "url": "https://thomas-leister.de/internet/mailserver-ubuntu-server-dovecot-postfix-mysql/"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "63169dc3-ca1a-49b2-94b4-2abf17246caa",
+                  "id": "74",
+                  "meta_info": {
+                     "Description": "Preiswerte Dedicated Server, Root Server, Webserver und vServer mit gutem Support"
+                  },
+                  "name": "Dedicated Server, vServer und Webserver mieten — webtropia.com",
+                  "type": "url",
+                  "url": "https://www.webtropia.com/"
+               }, {
+                  "date_added": "13088374000000000",
+                  "guid": "3c1bb296-60b3-4064-b511-0da3c96841a9",
+                  "id": "75",
+                  "name": "Vorgeschlagene Sites",
+                  "type": "url",
+                  "url": "https://ieonline.microsoft.com/#ieslice"
+               }, {
+                  "date_added": "13088374000000000",
+                  "guid": "17b7d514-f31e-4b54-9de6-0f0330f95a3e",
+                  "id": "76",
+                  "name": "Web Slice-Katalog",
+                  "type": "url",
+                  "url": "http://go.microsoft.com/fwlink/?LinkId=121315"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "65fd0019-ef59-4382-bcf6-c79c6af1dba6",
+                  "id": "77",
+                  "meta_info": {
+                     "Description": "So kannst du deinen Teamspeak Musikbot kostenlos auf deinem Linux Server installieren. Folge einfach der Anleitung."
+                  },
+                  "name": "Teamspeak Musikbot kostenlos auf Linux installieren",
+                  "type": "url",
+                  "url": "https://www.ts-coach.com/blog/teamspeak-musik-bot-auf-linux-installieren/"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "2af133a3-0824-4e4a-b3f1-da3a8e674d0c",
+                  "id": "78",
+                  "name": "Aktas - Aktas Autofahrschule Kreuzlingen",
+                  "type": "url",
+                  "url": "http://aktas.ch/"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "efa9e6ba-063e-4c60-9789-9a9a7e428b4b",
+                  "id": "79",
+                  "name": "Edit fiddle - JSFiddle",
+                  "type": "url",
+                  "url": "https://jsfiddle.net/3199hp7z/4/"
+               }, {
+                  "date_added": "13088614891000000",
+                  "guid": "6707faac-a7c3-412b-9fe0-23cf1ba0d638",
+                  "id": "80",
+                  "name": "Redactor WYSIWYG html editor",
+                  "type": "url",
+                  "url": "http://imperavi.com/redactor/"
+               }, {
+                  "date_added": "13088709082000000",
+                  "guid": "c1746465-f237-4360-901b-5f7cce231704",
+                  "id": "81",
+                  "name": "jQuery UI Touch Punch - Touch Event Support for jQuery UI",
+                  "type": "url",
+                  "url": "http://touchpunch.furf.com/"
+               }, {
+                  "date_added": "13090202759000000",
+                  "guid": "6f4a9402-a11a-4810-9990-18143e26adca",
+                  "id": "82",
+                  "name": "Webspace Webhosting Domain | World4You",
+                  "type": "url",
+                  "url": "http://www.world4you.at/?gclid=COTJ8Zag3MgCFUsYGwodB1wAYg"
+               }, {
+                  "date_added": "13089054984000000",
+                  "guid": "75a1a650-226f-4780-9128-a879b6428052",
+                  "id": "83",
+                  "name": "AllDebrid: Höchste Qualität beim Download, unbegrenzter Zugang zu vielen verschiedenen Anbietern, maximale Verbindungsgeschwindigkeit",
+                  "type": "url",
+                  "url": "http://www.alldebrid.de/"
+               }, {
+                  "date_added": "12948580117000000",
+                  "guid": "63495d1b-255d-43d6-953b-2942516ce258",
+                  "id": "84",
+                  "name": "News",
+                  "type": "url",
+                  "url": "https://blog.linuxmint.com/"
+               }, {
+                  "date_added": "13089485225000000",
+                  "guid": "c1ecb066-7104-4c4c-ad95-038e3a154600",
+                  "id": "85",
+                  "meta_info": {
+                     "Description": "Melde dich bei Facebook an, um dich mit deinen Freunden, deiner Familie und Personen, die du kennst, zu verbinden und Inhalte zu teilen."
+                  },
+                  "name": "Facebook",
+                  "type": "url",
+                  "url": "https://www.facebook.com/"
+               }, {
+                  "date_added": "13089485225000000",
+                  "guid": "a5bd8e06-aa0a-4b00-8ef3-c57b5122a109",
+                  "id": "86",
+                  "meta_info": {
+                     "Description": "Auf YouTube findest du die angesagtesten Videos und Tracks. Außerdem kannst du eigene Inhalte hochladen und mit Freunden oder gleich der ganzen Welt teilen."
+                  },
+                  "name": "YouTube",
+                  "type": "url",
+                  "url": "https://www.youtube.com/"
+               }, {
+                  "date_added": "13089485225000000",
+                  "guid": "c39e9491-331c-49b3-9406-ec17e11c2def",
+                  "id": "87",
+                  "name": "Outlook.com - fabio.caruso@hotmail.com",
+                  "type": "url",
+                  "url": "https://dub123.mail.live.com/default.aspx?id=64855&owa=1&owasuffix=owa%2f"
+               }, {
+                  "date_added": "13089485225000000",
+                  "guid": "513ae855-5d2e-419d-aa61-db73a046b0cb",
+                  "id": "88",
+                  "name": "api.ai",
+                  "type": "url",
+                  "url": "https://console.api.ai/api-client/#/intents"
+               }, {
+                  "date_added": "13089485225000000",
+                  "guid": "6d85e152-9939-48e8-b05a-8ea51246a5a8",
+                  "id": "89",
+                  "name": "Glyphr Studio",
+                  "type": "url",
+                  "url": "http://glyphrstudio.com/online/"
+               }, {
+                  "date_added": "13089485225000000",
+                  "guid": "d86a9cd2-56bc-4b1f-bef3-22527822ae44",
+                  "id": "90",
+                  "name": "lwfinger/rtl8723au_bt at new · GitHub",
+                  "type": "url",
+                  "url": "https://github.com/lwfinger/rtl8723au_bt/tree/new"
+               }, {
+                  "date_added": "13089672467000000",
+                  "guid": "7c26d303-f6cb-4392-b81f-c01766ae1f3c",
+                  "id": "91",
+                  "name": "Unslider — the super-tiny jQuery slider",
+                  "type": "url",
+                  "url": "http://unslider.com/"
+               }, {
+                  "date_added": "13091059946000000",
+                  "guid": "850dea6c-f6a8-4f96-9d93-d87490180ab0",
+                  "id": "92",
+                  "name": "Welcome - Polymer 1.0",
+                  "type": "url",
+                  "url": "https://www.polymer-project.org/1.0/"
+               }, {
+                  "date_added": "13092434550000000",
+                  "guid": "2ff85f72-55c1-462c-a7a2-fc54f6b02614",
+                  "id": "93",
+                  "name": "Hardware mit Diagnosesoftware überprüfen",
+                  "type": "url",
+                  "url": "http://de.ccm.net/faq/796-hardware-mit-diagnosesoftware-ueberpruefen"
+               }, {
+                  "date_added": "13092960645000000",
+                  "guid": "5a8ed234-7182-45bb-9cba-2e3bd7f9a5be",
+                  "id": "94",
+                  "name": "Gest: Work With Your Hands by Gest — Kickstarter",
+                  "type": "url",
+                  "url": "https://www.kickstarter.com/projects/asdffilms/gest-work-with-your-hands?ref=category"
+               }, {
+                  "date_added": "13096169952000000",
+                  "guid": "573f7293-6786-4fef-92ab-b38a6d56f4e1",
+                  "id": "95",
+                  "meta_info": {
+                     "Description": "Webspace und Webhosting sowie Domain, Domains, Rootserver und Domainregistrierungen. Ihr Provider aus Österreich / Austria mit mehr Service und Support. Hosting ab EUR 2,50 pro Monat. Domains ab EUR 5,00 pro Jahr. Webhosting auf Highspeed Servern. Inklusiv"
+                  },
+                  "name": "Webspace Webhosting Domain | World4You",
+                  "type": "url",
+                  "url": "https://www.world4you.com/de/index.html"
+               }, {
+                  "date_added": "13097374507000000",
+                  "guid": "7783a50b-976d-40e4-b3c1-43066e3ba069",
+                  "id": "96",
+                  "name": "Free dynamic DNS for IPv6",
+                  "type": "url",
+                  "url": "https://dynv6.com/"
+               }, {
+                  "date_added": "13109545424000000",
+                  "guid": "9de85259-9b5a-49d1-abe8-f315b514765a",
+                  "id": "97",
+                  "name": "DDL-Warez // Startseite // Kinofilme und Serien zum gratis Download",
+                  "type": "url",
+                  "url": "http://ddl-warez.to/"
+               }, {
+                  "date_added": "13114978482000000",
+                  "guid": "6db0b9d6-4261-4173-8262-865b38801bdc",
+                  "id": "98",
+                  "name": "Ausführbare Dateien unter Windows tarnen - Bastian Born - Developer Dump",
+                  "type": "url",
+                  "url": "http://bastianborn.de/ausfuhrbare-dateien-unter-windows-tarnen"
+               }, {
+                  "date_added": "13114998072000000",
+                  "guid": "7daadd02-8d6d-4431-901e-b71974d3712c",
+                  "id": "99",
+                  "name": "Fix: Stutter in Games Caused by Diagnostics Policy Service",
+                  "type": "url",
+                  "url": "http://windowsreport.com/stutter-games-diagnostics-policy-service/"
+               }, {
+                  "date_added": "13120074445000000",
+                  "guid": "6c472feb-a639-42bd-951e-b0bf26ea41e5",
+                  "id": "100",
+                  "name": "Real-Debrid",
+                  "type": "url",
+                  "url": "https://real-debrid.com/"
+               }, {
+                  "date_added": "13131753035000000",
+                  "guid": "6d7abda9-781b-4564-9c69-4f6367ebe43a",
+                  "id": "101",
+                  "name": "Kaggle: Your Home for Data Science",
+                  "type": "url",
+                  "url": "https://www.kaggle.com/"
+               }, {
+                  "date_added": "13136653920000000",
+                  "guid": "8c8e65be-d347-4a86-bee2-d3df64f7f490",
+                  "id": "102",
+                  "name": "Test CCcam - CCcam 4 clines",
+                  "type": "url",
+                  "url": "http://www.cccam-clines.com/test-cccam/"
+               }, {
+                  "date_added": "13136936224000000",
+                  "guid": "c0c2bd77-fe68-4a3c-a148-04735b5cbb11",
+                  "id": "103",
+                  "name": "python - How do I sudo a command in a script without being asked for a password? - Ask Ubuntu",
+                  "type": "url",
+                  "url": "https://askubuntu.com/questions/155791/how-do-i-sudo-a-command-in-a-script-without-being-asked-for-a-password"
+               }, {
+                  "date_added": "13140204910000000",
+                  "guid": "ad5f7679-0af0-43a9-ab5b-9ea326572c1b",
+                  "id": "104",
+                  "name": "Online-Kurse: Wann und wo immer es Ihnen gefällt | Udemy",
+                  "type": "url",
+                  "url": "https://www.udemy.com/courses/"
+               }, {
+                  "date_added": "13114232725000000",
+                  "guid": "8b6a7397-1d75-4fa5-a4b5-6226ae7e60ca",
+                  "id": "105",
+                  "name": "Outlook - fabio.caruso@hotmail.com",
+                  "type": "url",
+                  "url": "https://dub123.mail.live.com/default.aspx?id=64855&owa=1&owasuffix=owa%2f"
+               }, {
+                  "date_added": "13114232725000000",
+                  "guid": "2f73027c-2d67-46af-a3b2-96cd5a1414d1",
+                  "id": "106",
+                  "meta_info": {
+                     "Description": "Alle News über iPhone und iPad"
+                  },
+                  "name": "iPhone News",
+                  "type": "url",
+                  "url": "http://www.iphone-news.org/"
+               }, {
+                  "date_added": "13114232725000000",
+                  "guid": "c4f662ed-aebf-4bda-b00b-356da78b0578",
+                  "id": "107",
+                  "name": "Ajenti",
+                  "type": "url",
+                  "url": "http://ajenti.org/"
+               }, {
+                  "date_added": "13114232726000000",
+                  "guid": "80541b33-fa2f-4dd2-bcd9-bc4fef351a60",
+                  "id": "108",
+                  "name": "Balabolka",
+                  "type": "url",
+                  "url": "http://www.cross-plus-a.com/de/balabolka.htm"
+               }, {
+                  "date_added": "13114232726000000",
+                  "guid": "aaf60a1d-e856-4c42-8adb-59184b513528",
+                  "id": "109",
+                  "name": "EA7 Men Short Sleeved t Shirt - CREWNECK T SHIRT IN STRETCH COTTON EA7 Official Online Store",
+                  "type": "url",
+                  "url": "http://www.armani.com/ch/ea7/short-sleeved-t-shirt_cod37532990kq.html"
+               }, {
+                  "date_added": "12948579864000000",
+                  "guid": "056c73ad-c60a-4cb2-b3d4-986df58ab2b0",
+                  "id": "110",
+                  "name": "Linux Mint",
+                  "type": "url",
+                  "url": "http://www.linuxmint.com/"
+               }, {
+                  "date_added": "12948579918000000",
+                  "guid": "c76bbb71-55cb-49c8-8c18-319e36e9ff7e",
+                  "id": "111",
+                  "name": "Blog",
+                  "type": "url",
+                  "url": "http://blog.linuxmint.com/"
+               }, {
+                  "date_added": "12948579905000000",
+                  "guid": "a8e3d3c5-fc90-4c6c-8372-5c4e835ad620",
+                  "id": "112",
+                  "name": "Forums",
+                  "type": "url",
+                  "url": "http://forums.linuxmint.com/"
+               }, {
+                  "date_added": "12948579893000000",
+                  "guid": "c4cce4ec-de1d-4d32-998c-abd73c4854a3",
+                  "id": "113",
+                  "name": "Community",
+                  "type": "url",
+                  "url": "http://community.linuxmint.com/"
+               }, {
+                  "date_added": "13160152430000000",
+                  "guid": "da8cbafd-3781-468d-9483-19a8c9a4d657",
+                  "id": "114",
+                  "name": "Python TensorFlow Tutorial - Build a Neural Network - Adventures in Machine Learning",
+                  "type": "url",
+                  "url": "http://adventuresinmachinelearning.com/python-tensorflow-tutorial/"
+               }, {
+                  "date_added": "13166973861000000",
+                  "guid": "92701845-7142-4deb-b714-01b073c20bb9",
+                  "id": "115",
+                  "name": "Car Hifi Grundlagen",
+                  "type": "url",
+                  "url": "http://www.digitalpicture.ch/Auto/Galant/Car-Hifi-Grundlagen.htm"
+               }, {
+                  "date_added": "13171640551000000",
+                  "guid": "106b1ce6-9bb4-4767-a0b9-d7738e374556",
+                  "id": "116",
+                  "name": "World4You Webmail :: Posteingang",
+                  "type": "url",
+                  "url": "https://webmail.world4you.com/?_task=mail&_mbox=INBOX"
+               }, {
+                  "date_added": "13173114031000000",
+                  "guid": "20e8361a-e768-402f-955c-169981b317c3",
+                  "id": "117",
+                  "name": "http://icons-for-free.com/icon/card_cash_checkout_ebay_online_shopping_payment_method_service_icon_213741.html",
+                  "type": "url",
+                  "url": "http://icons-for-free.com/icon/card_cash_checkout_ebay_online_shopping_payment_method_service_icon_213741.html"
+               }, {
+                  "date_added": "13174003766000000",
+                  "guid": "98bc49bf-f91b-4a41-8b05-8ec644c50b5d",
+                  "id": "118",
+                  "meta_info": {
+                     "Description": "News und Foren zu Computer, IT, Wissenschaft, Medien und Politik. Preisvergleich von Hardware und Software sowie Downloads bei Heise Medien."
+                  },
+                  "name": "heise online - IT-News, Nachrichten und Hintergründe heise online",
+                  "type": "url",
+                  "url": "https://www.heise.de/"
+               }, {
+                  "date_added": "13186660680000000",
+                  "guid": "b280449e-5775-4c95-829e-e16b336687c5",
+                  "id": "119",
+                  "name": "Learn  |  web.dev",
+                  "type": "url",
+                  "url": "https://web.dev/learn"
+               }, {
+                  "date_added": "13187207436000000",
+                  "guid": "d01ea0a6-9715-42f3-b5ca-d230aa07cd86",
+                  "id": "120",
+                  "meta_info": {
+                     "Description": "Jede erfolgreiche Webseite fängt mit einer guten Planung an. Vielen fällt es jedoch schwer, sich dabei auf die entscheidenden Punkte zu konzentrieren: Zu viele Aspekte, zu viele Ideen und zu wenig Orientierung, wo es hingehen soll. Dabei ist die Planung ei"
+                  },
+                  "name": "Erfolgreiche Webseiten Planen | CMSstash",
+                  "type": "url",
+                  "url": "https://cmsstash.de/website-praxis/neue-webseite-planen"
+               }, {
+                  "date_added": "13188300185000000",
+                  "guid": "a32303e2-ae4c-49ee-8ce8-0b186c60aa3d",
+                  "id": "121",
+                  "name": "LEIFI Physik - Grundwissen, Versuche, Aufgaben, Tests, Geschichte der Physik - Bildung, Wissenschaft",
+                  "type": "url",
+                  "url": "https://www.leifiphysik.de/"
+               }, {
+                  "date_added": "13188436500000000",
+                  "guid": "2706c28e-db81-4b08-849a-9ac4d9b97b07",
+                  "id": "122",
+                  "name": "Qobuz - Musik in hoher Soundqualität - Streaming und Downloadkäufe in Hi-Res Audio",
+                  "type": "url",
+                  "url": "https://www.qobuz.com/ch-de/discover?qbzs=adwords&qbzc=st-m&gclid=Cj0KCQiA6JjgBRDbARIsANfu58E_f_hhoBCjxW2AphT1mJqtNKoXE9q-N-cweA9mBNyDqG7tQWw6q10aArd5EALw_wcB"
+               }, {
+                  "date_added": "13189351996000000",
+                  "guid": "e80aa353-720a-4170-a2fc-d5dc8a598b74",
+                  "id": "123",
+                  "name": "Caddy - The HTTP/2 Web Server with Automatic HTTPS",
+                  "type": "url",
+                  "url": "https://caddyserver.com/"
+               }, {
+                  "date_added": "13189353043000000",
+                  "guid": "0e472625-0669-4498-a3f0-f66571d65192",
+                  "id": "124",
+                  "meta_info": {
+                     "Description": "A comprehensive free SSL test for your public web servers."
+                  },
+                  "name": "SSL Server Test (Powered by Qualys SSL Labs)",
+                  "type": "url",
+                  "url": "https://www.ssllabs.com/ssltest/"
+               }, {
+                  "date_added": "13189674883000000",
+                  "guid": "58f80e4d-bc89-4428-b68d-eb0be9c7c1cb",
+                  "id": "125",
+                  "name": "Cura 3.6: Aufgepasst beim 3D-Druck mit dem Anet A8 | Make",
+                  "type": "url",
+                  "url": "https://www.heise.de/make/meldung/Cura-3-6-Aufgepasst-beim-3D-Druck-mit-dem-Anet-A8-4252920.html"
+               }, {
+                  "date_added": "13199452975000000",
+                  "guid": "2bcd928f-4ce3-4a15-95a8-e5d394241bc4",
+                  "id": "126",
+                  "meta_info": {
+                     "Description": "Serve raw files directly from GitHub with proper Content-Type headers and super fast CDN!"
+                  },
+                  "name": "GitCDN - A powerful CDN for Github files",
+                  "type": "url",
+                  "url": "https://gitcdn.link/"
+               }, {
+                  "date_added": "13177448815000000",
+                  "guid": "a1ded6b4-3b27-4618-9249-fc5ee31605db",
+                  "id": "127",
+                  "name": "The Twelve-Factor App",
+                  "type": "url",
+                  "url": "https://12factor.net/"
+               }, {
+                  "date_added": "13199900917000000",
+                  "guid": "006f380e-41cd-4a41-af3b-05a31f0a2bfb",
+                  "id": "128",
+                  "name": "Bootstrap Studio - The Revolutionary Web Design Tool",
+                  "type": "url",
+                  "url": "https://bootstrapstudio.io/"
+               }, {
+                  "date_added": "13199913314000000",
+                  "guid": "77920c22-0bb0-4faf-9e7d-2c15ad6f8faa",
+                  "id": "129",
+                  "name": "Downloads | Lenses.io",
+                  "type": "url",
+                  "url": "https://lenses.io/downloads/"
+               }, {
+                  "date_added": "13199972532000000",
+                  "guid": "1fca53ab-9e77-4c9d-9790-f08692cfa4c7",
+                  "id": "130",
+                  "meta_info": {
+                     "Description": "Die IT Projektbörse für Freelancer & Freiberufler. Profil erstellen ✅ Projekte finden ✅ 4.000 neue Projekte pro Woche ✅ Über 100.000 Mitglieder!"
+                  },
+                  "name": "Freelancer & Projekte für Freiberufler online finden | freelancermap",
+                  "type": "url",
+                  "url": "https://www.freelancermap.ch/"
+               }, {
+                  "date_added": "13200141337000000",
+                  "guid": "2e152d48-4dcd-4c5b-8559-de771fcd1c45",
+                  "id": "131",
+                  "name": "GitHub - badges/shields: Concise, consistent, and legible badges in SVG and raster format",
+                  "type": "url",
+                  "url": "https://github.com/badges/shields"
+               }, {
+                  "date_added": "13201295162000000",
+                  "guid": "c4ed0105-9fcf-405c-bbb9-c0428ee34abe",
+                  "id": "132",
+                  "name": "Dribbble - Discover the World’s Top Designers & Creative Professionals",
+                  "type": "url",
+                  "url": "https://dribbble.com/"
+               }, {
+                  "date_added": "13203423160000000",
+                  "guid": "9e87328f-423e-4a26-929b-4aec6fe43666",
+                  "id": "133",
+                  "name": "Working Draft",
+                  "type": "url",
+                  "url": "https://workingdraft.de/"
+               }, {
+                  "date_added": "13205322568000000",
+                  "guid": "7ee461eb-2b48-4c9b-b9e8-eb50d738622c",
+                  "id": "134",
+                  "meta_info": {
+                     "Description": "\n\tMicrosoft Windows 10 Pro Key für 1PC\n\t\n\tIhre Vorteile bei IT-Store.ch\n\t\n\t✔ SOFORT DOWNLOAD\n\t✔ Geld-zurück-Garantie\n\t✔ Zertifizierter Fachhändler\n\t✔ Originale Software\n\t✔ Aktivierungsgarantie: Sollte ein Key nicht ..."
+                  },
+                  "name": "IT-Store.ch - Windows 10 Pro für nur 39CHF!",
+                  "type": "url",
+                  "url": "https://www.it-store.ch/de/windows-10-pro-retail-sofort-downloadversion.html"
+               }, {
+                  "date_added": "13205880129000000",
+                  "guid": "87dbafd9-4639-47f5-bbbd-dc8f2d3ce2fc",
+                  "id": "135",
+                  "meta_info": {
+                     "Description": "Jetzt loslegen! ★ Challenges meistern ★ Prämien kassieren ★ IT-Unternehmen beeindrucken"
+                  },
+                  "name": "EntwicklerHeld - Verfügbare Challenges",
+                  "type": "url",
+                  "url": "https://platform.entwicklerheld.de/campaign"
+               }, {
+                  "date_added": "13206125413000000",
+                  "guid": "3aa0cd97-f328-493f-b6a8-843a19fa5776",
+                  "id": "136",
+                  "name": "GraphQL or REST? What should I use? - DEV Community 👩‍💻👨‍💻",
+                  "type": "url",
+                  "url": "https://dev.to/sadarshannaiynar/graphql-or-rest-what-should-i-use-38mj"
+               }, {
+                  "date_added": "13206126699000000",
+                  "guid": "86ee56a3-80bf-4ab7-a312-6ce2f34d5de8",
+                  "id": "137",
+                  "name": "An overview of realtime libraries and frameworks",
+                  "type": "url",
+                  "url": "https://deepstreamhub.com/blog/realtime-framework-overview/"
+               }, {
+                  "date_added": "13213117086000000",
+                  "guid": "1af52161-b084-45ce-a6ce-31ff2ea1bb0b",
+                  "id": "138",
+                  "name": "PostgreSQL: Documentation: 11: SQL Commands",
+                  "type": "url",
+                  "url": "https://www.postgresql.org/docs/11/sql-commands.html"
+               }, {
+                  "date_added": "13216369757000000",
+                  "guid": "ad2354fd-1671-423d-9c81-6d09492e88b1",
+                  "id": "139",
+                  "name": "Visual Paradigm Online Diagram",
+                  "type": "url",
+                  "url": "https://online.visual-paradigm.com/drive/#diagramlist:proj=0&new=ClassDiagram"
+               }, {
+                  "date_added": "13255883989000000",
+                  "guid": "ee14526d-51be-45ce-925c-e01b0fdc43f5",
+                  "id": "140",
+                  "name": "Cap'n Proto: Introduction",
+                  "type": "url",
+                  "url": "https://capnproto.org/"
+               }, {
+                  "date_added": "13259618471000000",
+                  "guid": "56d7aa11-a241-49be-82d6-5ca0f1bd588b",
+                  "id": "141",
+                  "name": "Dokumente",
+                  "type": "url",
+                  "url": "https://lucid.app/documents#/dashboard"
+               } ],
+               "date_added": "13268688189163399",
+               "date_modified": "0",
+               "guid": "a254621b-e195-474a-9dbf-a0e48b5177ff",
+               "id": "24",
+               "name": "Lesezeichen-Symbolleiste",
+               "type": "folder"
+            }, {
+               "children": [ {
+                  "date_added": "13268238455000000",
+                  "guid": "71e3783d-c5c5-4137-839a-30f1c8bd5ee2",
+                  "id": "143",
+                  "name": "Get Help",
+                  "type": "url",
+                  "url": "https://support.mozilla.org/en-US/products/firefox"
+               }, {
+                  "date_added": "13268238455000000",
+                  "guid": "070a14ca-ef32-4a6c-a33f-53e4a2ccbd7e",
+                  "id": "144",
+                  "name": "Customize Firefox",
+                  "type": "url",
+                  "url": "https://support.mozilla.org/en-US/kb/customize-firefox-controls-buttons-and-toolbars?utm_source=firefox-browser&utm_medium=default-bookmarks&utm_campaign=customize"
+               }, {
+                  "date_added": "13268238455000000",
+                  "guid": "3f97e680-b302-4e80-bbec-4b18dd9fc190",
+                  "id": "145",
+                  "name": "Get Involved",
+                  "type": "url",
+                  "url": "https://www.mozilla.org/en-US/contribute/"
+               }, {
+                  "date_added": "13268238455000000",
+                  "guid": "d58c06bc-262a-4f6e-a9a9-82313a2a050a",
+                  "id": "146",
+                  "name": "About Us",
+                  "type": "url",
+                  "url": "https://www.mozilla.org/en-US/about/"
+               }, {
+                  "date_added": "13088374000000000",
+                  "guid": "261d4e61-08ee-48f9-b50f-0e1337769857",
+                  "id": "147",
+                  "name": "Firefox anpassen",
+                  "type": "url",
+                  "url": "https://www.mozilla.org/de/firefox/customize/"
+               }, {
+                  "date_added": "13148338229000000",
+                  "guid": "8d1dc864-37ed-4259-8fdf-21c735b00541",
+                  "id": "148",
+                  "name": "Hilfe und Anleitungen",
+                  "type": "url",
+                  "url": "https://support.mozilla.org/de/products/firefox"
+               }, {
+                  "date_added": "13216160095000000",
+                  "guid": "12d97eb5-41cb-400f-b322-fa8574b6ab83",
+                  "id": "149",
+                  "name": "Firefox anpassen",
+                  "type": "url",
+                  "url": "https://support.mozilla.org/de/kb/customize-firefox-controls-buttons-and-toolbars?utm_source=firefox-browser&utm_medium=default-bookmarks&utm_campaign=customize"
+               }, {
+                  "date_added": "13088374000000000",
+                  "guid": "f01a3bd6-55e7-496c-9ad4-fc2bd3ea5d2a",
+                  "id": "150",
+                  "name": "Machen Sie mit",
+                  "type": "url",
+                  "url": "https://www.mozilla.org/de/contribute/"
+               }, {
+                  "date_added": "13088374000000000",
+                  "guid": "4d2a2df6-f379-43bd-8ba0-d4b92c7c6d0e",
+                  "id": "151",
+                  "name": "Über uns",
+                  "type": "url",
+                  "url": "https://www.mozilla.org/de/about/"
+               } ],
+               "date_added": "13268688189167069",
+               "date_modified": "0",
+               "guid": "c49af768-96c3-44c3-be21-b7231c63849d",
+               "id": "142",
+               "name": "Mozilla Firefox",
+               "type": "folder"
+            }, {
+               "children": [ {
+                  "date_added": "13088374053000000",
+                  "guid": "91821090-f5b8-45c9-8a35-acc513d9fec6",
+                  "id": "153",
+                  "name": "eBay",
+                  "type": "url",
+                  "url": "http://rover.ebay.com/rover/1/5222-124917-24801-0/4"
+               } ],
+               "date_added": "13268688189167339",
+               "date_modified": "0",
+               "guid": "e202319a-077f-4dfe-b796-7b96b15da2a2",
+               "id": "152",
+               "name": "Acer",
+               "type": "folder"
+            }, {
+               "date_added": "13088374053000000",
+               "guid": "f648eb67-b810-4dd6-9ae6-6e633d64ed8b",
+               "id": "154",
+               "name": "Bootable Compact Flash Cf I Ii To 2.5\" Inch Sata Converter Adapter - Buy Bootable Compact Flash Cf I Ii To 2.5\" Inch Sata Converter Adapter,Bootable Compact Flash Cf I Ii To 2.5\" Inch Sata C,Bootable Compact Flash Cf I Ii To 2.5\" Inch Sata C Product on Alibaba.com",
+               "type": "url",
+               "url": "http://www.alibaba.com/product-gs/581015491/Bootable_Compact_Flash_CF_I_II.html"
+            }, {
+               "date_added": "13088374053000000",
+               "guid": "3129d632-8f56-4a9c-83ba-ba09e8e4efa0",
+               "id": "155",
+               "name": "Seagate 80GB 80 GB IDE P-ATA Notebook Laptop Festplatte 2,5\" 2,5 Zoll ST980815A 2000011886875 | eBay",
+               "type": "url",
+               "url": "http://www.ebay.de/itm/Seagate-80GB-80-GB-IDE-P-ATA-Notebook-Laptop-Festplatte-2-5-2-5-Zoll-ST980815A-/390413623832"
+            }, {
+               "date_added": "13088374053000000",
+               "guid": "261fa25c-7ba7-44c4-9395-adcf8542ff48",
+               "id": "156",
+               "name": "Windows 7 Auf Usb-stick - WinFuture-Forum.de",
+               "type": "url",
+               "url": "http://www.winfuture-forum.de/index.php?showtopic=182598"
+            }, {
+               "date_added": "13088374053000000",
+               "guid": "174bfaf6-e169-475d-bb7b-9bee4c209194",
+               "id": "157",
+               "name": "IMDBFetcher - Experimental IMDB JavaScript API | Acid.JS Web.UI",
+               "type": "url",
+               "url": "http://acidjs.wemakesites.net/pages/imdb-fetcher/demo/"
+            }, {
+               "date_added": "13088374053000000",
+               "guid": "59e3a536-8c77-43c1-9516-c58f4a6f4009",
+               "id": "158",
+               "name": "Bing",
+               "type": "url",
+               "url": "http://go.microsoft.com/fwlink/p/?LinkId=255142"
+            }, {
+               "children": [ {
+                  "date_added": "13088374001000000",
+                  "guid": "4e71f984-1d47-4bdf-9cb6-8b7b3e6e76f3",
+                  "id": "160",
+                  "name": "IE-Site auf Microsoft.com",
+                  "type": "url",
+                  "url": "http://go.microsoft.com/fwlink/?LinkId=72186"
+               }, {
+                  "date_added": "13088374001000000",
+                  "guid": "6ba76a11-3a1f-4b5c-8c4f-2b9a777ff4a9",
+                  "id": "161",
+                  "name": "Microsoft Deutschland GmbH",
+                  "type": "url",
+                  "url": "http://go.microsoft.com/fwlink/?LinkId=72520"
+               }, {
+                  "date_added": "13088374001000000",
+                  "guid": "3dc787c1-8728-4823-81e3-74fa8664f18c",
+                  "id": "162",
+                  "name": "Microsoft Store",
+                  "type": "url",
+                  "url": "http://go.microsoft.com/fwlink/?linkid=140813"
+               }, {
+                  "date_added": "13088374001000000",
+                  "guid": "afd33c21-2541-4117-99e7-8c6069b0fe88",
+                  "id": "163",
+                  "name": "Microsoft Windows - Start",
+                  "type": "url",
+                  "url": "http://go.microsoft.com/fwlink/?LinkId=72629"
+               }, {
+                  "date_added": "13088374001000000",
+                  "guid": "252d4d62-5b70-4df7-ae46-868f17b66096",
+                  "id": "164",
+                  "name": "Microsoft zu Hause",
+                  "type": "url",
+                  "url": "http://go.microsoft.com/fwlink/?LinkId=72406"
+               }, {
+                  "date_added": "13088374001000000",
+                  "guid": "7942d719-e8eb-4998-a280-480c08a68f25",
+                  "id": "165",
+                  "name": "Microsoft.com durchsuchen",
+                  "type": "url",
+                  "url": "http://go.microsoft.com/fwlink/?LinkId=72893"
+               }, {
+                  "date_added": "13088374001000000",
+                  "guid": "61c3471d-734b-49f3-9353-7496cbf05d52",
+                  "id": "166",
+                  "name": "Site für IE Add-Ons",
+                  "type": "url",
+                  "url": "http://go.microsoft.com/fwlink/?LinkId=50893"
+               } ],
+               "date_added": "13268688189167577",
+               "date_modified": "0",
+               "guid": "22ae585a-fe83-40c6-884f-a73b4edcddd7",
+               "id": "159",
+               "name": "Microsoft-Websites",
+               "type": "folder"
+            }, {
+               "children": [ {
+                  "date_added": "13088374001000000",
+                  "guid": "722df1c7-1150-4fd0-b0a9-d2d71abbfe83",
+                  "id": "168",
+                  "name": "MSN Auto",
+                  "type": "url",
+                  "url": "http://go.microsoft.com/fwlink/?LinkId=72680"
+               }, {
+                  "date_added": "13088374001000000",
+                  "guid": "136456cf-dad0-47f2-9bd6-1af121763c37",
+                  "id": "169",
+                  "name": "MSN Fernsehen",
+                  "type": "url",
+                  "url": "http://go.microsoft.com/fwlink/?LinkId=72659"
+               }, {
+                  "date_added": "13088374001000000",
+                  "guid": "b72061f7-a157-48ee-8182-f55f62a8685c",
+                  "id": "170",
+                  "name": "MSN Money",
+                  "type": "url",
+                  "url": "http://go.microsoft.com/fwlink/?LinkId=72640"
+               }, {
+                  "date_added": "13088374001000000",
+                  "guid": "4a606268-9607-4405-b4e9-688f84b6390a",
+                  "id": "171",
+                  "name": "MSN Nachrichten",
+                  "type": "url",
+                  "url": "http://go.microsoft.com/fwlink/?LinkId=72636"
+               }, {
+                  "date_added": "13088374001000000",
+                  "guid": "bd1802c9-6c01-4ba2-a2cd-9a99e649bd9b",
+                  "id": "172",
+                  "name": "MSN Sport",
+                  "type": "url",
+                  "url": "http://go.microsoft.com/fwlink/?LinkId=72635"
+               }, {
+                  "date_added": "13088374001000000",
+                  "guid": "5513bc60-fa14-4c90-bd84-db12d13dda76",
+                  "id": "173",
+                  "name": "MSN",
+                  "type": "url",
+                  "url": "http://go.microsoft.com/fwlink/?LinkId=72630"
+               } ],
+               "date_added": "13268688189167782",
+               "date_modified": "0",
+               "guid": "ee1fe5ef-2a00-46ff-81c6-de89dc2dd577",
+               "id": "167",
+               "name": "MSN-Websites",
+               "type": "folder"
+            }, {
+               "children": [ {
+                  "date_added": "13088374001000000",
+                  "guid": "a7063b77-8bd7-4c5d-ab6a-55d828c76654",
+                  "id": "175",
+                  "name": "Windows Live Gallery",
+                  "type": "url",
+                  "url": "http://go.microsoft.com/fwlink/?LinkId=70742"
+               }, {
+                  "date_added": "13088374001000000",
+                  "guid": "365f8bc7-fc06-43aa-8aae-1b91d70af895",
+                  "id": "176",
+                  "name": "Windows Live Ideas",
+                  "type": "url",
+                  "url": "http://go.microsoft.com/fwlink/?LinkId=72700"
+               }, {
+                  "date_added": "13088374001000000",
+                  "guid": "8e93e2f1-549f-4955-99ef-435c77c13ac8",
+                  "id": "177",
+                  "name": "Windows Live Mail",
+                  "type": "url",
+                  "url": "http://go.microsoft.com/fwlink/?LinkId=72681"
+               }, {
+                  "date_added": "13088374001000000",
+                  "guid": "9d3e6d8f-ebb0-47da-adaf-269e93f579d8",
+                  "id": "178",
+                  "name": "Windows Live Spaces",
+                  "type": "url",
+                  "url": "http://go.microsoft.com/fwlink/?LinkId=72682"
+               } ],
+               "date_added": "13268688189167956",
+               "date_modified": "0",
+               "guid": "6cbce59d-d506-422f-8117-3d71e092ba7e",
+               "id": "174",
+               "name": "Windows Live",
+               "type": "folder"
+            }, {
+               "date_added": "12948580001000000",
+               "guid": "be665c80-b187-44d7-9e31-bb157188c0e3",
+               "id": "179",
+               "name": "DistroWatch",
+               "type": "url",
+               "url": "http://distrowatch.com/"
+            }, {
+               "date_added": "13012417547000000",
+               "guid": "da7a8e2c-caba-49ef-a1fe-bc0355f4f85b",
+               "id": "180",
+               "name": "Segfault",
+               "type": "url",
+               "url": "http://segfault.linuxmint.com/"
+            }, {
+               "date_added": "13121123706000000",
+               "guid": "0b7ed613-7ae0-43bd-ada5-b8947b1b03fd",
+               "id": "181",
+               "name": "http://localhost/packages/musicIdentifier.class.php",
+               "type": "url",
+               "url": "http://localhost/packages/musicIdentifier.class.php"
+            }, {
+               "date_added": "13088374053000000",
+               "guid": "15d16fe3-00d7-4e13-826b-43ee2feb7e7c",
+               "id": "182",
+               "name": "Hilfe und Anleitungen",
+               "type": "url",
+               "url": "http://www.mozilla.com/de/firefox/help/"
+            }, {
+               "date_added": "13088374053000000",
+               "guid": "945d56e9-c688-47b2-abfc-0ff456d11285",
+               "id": "183",
+               "name": "Firefox anpassen",
+               "type": "url",
+               "url": "http://www.mozilla.com/de/firefox/customize/"
+            }, {
+               "date_added": "13088374053000000",
+               "guid": "dcd7317d-f342-427e-be27-e6014cf07ed6",
+               "id": "184",
+               "name": "Machen Sie mit",
+               "type": "url",
+               "url": "http://www.mozilla.com/de/firefox/community/"
+            }, {
+               "date_added": "13088374053000000",
+               "guid": "8968e5fb-75fc-4e3f-af41-820eefbae02f",
+               "id": "185",
+               "name": "Über uns",
+               "type": "url",
+               "url": "http://www.mozilla.com/de/about/"
+            }, {
+               "date_added": "13088374000000000",
+               "guid": "65332a59-5a9d-42de-9069-08c66cacdb7e",
+               "id": "186",
+               "name": "Hilfe und Anleitungen",
+               "type": "url",
+               "url": "https://www.mozilla.org/de/firefox/help/"
+            }, {
+               "date_added": "13142173004000000",
+               "guid": "28757f75-6246-424d-84b6-076ab0d40dd2",
+               "id": "187",
+               "name": "Get Involved",
+               "type": "url",
+               "url": "https://www.mozilla.org/en-US/contribute/"
+            }, {
+               "date_added": "13142173004000000",
+               "guid": "b62bcc45-4945-4e74-a083-66e552da3a19",
+               "id": "188",
+               "name": "Customize Firefox",
+               "type": "url",
+               "url": "https://www.mozilla.org/en-US/firefox/customize/"
+            }, {
+               "date_added": "13142173004000000",
+               "guid": "d921d20d-1eaa-47e8-a3a5-a03093452720",
+               "id": "189",
+               "name": "About Us",
+               "type": "url",
+               "url": "https://www.mozilla.org/en-US/about/"
+            }, {
+               "date_added": "13142173004000000",
+               "guid": "08c78009-c530-4a03-a247-1d04e93923c6",
+               "id": "190",
+               "name": "Help and Tutorials",
+               "type": "url",
+               "url": "https://www.mozilla.org/en-US/firefox/help/"
+            }, {
+               "children": [ {
+                  "date_added": "13165261220000000",
+                  "guid": "a71a91a9-40bb-4cef-9b7f-ef0a05f998eb",
+                  "id": "192",
+                  "name": "Ubuntu",
+                  "type": "url",
+                  "url": "http://www.ubuntu.com/"
+               }, {
+                  "date_added": "13165261220000000",
+                  "guid": "f8b8a0f5-38e3-4e94-8317-880c827551ce",
+                  "id": "193",
+                  "name": "Ubuntu Wiki (community-edited website)",
+                  "type": "url",
+                  "url": "http://wiki.ubuntu.com/"
+               }, {
+                  "date_added": "13165261220000000",
+                  "guid": "2a77ebf4-02f6-4aa6-98e5-8c188fae5ec4",
+                  "id": "194",
+                  "name": "Make a Support Request to the Ubuntu Community",
+                  "type": "url",
+                  "url": "https://answers.launchpad.net/ubuntu/+addquestion"
+               }, {
+                  "date_added": "13165261220000000",
+                  "guid": "c22bb69d-a03d-42c5-88dc-52857d9f4432",
+                  "id": "195",
+                  "name": "Debian (Ubuntu is based on Debian)",
+                  "type": "url",
+                  "url": "http://www.debian.org/"
+               } ],
+               "date_added": "13268688189168394",
+               "date_modified": "0",
+               "guid": "fbd4a449-357b-4a45-b4a2-2348549135a2",
+               "id": "191",
+               "name": "Ubuntu and Free Software links",
+               "type": "folder"
+            }, {
+               "children": [ {
+                  "date_added": "13088374053000000",
+                  "guid": "6939ca38-ddb7-4a87-929f-52006e992b7f",
+                  "id": "197",
+                  "name": "DIE TOP 7 ASIA FILME - Kritik, Review, Trailer [German/Deutsch] - YouTube",
+                  "type": "url",
+                  "url": "https://www.youtube.com/watch?v=e49B0GHwDpk"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "187341ff-92b9-4a9d-a683-bec8a7970e0c",
+                  "id": "198",
+                  "name": "A Company Man - German/Deutsch Full Movie - YouTube",
+                  "type": "url",
+                  "url": "https://www.youtube.com/watch?v=yvLd-RUhC3Q"
+               }, {
+                  "date_added": "13088374053000000",
+                  "guid": "e90f77d1-dd4b-47c2-ae88-cf88057aa802",
+                  "id": "199",
+                  "name": "Mein Warenkorb - Tunehosting",
+                  "type": "url",
+                  "url": "https://www.tunehosting.de/cart.php?a=checkout"
+               }, {
+                  "date_added": "13089485225000000",
+                  "guid": "c9a672b9-12fe-46f0-9faf-5c2adaab23a0",
+                  "id": "200",
+                  "name": "How to upgrade MySQL server on Debian or Ubuntu - Xmodulo",
+                  "type": "url",
+                  "url": "http://xmodulo.com/upgrade-mysql-server-debian-ubuntu.html"
+               }, {
+                  "date_added": "13089485225000000",
+                  "guid": "7ac92d89-49f4-46c0-a853-49add747b9a0",
+                  "id": "201",
+                  "name": "David Guetta vs. The Egg - Love Don't Let Me Go - YouTube",
+                  "type": "url",
+                  "url": "https://www.youtube.com/watch?v=rqGNlSa8on4"
+               }, {
+                  "date_added": "13097963407000000",
+                  "guid": "9696f9a8-2b7f-4611-aa48-1e2a2b02f84a",
+                  "id": "202",
+                  "name": "Facebook",
+                  "type": "url",
+                  "url": "https://www.facebook.com/photo.php?fbid=1042058082502450&set=a.263327570375509.60657.100000948052534&type=3&theater"
+               }, {
+                  "date_added": "13105355252000000",
+                  "guid": "69c84f15-4e1c-4348-84c1-b3edabc5c90d",
+                  "id": "203",
+                  "name": "Germany Archives - Source of Iptv Address",
+                  "type": "url",
+                  "url": "http://sourcetv.info/category/europe-iptv/germany-iptv/"
+               }, {
+                  "date_added": "13105355755000000",
+                  "guid": "fd6232e4-9875-4f2f-818f-92a5334e303e",
+                  "id": "204",
+                  "name": "Subscriptions - Bestiptv - Bestiptv playlist For Kodi - Arab IPTV Services",
+                  "type": "url",
+                  "url": "http://arab-iptv.com/bestiptv-playlist-for-kodi/"
+               }, {
+                  "date_added": "13105356225000000",
+                  "guid": "7e24fff0-8f0e-4ecf-b4a9-9d9e9862f796",
+                  "id": "205",
+                  "name": "Best European IPTV Server. It has it all.",
+                  "type": "url",
+                  "url": "http://www.iptvchoice.com/"
+               }, {
+                  "date_added": "13232214760000000",
+                  "guid": "94aca888-f947-4deb-954c-f5917eb85a76",
+                  "id": "206",
+                  "meta_info": {
+                     "Description": "ESP8266 core for Arduino. Contribute to esp8266/Arduino development by creating an account on GitHub."
+                  },
+                  "name": "Arduino/ESP8266WiFiGeneric.cpp at master · esp8266/Arduino",
+                  "type": "url",
+                  "url": "https://github.com/esp8266/Arduino/blob/master/libraries/ESP8266WiFi/src/ESP8266WiFiGeneric.cpp"
+               } ],
+               "date_added": "13268688189168525",
+               "date_modified": "0",
+               "guid": "9813e889-27da-402b-a677-c87cf722f2fb",
+               "id": "196",
+               "name": "Weitere Lesezeichen",
+               "type": "folder"
+            } ],
+            "date_added": "13268688189163361",
+            "date_modified": "0",
+            "guid": "e6e63810-d75b-49fc-b237-ec169ef7bdb5",
+            "id": "23",
+            "name": "Aus Firefox importiert",
+            "type": "folder"
+         } ],
+         "date_added": "13268686731070568",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000000002",
+         "id": "1",
+         "name": "Lesezeichen",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13268686731070569",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000000003",
+         "id": "2",
+         "name": "Weitere Lesezeichen",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13268686731070570",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000000004",
+         "id": "3",
+         "name": "Mobile Lesezeichen",
+         "type": "folder"
+      },
+      "trash": {
+         "children": [  ],
+         "date_added": "13268686731070573",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-a000-000000040000",
+         "id": "4",
+         "name": "Papierkorb",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}
