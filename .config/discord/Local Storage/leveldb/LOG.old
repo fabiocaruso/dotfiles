@@ -1,3 +1,6 @@
-2021/06/28-11:36:42.850 51b7 Reusing MANIFEST /home/fabiocaruso/.config/discord/Local Storage/leveldb/MANIFEST-000001
-2021/06/28-11:36:42.854 51b7 Recovering log #3
-2021/06/28-11:36:42.854 51b7 Reusing old log /home/fabiocaruso/.config/discord/Local Storage/leveldb/000003.log 
+2021/06/29-08:43:11.107 7a421 Reusing MANIFEST /home/fabiocaruso/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2021/06/29-08:43:11.109 7a421 Recovering log #6
+2021/06/29-08:43:11.109 7a421 Reusing old log /home/fabiocaruso/.config/discord/Local Storage/leveldb/000006.log 
+2021/06/29-09:31:12.418 7f016 Level-0 table #10: started
+2021/06/29-09:31:12.426 7f016 Level-0 table #10: 10617 bytes OK
+2021/06/29-09:31:12.432 7f016 Delete type=0 #6

@@ -134,7 +134,7 @@ ForegroundPositive=39,174,96
 ForegroundVisited=127,140,141
 
 [General]
-BrowserApplication=userapp-Firefox-73FQ40.desktop
+BrowserApplication=firefox.desktop
 ColorScheme=SolusDark
 Name[de_CH]=Breeze-Hell
 Name=SolusDark

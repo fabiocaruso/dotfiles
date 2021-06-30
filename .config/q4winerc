@@ -1,0 +1,4 @@
+[KFileDialog Settings]
+Recent Files[$e]=wine64,file:///usr/bin/alacritty,file:///usr/bin/wine64-preloader,file:///usr/bin/wine64
+Recent URLs[$e]=file:///usr/bin/,file:$HOME/Downloads/
+detailViewIconSize=16
