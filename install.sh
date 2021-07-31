@@ -69,12 +69,15 @@ if [ "$OSTYPE" = "linux-gnu" ] ; then
 	rm -Rf ~/dotfiles/
 	git config --global core.excludesfile ~/.gitignore_global
 	# Clone Vundle if it's missing
-	mkdir ~/.vim/bundle/
-	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+	mkdir ~/.vim/plugged/
+	sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+	curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	# Clone tmux plugin manager (tpm)
 	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 	# Install plugins
-	nvim -u ~/.vim/vundle.vim +PluginInstall +qall
+	nvim -u ~/.vim/plug.vim +PlugInstall +qall
 	nvim "+CocInstall coc-explorer" +qall
 	~/.tmux/plugins/tpm/scripts/install_plugins.sh
 elif [ "$OSTYPE" = "darwin" ] ; then

@@ -1,0 +1,6 @@
+[General]
+Index=ZHAW shared
+
+[ZHAW shared]
+Type=SMB
+URL=smb://shared.zhaw.ch/shared$

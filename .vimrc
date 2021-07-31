@@ -1,6 +1,6 @@
-"Vundle
 let mapleader = " "
-source ~/.vim/vundle.vim
+filetype plugin on
+source ~/.vim/plug.vim
 
   "____                           _ 
  "/ ___| ___ _ __   ___ _ __ __ _| |
@@ -44,6 +44,11 @@ noremap <C-c> y
 imap § <ESC>
 ""Search with * for word under cursor without jump and with wordcount
 nnoremap <expr> * ':%s/'.expand('<cword>').'//gn<CR>``'
+""Undo break points
+inoremap , ,<c-g>u
+inoremap . .<c-g>u
+inoremap ! !<c-g>u
+inoremap ? ?<c-g>u
 "Plugins
 ""FZF
 nnoremap ; :FZF<cr>
@@ -59,8 +64,11 @@ nnoremap <leader>t :call ToggleRustTypeHints()<cr>
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 nnoremap <leader>gd :call CocAction('jumpDefinition')<cr>
+"inoremap <silent> <leader>a <C-r>=CocActionAsync('showSignatureHelp')<CR>
 ""Coc-Explorer
 nnoremap <F2> :CocCommand explorer<CR>
+""Obsession
+noremap <leader>s :Obsess<cr>
 ""Gitgutter
 nnoremap <leader>g :GitGutterToggle<cr>
 ""Vimspector
@@ -106,7 +114,28 @@ inoremap <> <>
 "Coc
 let g:coc_global_config="$HOME/.vim/coc-settings.json"
 
+"Coc Explorer
+"" Disable netrw
+let g:loaded_netrw  = 1
+let g:loaded_netrwPlugin = 1
+let g:loaded_netrwSettings = 1
+let g:loaded_netrwFileHandlers = 1
+let g:loaded_matchit = 1
+"" Startup
+"autocmd VimEnter * ++nested call <SID>coc_explorer#open_explorer(1, {'name':'left'}, {})
+"autocmd VimEnter * :tabdo CocCommand explorer
+"autocmd WinNew * :CocCommand explorer
+"autocmd TabEnter * if (!exists('*coc_explorer#open_explorer')) | :CocCommand explorer | endif
+"autocmd BufWinLeave * :if (winnr("$") == 1) | q | endif
+"Wait for official :mksession support: https://github.com/weirongxu/coc-explorer/issues/297
+"autocmd VimEnter * :CocCommand explorer
+"autocmd TabNew * :CocCommand explorer
+autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
+
 "Obsession
+set sessionoptions+=winpos
+set sessionoptions+=terminal
+set sessionoptions+=resize
 function! AirlineInit()
     let g:airline_section_z = airline#section#create(['%{ObsessionStatus(''S'', '''')}', 'windowswap', '%3p%% ', 'linenr', ':%3v '])
 endfunction
@@ -169,19 +198,6 @@ let g:airline_right_alt_sep = ''
 let g:airline_symbols.branch = ''
 let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
-
-"Coc Explorer
-"" Disable netrw
-let g:loaded_netrw  = 1
-let g:loaded_netrwPlugin = 1
-let g:loaded_netrwSettings = 1
-let g:loaded_netrwFileHandlers = 1
-let g:loaded_matchit = 1
-"" Startup
-autocmd VimEnter * :CocCommand explorer
-autocmd TabNew * :CocCommand explorer
-"autocmd BufWinLeave * :if (winnr("$") == 1) | q | endif
-autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 
 "vim-oscyank
 autocmd TextYankPost * if v:event.operator is 'y' && v:event.regname is '' | OSCYankReg " | endif

@@ -3,6 +3,12 @@
     "openedPathsList": {
         "entries": [
             {
+                "folderUri": "file:///run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio%20Caruso/rustProjects/guessing_game"
+            },
+            {
+                "folderUri": "file:///run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio%20Caruso/rustProjects/minigrep"
+            },
+            {
                 "folderUri": "file:///home/fabiocaruso/Dokumente/HM2%20SEP"
             },
             {
@@ -98,7 +104,8 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor"
+                                    "label": "&&Reopen Closed Editor",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -107,6 +114,30 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
+                                        "fsPath": "/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/guessing_game",
+                                        "external": "file:///run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio%20Caruso/rustProjects/guessing_game",
+                                        "path": "/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/guessing_game",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/guessing_game"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio%20Caruso/rustProjects/minigrep",
+                                        "path": "/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/minigrep",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/minigrep"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/fabiocaruso/Dokumente/HM2%20SEP",
                                         "path": "/home/fabiocaruso/Dokumente/HM2 SEP",
                                         "scheme": "file"
                                     },
@@ -120,23 +151,23 @@
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/fabiocaruso/Downloads/Verify.sign.sha256",
-                                        "path": "/home/fabiocaruso/Downloads/Verify.sign.sha256",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/Downloads/Verify.sign.sha256"
-                                },
-                                {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
                                         "external": "file:///home/fabiocaruso/Downloads/Verify.sha256",
                                         "path": "/home/fabiocaruso/Downloads/Verify.sha256",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
                                     "label": "~/Downloads/Verify.sha256"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/fabiocaruso/Downloads/Verify.sign.sha256",
+                                        "path": "/home/fabiocaruso/Downloads/Verify.sign.sha256",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads/Verify.sign.sha256"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -267,8 +298,7 @@
                     },
                     {
                         "id": "saveAll",
-                        "label": "Save A&&ll",
-                        "enabled": false
+                        "label": "Save A&&ll"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -326,13 +356,6 @@
                                 {
                                     "id": "workbench.action.selectProductIconTheme",
                                     "label": "&&Product Icon Theme"
-                                },
-                                {
-                                    "id": "vscode.menubar.separator"
-                                },
-                                {
-                                    "id": "workbench.userDataSync.actions.turnOn",
-                                    "label": "Turn on Settings Sync..."
                                 }
                             ]
                         }
@@ -350,8 +373,7 @@
                     },
                     {
                         "id": "workbench.action.closeFolder",
-                        "label": "Close &&Folder",
-                        "enabled": false
+                        "label": "Close &&Folder"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -547,7 +569,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "Show &&Side Bar"
+                                    "label": "Show &&Side Bar",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleStatusbarVisibility",
@@ -561,7 +584,8 @@
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
-                                    "label": "Show &&Panel"
+                                    "label": "Show &&Panel",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleEditorVisibility",
@@ -714,7 +738,8 @@
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "&&Word Wrap"
+                        "label": "&&Word Wrap",
+                        "enabled": false
                     },
                     {
                         "id": "editor.action.toggleMinimap",
@@ -975,8 +1000,7 @@
                     },
                     {
                         "id": "workbench.action.debug.configure",
-                        "label": "Open &&Configurations",
-                        "enabled": false
+                        "label": "Open &&Configurations"
                     },
                     {
                         "id": "debug.addConfiguration",
@@ -1075,49 +1099,12 @@
                         "id": "vscode.menubar.separator"
                     },
                     {
-                        "id": "workbench.action.tasks.runTask",
-                        "label": "&&Run Task..."
-                    },
-                    {
-                        "id": "workbench.action.tasks.build",
-                        "label": "Run &&Build Task..."
-                    },
-                    {
                         "id": "workbench.action.terminal.runActiveFile",
                         "label": "Run &&Active File"
                     },
                     {
                         "id": "workbench.action.terminal.runSelectedText",
                         "label": "Run &&Selected Text"
-                    },
-                    {
-                        "id": "vscode.menubar.separator"
-                    },
-                    {
-                        "id": "workbench.action.tasks.showTasks",
-                        "label": "Show Runnin&&g Tasks...",
-                        "enabled": false
-                    },
-                    {
-                        "id": "workbench.action.tasks.restartTask",
-                        "label": "R&&estart Running Task...",
-                        "enabled": false
-                    },
-                    {
-                        "id": "workbench.action.tasks.terminate",
-                        "label": "&&Terminate Task...",
-                        "enabled": false
-                    },
-                    {
-                        "id": "vscode.menubar.separator"
-                    },
-                    {
-                        "id": "workbench.action.tasks.configureTaskRunner",
-                        "label": "&&Configure Tasks..."
-                    },
-                    {
-                        "id": "workbench.action.tasks.configureDefaultBuildTask",
-                        "label": "Configure De&&fault Build Task..."
                     }
                 ]
             },
@@ -1594,10 +1581,6 @@
                 "label": "Ctrl+Shift+5",
                 "userSettingsLabel": "ctrl+shift+5"
             },
-            "workbench.action.tasks.build": {
-                "label": "Ctrl+Shift+B",
-                "userSettingsLabel": "ctrl+shift+b"
-            },
             "workbench.action.keybindingsReference": {
                 "label": "Ctrl+K Ctrl+R",
                 "isNative": false,
@@ -1628,22 +1611,24 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 0,
+            "sideBarWidth": 256,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/fabiocaruso/.config/Code - OSS/Backups/1624880071846",
+            "folder": "file:///run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio%20Caruso/rustProjects/guessing_game",
+            "backupPath": "/home/fabiocaruso/.config/Code - OSS/Backups/0b09e83f49baa95ce359d6416763e1eb",
             "uiState": {
-                "mode": 1,
-                "x": 4265,
-                "y": 505,
-                "width": 1529,
-                "height": 1008
+                "mode": 0,
+                "x": 4264,
+                "y": 533,
+                "width": 1535,
+                "height": 1013
             }
         },
         "openedWindows": []
-    }
+    },
+    "pickerWorkingDir": "/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects"
 }

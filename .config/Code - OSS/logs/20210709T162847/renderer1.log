@@ -1,0 +1,35 @@
+[2021-07-09 16:30:26.266] [renderer1] [error] Language client is not ready yet: Error: Language client is not ready yet
+    at LanguageClient.sendRequest (/home/fabiocaruso/.vscode/extensions/rust-lang.rust-0.7.8/node_modules/vscode-languageclient/lib/client.js:1789:19)
+    at /home/fabiocaruso/.vscode/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:35:16
+    at new Promise (<anonymous>)
+    at SignatureHelpProvider.provideHover (/home/fabiocaruso/.vscode/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:34:16)
+    at SignatureHelpProvider.provideSignatureHelp (/home/fabiocaruso/.vscode/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:15:25)
+    at /usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:47934:59
+    at /usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:15343:26
+    at new Promise (<anonymous>)
+    at Object.asPromise (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:15342:16)
+    at SignatureHelpAdapter.provideSignatureHelp (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:47934:28)
+    at /usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48558:87
+    at ExtHostLanguageFeatures._withAdapter (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48255:27)
+    at ExtHostLanguageFeatures.$provideSignatureHelp (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48558:25)
+    at RPCProtocol._doInvokeHandler (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:54363:27)
+    at RPCProtocol._invokeHandler (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:54348:45)
+    at RPCProtocol._receiveRequest (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:54270:32)
+    at RPCProtocol._receiveOneMessage (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:54203:26)
+    at /usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:54084:52
+    at Emitter.fire (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:8338:38)
+    at BufferedEmitter.fire (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:20504:35)
+    at /usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65756:41
+    at Emitter.fire (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:8338:38)
+    at BufferedEmitter.fire (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:20504:35)
+    at PersistentProtocol._receiveMessage (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:20783:41)
+    at /usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:20639:83
+    at Emitter.fire (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:8338:38)
+    at ProtocolReader.acceptChunk (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:20318:37)
+    at /usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:20287:61
+    at Socket.listener (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:64795:40)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at Socket.Readable.push (internal/streams/readable.js:223:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:188:23)

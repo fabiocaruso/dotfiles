@@ -1,0 +1,140 @@
+Installing platform package from https://github.com/vadimcn/vscode-lldb/releases/download/v1.6.5/codelldb-x86_64-linux.vsix
+Done
+Running `cargo test --no-run --lib --package=minigrep --message-format=json`...
+   Compiling minigrep v0.1.0 (/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/minigrep)
+error[E0308]: mismatched types
+  --> src/lib.rs:30:13
+   |
+30 |             query,
+   |             ^^^^^
+   |             |
+   |             expected `&str`, found struct `String`
+   |             help: consider borrowing here: `query: &query`
+
+
+error[E0308]: mismatched types
+  --> src/lib.rs:31:13
+   |
+31 |             filename,
+   |             ^^^^^^^^
+   |             |
+   |             expected `&str`, found struct `String`
+   |             help: consider borrowing here: `filename: &filename`
+
+
+error[E0271]: type mismatch resolving `<std::slice::Iter<'_, String> as Iterator>::Item == String`
+   --> src/lib.rs:124:22
+    |
+14  |     pub fn new<T: std::iter::Iterator<Item = String>>(mut args: T) -> Result<Config<'static>, &'static str> 
+    |                                       ------------- required by this bound in `Config::<'_>::new`
+...
+124 |         let config = Config::new(args.iter());
+    |                      ^^^^^^^^^^^ expected struct `String`, found reference
+    |
+    = note: expected struct `String`
+            found reference `&String`
+
+
+error[E0277]: `&[String; 3]` is not an iterator
+   --> src/lib.rs:133:34
+    |
+14  |     pub fn new<T: std::iter::Iterator<Item = String>>(mut args: T) -> Result<Config<'static>, &'static str> 
+    |                   ---------------------------------- required by this bound in `Config::<'_>::new`
+...
+133 |         let config = Config::new(&args).expect("creation failed!");
+    |                                  ^^^^^ `&[String; 3]` is not an iterator
+    |
+    = help: the trait `Iterator` is not implemented for `&[String; 3]`
+
+
+error[E0277]: `&Vec<String>` is not an iterator
+   --> src/lib.rs:142:27
+    |
+14  |     pub fn new<T: std::iter::Iterator<Item = String>>(mut args: T) -> Result<Config<'static>, &'static str> 
+    |                   ---------------------------------- required by this bound in `Config::<'_>::new`
+...
+142 |         match Config::new(&args) {
+    |                           ^^^^^ `&Vec<String>` is not an iterator
+    |
+    = help: the trait `Iterator` is not implemented for `&Vec<String>`
+
+
+error: aborting due to 5 previous errors
+
+
+Some errors have detailed explanations: E0271, E0277, E0308.
+
+For more information about an error, try `rustc --explain E0271`.
+
+error: could not compile `minigrep`
+
+To learn more, run the command again with --verbose.
+Running `cargo test --no-run --lib --package=minigrep --message-format=json`...
+   Compiling minigrep v0.1.0 (/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/minigrep)
+error[E0308]: mismatched types
+  --> src/lib.rs:30:13
+   |
+30 |             query,
+   |             ^^^^^
+   |             |
+   |             expected `&str`, found struct `String`
+   |             help: consider borrowing here: `query: &query`
+
+
+error[E0308]: mismatched types
+  --> src/lib.rs:31:13
+   |
+31 |             filename,
+   |             ^^^^^^^^
+   |             |
+   |             expected `&str`, found struct `String`
+   |             help: consider borrowing here: `filename: &filename`
+
+
+error[E0271]: type mismatch resolving `<std::slice::Iter<'_, String> as Iterator>::Item == String`
+   --> src/lib.rs:124:22
+    |
+14  |     pub fn new<T: std::iter::Iterator<Item = String>>(mut args: T) -> Result<Config<'static>, &'static str> 
+    |                                       ------------- required by this bound in `Config::<'_>::new`
+...
+124 |         let config = Config::new(args.iter());
+    |                      ^^^^^^^^^^^ expected struct `String`, found reference
+    |
+    = note: expected struct `String`
+            found reference `&String`
+
+
+error[E0277]: `&[String; 3]` is not an iterator
+   --> src/lib.rs:133:34
+    |
+14  |     pub fn new<T: std::iter::Iterator<Item = String>>(mut args: T) -> Result<Config<'static>, &'static str> 
+    |                   ---------------------------------- required by this bound in `Config::<'_>::new`
+...
+133 |         let config = Config::new(&args).expect("creation failed!");
+    |                                  ^^^^^ `&[String; 3]` is not an iterator
+    |
+    = help: the trait `Iterator` is not implemented for `&[String; 3]`
+
+
+error[E0277]: `&Vec<String>` is not an iterator
+   --> src/lib.rs:142:27
+    |
+14  |     pub fn new<T: std::iter::Iterator<Item = String>>(mut args: T) -> Result<Config<'static>, &'static str> 
+    |                   ---------------------------------- required by this bound in `Config::<'_>::new`
+...
+142 |         match Config::new(&args) {
+    |                           ^^^^^ `&Vec<String>` is not an iterator
+    |
+    = help: the trait `Iterator` is not implemented for `&Vec<String>`
+
+
+error: aborting due to 5 previous errors
+
+
+Some errors have detailed explanations: E0271, E0277, E0308.
+
+For more information about an error, try `rustc --explain E0271`.
+
+error: could not compile `minigrep`
+
+To learn more, run the command again with --verbose.

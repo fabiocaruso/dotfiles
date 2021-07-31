@@ -1,0 +1,84 @@
+[2021-07-09 16:28:48.639] [exthost] [info] extension host started
+[2021-07-09 16:28:48.997] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication {"startup":false,"extensionId":{"value":"vscode.microsoft-authentication","_lower":"vscode.microsoft-authentication"},"activationEvent":"onAuthenticationRequest:microsoft"}
+[2021-07-09 16:28:48.997] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/microsoft-authentication/dist/extension.js
+[2021-07-09 16:28:49.002] [exthost] [info] ExtensionService#_doActivateExtension matklad.rust-analyzer {"startup":false,"extensionId":{"value":"matklad.rust-analyzer","_lower":"matklad.rust-analyzer"},"activationEvent":"onLanguage:rust"}
+[2021-07-09 16:28:49.002] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/fabiocaruso/.vscode/extensions/matklad.rust-analyzer-0.2.662/out/src/main
+[2021-07-09 16:28:49.014] [exthost] [info] ExtensionService#_doActivateExtension rust-lang.rust {"startup":false,"extensionId":{"value":"rust-lang.rust","_lower":"rust-lang.rust"},"activationEvent":"onLanguage:rust"}
+[2021-07-09 16:28:49.014] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/fabiocaruso/.vscode/extensions/rust-lang.rust-0.7.8/out/src/extension.js
+[2021-07-09 16:28:49.034] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2021-07-09 16:28:49.034] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/debug-auto-launch/dist/extension
+[2021-07-09 16:28:49.035] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-07-09 16:28:49.035] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/git/dist/main
+[2021-07-09 16:28:49.222] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-07-09 16:28:49.222] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/github/dist/extension.js
+[2021-07-09 16:28:49.315] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onCommand:extension.js-debug.clearAutoAttachVariables"}
+[2021-07-09 16:28:49.315] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/ms-vscode.js-debug/src/extension.js
+[2021-07-09 16:28:49.426] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication {"startup":false,"extensionId":{"value":"vscode.github-authentication","_lower":"vscode.github-authentication"},"activationEvent":"onAuthenticationRequest:github"}
+[2021-07-09 16:28:49.426] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/github-authentication/dist/extension.js
+[2021-07-09 16:28:49.460] [exthost] [info] eager extensions activated
+[2021-07-09 16:28:49.476] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":false,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"onStartupFinished"}
+[2021-07-09 16:28:49.476] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/emmet/dist/node/emmetNodeMain
+[2021-07-09 16:28:49.479] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":false,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"onStartupFinished"}
+[2021-07-09 16:28:49.479] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/merge-conflict/dist/mergeConflictMain
+[2021-07-09 16:28:49.481] [exthost] [info] ExtensionService#_doActivateExtension vscode.testing-editor-contributions {"startup":false,"extensionId":{"value":"vscode.testing-editor-contributions","_lower":"vscode.testing-editor-contributions"},"activationEvent":"onStartupFinished"}
+[2021-07-09 16:28:49.481] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/testing-editor-contributions/dist/extension.js
+[2021-07-09 16:28:49.481] [exthost] [info] ExtensionService#_doActivateExtension vadimcn.vscode-lldb {"startup":false,"extensionId":{"value":"vadimcn.vscode-lldb","_lower":"vadimcn.vscode-lldb"},"activationEvent":"onStartupFinished"}
+[2021-07-09 16:28:49.481] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/fabiocaruso/.vscode/extensions/vadimcn.vscode-lldb-1.6.5/extension.js
+[2021-07-09 16:29:26.230] [exthost] [info] ExtensionService#_doActivateExtension GitHub.copilot {"startup":false,"extensionId":{"value":"GitHub.copilot","_lower":"github.copilot"},"activationEvent":"*"}
+[2021-07-09 16:29:26.230] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/fabiocaruso/.vscode/extensions/github.copilot-1.1.1959/dist/extension
+[2021-07-09 16:30:26.224] [exthost] [error] [rust-lang.rust] provider FAILED
+[2021-07-09 16:30:26.264] [exthost] [error] Error: Language client is not ready yet
+    at LanguageClient.sendRequest (/home/fabiocaruso/.vscode/extensions/rust-lang.rust-0.7.8/node_modules/vscode-languageclient/lib/client.js:1789:19)
+    at /home/fabiocaruso/.vscode/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:35:16
+    at new Promise (<anonymous>)
+    at SignatureHelpProvider.provideHover (/home/fabiocaruso/.vscode/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:34:16)
+    at SignatureHelpProvider.provideSignatureHelp (/home/fabiocaruso/.vscode/extensions/rust-lang.rust-0.7.8/out/src/providers/signatureHelpProvider.js:15:25)
+    at /usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:47934:59
+    at /usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:15343:26
+    at new Promise (<anonymous>)
+    at Object.asPromise (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:15342:16)
+    at SignatureHelpAdapter.provideSignatureHelp (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:47934:28)
+    at /usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48558:87
+    at ExtHostLanguageFeatures._withAdapter (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48255:27)
+    at ExtHostLanguageFeatures.$provideSignatureHelp (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:48558:25)
+    at RPCProtocol._doInvokeHandler (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:54363:27)
+    at RPCProtocol._invokeHandler (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:54348:45)
+    at RPCProtocol._receiveRequest (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:54270:32)
+    at RPCProtocol._receiveOneMessage (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:54203:26)
+    at /usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:54084:52
+    at Emitter.fire (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:8338:38)
+    at BufferedEmitter.fire (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:20504:35)
+    at /usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65756:41
+    at Emitter.fire (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:8338:38)
+    at BufferedEmitter.fire (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:20504:35)
+    at PersistentProtocol._receiveMessage (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:20783:41)
+    at /usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:20639:83
+    at Emitter.fire (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:8338:38)
+    at ProtocolReader.acceptChunk (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:20318:37)
+    at /usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:20287:61
+    at Socket.listener (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:64795:40)
+    at Socket.emit (events.js:315:20)
+    at addChunk (internal/streams/readable.js:309:12)
+    at readableAddChunk (internal/streams/readable.js:284:9)
+    at Socket.Readable.push (internal/streams/readable.js:223:10)
+    at Pipe.onStreamRead (internal/stream_base_commons.js:188:23)
+[2021-07-09 16:31:29.402] [exthost] [info] extension host terminating: renderer closed the socket
+[2021-07-09 16:31:29.431] [exthost] [error] Canceled: Canceled
+    at Object.canceled (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:391:23)
+    at RPCProtocol._remoteCall (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:54367:46)
+    at Proxy.target.<computed> (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:54165:41)
+    at ExtHostCommands._doExecuteCommand (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:44940:54)
+    at ExtHostCommands.executeCommand (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:44912:25)
+    at Object.executeCommand (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:61126:44)
+    at Object.setContextValue (/home/fabiocaruso/.vscode/extensions/matklad.rust-analyzer-0.2.662/out/src/main.js:17611:48)
+    at Object.deactivate (/home/fabiocaruso/.vscode/extensions/matklad.rust-analyzer-0.2.662/out/src/main.js:23249:18)
+    at ExtHostExtensionService._deactivate (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:58227:63)
+    at /usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:58157:33
+    at Array.map (<anonymous>)
+    at ExtHostExtensionService.deactivateAll (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:58156:51)
+    at ExtensionHostMain.terminate (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:60200:66)
+    at onTerminate (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65886:53)
+    at Socket.<anonymous> (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65738:21)
+    at Socket.emit (events.js:327:22)
+    at Pipe.<anonymous> (net.js:673:12)
+[2021-07-09 16:31:30.427] [exthost] [info] exiting with code 0

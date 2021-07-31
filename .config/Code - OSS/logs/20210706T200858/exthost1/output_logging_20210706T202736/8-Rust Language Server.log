@@ -1,0 +1,11 @@
+[Error - 20:27:36] Starting client failed
+Canceled: Canceled
+	at Object.canceled (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:391:23)
+	at /usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:54091:43
+	at Array.forEach (<anonymous>)
+	at RPCProtocol.dispose (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:54089:50)
+	at ExtensionHostMain.terminate (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:60199:31)
+	at onTerminate (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65886:53)
+	at Socket.<anonymous> (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65738:21)
+	at Socket.emit (events.js:327:22)
+	at Pipe.<anonymous> (net.js:673:12)

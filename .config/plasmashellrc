@@ -4,10 +4,10 @@ Recent URLs[$e]=file:$HOME/Bilder/,file:$HOME/Bilder/icons/,file:$HOME/
 detailViewIconSize=16
 
 [KPropertiesDialog]
-DP-0 DP-2 Height 3840x2160=511
-DP-0 DP-2 Width 3840x2160=465
-DP-2 DP-0 Height 3840x2160=525
-DP-2 DP-0 Width 3840x2160=549
+DP-0 DP-2 Height 3840x2160=503
+DP-0 DP-2 Width 3840x2160=683
+DP-2 DP-0 Height 3840x2160=503
+DP-2 DP-0 Width 3840x2160=683
 
 [PlasmaViews][Panel 123][Defaults]
 thickness=56
@@ -52,8 +52,8 @@ thickness=56
 thickness=56
 
 [ScreenConnectors]
-0=DP-0
-1=DP-2
+0=DP-2
+1=DP-0
 2=:0.0
 
 [Updates]

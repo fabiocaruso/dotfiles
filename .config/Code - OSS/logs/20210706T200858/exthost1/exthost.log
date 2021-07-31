@@ -1,0 +1,151 @@
+[2021-07-06 20:08:59.824] [exthost] [info] extension host started
+[2021-07-06 20:08:59.848] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication {"startup":false,"extensionId":{"value":"vscode.microsoft-authentication","_lower":"vscode.microsoft-authentication"},"activationEvent":"onAuthenticationRequest:microsoft"}
+[2021-07-06 20:08:59.849] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/microsoft-authentication/dist/extension.js
+[2021-07-06 20:08:59.854] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2021-07-06 20:08:59.854] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/debug-auto-launch/dist/extension
+[2021-07-06 20:08:59.855] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-07-06 20:08:59.855] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/git/dist/main
+[2021-07-06 20:08:59.903] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-07-06 20:08:59.903] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/github/dist/extension.js
+[2021-07-06 20:08:59.922] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onCommand:extension.js-debug.clearAutoAttachVariables"}
+[2021-07-06 20:08:59.922] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/ms-vscode.js-debug/src/extension.js
+[2021-07-06 20:09:00.004] [exthost] [info] eager extensions activated
+[2021-07-06 20:09:00.009] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":false,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"onStartupFinished"}
+[2021-07-06 20:09:00.009] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/emmet/dist/node/emmetNodeMain
+[2021-07-06 20:09:00.013] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":false,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"onStartupFinished"}
+[2021-07-06 20:09:00.013] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/merge-conflict/dist/mergeConflictMain
+[2021-07-06 20:09:00.014] [exthost] [info] ExtensionService#_doActivateExtension vscode.testing-editor-contributions {"startup":false,"extensionId":{"value":"vscode.testing-editor-contributions","_lower":"vscode.testing-editor-contributions"},"activationEvent":"onStartupFinished"}
+[2021-07-06 20:09:00.014] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/testing-editor-contributions/dist/extension.js
+[2021-07-06 20:09:00.031] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication {"startup":false,"extensionId":{"value":"vscode.github-authentication","_lower":"vscode.github-authentication"},"activationEvent":"onAuthenticationRequest:github"}
+[2021-07-06 20:09:00.031] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/github-authentication/dist/extension.js
+[2021-07-06 20:10:18.963] [exthost] [info] extension host terminating: renderer closed the socket
+[2021-07-06 20:10:19.966] [exthost] [info] exiting with code 0
+[2021-07-06 20:10:20.251] [exthost] [info] extension host started
+[2021-07-06 20:10:20.285] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication {"startup":false,"extensionId":{"value":"vscode.microsoft-authentication","_lower":"vscode.microsoft-authentication"},"activationEvent":"onAuthenticationRequest:microsoft"}
+[2021-07-06 20:10:20.285] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/microsoft-authentication/dist/extension.js
+[2021-07-06 20:10:20.289] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2021-07-06 20:10:20.289] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/debug-auto-launch/dist/extension
+[2021-07-06 20:10:20.291] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-07-06 20:10:20.291] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/git/dist/main
+[2021-07-06 20:10:20.355] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-07-06 20:10:20.356] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/github/dist/extension.js
+[2021-07-06 20:10:20.381] [exthost] [info] eager extensions activated
+[2021-07-06 20:10:20.404] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onCommand:extension.js-debug.clearAutoAttachVariables"}
+[2021-07-06 20:10:20.404] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/ms-vscode.js-debug/src/extension.js
+[2021-07-06 20:10:20.464] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication {"startup":false,"extensionId":{"value":"vscode.github-authentication","_lower":"vscode.github-authentication"},"activationEvent":"onAuthenticationRequest:github"}
+[2021-07-06 20:10:20.464] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/github-authentication/dist/extension.js
+[2021-07-06 20:10:20.469] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":false,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"onStartupFinished"}
+[2021-07-06 20:10:20.469] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/emmet/dist/node/emmetNodeMain
+[2021-07-06 20:10:20.471] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":false,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"onStartupFinished"}
+[2021-07-06 20:10:20.471] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/merge-conflict/dist/mergeConflictMain
+[2021-07-06 20:10:20.473] [exthost] [info] ExtensionService#_doActivateExtension vscode.testing-editor-contributions {"startup":false,"extensionId":{"value":"vscode.testing-editor-contributions","_lower":"vscode.testing-editor-contributions"},"activationEvent":"onStartupFinished"}
+[2021-07-06 20:10:20.473] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/testing-editor-contributions/dist/extension.js
+[2021-07-06 20:11:01.845] [exthost] [info] ExtensionService#_doActivateExtension matklad.rust-analyzer {"startup":false,"extensionId":{"value":"matklad.rust-analyzer","_lower":"matklad.rust-analyzer"},"activationEvent":"onLanguage:rust"}
+[2021-07-06 20:11:01.845] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/fabiocaruso/.vscode/extensions/matklad.rust-analyzer-0.2.662/out/src/main
+[2021-07-06 20:11:33.373] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"extensionId":{"value":"vscode.configuration-editing","_lower":"vscode.configuration-editing"},"activationEvent":"onLanguage:json"}
+[2021-07-06 20:11:33.373] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/configuration-editing/dist/configurationEditingMain
+[2021-07-06 20:11:33.379] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing {"startup":false,"extensionId":{"value":"vscode.extension-editing","_lower":"vscode.extension-editing"},"activationEvent":"onLanguage:json"}
+[2021-07-06 20:11:33.379] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/extension-editing/dist/extensionEditingMain
+[2021-07-06 20:11:33.388] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"extensionId":{"value":"vscode.json-language-features","_lower":"vscode.json-language-features"},"activationEvent":"onLanguage:json"}
+[2021-07-06 20:11:33.388] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/json-language-features/client/dist/node/jsonClientMain
+[2021-07-06 20:11:33.412] [exthost] [info] ExtensionService#_doActivateExtension vscode.npm {"startup":false,"extensionId":{"value":"vscode.npm","_lower":"vscode.npm"},"activationEvent":"onLanguage:json"}
+[2021-07-06 20:11:33.412] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/npm/dist/npmMain
+[2021-07-06 20:12:44.026] [exthost] [info] ExtensionService#_doActivateExtension rust-lang.rust {"startup":false,"extensionId":{"value":"rust-lang.rust","_lower":"rust-lang.rust"},"activationEvent":"onLanguage:rust"}
+[2021-07-06 20:12:44.026] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/fabiocaruso/.vscode/extensions/rust-lang.rust-0.7.8/out/src/extension.js
+[2021-07-06 20:20:01.373] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"extensionId":{"value":"vscode.typescript-language-features","_lower":"vscode.typescript-language-features"},"activationEvent":"onLanguage:javascript"}
+[2021-07-06 20:20:01.373] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/typescript-language-features/dist/extension
+[2021-07-06 20:20:03.395] [exthost] [info] ExtensionService#_doActivateExtension vadimcn.vscode-lldb {"startup":false,"extensionId":{"value":"vadimcn.vscode-lldb","_lower":"vadimcn.vscode-lldb"},"activationEvent":"onStartupFinished"}
+[2021-07-06 20:20:03.395] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/fabiocaruso/.vscode/extensions/vadimcn.vscode-lldb-1.6.5/extension.js
+[2021-07-06 20:20:40.604] [exthost] [info] ExtensionService#_doActivateExtension vscode.grunt {"startup":false,"extensionId":{"value":"vscode.grunt","_lower":"vscode.grunt"},"activationEvent":"onCommand:workbench.action.tasks.runTask"}
+[2021-07-06 20:20:40.605] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/grunt/dist/main
+[2021-07-06 20:20:40.616] [exthost] [info] ExtensionService#_doActivateExtension vscode.gulp {"startup":false,"extensionId":{"value":"vscode.gulp","_lower":"vscode.gulp"},"activationEvent":"onCommand:workbench.action.tasks.runTask"}
+[2021-07-06 20:20:40.616] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/gulp/dist/main
+[2021-07-06 20:20:40.619] [exthost] [info] ExtensionService#_doActivateExtension vscode.jake {"startup":false,"extensionId":{"value":"vscode.jake","_lower":"vscode.jake"},"activationEvent":"onCommand:workbench.action.tasks.runTask"}
+[2021-07-06 20:20:40.619] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/jake/dist/main
+[2021-07-06 20:21:03.400] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.node-debug2 {"startup":false,"extensionId":{"value":"ms-vscode.node-debug","_lower":"ms-vscode.node-debug"},"activationEvent":"onDebugInitialConfigurations"}
+[2021-07-06 20:21:03.400] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/ms-vscode.node-debug2/out/src/extension
+[2021-07-06 20:21:03.408] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.node-debug {"startup":false,"extensionId":{"value":"ms-vscode.node-debug","_lower":"ms-vscode.node-debug"},"activationEvent":"onDebugInitialConfigurations"}
+[2021-07-06 20:21:03.408] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/ms-vscode.node-debug/dist/extension.js
+[2021-07-06 20:21:54.848] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-server-ready {"startup":false,"extensionId":{"value":"vscode.debug-server-ready","_lower":"vscode.debug-server-ready"},"activationEvent":"onDebugResolve"}
+[2021-07-06 20:21:54.848] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/debug-server-ready/dist/extension
+[2021-07-06 20:24:42.328] [exthost] [info] extension host terminating: renderer closed the socket
+[2021-07-06 20:24:42.337] [exthost] [error] Canceled: Canceled
+	at Object.canceled (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:391:23)
+	at RPCProtocol._remoteCall (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:54367:46)
+	at Proxy.target.<computed> (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:54165:41)
+	at ExtHostCommands._doExecuteCommand (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:44940:54)
+	at ExtHostCommands.executeCommand (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:44912:25)
+	at Object.executeCommand (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:61126:44)
+	at Object.setContextValue (/home/fabiocaruso/.vscode/extensions/matklad.rust-analyzer-0.2.662/out/src/main.js:17611:48)
+	at Object.deactivate (/home/fabiocaruso/.vscode/extensions/matklad.rust-analyzer-0.2.662/out/src/main.js:23249:18)
+	at ExtHostExtensionService._deactivate (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:58227:63)
+	at /usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:58157:33
+	at Array.map (<anonymous>)
+	at ExtHostExtensionService.deactivateAll (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:58156:51)
+	at ExtensionHostMain.terminate (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:60200:66)
+	at onTerminate (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65886:53)
+	at Socket.<anonymous> (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65738:21)
+	at Socket.emit (events.js:327:22)
+	at Pipe.<anonymous> (net.js:673:12)
+[2021-07-06 20:24:43.336] [exthost] [info] exiting with code 0
+[2021-07-06 20:24:43.626] [exthost] [info] extension host started
+[2021-07-06 20:24:43.683] [exthost] [info] ExtensionService#_doActivateExtension vscode.microsoft-authentication {"startup":false,"extensionId":{"value":"vscode.microsoft-authentication","_lower":"vscode.microsoft-authentication"},"activationEvent":"onAuthenticationRequest:microsoft"}
+[2021-07-06 20:24:43.684] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/microsoft-authentication/dist/extension.js
+[2021-07-06 20:24:43.688] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2021-07-06 20:24:43.688] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/debug-auto-launch/dist/extension
+[2021-07-06 20:24:43.689] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-07-06 20:24:43.689] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/git/dist/main
+[2021-07-06 20:24:43.748] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2021-07-06 20:24:43.748] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/github/dist/extension.js
+[2021-07-06 20:24:43.771] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onCommand:extension.js-debug.clearAutoAttachVariables"}
+[2021-07-06 20:24:43.771] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/ms-vscode.js-debug/src/extension.js
+[2021-07-06 20:24:43.828] [exthost] [info] eager extensions activated
+[2021-07-06 20:24:43.837] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication {"startup":false,"extensionId":{"value":"vscode.github-authentication","_lower":"vscode.github-authentication"},"activationEvent":"onAuthenticationRequest:github"}
+[2021-07-06 20:24:43.837] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/github-authentication/dist/extension.js
+[2021-07-06 20:24:43.841] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":false,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"onStartupFinished"}
+[2021-07-06 20:24:43.841] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/emmet/dist/node/emmetNodeMain
+[2021-07-06 20:24:43.844] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":false,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"onStartupFinished"}
+[2021-07-06 20:24:43.844] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/merge-conflict/dist/mergeConflictMain
+[2021-07-06 20:24:43.845] [exthost] [info] ExtensionService#_doActivateExtension vscode.testing-editor-contributions {"startup":false,"extensionId":{"value":"vscode.testing-editor-contributions","_lower":"vscode.testing-editor-contributions"},"activationEvent":"onStartupFinished"}
+[2021-07-06 20:24:43.845] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/testing-editor-contributions/dist/extension.js
+[2021-07-06 20:24:44.915] [exthost] [info] ExtensionService#_doActivateExtension vadimcn.vscode-lldb {"startup":false,"extensionId":{"value":"vadimcn.vscode-lldb","_lower":"vadimcn.vscode-lldb"},"activationEvent":"onStartupFinished"}
+[2021-07-06 20:24:44.915] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/fabiocaruso/.vscode/extensions/vadimcn.vscode-lldb-1.6.5/extension.js
+[2021-07-06 20:24:44.925] [exthost] [info] ExtensionService#_doActivateExtension rust-lang.rust {"startup":false,"extensionId":{"value":"rust-lang.rust","_lower":"rust-lang.rust"},"activationEvent":"workspaceContains:Cargo.toml"}
+[2021-07-06 20:24:44.925] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/fabiocaruso/.vscode/extensions/rust-lang.rust-0.7.8/out/src/extension.js
+[2021-07-06 20:24:45.019] [exthost] [info] ExtensionService#_doActivateExtension matklad.rust-analyzer {"startup":false,"extensionId":{"value":"matklad.rust-analyzer","_lower":"matklad.rust-analyzer"},"activationEvent":"workspaceContains:**/Cargo.toml"}
+[2021-07-06 20:24:45.019] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/fabiocaruso/.vscode/extensions/matklad.rust-analyzer-0.2.662/out/src/main
+[2021-07-06 20:25:15.132] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.node-debug2 {"startup":false,"extensionId":{"value":"ms-vscode.node-debug","_lower":"ms-vscode.node-debug"},"activationEvent":"onDebugInitialConfigurations"}
+[2021-07-06 20:25:15.133] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/ms-vscode.node-debug2/out/src/extension
+[2021-07-06 20:25:15.144] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.node-debug {"startup":false,"extensionId":{"value":"ms-vscode.node-debug","_lower":"ms-vscode.node-debug"},"activationEvent":"onDebugInitialConfigurations"}
+[2021-07-06 20:25:15.145] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/ms-vscode.node-debug/dist/extension.js
+[2021-07-06 20:25:17.007] [exthost] [info] ExtensionService#_doActivateExtension vscode.configuration-editing {"startup":false,"extensionId":{"value":"vscode.configuration-editing","_lower":"vscode.configuration-editing"},"activationEvent":"onLanguage:jsonc"}
+[2021-07-06 20:25:17.007] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/configuration-editing/dist/configurationEditingMain
+[2021-07-06 20:25:17.010] [exthost] [info] ExtensionService#_doActivateExtension vscode.json-language-features {"startup":false,"extensionId":{"value":"vscode.json-language-features","_lower":"vscode.json-language-features"},"activationEvent":"onLanguage:jsonc"}
+[2021-07-06 20:25:17.010] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/json-language-features/client/dist/node/jsonClientMain
+[2021-07-06 20:25:17.020] [exthost] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"extensionId":{"value":"vscode.typescript-language-features","_lower":"vscode.typescript-language-features"},"activationEvent":"onLanguage:jsonc"}
+[2021-07-06 20:25:17.020] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/typescript-language-features/dist/extension
+[2021-07-06 20:25:23.259] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-server-ready {"startup":false,"extensionId":{"value":"vscode.debug-server-ready","_lower":"vscode.debug-server-ready"},"activationEvent":"onDebugResolve"}
+[2021-07-06 20:25:23.259] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/share/vscode/resources/app/extensions/debug-server-ready/dist/extension
+[2021-07-06 20:27:36.266] [exthost] [info] extension host terminating: renderer closed the socket
+[2021-07-06 20:27:36.284] [exthost] [warning] {"name":"Canceled"}
+[2021-07-06 20:27:36.284] [exthost] [warning] {"name":"Canceled"}
+[2021-07-06 20:27:36.284] [exthost] [warning] {"name":"Canceled"}
+[2021-07-06 20:27:36.286] [exthost] [error] Canceled: Canceled
+	at Object.canceled (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:391:23)
+	at RPCProtocol._remoteCall (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:54367:46)
+	at Proxy.target.<computed> (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:54165:41)
+	at ExtHostCommands._doExecuteCommand (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:44940:54)
+	at ExtHostCommands.executeCommand (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:44912:25)
+	at Object.executeCommand (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:61126:44)
+	at Object.setContextValue (/home/fabiocaruso/.vscode/extensions/matklad.rust-analyzer-0.2.662/out/src/main.js:17611:48)
+	at Object.deactivate (/home/fabiocaruso/.vscode/extensions/matklad.rust-analyzer-0.2.662/out/src/main.js:23249:18)
+	at ExtHostExtensionService._deactivate (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:58227:63)
+	at /usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:58157:33
+	at Array.map (<anonymous>)
+	at ExtHostExtensionService.deactivateAll (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:58156:51)
+	at ExtensionHostMain.terminate (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:60200:66)
+	at onTerminate (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65886:53)
+	at Socket.<anonymous> (/usr/share/vscode/resources/app/out/vs/workbench/services/extensions/node/extensionHostProcess.js:65738:21)
+	at Socket.emit (events.js:327:22)
+	at Pipe.<anonymous> (net.js:673:12)
+[2021-07-06 20:27:37.285] [exthost] [info] exiting with code 0

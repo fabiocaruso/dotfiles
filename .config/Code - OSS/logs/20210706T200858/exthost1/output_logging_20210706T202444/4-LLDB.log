@@ -1,0 +1,36 @@
+Running `cargo build --bin=guessing_game --package=guessing_game --message-format=json`...
+    Finished dev [unoptimized + debuginfo] target(s) in 0.01s
+Raw artifacts:
+{
+  fileName: '/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/guessing_game/target/debug/guessing_game',
+  name: 'guessing_game',
+  kind: 'bin'
+}
+Filtered artifacts: 
+{
+  fileName: '/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/guessing_game/target/debug/guessing_game',
+  name: 'guessing_game',
+  kind: 'bin'
+}
+configuration: {
+  type: 'lldb',
+  request: 'launch',
+  name: "Debug executable 'guessing_game'",
+  args: [],
+  cwd: '${workspaceFolder}',
+  __configurationTarget: 5,
+  relativePathBase: '/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/guessing_game',
+  program: '/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects/guessing_game/target/debug/guessing_game',
+  sourceLanguages: [ 'rust' ]
+}
+Listening on port 43663
+Listening on port 37067
+Debug adapter exit code=0, signal=null.
+[2021-07-06T18:26:29.560Z ERROR codelldb::handles] Parent/key combination is not unique (None/[1,0])
+[2021-07-06T18:26:37.143Z ERROR codelldb::handles] Parent/key combination is not unique (None/[1,0])
+[2021-07-06T18:27:08.641Z ERROR codelldb::handles] Parent/key combination is not unique (None/[1,0])
+[2021-07-06T18:27:17.638Z ERROR codelldb::debug_session] Internal debugger error: Invalid frame reference: 1049
+[2021-07-06T18:27:20.035Z ERROR codelldb::debug_session] Received invalid thread id in stack trace request.
+[2021-07-06T18:27:20.035Z ERROR codelldb::debug_session] Internal debugger error: Invalid thread id.
+[2021-07-06T18:27:24.910Z ERROR codelldb::handles] Parent/key combination is not unique (None/[1,0])
+Debug adapter exit code=0, signal=null.

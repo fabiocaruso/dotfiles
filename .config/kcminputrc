@@ -8,6 +8,7 @@ RepeatDelay=600
 RepeatRate=25
 
 [Mouse]
+XLbInptPointerAcceleration=0.4
 cursorTheme=breeze_cursors
 
 [Tmp]

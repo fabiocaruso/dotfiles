@@ -133,6 +133,9 @@ ForegroundNormal=239,240,241
 ForegroundPositive=39,174,96
 ForegroundVisited=127,140,141
 
+[DirSelect Dialog]
+DirSelectDialog Size=950,610
+
 [General]
 BrowserApplication=firefox.desktop
 ColorScheme=SolusDark
@@ -147,6 +150,7 @@ widgetStyle=Breeze
 Theme=breeze-dark
 
 [KDE]
+AnimationDurationFactor=0.25
 ColorScheme=SolusDark
 LookAndFeelPackage=solusdark.desktop
 SingleClick=false

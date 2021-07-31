@@ -18,9 +18,11 @@ $
 
 # Befehlszeile Geschichte (neueste bis älteste):
 :qa
-|2,0,1624820012,,"qa"
+|2,0,1627770556,,"qa"
+:messages
+|2,0,1627770548,,"messages"
 :w
-|2,0,1624746754,,"w"
+|2,0,1627770139,,"w"
 :tabnew .vimrc
 |2,0,1624746714,,"tabnew .vimrc"
 :q
@@ -105,8 +107,6 @@ $
 |2,0,1616884817,,"set nolist"
 :PluginInstall
 |2,0,1616884437,,"PluginInstall"
-:messages
-|2,0,1616874091,,"messages"
 :so ~/.vimrc
 |2,0,1616872929,,"so ~/.vimrc"
 :CocInstall coc-json
@@ -148,15 +148,8 @@ $
 
 # Register:
 ""0	CHAR	0
-	.bashrc                                                                                                                                                  
-	!     .esd_auth                                                                                                                                                
-	!     .fonts.conf                                                                                                                                              
-	!     .gdbinit                                                                                                                                                 
-	!     .gitconfig                                                                                                                                               
-	      .gitigno
-|3,1,0,0,6,0,1624819977,".bashrc                                                                                                                                                  ","!     .esd_auth                                                                                                                                                ",>164
-|<"!     .fonts.conf                                                                                                                                              ","!     .gdbinit                                                                                                                                                 ",>164
-|<"!     .gitconfig                                                                                                                                               ","      .gitigno"
+	/usr/lib64/bluez/bluetooth/bluetoothd
+|3,1,0,0,1,0,1626525624,"/usr/lib64/bluez/bluetooth/bluetoothd"
 "1	LINE	0
 	
 |3,0,1,1,1,0,1624746722,""
@@ -201,270 +194,286 @@ $
 |3,0,36,0,1,0,1616887815,"/"
 
 # Datei-Markierungen:
-'0  1  0  /usr/lib64/systemd/system/bluetooth.service
-|4,48,1,0,1624749285,"/usr/lib64/systemd/system/bluetooth.service"
-'1  128  3  ~/.vimrc
-|4,49,128,3,1624747008,"~/.vimrc"
-'2  416  0  ~/[coc-explorer]-1
-|4,50,416,0,1624746764,"~/[coc-explorer]-1"
-'3  125  0  ~/[coc-explorer]-1
-|4,51,125,0,1624746764,"~/[coc-explorer]-1"
-'4  355  0  ~/[coc-explorer]-1
-|4,52,355,0,1624746764,"~/[coc-explorer]-1"
-'5  64  0  ~/[coc-explorer]-1
-|4,53,64,0,1624746764,"~/[coc-explorer]-1"
-'6  355  0  ~/[coc-explorer]-1
-|4,54,355,0,1624746764,"~/[coc-explorer]-1"
-'7  64  0  ~/[coc-explorer]-1
-|4,55,64,0,1624746764,"~/[coc-explorer]-1"
-'8  294  0  ~/[coc-explorer]-1
-|4,56,294,0,1624746764,"~/[coc-explorer]-1"
-'9  2  0  ~/[coc-explorer]-1
-|4,57,2,0,1624746764,"~/[coc-explorer]-1"
+'0  5  0  ~/test.py
+|4,48,5,0,1627770556,"~/test.py"
+'1  6  0  ~/test.py
+|4,49,6,0,1627770521,"~/test.py"
+'2  6  0  ~/test.py
+|4,50,6,0,1627770521,"~/test.py"
+'3  33  24  ~/.bashrc
+|4,51,33,24,1627770301,"~/.bashrc"
+'4  21  16  ~/.bashrc
+|4,52,21,16,1627769813,"~/.bashrc"
+'5  19  16  ~/.bashrc
+|4,53,19,16,1627769813,"~/.bashrc"
+'6  81  3  ~/.vimrc
+|4,54,81,3,1627769796,"~/.vimrc"
+'7  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,55,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+'8  1  0  /usr/lib64/systemd/system/bluetooth.service
+|4,56,1,0,1624749285,"/usr/lib64/systemd/system/bluetooth.service"
+'9  1  0  /usr/lib64/systemd/system/bluetooth.service
+|4,57,1,0,1624749285,"/usr/lib64/systemd/system/bluetooth.service"
 
 # Jumplist (neueste zuerst):
--'  1  0  /usr/lib64/systemd/system/bluetooth.service
-|4,39,1,0,1624749285,"/usr/lib64/systemd/system/bluetooth.service"
--'  1  0  /usr/lib64/systemd/system/bluetooth.service
-|4,39,1,0,1624749285,"/usr/lib64/systemd/system/bluetooth.service"
--'  1  0  /usr/lib64/systemd/system/bluetooth.service
-|4,39,1,0,1624749285,"/usr/lib64/systemd/system/bluetooth.service"
--'  1  0  /usr/lib64/systemd/system/bluetooth.service
-|4,39,1,0,1624749285,"/usr/lib64/systemd/system/bluetooth.service"
+-'  5  0  ~/test.py
+|4,39,5,0,1627770556,"~/test.py"
+-'  6  0  ~/test.py
+|4,39,6,0,1627770544,"~/test.py"
+-'  6  0  ~/test.py
+|4,39,6,0,1627770521,"~/test.py"
+-'  1  0  ~/test.py
+|4,39,1,0,1627770509,"~/test.py"
+-'  1  0  ~/test.py
+|4,39,1,0,1627770509,"~/test.py"
+-'  33  24  ~/.bashrc
+|4,39,33,24,1627770301,"~/.bashrc"
+-'  33  24  ~/.bashrc
+|4,39,33,24,1627770301,"~/.bashrc"
+-'  33  24  ~/.bashrc
+|4,39,33,24,1627770301,"~/.bashrc"
+-'  33  24  ~/.bashrc
+|4,39,33,24,1627770301,"~/.bashrc"
+-'  21  16  ~/.bashrc
+|4,39,21,16,1627769939,"~/.bashrc"
+-'  21  16  ~/.bashrc
+|4,39,21,16,1627769939,"~/.bashrc"
+-'  21  16  ~/.bashrc
+|4,39,21,16,1627769939,"~/.bashrc"
+-'  21  16  ~/.bashrc
+|4,39,21,16,1627769939,"~/.bashrc"
+-'  19  16  ~/.bashrc
+|4,39,19,16,1627769813,"~/.bashrc"
+-'  19  16  ~/.bashrc
+|4,39,19,16,1627769813,"~/.bashrc"
+-'  19  16  ~/.bashrc
+|4,39,19,16,1627769813,"~/.bashrc"
+-'  19  16  ~/.bashrc
+|4,39,19,16,1627769813,"~/.bashrc"
+-'  24  0  ~/.bashrc
+|4,39,24,0,1627769805,"~/.bashrc"
+-'  22  0  ~/.bashrc
+|4,39,22,0,1627769805,"~/.bashrc"
+-'  24  0  ~/.bashrc
+|4,39,24,0,1627769805,"~/.bashrc"
+-'  22  0  ~/.bashrc
+|4,39,22,0,1627769805,"~/.bashrc"
+-'  24  0  ~/.bashrc
+|4,39,24,0,1627769805,"~/.bashrc"
+-'  22  0  ~/.bashrc
+|4,39,22,0,1627769805,"~/.bashrc"
+-'  24  0  ~/.bashrc
+|4,39,24,0,1627769805,"~/.bashrc"
+-'  22  0  ~/.bashrc
+|4,39,22,0,1627769805,"~/.bashrc"
+-'  81  3  ~/.vimrc
+|4,39,81,3,1627769796,"~/.vimrc"
+-'  81  3  ~/.vimrc
+|4,39,81,3,1627769796,"~/.vimrc"
+-'  81  3  ~/.vimrc
+|4,39,81,3,1627769796,"~/.vimrc"
+-'  81  3  ~/.vimrc
+|4,39,81,3,1627769796,"~/.vimrc"
+-'  81  3  ~/.vimrc
+|4,39,81,3,1627769796,"~/.vimrc"
+-'  81  3  ~/.vimrc
+|4,39,81,3,1627769796,"~/.vimrc"
+-'  81  3  ~/.vimrc
+|4,39,81,3,1627769796,"~/.vimrc"
+-'  81  3  ~/.vimrc
+|4,39,81,3,1627769796,"~/.vimrc"
+-'  81  3  ~/.vimrc
+|4,39,81,3,1627769796,"~/.vimrc"
+-'  81  3  ~/.vimrc
+|4,39,81,3,1627769796,"~/.vimrc"
+-'  81  3  ~/.vimrc
+|4,39,81,3,1627769796,"~/.vimrc"
+-'  81  3  ~/.vimrc
+|4,39,81,3,1627769796,"~/.vimrc"
+-'  81  3  ~/.vimrc
+|4,39,81,3,1627769796,"~/.vimrc"
+-'  81  3  ~/.vimrc
+|4,39,81,3,1627769796,"~/.vimrc"
+-'  81  3  ~/.vimrc
+|4,39,81,3,1627769796,"~/.vimrc"
+-'  81  3  ~/.vimrc
+|4,39,81,3,1627769796,"~/.vimrc"
 -'  128  3  ~/.vimrc
-|4,39,128,3,1624747008,"~/.vimrc"
+|4,39,128,3,1627769772,"~/.vimrc"
 -'  128  3  ~/.vimrc
-|4,39,128,3,1624747008,"~/.vimrc"
+|4,39,128,3,1627769772,"~/.vimrc"
 -'  128  3  ~/.vimrc
-|4,39,128,3,1624747008,"~/.vimrc"
+|4,39,128,3,1627769772,"~/.vimrc"
 -'  128  3  ~/.vimrc
-|4,39,128,3,1624747008,"~/.vimrc"
+|4,39,128,3,1627769772,"~/.vimrc"
 -'  128  3  ~/.vimrc
-|4,39,128,3,1624747008,"~/.vimrc"
+|4,39,128,3,1627769772,"~/.vimrc"
 -'  128  3  ~/.vimrc
-|4,39,128,3,1624747008,"~/.vimrc"
+|4,39,128,3,1627769772,"~/.vimrc"
 -'  128  3  ~/.vimrc
-|4,39,128,3,1624747008,"~/.vimrc"
+|4,39,128,3,1627769772,"~/.vimrc"
 -'  128  3  ~/.vimrc
-|4,39,128,3,1624747008,"~/.vimrc"
--'  416  0  ~/[coc-explorer]-1
-|4,39,416,0,1624746764,"~/[coc-explorer]-1"
--'  125  0  ~/[coc-explorer]-1
-|4,39,125,0,1624746764,"~/[coc-explorer]-1"
--'  355  0  ~/[coc-explorer]-1
-|4,39,355,0,1624746764,"~/[coc-explorer]-1"
--'  64  0  ~/[coc-explorer]-1
-|4,39,64,0,1624746764,"~/[coc-explorer]-1"
--'  355  0  ~/[coc-explorer]-1
-|4,39,355,0,1624746764,"~/[coc-explorer]-1"
--'  64  0  ~/[coc-explorer]-1
-|4,39,64,0,1624746764,"~/[coc-explorer]-1"
--'  294  0  ~/[coc-explorer]-1
-|4,39,294,0,1624746764,"~/[coc-explorer]-1"
--'  2  0  ~/[coc-explorer]-1
-|4,39,2,0,1624746764,"~/[coc-explorer]-1"
--'  19  0  ~/.vim/vundle.vim
-|4,39,19,0,1624746714,"~/.vim/vundle.vim"
--'  19  0  ~/.vim/vundle.vim
-|4,39,19,0,1624746714,"~/.vim/vundle.vim"
--'  19  0  ~/.vim/vundle.vim
-|4,39,19,0,1624746714,"~/.vim/vundle.vim"
--'  19  0  ~/.vim/vundle.vim
-|4,39,19,0,1624746714,"~/.vim/vundle.vim"
--'  19  0  ~/.vim/vundle.vim
-|4,39,19,0,1624746714,"~/.vim/vundle.vim"
--'  19  0  ~/.vim/vundle.vim
-|4,39,19,0,1624746714,"~/.vim/vundle.vim"
--'  19  0  ~/.vim/vundle.vim
-|4,39,19,0,1624746714,"~/.vim/vundle.vim"
--'  19  0  ~/.vim/vundle.vim
-|4,39,19,0,1624746714,"~/.vim/vundle.vim"
--'  1  0  ~/.vim/vundle.vim
-|4,39,1,0,1624746704,"~/.vim/vundle.vim"
--'  1  0  ~/.vim/vundle.vim
-|4,39,1,0,1624746704,"~/.vim/vundle.vim"
--'  1  0  ~/.vim/vundle.vim
-|4,39,1,0,1624746704,"~/.vim/vundle.vim"
--'  1  0  ~/.vim/vundle.vim
-|4,39,1,0,1624746704,"~/.vim/vundle.vim"
--'  1  0  ~/.vim/vundle.vim
-|4,39,1,0,1624746704,"~/.vim/vundle.vim"
--'  1  0  ~/.vim/vundle.vim
-|4,39,1,0,1624746704,"~/.vim/vundle.vim"
--'  1  0  ~/.vim/vundle.vim
-|4,39,1,0,1624746704,"~/.vim/vundle.vim"
--'  1  0  ~/.vim/vundle.vim
-|4,39,1,0,1624746704,"~/.vim/vundle.vim"
--'  136  18  ~/.vimrc
-|4,39,136,18,1624746683,"~/.vimrc"
--'  134  18  ~/.vimrc
-|4,39,134,18,1624746683,"~/.vimrc"
--'  134  18  ~/.vimrc
-|4,39,134,18,1624746683,"~/.vimrc"
--'  136  18  ~/.vimrc
-|4,39,136,18,1624746683,"~/.vimrc"
--'  134  18  ~/.vimrc
-|4,39,134,18,1624746683,"~/.vimrc"
--'  134  18  ~/.vimrc
-|4,39,134,18,1624746683,"~/.vimrc"
--'  136  18  ~/.vimrc
-|4,39,136,18,1624746683,"~/.vimrc"
--'  134  18  ~/.vimrc
-|4,39,134,18,1624746683,"~/.vimrc"
--'  134  18  ~/.vimrc
-|4,39,134,18,1624746683,"~/.vimrc"
--'  136  18  ~/.vimrc
-|4,39,136,18,1624746683,"~/.vimrc"
--'  134  18  ~/.vimrc
-|4,39,134,18,1624746683,"~/.vimrc"
--'  134  18  ~/.vimrc
-|4,39,134,18,1624746683,"~/.vimrc"
--'  136  18  ~/.vimrc
-|4,39,136,18,1624746683,"~/.vimrc"
--'  134  18  ~/.vimrc
-|4,39,134,18,1624746683,"~/.vimrc"
--'  134  18  ~/.vimrc
-|4,39,134,18,1624746683,"~/.vimrc"
--'  136  18  ~/.vimrc
-|4,39,136,18,1624746683,"~/.vimrc"
--'  134  18  ~/.vimrc
-|4,39,134,18,1624746683,"~/.vimrc"
--'  134  18  ~/.vimrc
-|4,39,134,18,1624746683,"~/.vimrc"
--'  136  18  ~/.vimrc
-|4,39,136,18,1624746683,"~/.vimrc"
--'  134  18  ~/.vimrc
-|4,39,134,18,1624746683,"~/.vimrc"
--'  134  18  ~/.vimrc
-|4,39,134,18,1624746683,"~/.vimrc"
--'  136  18  ~/.vimrc
-|4,39,136,18,1624746683,"~/.vimrc"
--'  134  18  ~/.vimrc
-|4,39,134,18,1624746683,"~/.vimrc"
--'  134  18  ~/.vimrc
-|4,39,134,18,1624746683,"~/.vimrc"
--'  25  4  ~/.vimrc
-|4,39,25,4,1624746630,"~/.vimrc"
--'  27  6  ~/.vimrc
-|4,39,27,6,1624746630,"~/.vimrc"
--'  25  4  ~/.vimrc
-|4,39,25,4,1624746630,"~/.vimrc"
--'  27  6  ~/.vimrc
-|4,39,27,6,1624746630,"~/.vimrc"
--'  25  4  ~/.vimrc
-|4,39,25,4,1624746630,"~/.vimrc"
--'  27  6  ~/.vimrc
-|4,39,27,6,1624746630,"~/.vimrc"
--'  25  4  ~/.vimrc
-|4,39,25,4,1624746630,"~/.vimrc"
--'  27  6  ~/.vimrc
-|4,39,27,6,1624746630,"~/.vimrc"
--'  25  4  ~/.vimrc
-|4,39,25,4,1624746630,"~/.vimrc"
--'  27  6  ~/.vimrc
-|4,39,27,6,1624746630,"~/.vimrc"
--'  25  4  ~/.vimrc
-|4,39,25,4,1624746630,"~/.vimrc"
--'  27  6  ~/.vimrc
-|4,39,27,6,1624746630,"~/.vimrc"
--'  25  4  ~/.vimrc
-|4,39,25,4,1624746630,"~/.vimrc"
--'  27  6  ~/.vimrc
-|4,39,27,6,1624746630,"~/.vimrc"
--'  25  4  ~/.vimrc
-|4,39,25,4,1624746630,"~/.vimrc"
--'  27  6  ~/.vimrc
-|4,39,27,6,1624746630,"~/.vimrc"
--'  25  4  ~/.vimrc
-|4,39,25,4,1624746630,"~/.vimrc"
--'  27  6  ~/.vimrc
-|4,39,27,6,1624746630,"~/.vimrc"
--'  25  4  ~/.vimrc
-|4,39,25,4,1624746630,"~/.vimrc"
--'  27  6  ~/.vimrc
-|4,39,27,6,1624746630,"~/.vimrc"
--'  25  4  ~/.vimrc
-|4,39,25,4,1624746630,"~/.vimrc"
--'  27  6  ~/.vimrc
-|4,39,27,6,1624746630,"~/.vimrc"
--'  25  4  ~/.vimrc
-|4,39,25,4,1624746630,"~/.vimrc"
--'  27  6  ~/.vimrc
-|4,39,27,6,1624746630,"~/.vimrc"
--'  25  4  ~/.vimrc
-|4,39,25,4,1624746630,"~/.vimrc"
--'  27  6  ~/.vimrc
-|4,39,27,6,1624746630,"~/.vimrc"
--'  25  4  ~/.vimrc
-|4,39,25,4,1624746630,"~/.vimrc"
--'  27  6  ~/.vimrc
-|4,39,27,6,1624746630,"~/.vimrc"
--'  25  4  ~/.vimrc
-|4,39,25,4,1624746630,"~/.vimrc"
--'  27  6  ~/.vimrc
-|4,39,27,6,1624746630,"~/.vimrc"
--'  25  4  ~/.vimrc
-|4,39,25,4,1624746630,"~/.vimrc"
--'  27  6  ~/.vimrc
-|4,39,27,6,1624746630,"~/.vimrc"
--'  25  4  ~/.vimrc
-|4,39,25,4,1624746630,"~/.vimrc"
--'  27  6  ~/.vimrc
-|4,39,27,6,1624746630,"~/.vimrc"
--'  25  4  ~/.vimrc
-|4,39,25,4,1624746630,"~/.vimrc"
--'  27  6  ~/.vimrc
-|4,39,27,6,1624746630,"~/.vimrc"
--'  25  4  ~/.vimrc
-|4,39,25,4,1624746630,"~/.vimrc"
--'  27  6  ~/.vimrc
-|4,39,27,6,1624746630,"~/.vimrc"
--'  25  4  ~/.vimrc
-|4,39,25,4,1624746630,"~/.vimrc"
+|4,39,128,3,1627769772,"~/.vimrc"
+-'  128  3  ~/.vimrc
+|4,39,128,3,1627769772,"~/.vimrc"
+-'  128  3  ~/.vimrc
+|4,39,128,3,1627769772,"~/.vimrc"
+-'  128  3  ~/.vimrc
+|4,39,128,3,1627769772,"~/.vimrc"
+-'  128  3  ~/.vimrc
+|4,39,128,3,1627769772,"~/.vimrc"
+-'  128  3  ~/.vimrc
+|4,39,128,3,1627769772,"~/.vimrc"
+-'  128  3  ~/.vimrc
+|4,39,128,3,1627769772,"~/.vimrc"
+-'  128  3  ~/.vimrc
+|4,39,128,3,1627769772,"~/.vimrc"
+-'  128  3  ~/.vimrc
+|4,39,128,3,1627769772,"~/.vimrc"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
+-'  9  10  /usr/lib64/systemd/system/bluetooth.service
+|4,39,9,10,1626525628,"/usr/lib64/systemd/system/bluetooth.service"
 
 # Geschichte der Markierungen innerhalb von Dateien (neueste zuerst):
 
-> ~/[coc-explorer]-1
-	*	1624819989	0
-	"	46	17
-	.	1	0
-	+	1336	0
-	+	1286	0
-	+	1236	0
-	+	1186	0
-	+	1185	0
-	+	1136	0
-	+	1157	0
-	+	1164	0
-	+	1151	0
-	+	1086	0
-	+	1036	0
-	+	1064	0
-	+	1063	0
-	+	1064	0
-	+	1053	0
-	+	1014	0
-	+	915	0
-	+	783	0
-	+	660	0
-	+	600	0
-	+	540	0
-	+	480	0
-	+	526	0
-	+	416	0
-	+	437	0
-	+	465	0
-	+	125	0
-	+	64	0
-	+	1	0
+> ~/test.py
+	*	1627770554	0
+	"	5	0
 
-> /usr/lib64/systemd/system/bluetooth.service
-	*	1624749281	0
-	"	1	0
+> ~/.bashrc
+	*	1627770299	0
+	"	33	24
+	^	20	63
+	.	20	62
+	+	24	0
+	+	21	16
+	+	19	75
+	+	20	62
+
+> ~/[coc-explorer]-1
+	*	1627769951	0
+	"	44	0
+	.	44	0
+	+	1709	0
+	+	1659	0
+	+	1609	0
+	+	1559	0
+	+	1558	0
+	+	1509	0
+	+	1530	0
+	+	1537	0
+	+	1524	0
+	+	1459	0
+	+	1409	0
+	+	1437	0
+	+	1436	0
+	+	1437	0
+	+	1426	0
+	+	1387	0
+	+	1288	0
+	+	1156	0
+	+	1033	0
+	+	973	0
+	+	913	0
+	+	853	0
+	+	899	0
+	+	789	0
+	+	810	0
+	+	838	0
+	+	498	0
+	+	437	0
+	+	376	0
+	+	78	0
+	+	1	0
+	+	77	0
+	+	44	0
 
 > ~/.vimrc
-	*	1624747007	0
-	"	128	3
+	*	1627769794	0
+	"	81	3
 	^	128	4
 	.	128	3
 	+	6	0
@@ -556,6 +565,10 @@ $
 	+	131	4
 	+	128	3
 
+> /usr/lib64/systemd/system/bluetooth.service
+	*	1626525625	0
+	"	9	10
+
 > ~/.vim/vundle.vim
 	*	1624747005	0
 	"	19	0
@@ -635,12 +648,6 @@ $
 	+	29	0
 	+	26	0
 	+	12	0
-
-> ~/.bashrc
-	*	1624033885	0
-	"	22	0
-	.	22	0
-	+	22	0
 
 > ~/.vim/coc-settings.json
 	*	1624016066	0
