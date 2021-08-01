@@ -78,7 +78,7 @@ nmap <leader>dx :VimspectorReset<CR>
 nmap <leader>dw :VimspectorWatch
 nmap <leader>do :VimspectorShowOutput
 ""Function Keymappings
-nnoremap <leader>f :call WordToFiglet()<cr>
+nnoremap <leader>fl :call WordToFiglet()<cr>
 nnoremap <leader>de :call TranslateToGerman()<cr>
 nnoremap <leader>en :call TranslateToEnglish()<cr>
 vnoremap <leader>de :call TranslateToGerman()<cr>

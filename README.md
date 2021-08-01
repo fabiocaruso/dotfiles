@@ -2,7 +2,7 @@
 A Repository for all my workspace configuration files.
 
 # Requirements
-- For full feature support you need Neovim > 0.4.3.
+- For full feature support you need Neovim > 0.5.
 - Vim > 8.0 is also supported but limited.
 - A Terminal with OSC52 (clipboard) support [supported terminals](https://github.com/ojroques/vim-oscyank)
 - A patched nerd font installed in the terminal emulator [fonts](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts)
@@ -32,7 +32,7 @@ or if you installed it over apt:
 
 Update Plugins (in vim):
 
-```:PluginUpdate```
+```:PlugUpdate```
 
 # Usage
 TODO

@@ -20,6 +20,7 @@
     },
     "run": {
       "is_enabled": true,
+      "line_suggestions": false,
       "multiline_suggestions": false,
       "omit_prefix_suggestions": false
     },

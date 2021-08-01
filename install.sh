@@ -43,7 +43,7 @@ install_deps() {
 	# Install dependencies
 	if [ "$OS" = "Solus" ]; then
 		sudo eopkg it -c system.devel
-		sudo eopkg it cmake rsync tmux vim neovim python3 python3-devel curl nodejs fzf ripgrep bat rlwrap translate-shell
+		sudo eopkg it cmake rsync tmux vim neovim python3 python3-devel curl nodejs fzf ripgrep silver-searcher bat rlwrap translate-shell
 		sudo snap install figlet
 	elif [ "$OS" = "Ubuntu" ] || [ "$OS" = "Linux Mint" ]; then
 		sudo apt-get update
