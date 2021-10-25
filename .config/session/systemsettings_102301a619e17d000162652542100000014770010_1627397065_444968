@@ -1,9 +1,0 @@
-[Number]
-NumberOfWindows=1
-
-[WindowProperties1]
-ClassName=SettingsBase
-DP-2 Window-Maximized 3840x2160=true
-MenuBar=Disabled
-ObjectName=MainWindow#1
-State=AAAA/wAAAAD9AAAAAAAAB/oAAASxAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA

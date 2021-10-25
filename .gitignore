@@ -5,7 +5,33 @@
 !.vim/**/*
 !.config/
 !.config/*/
-!.config/**/*
+!.config/alacritty/**/*
+!.config/coc/**/*
+!.config/Code/**/*
+!.config/Code\ -\ OSS/**/*
+!.config/cura/**/*
+!.config/dim/**/*
+!.config/discord/**/*
+!.config/dolphin-emu/**/*
+!.config/flameshot/**/*
+!.config/google-chrome/**/*
+!.config/gtk-3.0/**/*
+!.config/gtk-4.0/**/*
+!.config/helix/**/*
+!.config/kde.org/**/*
+!.config/kdeconnect/**/*
+!.config/KeeWeb/**/*
+!.config/libreoffice/**/*
+!.config/nvim/**/*
+!.config/plasma-workspace/**/*
+!.config/smplayer/**/*
+!.config/Ultimaker\ B.V./**/*
+!.config/VirtualBox/**/*
+!.config/vivaldi/**/*
+!.config/vlc/**/*
+!.config/wal/**/*
+!.config/xsettingsd/**/*
+#!.config/**/*
 !.bashrc
 !.bash_profile
 !.tmux.config
@@ -31,6 +57,8 @@
 *.key
 *.keystore
 *.jks
+*.log
+*.log.*
 node_modules/
 # Vivaldi Webbrowser
 CertificateRevocation/
@@ -61,7 +89,3 @@ TransportSecurity
 # KeeWeb
 OfflineFiles/
 temp/
-# Libaccounts
-libaccounts-glib/
-# Signond
-signond/
