@@ -1,0 +1,63 @@
+[KFileDialog Settings]
+Recent Files[$e]=jupyter-notebook.svg,file:$HOME/Bilder/icons/microsoft-powerpoint.svg,file:$HOME/Bilder/icons/microsoft-onenote.svg,file:$HOME/Bilder/icons/microsoft-excel.svg,file:$HOME/Bilder/icons/microsoft-word.svg,file:$HOME/Bilder/icons/jupyter-notebook.svg
+Recent URLs[$e]=file:$HOME/Bilder/,file:$HOME/Bilder/icons/,file:$HOME/
+detailViewIconSize=16
+
+[KPropertiesDialog]
+DP-0 DP-2 Height 3840x2160=503
+DP-0 DP-2 Width 3840x2160=683
+DP-2 DP-0 Height 3840x2160=512
+DP-2 DP-0 Width 3840x2160=818
+
+[PlasmaTransientsConfig]
+PreloadWeight=92
+
+[PlasmaViews][Panel 123][Defaults]
+thickness=56
+
+[PlasmaViews][Panel 123][Horizontal3840]
+thickness=56
+
+[PlasmaViews][Panel 2][Defaults]
+thickness=56
+
+[PlasmaViews][Panel 2][Horizontal3840]
+thickness=56
+
+[PlasmaViews][Panel 40][Defaults]
+thickness=48
+
+[PlasmaViews][Panel 40][Horizontal3840]
+thickness=48
+
+[PlasmaViews][Panel 42][Defaults]
+thickness=36
+
+[PlasmaViews][Panel 42][Horizontal3840]
+thickness=36
+
+[PlasmaViews][Panel 44][Defaults]
+thickness=60
+
+[PlasmaViews][Panel 44][Horizontal3840]
+thickness=60
+
+[PlasmaViews][Panel 78][Defaults]
+thickness=60
+
+[PlasmaViews][Panel 78][Horizontal3840]
+thickness=60
+
+[PlasmaViews][Panel 99][Defaults]
+thickness=56
+
+[PlasmaViews][Panel 99][Horizontal3840]
+thickness=56
+
+[ScreenConnectors]
+0=DP-0
+1=DP-2
+2=:0.0
+
+[Updates]
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/systemloadviewer_systemmonitor.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/obsolete_kickoffrc.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/containmentactions_middlebutton.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/maintain_existing_desktop_icon_sizes.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/klipper_clear_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_rename_timezonedisplay_key.js

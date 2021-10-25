@@ -1,0 +1,29 @@
+[Desktop Entry]
+FullScreen=false
+
+[MainWindow]
+DP-0 DP-2 Height 3840x2160=2067
+DP-0 DP-2 Width 3840x2160=3840
+DP-0 DP-2 Window-Maximized 3840x2160=true
+DP-0 DP-2 XPosition 3840x2160=0
+DP-0 DP-2 YPosition 3840x2160=37
+DP-0 Height 3840x2160=2067
+DP-0 Width 3840x2160=3840
+DP-2 DP-0 Height 3840x2160=2067
+DP-2 DP-0 Width 3840x2160=3840
+DP-2 DP-0 XPosition 3840x2160=0
+DP-2 DP-0 YPosition 3840x2160=37
+DP-2 Height 3840x2160=2067
+DP-2 Width 3840x2160=3840
+State=AAAA/wAAAAD9AAAAAAAADwAAAAe9AAAABAAAAAQAAAAIAAAACPwAAAACAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAAAAAAAgAAAAEAAAAiAGEAbgBuAG8AdABhAHQAaQBvAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/Downloads/Scan10.10.2021212702.pdf
+File2[$e]=$HOME/Downloads/Scan10.10.2021212856.pdf
+File3[$e]=$HOME/Downloads/case_TG-W2-B279D0B821.pdf
+File4[$e]=$HOME/Downloads/SecLab/Lab 3/SecLab_CryptographyInJava.pdf
+Name1[$e]=Scan10.10.2021212702.pdf
+Name2[$e]=Scan10.10.2021212856.pdf
+Name3[$e]=case_TG-W2-B279D0B821.pdf
+Name4[$e]=SecLab_CryptographyInJava.pdf

@@ -1,0 +1,9 @@
+[$Version]
+update_info=spectacle_newConfig.upd:spectacle-new-config,spectacle_clipboard.upd:clipboard-settings-change
+
+[GuiConfig]
+lastUsedSaveMode[$d]
+window-position=50,50
+
+[Save]
+lastUsedSaveMode=1

@@ -2,9 +2,12 @@
 *
 
 # Except these
+!.kde/
+!.kde/**/*
+!.vim/
 !.vim/**/*
 !.config/
-!.config/*/
+!.config/*
 !.config/alacritty/**/*
 !.config/coc/**/*
 !.config/Code/**/*
@@ -31,10 +34,9 @@
 !.config/vlc/**/*
 !.config/wal/**/*
 !.config/xsettingsd/**/*
-#!.config/**/*
 !.bashrc
 !.bash_profile
-!.tmux.config
+!.tmux.conf
 !.vimrc
 !README.md
 !install.sh
@@ -60,6 +62,8 @@
 *.log
 *.log.*
 node_modules/
+# Vim plugged
+.vim/plugged/
 # Vivaldi Webbrowser
 CertificateRevocation/
 ClientSidePhishing/

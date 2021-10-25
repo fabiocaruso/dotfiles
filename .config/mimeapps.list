@@ -1,0 +1,34 @@
+[Added Associations]
+application/x-extension-htm=userapp-Firefox-73FQ40.desktop;
+application/x-extension-html=userapp-Firefox-73FQ40.desktop;
+application/x-extension-shtml=userapp-Firefox-73FQ40.desktop;
+application/x-extension-xht=userapp-Firefox-73FQ40.desktop;
+application/x-extension-xhtml=userapp-Firefox-73FQ40.desktop;
+application/x-shellscript=nvim.desktop;vim.desktop;org.kde.kate.desktop;okularApplication_txt.desktop;vscode-oss.desktop;gvim.desktop;
+application/xhtml+xml=userapp-Firefox-73FQ40.desktop;
+inode/directory=org.kde.dolphin.desktop;
+text/html=userapp-Firefox-73FQ40.desktop;
+text/plain=nvim.desktop;vim.desktop;org.kde.kate.desktop;okularApplication_txt.desktop;vscode-oss.desktop;gvim.desktop;
+video/x-matroska=vlc.desktop;
+x-scheme-handler/chrome=userapp-Firefox-73FQ40.desktop;
+x-scheme-handler/http=firefox.desktop;brave-browser.desktop;vivaldi-stable.desktop;userapp-Firefox-73FQ40.desktop;
+x-scheme-handler/https=firefox.desktop;brave-browser.desktop;vivaldi-stable.desktop;userapp-Firefox-73FQ40.desktop;
+x-scheme-handler/mailto=thunderbird.desktop;
+
+[Default Applications]
+application/x-extension-htm=userapp-Firefox-73FQ40.desktop
+application/x-extension-html=userapp-Firefox-73FQ40.desktop
+application/x-extension-shtml=userapp-Firefox-73FQ40.desktop
+application/x-extension-xht=userapp-Firefox-73FQ40.desktop
+application/x-extension-xhtml=userapp-Firefox-73FQ40.desktop
+application/x-shellscript=nvim.desktop;
+application/xhtml+xml=userapp-Firefox-73FQ40.desktop
+inode/directory=org.kde.dolphin.desktop;
+text/html=userapp-Firefox-73FQ40.desktop
+text/plain=nvim.desktop;
+video/x-matroska=vlc.desktop;
+x-scheme-handler/chrome=userapp-Firefox-73FQ40.desktop
+x-scheme-handler/discord-455712169795780630=discord-455712169795780630.desktop
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
+x-scheme-handler/mailto=thunderbird.desktop;
