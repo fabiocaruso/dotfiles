@@ -1,0 +1,22 @@
+[1]
+Active Tab Index=3
+Tab Count=4
+Tab Data 0=\x00\x00\x00\x02\x00\x00\x00\x00@file:///home/fabiocaruso/Downloads/SecLab/SecLab_Ubuntu_20210525\x00\x00\x00\x00\x01\x00\x00\x00Rfile:///home/fabiocaruso/Downloads/SecLab/SecLab_Ubuntu_20210525/SecLab_Ubuntu.vmx\x00\x00\x00\x01\x00\x00\x00Rfile:///home/fabiocaruso/Downloads/SecLab/SecLab_Ubuntu_20210525/SecLab_Ubuntu.vmx\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x1b\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x01\x00\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
+Tab Data 1=\x00\x00\x00\x02\x00\x00\x00\x00Tfile:///home/fabiocaruso/Downloads/Solar%20Terminator%20Parts%20CAD/Rover/R%C3%A4der\x00\x00\x00\x00\x01\x00\x00\x00]file:///home/fabiocaruso/Downloads/Solar%20Terminator%20Parts%20CAD/Rover/R%C3%A4der/Assembly\x00\x00\x00\x02\x00\x00\x00]file:///home/fabiocaruso/Downloads/Solar%20Terminator%20Parts%20CAD/Rover/R%C3%A4der/Assembly\x00\x00\x00tfile:///home/fabiocaruso/Downloads/Solar%20Terminator%20Parts%20CAD/Rover/R%C3%A4der/mecanum-wheel-26.snapshot.7.zip\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x1b\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x01\x00\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
+Tab Data 2=\x00\x00\x00\x02\x00\x00\x00\x001file:///home/fabiocaruso/Downloads/SecLab/Lab%203\x00\x00\x00\x00\x01\x00\x00\x009file:///home/fabiocaruso/Downloads/SecLab/Lab%203/SLCrypt\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x1b\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x01\x00\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
+Tab Data 3=\x00\x00\x00\x02\x00\x00\x00\x00#file:///home/fabiocaruso/Downloads/\x00\x00\x00\x00\x01\x00\x00\x00Dfile:///home/fabiocaruso/Downloads/Bestellung%20Linsenhalterung.xlsx\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x1b\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x01\x00\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
+
+[Number]
+NumberOfWindows=1
+
+[WindowProperties1]
+ClassName=DolphinMainWindow
+DP-2 DP-0 Height 3840x2160=1157
+DP-2 DP-0 Width 3840x2160=2406
+DP-2 DP-0 XPosition 3840x2160=0
+DP-2 DP-0 YPosition 3840x2160=406
+MenuBar=Disabled
+ObjectName=Dolphin#1
+RestorePositionForNextInstance=false
+State=AAAA/wAAAAD9AAAAAwAAAAAAAAE0AAAEUfwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAoBAAAD+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAA0AAAEUQAAAF0BAAADAAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAACgEAAAMAAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAAoBAAADAAAIMQAABFEAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled

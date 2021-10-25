@@ -249,12 +249,13 @@ _k_friendly_name=Emoji-Auswahl
 _launch=Meta+.,Meta+.,Emoji-Auswahl
 
 [org.kde.spectacle.desktop]
-ActiveWindowScreenShot=Meta+Print,Meta+Print,Das aktive Fenster aufnehmen
-CurrentMonitorScreenShot=,,Den aktuellen Bildschirm aufnehmen
-FullScreenScreenShot=Shift+Print,Shift+Print,Die gesamte Arbeitsfläche aufnehmen
-RectangularRegionScreenShot=Meta+Shift+Print,Meta+Shift+Print,Einen rechteckigen Bereich aufnehmen
+ActiveWindowScreenShot=Meta+Print,Meta+Print,Aktives Fenster aufnehmen
+CurrentMonitorScreenShot=,none,Aktuellen Bildschirm aufnehmen
+FullScreenScreenShot=Shift+Print,Shift+Print,Gesamte Arbeitsfläche aufnehmen
+RectangularRegionScreenShot=Meta+Shift+Print,Meta+Shift+Print,Rechteckigen Bereich aufnehmen
+WindowUnderCursorScreenShot=Meta+Ctrl+Print,Meta+Ctrl+Print,Fenster unter dem Mauszeiger aufnehmen
 _k_friendly_name=Spectacle
-_launch=Print,Print,Spectacle
+_launch=Print,Print,Spectacle starten
 
 [org_kde_powerdevil]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Helligkeit der Tastatur-Hintergrundbeleuchtung verringern
@@ -281,16 +282,16 @@ activate task manager entry 6=Meta+6,Meta+6,Fensterleisteneintrag 6 aktivieren
 activate task manager entry 7=Meta+7,Meta+7,Fensterleisteneintrag 7 aktivieren
 activate task manager entry 8=Meta+8,Meta+8,Fensterleisteneintrag 8 aktivieren
 activate task manager entry 9=Meta+9,Meta+9,Fensterleisteneintrag 9 aktivieren
-activate widget 100=,none,Miniprogramm Anwendungs-Starter aktivieren
 activate widget 154=none,none,Miniprogramm Anwendungs-Starter aktivieren
 activate widget 155=Alt+F1,none,Miniprogramm Anwendungs-Starter aktivieren
+activate widget 157=none,none,Miniprogramm Anwendungsmenü aktivieren
 activate widget 68=none,none,Miniprogramm Anwendungs-Starter aktivieren
 activate widget 79=,none,Miniprogramm Anwendungsmenü aktivieren
 clear-history=none,none,Bisherigen Inhalt der Zwischenablage löschen
 clipboard_action=Ctrl+Alt+X,Ctrl+Alt+X,Zwischenablageaktionen aktivieren
 cycleNextAction=none,none,Nächstes Element im Verlauf
 cyclePrevAction=none,none,Vorheriges Element im Verlauf
-edit_clipboard=none,none,Inhalt bearbeiten ...
+edit_clipboard=none,none,Inhalt bearbeiten …
 manage activities=Meta+Q,Meta+Q,Aktivitätenwechsler anzeigen
 next activity=Meta+Tab,Meta+Tab,Zwischen Aktivitäten wechseln
 previous activity=Meta+Shift+Tab,Meta+Shift+Tab,Zwischen Aktivitäten wechseln (Gegenrichtung)

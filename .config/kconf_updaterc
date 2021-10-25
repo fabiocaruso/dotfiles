@@ -21,24 +21,24 @@ done=filepicker-remove-old-previews-entry
 mtime=1623486382
 
 [fonts_akregator.upd]
-ctime=1623763531
+ctime=1632661765
 done=Plasma_Fonts_Akregator
-mtime=1620131651
+mtime=1630410470
 
 [fonts_global.upd]
-ctime=1623763531
+ctime=1632661765
 done=Fonts_Global
-mtime=1620131651
+mtime=1630410470
 
 [fonts_global_toolbar.upd]
-ctime=1623763531
+ctime=1632661765
 done=Fonts_Global_Toolbar
-mtime=1620131651
+mtime=1630410470
 
 [fonts_kate.upd]
-ctime=1623763531
+ctime=1632661765
 done=Plasma_Fonts_Kate
-mtime=1620131651
+mtime=1630410470
 
 [gtkconfig.upd]
 ctime=1623763577
@@ -60,14 +60,14 @@ ctime=1623763556
 mtime=1620411800
 
 [kcminputrc_fix_botched_5_21_0.upd]
-ctime=1624752764
+ctime=1632663000
 done=kcminputrc_fix_botched_5_21_0_pre,kcminputrc_fix_botched_5_21_0
-mtime=1623751445
+mtime=1630410327
 
 [kcminputrc_repeat.upd]
-ctime=1624752764
+ctime=1632663000
 done=kcminputrc_migrate_key_repeat
-mtime=1623751445
+mtime=1630410327
 
 [kde4breeze.upd]
 ctime=1623763570
@@ -104,29 +104,34 @@ done=0.1-autolock
 mtime=1620130146
 
 [ksmserver_update_loginMode_value.upd]
-ctime=1624752764
+ctime=1632663000
 done=ksmserver_update_loginMode_value_default_enum
-mtime=1623751445
+mtime=1630410327
 
 [kwin.upd]
-ctime=1624752825
-done=replace-scalein-with-scale,port-minimizeanimation-effect-to-js,port-scale-effect-to-js,port-dimscreen-effect-to-js,auto-bordersize,animation-speed,desktop-grid-click-behavior,no-swap-encourage
-mtime=1623751224
+ctime=1634984964
+done=replace-scalein-with-scale,port-minimizeanimation-effect-to-js,port-scale-effect-to-js,port-dimscreen-effect-to-js,auto-bordersize,animation-speed,desktop-grid-click-behavior,no-swap-encourage,make-translucency-effect-disabled-by-default,remove-flip-switch-effect,remove-cover-switch-effect,remove-cubeslide-effect,remove-xrender-backend
+mtime=1634647898
 
 [kwinrules.upd]
-ctime=1624752825
-done=replace-placement-string-to-enum
-mtime=1623751224
+ctime=1634984964
+done=replace-placement-string-to-enum,use-virtual-desktop-ids
+mtime=1634647898
 
 [kxkb_variants.upd]
-ctime=1624752764
+ctime=1632663000
 done=split-variants
-mtime=1623751445
+mtime=1630410327
 
 [okular.upd]
 ctime=1623763576
 done=annotation-toolbar,builtin-annotations
 mtime=1620411842
+
+[spectacle_clipboard.upd]
+ctime=1630257475
+done=clipboard-settings-change
+mtime=1628114018
 
 [spectacle_newConfig.upd]
 ctime=1623763557

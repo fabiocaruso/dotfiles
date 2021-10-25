@@ -1,9 +1,0 @@
-[2021-07-09 16:29:25.449] [sharedprocess] [info] Installing extension: github.copilot
-[2021-07-09 16:29:25.939] [sharedprocess] [info] Downloaded extension: github.copilot /home/fabiocaruso/.config/Code - OSS/CachedExtensionVSIXs/github.copilot-1.1.1959
-[2021-07-09 16:29:26.060] [sharedprocess] [info] Extracted extension to /home/fabiocaruso/.vscode/extensions/.64ddf7a2-147e-49f0-895d-7f1851df1304: github.copilot
-[2021-07-09 16:29:26.072] [sharedprocess] [info] Renamed to /home/fabiocaruso/.vscode/extensions/github.copilot-1.1.1959
-[2021-07-09 16:29:26.077] [sharedprocess] [info] Installation completed. github.copilot
-[2021-07-09 16:29:26.091] [sharedprocess] [info] Extensions installed successfully: github.copilot
-[2021-07-09 16:29:28.539] [sharedprocess] [info] Starting to clean up unused language packs.
-[2021-07-09 16:31:26.842] [sharedprocess] [info] Uninstalling extension: github.copilot
-[2021-07-09 16:31:26.860] [sharedprocess] [info] Successfully uninstalled extension: github.copilot

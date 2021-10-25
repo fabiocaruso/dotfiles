@@ -1,6 +1,6 @@
-[General]
-Index=ZHAW shared
-
-[ZHAW shared]
+[CarusoNAS]
 Type=SMB
-URL=smb://shared.zhaw.ch/shared$
+URL=smb://192.168.1.209/
+
+[General]
+Index=CarusoNAS

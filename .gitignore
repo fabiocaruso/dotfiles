@@ -15,3 +15,53 @@
 
 !.gitignore_global
 !.gitignore
+
+# Ignore files/folders inside the allowed files/folders
+# General
+*.pem
+*.crt
+*.cer
+*.ca-bundle
+*.p7b
+*.p7c
+*.p7s
+*.der
+*.pfx
+*.p12
+*.key
+*.keystore
+*.jks
+node_modules/
+# Vivaldi Webbrowser
+CertificateRevocation/
+ClientSidePhishing/
+Crash\ Reports/
+GrShaderCache/
+ShaderCache/
+Safe\ Browsing/
+ZxcvbnData/
+Default/
+# VSCode
+Backups/
+Cache/
+CachedData/
+CachedExtensions/
+CachedExtensionVSIXs/
+Code\ Cache/
+exthost\ Crash\ Reports/
+GPUCache/
+Local\ Storage/
+logs/
+Session\ Storage/
+User/
+Cookies
+# Discord
+shared_proto_db/
+TransportSecurity
+# KeeWeb
+OfflineFiles/
+temp/
+# Libaccounts
+libaccounts-glib/
+# Signond
+signond/

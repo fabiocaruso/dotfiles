@@ -1,7 +1,13 @@
+[Applications][com.valvesoftware.steam]
+Seen=true
+
 [Applications][discord]
 Seen=true
 
 [Applications][firefox]
+Seen=true
+
+[Applications][telegram-desktop_telegram-desktop]
 Seen=true
 
 [Applications][thunderbird]

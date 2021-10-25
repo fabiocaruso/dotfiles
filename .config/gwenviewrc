@@ -1,17 +1,28 @@
 [$Version]
 update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBackgroundMode_Update,gwenview.upd:DeleteThumbnailSetting_Rename
 
+[General]
+LastUsedVersion=210800
+
 [MainWindow]
 DP-0 DP-2 Height 3840x2160=700
 DP-0 DP-2 Width 3840x2160=1059
+DP-0 DP-2 Window-Maximized 3840x2160=true
 DP-0 DP-2 XPosition 3840x2160=4196
 DP-0 DP-2 YPosition 3840x2160=693
-State=AAAA/wAAAAD9AAAAAAAABCMAAAJoAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAAAADwAAAAfjAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 
 [Recent Files]
-File1[$e]=/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/Desktop/Studium/FS2021 (Semester 4)/SIC-Smart_living/General/Gruppenzuteilung
-Name1[$e]=Gruppenzuteilung
+File1[$e]=$HOME/Schreibtisch/004 Alte Dokumente/Bürgerbrief für Hans Eemann 1594/Bürgerbrief für Hans Eemann 1594 - E.JPG
+File2[$e]=$HOME/Schreibtisch/004 Alte Dokumente/Bürgerbrief für Hans Eemann 1594/Bürgerbrief für Hans Eemann 1594.pdf
+File3[$e]=$HOME/Schreibtisch/004 Alte Dokumente/Bürgerbrief für Hans Eemann 1594/Offnung zu Landschlacht 1739 Nr 8 - M.jpg
+File4[$e]=$HOME/Downloads/2021-10-10_21-58.png
+Name1[$e]=Bürgerbrief für Hans Eemann 1594 - E.JPG
+Name2[$e]=Bürgerbrief für Hans Eemann 1594.pdf
+Name3[$e]=Offnung zu Landschlacht 1739 Nr 8 - M.jpg
+Name4[$e]=2021-10-10_21-58.png
 
 [SideBar]
-SideBarSplitterSizes=242,814
+SideBarSplitterSizes=242,3595

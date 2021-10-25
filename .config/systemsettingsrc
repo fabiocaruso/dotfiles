@@ -1,20 +1,20 @@
 [KFileDialog Settings]
-Recent Files[$e]=krohnkite-0.7.kwinscript,file:$HOME/Downloads/krohnkite-0.7.kwinscript
-Recent URLs[$e]=file:$HOME/Downloads/
+Recent Files[$e]=krohnkite-0.7.kwinscript,file:$HOME/Downloads/anyconnect-linux64-4.10.01075/vpn/DigiCertAssuredIDRootCA.pem,file:$HOME/Downloads/anyconnect-linux64-4.10.01075/vpn/VeriSignClass3PublicPrimaryCertificationAuthority-G5.pem
+Recent URLs[$e]=file:$HOME/Downloads/,file:$HOME/Downloads/anyconnect-linux64-4.10.01075/vpn/
 detailViewIconSize=16
 
 [MainWindow]
 DP-0 DP-2 Height 3840x2160=1201
 DP-0 DP-2 Width 3840x2160=2042
-DP-0 DP-2 XPosition 3840x2160=4113
-DP-0 DP-2 YPosition 3840x2160=662
+DP-0 DP-2 XPosition 3840x2160=899
+DP-0 DP-2 YPosition 3840x2160=470
 DP-1 XPosition 3840x2160=1410
 DP-1 YPosition 3840x2160=721
 DP-2 DP-0 Height 3840x2160=1365
 DP-2 DP-0 Width 3840x2160=2560
 DP-2 DP-0 Window-Maximized 3840x2160=true
-DP-2 DP-0 XPosition 3840x2160=582
-DP-2 DP-0 YPosition 3840x2160=394
+DP-2 DP-0 XPosition 3840x2160=642
+DP-2 DP-0 YPosition 3840x2160=659
 DP-2 Height 3840x2160=2077
 DP-2 Width 3840x2160=3840
 DP-2 Window-Maximized 3840x2160=true

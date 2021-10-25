@@ -1,0 +1,9 @@
+<Menu>
+<Name>Applications</Name>
+<Menu>
+<Directory>STMicroelectronics\STM32CubeProgrammer-izpack.directory</Directory>
+<Name>STMicroelectronics\STM32CubeProgrammer</Name>
+<Include>
+</Include>
+</Menu>
+</Menu>

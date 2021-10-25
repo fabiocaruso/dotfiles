@@ -70,7 +70,11 @@
    "keywords" : "",
    "keywords-suggestions" : [],
    "libimage-sane-perl version" : "5",
-   "message" : {},
+   "message" : {
+      "pdftk ist installiert, kann jedoch nicht auf das Verzeichnis f\u00fcr tempor\u00e4re Dateien zugreifen.Der Grund daf\u00fcr k\u00f6nnte sein, dass pdftk via Snap installiert wurde.In diesem Fall w\u00fcrde das Entfernen von pdftk und nachfolgende Installieren von pdftk ohne Snap gscan2pdf erm\u00f6glichen, pdftk zu verwenden.Eine andere Behelfsl\u00f6sung ist, bei Bearbeiten/Einstellungen ein Arbeitsverzeichnis unterhalb des Home-Verzeichnisses einzustellen." : {
+         "response" : "delete-event"
+      }
+   },
    "message_window_height" : 200,
    "message_window_width" : 600,
    "ocr engine" : "tesseract",
@@ -85,7 +89,9 @@
    "rotate facing" : 0,
    "rotate reverse" : 0,
    "scan prefix" : "",
-   "scan-reload-triggers" : "mode",
+   "scan-reload-triggers" : [
+      "mode"
+   ],
    "scan_window_height" : 67,
    "scan_window_width" : 236,
    "selection" : {
@@ -102,15 +108,6 @@
    "threshold-before-ocr" : "",
    "thumb panel" : 212,
    "tiff compression" : null,
-   "timezone offset" : [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0
-   ],
    "title" : "",
    "title-suggestions" : [],
    "to_png" : 1,

@@ -1,0 +1,19 @@
+[1]
+Active Tab Index=0
+Tab Count=1
+Tab Data 0=\x00\x00\x00\x02\x00\x00\x00\x00\xaefile:///run/media/fabiocaruso/Seagate%20Expansion%20Drive/Filme/Harry%20Potter%201-7/Harry%20Potter%207/Harry%20Potter%20und%20die%20Heiligt%C3%BCmer%20des%20Todes%20Teil%201\x00\x00\x00\x00\x01\x00\x00\x00\xf9file:///run/media/fabiocaruso/Seagate%20Expansion%20Drive/Filme/Harry%20Potter%201-7/Harry%20Potter%207/Harry%20Potter%20und%20die%20Heiligt%C3%BCmer%20des%20Todes%20Teil%201/Harry%20Potter%20und%20die%20Heiligt%C3%BCmer%20des%20Todes%20Teil%201.mkv\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x1b\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x01\x00\x00\x01\x00\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
+
+[Number]
+NumberOfWindows=1
+
+[WindowProperties1]
+ClassName=DolphinMainWindow
+DP-2 DP-0 Height 3840x2160=1157
+DP-2 DP-0 Width 3840x2160=2406
+DP-2 DP-0 XPosition 3840x2160=5274
+DP-2 DP-0 YPosition 3840x2160=490
+MenuBar=Disabled
+ObjectName=Dolphin#1
+RestorePositionForNextInstance=false
+State=AAAA/wAAAAD9AAAAAwAAAAAAAAE0AAAEUfwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAoBAAAD+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAA0AAAEUQAAAF0BAAADAAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAACgEAAAMAAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAAoBAAADAAAIMQAABFEAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
