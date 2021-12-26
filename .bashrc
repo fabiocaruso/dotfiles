@@ -16,6 +16,18 @@ alias l='ls $LS_OPTIONS -lA'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
+# Convenience for cd ..
+up ()
+{
+	DEEP=$1;
+	[ -z "${DEEP}" ] && {
+		DEEP=1
+	};
+	for i in $(seq 1 ${DEEP});
+	do
+		cd ../;
+	done
+}
 # Needed to load .vimrc from ~ and not nvim's init.vim from ~/.config/nvim/
 # Normally it needs to be -u but for some reason only -S works.
 alias vim='vim -S ~/.vimrc'

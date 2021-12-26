@@ -3,6 +3,7 @@ update_info=gwenview.upd:SideBar_StatusBar_Rename,gwenview.upd:ImageView_AlphaBa
 
 [General]
 LastUsedVersion=210800
+SideBarPage=operations
 
 [MainWindow]
 DP-0 DP-2 Height 3840x2160=700
@@ -11,18 +12,31 @@ DP-0 DP-2 Window-Maximized 3840x2160=true
 DP-0 DP-2 XPosition 3840x2160=4196
 DP-0 DP-2 YPosition 3840x2160=693
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAAAADwAAAAfjAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+State=AAAA/wAAAAD9AAAAAAAADwAAAAfiAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
 ToolBarsMovable=Disabled
 
 [Recent Files]
 File1[$e]=$HOME/Schreibtisch/004 Alte Dokumente/Bürgerbrief für Hans Eemann 1594/Bürgerbrief für Hans Eemann 1594 - E.JPG
+File10[$e]=/run/media/fabiocaruso/3832-6431/arbeit/DSC_0036.jpg
 File2[$e]=$HOME/Schreibtisch/004 Alte Dokumente/Bürgerbrief für Hans Eemann 1594/Bürgerbrief für Hans Eemann 1594.pdf
 File3[$e]=$HOME/Schreibtisch/004 Alte Dokumente/Bürgerbrief für Hans Eemann 1594/Offnung zu Landschlacht 1739 Nr 8 - M.jpg
 File4[$e]=$HOME/Downloads/2021-10-10_21-58.png
+File5[$e]=$HOME/Downloads/Solar Terminator Parts CAD/Mechanischer Aufbau Alt.png
+File6[$e]=$HOME/Downloads/Solar Terminator Parts CAD/Mechanischer Aufbau.png
+File7[$e]=$HOME/Downloads/Solar Terminator Parts CAD/Bilder/Mecanum Rad.png
+File8[$e]=$HOME/Downloads/Solar Terminator Parts CAD/Bilder/Elektroschema.png
+File9[$e]=/run/media/fabiocaruso/3832-6431/arbeit/DSC_0026.jpg
 Name1[$e]=Bürgerbrief für Hans Eemann 1594 - E.JPG
+Name10[$e]=DSC_0036.jpg
 Name2[$e]=Bürgerbrief für Hans Eemann 1594.pdf
 Name3[$e]=Offnung zu Landschlacht 1739 Nr 8 - M.jpg
 Name4[$e]=2021-10-10_21-58.png
+Name5[$e]=Mechanischer Aufbau Alt.png
+Name6[$e]=Mechanischer Aufbau.png
+Name7[$e]=Mecanum Rad.png
+Name8[$e]=Elektroschema.png
+Name9[$e]=DSC_0026.jpg
 
 [SideBar]
-SideBarSplitterSizes=242,3595
+IsVisible ViewMode=true
+SideBarSplitterSizes=269,3570

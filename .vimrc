@@ -64,6 +64,7 @@ nnoremap <leader>t :call ToggleRustTypeHints()<cr>
 inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
 inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
 nnoremap <leader>gd :call CocAction('jumpDefinition')<cr>
+nmap <leader>rn <Plug>(coc-rename)
 "inoremap <silent> <leader>a <C-r>=CocActionAsync('showSignatureHelp')<CR>
 ""Coc-Explorer
 nnoremap <F2> :CocCommand explorer<CR>

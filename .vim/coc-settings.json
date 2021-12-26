@@ -2,6 +2,7 @@
 	"rust.clippy_preference": "on",
 	"rust-analyzer.inlayHints.typeHints": true,
 	"rust-analyzer.inlayHints.chainingHints": true,
+	"rust-analyzer.checkOnSave.command": "clippy",
 	"coc.preferences.jumpCommand": "vsplit",
 	"explorer.file.showHiddenFiles": true,
 	"explorer.file.reveal.auto": false,

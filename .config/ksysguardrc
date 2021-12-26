@@ -2,8 +2,8 @@
 CommandList=
 DP-0 DP-2 Height 3840x2160=893
 DP-0 DP-2 Width 3840x2160=1019
-DP-0 DP-2 XPosition 3840x2160=2543
-DP-0 DP-2 YPosition 3840x2160=499
+DP-0 DP-2 XPosition 3840x2160=4569
+DP-0 DP-2 YPosition 3840x2160=1101
 HostList=
 SelectedSheets[$e]=ProcessTable.sgrd,SystemLoad2.sgrd
 SplitterSizeList=10,90

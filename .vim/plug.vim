@@ -11,7 +11,8 @@ Plug 'ryanoasis/vim-devicons'
 if has("nvim")
 	Plug 'nvim-treesitter/nvim-treesitter', { 'branch': '0.5-compat', 'do': ':TSUpdate' }
 	Plug 'nvim-treesitter/playground'
-	Plug 'nvim-treesitter/nvim-treesitter-textobjects', { 'branch': '0.5-compat' }
+	"Plug 'nvim-treesitter/nvim-treesitter-textobjects', { 'branch': '0.5-compat' }
+	Plug 'fabiocaruso/nvim-treesitter-textobjects', { 'branch': '0.5-compat' }
 endif
 "Language specific
 Plug 'alvan/vim-closetag'
@@ -46,6 +47,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-fugitive'
 Plug 'https://github.com/airblade/vim-gitgutter.git'
 "For better workflow
+Plug 'wellle/context.vim'
 Plug 'wellle/targets.vim'
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'preservim/nerdcommenter'

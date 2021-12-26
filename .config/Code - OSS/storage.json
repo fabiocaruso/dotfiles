@@ -3,6 +3,9 @@
     "openedPathsList": {
         "entries": [
             {
+                "folderUri": "file:///home/fabiocaruso/pa"
+            },
+            {
                 "folderUri": "file:///run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio%20Caruso/rustProjects/guessing_game"
             },
             {
@@ -10,6 +13,9 @@
             },
             {
                 "folderUri": "file:///home/fabiocaruso/Dokumente/HM2%20SEP"
+            },
+            {
+                "fileUri": "file:///home/fabiocaruso/Downloads/SecLab/Lab%204/index.html"
             },
             {
                 "fileUri": "file:///run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio%20Caruso/rustProjects/soundloop/Notes.txt"
@@ -98,20 +104,31 @@
                     },
                     {
                         "id": "workbench.action.openWorkspace",
-                        "label": "Open Wor&&kspace..."
+                        "label": "Open Wor&&kspace from File..."
                     },
                     {
-                        "id": "submenuitem.30",
+                        "id": "submenuitem.31",
                         "label": "Open &&Recent",
                         "submenu": {
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "fsPath": "/home/fabiocaruso/pa",
+                                        "external": "file:///home/fabiocaruso/pa",
+                                        "path": "/home/fabiocaruso/pa",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/pa"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -148,6 +165,17 @@
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/fabiocaruso/Downloads/SecLab/Lab%204/index.html",
+                                        "path": "/home/fabiocaruso/Downloads/SecLab/Lab 4/index.html",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads/SecLab/Lab 4/index.html"
                                 },
                                 {
                                     "id": "openRecentFile",
@@ -249,17 +277,6 @@
                                     "label": "/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/Desktop/Studium/FS2021 (Semester 4)/HM2 - Höhere Mathematik 2/SEP/Snippets/wasermor/einzuordnen/Ausgleichsfunktion-polyfit.py"
                                 },
                                 {
-                                    "id": "openRecentFile",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio%20Caruso/Desktop/Studium/FS2021%20%28Semester%204%29/HM2%20-%20H%C3%B6here%20Mathematik%202/SEP/Snippets/albi/f_equalization/gauss_newton_least_squares.py",
-                                        "path": "/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/Desktop/Studium/FS2021 (Semester 4)/HM2 - Höhere Mathematik 2/SEP/Snippets/albi/f_equalization/gauss_newton_least_squares.py",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/Desktop/Studium/FS2021 (Semester 4)/HM2 - Höhere Mathematik 2/SEP/Snippets/albi/f_equalization/gauss_newton_least_squares.py"
-                                },
-                                {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
@@ -304,7 +321,8 @@
                     },
                     {
                         "id": "saveAll",
-                        "label": "Save A&&ll"
+                        "label": "Save A&&ll",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -314,7 +332,7 @@
                         "label": "A&&uto Save"
                     },
                     {
-                        "id": "submenuitem.29",
+                        "id": "submenuitem.30",
                         "label": "&&Preferences",
                         "submenu": {
                             "items": [
@@ -343,7 +361,7 @@
                                 },
                                 {
                                     "id": "workbench.extensions.action.showRecommendedKeymapExtensions",
-                                    "label": "&&Keymaps"
+                                    "label": "&&Migrate Keyboard Shortcuts from..."
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -387,6 +405,10 @@
                     {
                         "id": "workbench.action.closeActiveEditor",
                         "label": "&&Close Editor"
+                    },
+                    {
+                        "id": "workbench.action.closeFolder",
+                        "label": "Close &&Folder"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -556,7 +578,7 @@
                         "id": "vscode.menubar.separator"
                     },
                     {
-                        "id": "submenuitem.20",
+                        "id": "submenuitem.21",
                         "label": "&&Appearance",
                         "submenu": {
                             "items": [
@@ -582,7 +604,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "Show &&Side Bar"
+                                    "label": "Show &&Side Bar",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleStatusbarVisibility",
@@ -596,7 +619,8 @@
                                 },
                                 {
                                     "id": "workbench.action.togglePanel",
-                                    "label": "Show &&Panel"
+                                    "label": "Show &&Panel",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleEditorVisibility",
@@ -637,7 +661,7 @@
                         }
                     },
                     {
-                        "id": "submenuitem.27",
+                        "id": "submenuitem.28",
                         "label": "Editor &&Layout",
                         "submenu": {
                             "items": [
@@ -656,6 +680,13 @@
                                 {
                                     "id": "workbench.action.splitEditorRight",
                                     "label": "Split &&Right"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "workbench.action.splitEditorInGroup",
+                                    "label": "Split in &&Group"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -768,7 +799,8 @@
                     },
                     {
                         "id": "editor.action.toggleRenderControlCharacter",
-                        "label": "Render &&Control Characters"
+                        "label": "Render &&Control Characters",
+                        "checked": true
                     }
                 ]
             },
@@ -776,8 +808,7 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back",
-                        "enabled": false
+                        "label": "&&Back"
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -792,7 +823,7 @@
                         "id": "vscode.menubar.separator"
                     },
                     {
-                        "id": "submenuitem.32",
+                        "id": "submenuitem.33",
                         "label": "Switch &&Editor",
                         "submenu": {
                             "items": [
@@ -841,7 +872,7 @@
                         }
                     },
                     {
-                        "id": "submenuitem.33",
+                        "id": "submenuitem.34",
                         "label": "Switch &&Group",
                         "submenu": {
                             "items": [
@@ -855,54 +886,45 @@
                                 },
                                 {
                                     "id": "workbench.action.focusThirdEditorGroup",
-                                    "label": "Group &&3",
-                                    "enabled": false
+                                    "label": "Group &&3"
                                 },
                                 {
                                     "id": "workbench.action.focusFourthEditorGroup",
-                                    "label": "Group &&4",
-                                    "enabled": false
+                                    "label": "Group &&4"
                                 },
                                 {
                                     "id": "workbench.action.focusFifthEditorGroup",
-                                    "label": "Group &&5",
-                                    "enabled": false
+                                    "label": "Group &&5"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusNextGroup",
-                                    "label": "&&Next Group",
-                                    "enabled": false
+                                    "label": "&&Next Group"
                                 },
                                 {
                                     "id": "workbench.action.focusPreviousGroup",
-                                    "label": "&&Previous Group",
-                                    "enabled": false
+                                    "label": "&&Previous Group"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "workbench.action.focusLeftGroup",
-                                    "label": "Group &&Left",
-                                    "enabled": false
+                                    "label": "Group &&Left"
                                 },
                                 {
                                     "id": "workbench.action.focusRightGroup",
-                                    "label": "Group &&Right",
-                                    "enabled": false
+                                    "label": "Group &&Right"
                                 },
                                 {
                                     "id": "workbench.action.focusAboveGroup",
-                                    "label": "Group &&Above",
-                                    "enabled": false
+                                    "label": "Group &&Above"
                                 },
                                 {
                                     "id": "workbench.action.focusBelowGroup",
-                                    "label": "Group &&Below",
-                                    "enabled": false
+                                    "label": "Group &&Below"
                                 }
                             ]
                         }
@@ -1043,7 +1065,7 @@
                         "label": "Toggle &&Breakpoint"
                     },
                     {
-                        "id": "submenuitem.28",
+                        "id": "submenuitem.29",
                         "label": "&&New Breakpoint",
                         "submenu": {
                             "items": [
@@ -1098,8 +1120,7 @@
                     },
                     {
                         "id": "workbench.action.terminal.split",
-                        "label": "&&Split Terminal",
-                        "enabled": false
+                        "label": "&&Split Terminal"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1155,11 +1176,15 @@
                 "items": [
                     {
                         "id": "workbench.action.openWalkthrough",
-                        "label": "Welcome"
+                        "label": "Get Started"
+                    },
+                    {
+                        "id": "workbench.action.showCommands",
+                        "label": "Show All Commands"
                     },
                     {
                         "id": "workbench.action.showInteractivePlayground",
-                        "label": "I&&nteractive Playground"
+                        "label": "Editor Playgrou&&nd"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1259,11 +1284,6 @@
                 "isNative": false,
                 "userSettingsLabel": "ctrl+k ctrl+s"
             },
-            "workbench.extensions.action.showRecommendedKeymapExtensions": {
-                "label": "Ctrl+K Ctrl+M",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+k ctrl+m"
-            },
             "workbench.action.selectTheme": {
                 "label": "Ctrl+K Ctrl+T",
                 "isNative": false,
@@ -1272,6 +1292,11 @@
             "workbench.action.closeActiveEditor": {
                 "label": "Ctrl+W",
                 "userSettingsLabel": "ctrl+w"
+            },
+            "workbench.action.closeFolder": {
+                "label": "Ctrl+K F",
+                "isNative": false,
+                "userSettingsLabel": "ctrl+k f"
             },
             "workbench.action.closeWindow": {
                 "label": "Alt+F4",
@@ -1649,23 +1674,24 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 0,
+            "sideBarWidth": 256,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "backupPath": "/home/fabiocaruso/.config/Code - OSS/Backups/1633184006844",
+            "folder": "file:///home/fabiocaruso/pa",
+            "backupPath": "/home/fabiocaruso/.config/Code - OSS/Backups/17b3887bb4fbfa3f8f4e5d248f75d86e",
             "uiState": {
                 "mode": 0,
-                "x": 4264,
-                "y": 532,
-                "width": 1536,
-                "height": 1016
+                "x": 0,
+                "y": 0,
+                "width": 3072,
+                "height": 1656
             }
         },
         "openedWindows": []
     },
-    "pickerWorkingDir": "/run/media/fabiocaruso/F4A0A22EA0A1F6F0/Users/Fabio Caruso/rustProjects"
+    "pickerWorkingDir": "/home/fabiocaruso"
 }

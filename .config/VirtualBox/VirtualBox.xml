@@ -9,14 +9,18 @@
   <Global>
     <ExtraData>
       <ExtraDataItem name="GUI/Details/Elements" value="general,system,preview,display,storage,audio,network,usb,sharedFolders,description"/>
-      <ExtraDataItem name="GUI/GroupDefinitions/" value="n=GLOBAL"/>
-      <ExtraDataItem name="GUI/LastItemSelected" value="n=GLOBAL"/>
-      <ExtraDataItem name="GUI/LastWindowPosition" value="4137,755,1920,1080"/>
+      <ExtraDataItem name="GUI/GroupDefinitions/" value="n=GLOBAL,m=25a7a8b4-03ae-4ada-ac64-14d1be772161"/>
+      <ExtraDataItem name="GUI/LastItemSelected" value="m=Arch"/>
+      <ExtraDataItem name="GUI/LastWindowPosition" value="1047,277,1920,1808"/>
+      <ExtraDataItem name="GUI/RecentFolderCD" value="/home/fabiocaruso/Downloads"/>
+      <ExtraDataItem name="GUI/RecentListCD" value="/home/fabiocaruso/Downloads/archlinux-2021.12.01-x86_64.iso,--"/>
       <ExtraDataItem name="GUI/SplitterSizes" value="640,1279"/>
       <ExtraDataItem name="GUI/Toolbar" value="false"/>
       <ExtraDataItem name="GUI/Tools/LastItemsSelected" value="Welcome,Details"/>
     </ExtraData>
-    <MachineRegistry/>
+    <MachineRegistry>
+      <MachineEntry uuid="{25a7a8b4-03ae-4ada-ac64-14d1be772161}" src="/home/fabiocaruso/VirtualBox VMs/Arch/Arch.vbox"/>
+    </MachineRegistry>
     <NetserviceRegistry>
       <DHCPServers>
         <DHCPServer networkName="HostInterfaceNetworking-vboxnet0" IPAddress="192.168.56.100" networkMask="255.255.255.0" lowerIP="192.168.56.101" upperIP="192.168.56.254" enabled="1"/>

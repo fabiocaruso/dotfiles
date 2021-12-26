@@ -10,39 +10,71 @@ nnoremap <Leader>fgb :lua require'telescope.builtin'.git_branches{}<cr>
 nnoremap <Leader>fgc :lua require'telescope.builtin'.git_commits{}<cr>
 nnoremap <Leader>fgs :lua require'telescope.builtin'.git_status{}<cr>
 
+"nvim-treesitter textobjects select
+nnoremap <leader>fi <Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@function.inner', 'o')<CR>
+nnoremap <leader>fa <Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@function.outer', 'o')<CR>
+nnoremap <leader>ci <Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@class.inner', 'o')<CR>
+nnoremap <leader>ca <Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@class.outer', 'o')<CR>
+nnoremap <leader>li <Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@loop.inner', 'o')<CR>
+nnoremap <leader>la <Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@loop.outer', 'o')<CR>
+nnoremap <leader>pi <Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@parameter.inner', 'o')<CR>
+nnoremap <leader>pa <Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@parameter.outer', 'o')<CR>
+nnoremap <leader>fn <Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@function.name', 'o')<CR>
+
 lua << EOF
 require("nvim-treesitter.configs").setup {
+	--[[indent = {
+    enable = true
+  },]]
 	playground = {
 		enable = true,
 		disable = {},
 	},
 	textobjects = {
+		--[[
     select = {
       enable = true,
       lookahead = true,
       keymaps = {
-        -- You can use the capture groups defined in textobjects.scm
-        ["<leader>n"] = "@function.outer",
+        ["<space>n"] = "@function.inner",
         ["if"] = "@function.inner",
         ["ac"] = "@class.outer",
         ["ic"] = "@class.inner",
-
-        -- Or you can define your own textobjects like this
-        ["-"] = {
-          python = "(function_definition) @function",
-          cpp = "(function_definition) @function",
-          c = "(function_definition) @function",
-          rust = "(function_item (identifier)) @function",
-        },
       },
     },
+		]]--
+    select = {
+      enable = true,
+      lookahead = false,
+			lookbehind = true,
+		},
 		swap = {
       enable = true,
       swap_next = {
-        ["<space>q"] = "@parameter.inner",
+        ["<leader>>"] = "@parameter.inner",
       },
       swap_previous = {
-        ["<space>w"] = "@parameter.inner",
+        ["<space><"] = "@parameter.inner",
+      },
+    },
+		move = {
+      enable = true,
+      set_jumps = true, -- whether to set jumps in the jumplist
+      goto_next_start = {
+        ["]m"] = "@function.outer",
+        ["]]"] = "@class.outer",
+      },
+      goto_next_end = {
+        ["]M"] = "@function.outer",
+        ["]["] = "@class.outer",
+      },
+      goto_previous_start = {
+        ["[m"] = "@function.outer",
+        ["[["] = "@class.outer",
+      },
+      goto_previous_end = {
+        ["[M"] = "@function.outer",
+        ["[]"] = "@class.outer",
       },
     },
   },

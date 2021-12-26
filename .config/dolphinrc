@@ -1,3 +1,9 @@
+[CompactMode]
+FontWeight=50
+
+[DetailsMode]
+FontWeight=50
+
 [ExtractDialog]
 DP-2 DP-0 Height 3840x2160=1072
 DP-2 DP-0 Width 3840x2160=2313
@@ -6,34 +12,45 @@ DP-2 DP-0 Width 3840x2160=2313
 Version=201
 ViewPropsTimestamp=2021,6,15,16,13,8.036
 
+[IconsMode]
+FontWeight=50
+
 [KPropertiesDialog]
-DP-0 DP-2 Height 3840x2160=525
-DP-0 DP-2 Width 3840x2160=547
+DP-0 DP-2 Height 3840x2160=692
+DP-0 DP-2 Width 3840x2160=803
+DP-2 DP-0 Height 3840x2160=668
+DP-2 DP-0 Width 3840x2160=803
 
 [MainWindow]
-DP-0 DP-2 Height 3840x2160=1157
-DP-0 DP-2 Width 3840x2160=2406
-DP-0 DP-2 XPosition 3840x2160=3476
-DP-0 DP-2 YPosition 3840x2160=60
+DP-0 DP-2 Height 3840x2160=1306
+DP-0 DP-2 Width 3840x2160=2079
+DP-0 DP-2 XPosition 3840x2160=5110
+DP-0 DP-2 YPosition 3840x2160=550
 DP-0 Height 3840x2160=1015
 DP-0 Width 3840x2160=1920
 DP-0 XPosition 3840x2160=0
 DP-0 YPosition 3840x2160=1089
-DP-2 DP-0 Height 3840x2160=1157
-DP-2 DP-0 Width 3840x2160=2406
-DP-2 DP-0 XPosition 3840x2160=5274
-DP-2 DP-0 YPosition 3840x2160=566
-DP-2 Height 3840x2160=1157
-DP-2 Width 3840x2160=2406
-DP-2 XPosition 3840x2160=2879
-DP-2 YPosition 3840x2160=490
+DP-2 DP-0 Height 3840x2160=1150
+DP-2 DP-0 Width 3840x2160=2398
+DP-2 DP-0 XPosition 3840x2160=5278
+DP-2 DP-0 YPosition 3840x2160=156
+DP-2 Height 3840x2160=1150
+DP-2 Width 3840x2160=2398
+DP-2 XPosition 3840x2160=4891
+DP-2 YPosition 3840x2160=632
 MenuBar=Disabled
-State=AAAA/wAAAAD9AAAAAwAAAAAAAAE0AAAEUfwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAoBAAAD+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAA0AAAEUQAAAF0BAAADAAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAACgEAAAMAAAADAAAAAAAAAAD8AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAA/////wAAAAoBAAADAAAIMQAABFEAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
 ToolBarsMovable=Disabled
 
 [Open-with settings]
 CompletionMode=1
-History=vlc,vis,ala
+History=draw,vlc,vis,ala
+
+[PreviewSettings]
+Plugins=audiothumbnail,windowsexethumbnail,imagethumbnail,blenderthumbnail,comicbookthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,jpegthumbnail,kraorathumbnail,windowsimagethumbnail,mobithumbnail,opendocumentthumbnail,directorythumbnail,gsthumbnail,rawthumbnail,fontthumbnail,svgthumbnail,ffmpegthumbs
+
+[SettingsDialog]
+DP-0 DP-2 Height 3840x2160=512
+DP-0 DP-2 Width 3840x2160=910
 
 [ViewPropertiesDialog]
 DP-0 DP-2 Height 3840x2160=616

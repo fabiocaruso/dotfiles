@@ -4,13 +4,13 @@ Recent URLs[$e]=file:$HOME/Bilder/,file:$HOME/Bilder/icons/,file:$HOME/
 detailViewIconSize=16
 
 [KPropertiesDialog]
-DP-0 DP-2 Height 3840x2160=503
-DP-0 DP-2 Width 3840x2160=683
+DP-0 DP-2 Height 3840x2160=525
+DP-0 DP-2 Width 3840x2160=549
 DP-2 DP-0 Height 3840x2160=512
 DP-2 DP-0 Width 3840x2160=818
 
 [PlasmaTransientsConfig]
-PreloadWeight=92
+PreloadWeight=34
 
 [PlasmaViews][Panel 123][Defaults]
 thickness=56

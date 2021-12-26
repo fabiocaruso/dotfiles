@@ -47,7 +47,7 @@
    "contrast tool" : 65,
    "convert whitespace to underscores" : "",
    "current_psh" : null,
-   "current_udt" : null,
+   "current_udt" : "gimp %i",
    "cwd" : "/home/fabiocaruso/Downloads",
    "cycle sane handle" : "",
    "datetime offset" : [
@@ -59,9 +59,17 @@
    "default filename" : "%Da %DY-%Dm-%Dd.%De",
    "default profile" : null,
    "default-scan-options" : null,
-   "device" : null,
+   "device" : "brother4:net1;dev0",
    "device blacklist" : null,
-   "device list" : [],
+   "device list" : [
+      {
+         "label" : "Brother SCANNER",
+         "model" : "SCANNER",
+         "name" : "brother4:net1;dev0",
+         "type" : "DCP-9020CDW",
+         "vendor" : "Brother"
+      }
+   ],
    "downsample" : 0,
    "downsample dpi" : 150,
    "frontend" : "libimage-sane-perl",
@@ -78,7 +86,7 @@
    "message_window_height" : 200,
    "message_window_width" : 600,
    "ocr engine" : "tesseract",
-   "ocr language" : null,
+   "ocr language" : "afr",
    "pdf compression" : "auto",
    "pdf font" : "/usr/share/fonts/truetype/noto-sans-ttf/NotoSans-CondensedItalic.ttf",
    "post_save_hook" : "",
@@ -92,8 +100,8 @@
    "scan-reload-triggers" : [
       "mode"
    ],
-   "scan_window_height" : 67,
-   "scan_window_width" : 236,
+   "scan_window_height" : 758,
+   "scan_window_width" : 747,
    "selection" : {
       "height" : 0,
       "width" : -1417,
@@ -157,6 +165,6 @@
    "window_height" : 2067,
    "window_maximize" : 1,
    "window_width" : 3840,
-   "window_x" : 3840,
+   "window_x" : 0,
    "window_y" : 0
 }

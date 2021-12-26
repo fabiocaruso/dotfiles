@@ -134,9 +134,14 @@ done=clipboard-settings-change
 mtime=1628114018
 
 [spectacle_newConfig.upd]
-ctime=1623763557
+ctime=1640448517
 done=spectacle-new-config
-mtime=1620411729
+mtime=1638480110
+
+[spectacle_rememberregion.upd]
+ctime=1640448517
+done=spectacle-migrate-rememberregion
+mtime=1638480110
 
 [spectacle_shortcuts.upd]
 ctime=1623763557
