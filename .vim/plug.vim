@@ -6,13 +6,14 @@ endif
 call plug#begin('~/.vim/plugged')
 "Themeing
 Plug 'morhetz/gruvbox'
-Plug 'vim-airline/vim-airline'
-Plug 'ryanoasis/vim-devicons'
 if has("nvim")
-	Plug 'nvim-treesitter/nvim-treesitter', { 'branch': '0.5-compat', 'do': ':TSUpdate' }
-	Plug 'nvim-treesitter/playground'
-	"Plug 'nvim-treesitter/nvim-treesitter-textobjects', { 'branch': '0.5-compat' }
-	Plug 'fabiocaruso/nvim-treesitter-textobjects', { 'branch': '0.5-compat' }
+	Plug 'akinsho/bufferline.nvim'
+	Plug 'nvim-lua/lsp-status.nvim'
+	Plug 'nvim-lualine/lualine.nvim'
+	Plug 'kyazdani42/nvim-web-devicons'
+else
+	Plug 'vim-airline/vim-airline'
+	Plug 'ryanoasis/vim-devicons'
 endif
 "Language specific
 Plug 'alvan/vim-closetag'
@@ -41,8 +42,38 @@ else
 	Plug 'junegunn/fzf.vim'
 	Plug 'mileszs/ack.vim'
 endif
+"Filetree
+Plug 'kyazdani42/nvim-tree.lua'
+"Treesitter
+if has("nvim")
+	Plug 'nvim-treesitter/nvim-treesitter', { 'branch': '0.5-compat', 'do': ':TSUpdate' }
+	Plug 'nvim-treesitter/playground'
+	"Plug 'nvim-treesitter/nvim-treesitter-textobjects', { 'branch': '0.5-compat' }
+	Plug 'fabiocaruso/nvim-treesitter-textobjects', { 'branch': '0.5-compat' }
+endif
 "LSP
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+if has("nvim")
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+	Plug 'neovim/nvim-lspconfig'
+	Plug 'alexaandru/nvim-lspupdate'
+	Plug 'ray-x/lsp_signature.nvim'
+	Plug 'simrat39/rust-tools.nvim'
+	Plug 'mfussenegger/nvim-dap'
+	Plug 'rcarriga/nvim-dap-ui'
+	Plug 'ldelossa/litee.nvim'
+	Plug 'hrsh7th/cmp-nvim-lsp'
+	Plug 'hrsh7th/cmp-buffer'
+	Plug 'hrsh7th/cmp-path'
+	Plug 'hrsh7th/cmp-cmdline'
+	Plug 'hrsh7th/nvim-cmp'
+	Plug 'SirVer/ultisnips'
+	Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+	Plug 'onsails/lspkind-nvim'
+	Plug 'wiliamks/nice-reference.nvim'
+	Plug 'nvim-telescope/telescope-ui-select.nvim'
+	Plug 'folke/trouble.nvim'
+	Plug 'saecki/crates.nvim', { 'tag': 'v0.1.0' }
+endif
 "Git
 Plug 'tpope/vim-fugitive'
 Plug 'https://github.com/airblade/vim-gitgutter.git'

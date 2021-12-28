@@ -1,4 +1,5 @@
 let mapleader = " "
+let g:native_lsp = 1
 filetype plugin on
 source ~/.vim/plug.vim
 
@@ -58,20 +59,31 @@ let g:fzf_action = {
   \ 'ctrl-v': 'vsplit' }
 ""Ack.vim
 nnoremap , :Ag<cr>
-""Coc
-nnoremap <leader>a :CocAction<cr>
-nnoremap <leader>t :call ToggleRustTypeHints()<cr>
-inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
-inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
-nnoremap <leader>gd :call CocAction('jumpDefinition')<cr>
-nmap <leader>rn <Plug>(coc-rename)
-"inoremap <silent> <leader>a <C-r>=CocActionAsync('showSignatureHelp')<CR>
-""Coc-Explorer
-nnoremap <F2> :CocCommand explorer<CR>
+""Coc + Native LSP
+let g:coc_start_at_startup = v:false
+if g:native_lsp == 1
+	nnoremap <leader>a <cmd>lua vim.lsp.buf.code_action()<cr>
+	nnoremap <leader>h <cmd>lua vim.lsp.buf.hover()<cr>
+	nnoremap <leader>gd <cmd>lua vim.lsp.buf.definition()<cr>
+	nnoremap <leader>gi <cmd>lua vim.lsp.buf.implementation()<cr>
+	inoremap <C-s> <cmd>lua vim.lsp.buf.signature_help()<CR>
+	nnoremap <leader>gr <cmd>NiceReference<cr>
+else
+	let g:coc_start_at_startup = v:true
+	nnoremap <leader>a :CocAction<cr>
+	nnoremap <leader>t :call ToggleRustTypeHints()<cr>
+	nnoremap <leader>gd :call CocAction('jumpDefinition')<cr>
+	inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
+	inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
+	nmap <leader>rn <Plug>(coc-rename)
+	"inoremap <silent> <leader>a <C-r>=CocActionAsync('showSignatureHelp')<CR>
+	""Coc-Explorer
+	nnoremap <F2> :CocCommand explorer<CR>
+endif
 ""Obsession
 noremap <leader>s :Obsess<cr>
 ""Gitgutter
-nnoremap <leader>g :GitGutterToggle<cr>
+nnoremap <leader>gg :GitGutterToggle<cr>
 ""Vimspector
 nmap <leader>dd :!cargo build<cr> <bar> :call vimspector#Launch()<cr>
 nmap <leader>dx :VimspectorReset<CR>
@@ -137,6 +149,7 @@ autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | end
 set sessionoptions+=winpos
 set sessionoptions+=terminal
 set sessionoptions+=resize
+set sessionoptions+=tabpages
 function! AirlineInit()
     let g:airline_section_z = airline#section#create(['%{ObsessionStatus(''S'', '''')}', 'windowswap', '%3p%% ', 'linenr', ':%3v '])
 endfunction
@@ -167,6 +180,9 @@ colorscheme gruvbox
 
 "Airline
 let g:airline#extensions#tabline#enabled = 1
+if has("nvim")
+	let g:airline#extensions#tabline#enabled = 0
+endif
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 " air-line

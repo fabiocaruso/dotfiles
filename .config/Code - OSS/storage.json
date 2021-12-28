@@ -113,7 +113,8 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor"
+                                    "label": "&&Reopen Closed Editor",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -122,7 +123,6 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "fsPath": "/home/fabiocaruso/pa",
                                         "external": "file:///home/fabiocaruso/pa",
                                         "path": "/home/fabiocaruso/pa",
                                         "scheme": "file"
@@ -408,7 +408,7 @@
                     },
                     {
                         "id": "workbench.action.closeFolder",
-                        "label": "Close &&Folder"
+                        "label": "Close &&Workspace"
                     },
                     {
                         "id": "workbench.action.closeWindow",
@@ -1014,21 +1014,18 @@
                     },
                     {
                         "id": "workbench.action.debug.stop",
-                        "label": "&&Stop Debugging",
-                        "enabled": false
+                        "label": "&&Stop Debugging"
                     },
                     {
                         "id": "workbench.action.debug.restart",
-                        "label": "&&Restart Debugging",
-                        "enabled": false
+                        "label": "&&Restart Debugging"
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.debug.configure",
-                        "label": "Open &&Configurations",
-                        "enabled": false
+                        "label": "Open &&Configurations"
                     },
                     {
                         "id": "debug.addConfiguration",
@@ -1039,23 +1036,19 @@
                     },
                     {
                         "id": "workbench.action.debug.stepOver",
-                        "label": "Step &&Over",
-                        "enabled": false
+                        "label": "Step &&Over"
                     },
                     {
                         "id": "workbench.action.debug.stepInto",
-                        "label": "Step &&Into",
-                        "enabled": false
+                        "label": "Step &&Into"
                     },
                     {
                         "id": "workbench.action.debug.stepOut",
-                        "label": "Step O&&ut",
-                        "enabled": false
+                        "label": "Step O&&ut"
                     },
                     {
                         "id": "workbench.action.debug.continue",
-                        "label": "&&Continue",
-                        "enabled": false
+                        "label": "&&Continue"
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1681,8 +1674,11 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/fabiocaruso/pa",
-            "backupPath": "/home/fabiocaruso/.config/Code - OSS/Backups/17b3887bb4fbfa3f8f4e5d248f75d86e",
+            "workspaceIdentifier": {
+                "id": "3eded68d4cc8ae598ff7df8242335c2e",
+                "configURIPath": "file:///home/fabiocaruso/.config/Code%20-%20OSS/Workspaces/1640653052146/workspace.json"
+            },
+            "backupPath": "/home/fabiocaruso/.config/Code - OSS/Backups/3eded68d4cc8ae598ff7df8242335c2e",
             "uiState": {
                 "mode": 0,
                 "x": 0,
