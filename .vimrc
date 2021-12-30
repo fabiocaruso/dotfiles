@@ -45,6 +45,8 @@ noremap <C-c> y
 imap § <ESC>
 ""Search with * for word under cursor without jump and with wordcount
 nnoremap <expr> * ':%s/'.expand('<cword>').'//gn<CR>``'
+""Remap <C-w> to <C-z> in insert mode to delete the written text
+inoremap <C-z> <C-w>
 ""Undo break points
 inoremap , ,<c-g>u
 inoremap . .<c-g>u
@@ -65,7 +67,7 @@ if g:native_lsp == 1
 	nnoremap <leader>a <cmd>lua vim.lsp.buf.code_action()<cr>
 	nnoremap <leader>h <cmd>lua vim.lsp.buf.hover()<cr>
 	nnoremap <leader>gd <cmd>lua vim.lsp.buf.definition()<cr>
-	nnoremap <leader>gi <cmd>lua vim.lsp.buf.implementation()<cr>
+	nnoremap <leader>gi <cmd>TroubleClose<cr> <cmd>lua vim.lsp.buf.implementation()<cr>
 	inoremap <C-s> <cmd>lua vim.lsp.buf.signature_help()<CR>
 	nnoremap <leader>gr <cmd>NiceReference<cr>
 else
@@ -85,11 +87,40 @@ noremap <leader>s :Obsess<cr>
 ""Gitgutter
 nnoremap <leader>gg :GitGutterToggle<cr>
 ""Vimspector
-nmap <leader>dd :!cargo build<cr> <bar> :call vimspector#Launch()<cr>
-nmap <leader>dx :VimspectorReset<CR>
-"nmap <leader>de :VimspectorEval
-nmap <leader>dw :VimspectorWatch
-nmap <leader>do :VimspectorShowOutput
+if g:native_lsp == 1
+	function ActivateDebugMode()
+		NvimTreeClose
+		TroubleClose
+		lua require('dapui').open()
+		RustDebuggables
+	endfunction
+	function DeactivateDebugMode()
+		lua require('dapui').close()
+		NvimTreeOpen
+		Trouble
+	endfunction
+	nnoremap <leader>dd :call ActivateDebugMode()<cr>
+	nnoremap <leader>dx :call DeactivateDebugMode()<CR>
+	nnoremap <leader>dc :lua require('dap').continue()<cr>
+	nnoremap <leader>di :lua require('dap').step_into()<cr>
+	nnoremap <leader>dv :lua require('dap').step_over()<cr>
+	nnoremap <leader>do :lua require('dap').step_out()<cr>
+	nnoremap <leader>db :lua require('dap').toggle_breakpoint()<cr>
+	nnoremap <leader>dr :lua require('dap').repl.open()<cr>
+	nnoremap <F5> :lua require('dap').continue()<cr>
+	nnoremap <F6> :lua require('dap').step_into()<cr>
+	nnoremap <F7> :lua require('dap').step_over()<cr>
+	nnoremap <F8> :lua require('dap').step_out()<cr>
+	nnoremap <F9> :lua require('dap').toggle_breakpoint()<cr>
+	nnoremap <F10> :lua require('dap').set_breakpoint(vim.fn.input("Breakpoint condition: "))<cr>
+	nnoremap <F11> :lua require('dap').set_breakpoint(nil, nil, vim.fn.input("Log point message: "))<cr>
+else
+	nmap <leader>dd :!cargo build<cr> <bar> :call vimspector#Launch()<cr>
+	nmap <leader>dx :VimspectorReset<CR>
+	"nmap <leader>de :VimspectorEval
+	nmap <leader>dw :VimspectorWatch
+	nmap <leader>do :VimspectorShowOutput
+endif
 ""Function Keymappings
 nnoremap <leader>fl :call WordToFiglet()<cr>
 nnoremap <leader>de :call TranslateToGerman()<cr>

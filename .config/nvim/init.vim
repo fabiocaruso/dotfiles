@@ -22,7 +22,10 @@ nnoremap <leader>pa <Cmd>lua require'nvim-treesitter.textobjects.select'.select_
 nnoremap <leader>fn <Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@function.name', 'o')<CR>
 
 lua << EOF
+-- Utils
 require('nvim-web-devicons').setup({})
+
+-- Tree-sitter
 require("nvim-treesitter.configs").setup {
 	--[[indent = {
     enable = true
@@ -80,9 +83,8 @@ require("nvim-treesitter.configs").setup {
     },
   },
 }
-EOF
 
-lua << EOF
+-- Telescope
 local actions = require('telescope.actions')
 require('telescope').setup {
 	defaults = {
@@ -133,18 +135,15 @@ local function goto_definition(split_cmd)
   local util = vim.lsp.util
   local log = require("vim.lsp.log")
   local api = vim.api
-
   -- note, this handler style is for neovim 0.5.1/0.6, if on 0.5, call with function(_, method, result)
   local handler = function(_, result, ctx)
     if result == nil or vim.tbl_isempty(result) then
       local _ = log.info() and log.info(ctx.method, "No location found")
       return nil
     end
-
     if split_cmd then
       vim.cmd(split_cmd)
     end
-
     if vim.tbl_islist(result) then
       util.jump_to_location(result[1])
 
@@ -157,11 +156,139 @@ local function goto_definition(split_cmd)
       util.jump_to_location(result)
     end
   end
-
   return handler
 end
-vim.lsp.handlers["textDocument/definition"] = goto_definition('vsplit')
-vim.lsp.handlers["textDocument/implementation"] = goto_definition('vsplit')
+-- Lsp Signature
+require('lsp_signature').setup({
+	bind = true, -- This is mandatory, otherwise border config won't get registered.
+  handler_opts = {
+    border = "none"
+  }
+})
+require('dapui').setup({})
+require('litee').setup({})
+require('crates').setup({})
+require("trouble").setup({
+	auto_open = true,
+	auto_close = true,
+})
+require('nvim-tree').setup({
+	open_on_setup = true,
+	auto_close = true,
+  open_on_tab = true,
+	update_to_buf_dir   = {
+    enable = false,
+    auto_open = true,
+  },
+	diagnostics = {
+		enable = true,
+	},
+	filters = {
+    dotfiles = true,
+	},
+	git = {
+    ignore = false,
+  },
+	view = {
+		auto_resize = true,
+	}
+})
+
+-- Nvim-cmp Autocompletion
+local cmp = require('cmp')
+local lspkind = require('lspkind')
+local luasnip = require('luasnip')
+require('luasnip.loaders.from_vscode').lazy_load()
+local confirm_behavior = {
+	behavior = cmp.ConfirmBehavior.Replace,
+	select = true,
+}
+cmp.setup({
+	snippet = {
+		-- REQUIRED - you must specify a snippet engine
+		expand = function(args)
+			-- vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
+			luasnip.lsp_expand(args.body) -- For `luasnip` users.
+			-- require('snippy').expand_snippet(args.body) -- For `snippy` users.
+			-- vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
+		end,
+	},
+	mapping = {
+		['<C-j>'] = cmp.mapping.select_next_item(),
+		['<C-k>'] = cmp.mapping.select_prev_item(),
+		['<C-y>'] = cmp.config.disable, -- Specify `cmp.config.disable` if you want to remove the default `<C-y>` mapping.
+		--[[['<C-e>'] = cmp.mapping({
+			i = cmp.mapping.abort(),
+			c = cmp.mapping.close(),
+		}),]]--
+		--[[['<S-Tab>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
+		['<Tab>'] = cmp.mapping.confirm({
+			behavior = cmp.ConfirmBehavior.Replace,
+			select = true,
+		}),]]-- -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+		['<S-Tab>'] = cmp.mapping(function(fallback)
+			if luasnip.jumpable(-1) then
+				luasnip.jump(-1)
+			elseif cmp.visible() == false then
+				cmp.complete()
+			else
+				fallback()
+			end
+		end, { 'i', 'c' }),
+		['<Tab>'] = cmp.mapping(function(fallback)
+			if cmp.visible() then
+				cmp.confirm(confirm_behavior)
+			elseif luasnip.expand_or_jumpable() then
+				luasnip.expand_or_jump()
+			else
+				fallback()
+			end
+		end, { 'i', 'c'}), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+		['<CR>'] = cmp.mapping.confirm(confirm_behavior),
+	},
+	sources = cmp.config.sources({
+		{ name = 'nvim_lsp' },
+		-- { name = 'vsnip' }, -- For vsnip users.
+		{ name = 'luasnip' }, -- For luasnip users.
+		-- { name = 'ultisnips' }, -- For ultisnips users.
+		-- { name = 'snippy' }, -- For snippy users.
+		{ name = 'crates' },
+	}, {
+		{ name = 'buffer' },
+	}),
+	formatting = {
+    format = lspkind.cmp_format({
+			with_text = true,
+			menu = ({
+				buffer = "[Buffer]",
+				nvim_lsp = "[LSP]",
+				luasnip = "[LuaSnip]",
+				crates = "[Crates]",
+				cmdline = "[CmdLine]",
+				--nvim_lua = "[Lua]",
+			})
+		}),
+  },
+})
+-- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
+cmp.setup.cmdline('/', {
+	sources = {
+		{ name = 'buffer' }
+	},
+})
+-- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
+cmp.setup.cmdline(':', {
+	sources = cmp.config.sources({
+		{ name = 'path' }
+	}, {
+		{ name = 'cmdline' }
+	}),
+})
+-- NOTE: If something with the lsp statusbar is broken it is likely due to the fact that i dont set
+-- capabilities for lsp_status properly. So change the Argument of update_capabilities to lsp_status.capabilities.
+-- Or maybe call it twice.
+local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+
 -- Status in Lualine
 local lsp_status = require('lsp-status')
 lsp_status.register_progress()
@@ -170,18 +297,16 @@ lsp_status.config({
 	show_filename = false,
 	diagnostics = false,
 })
--- Lsp Signature
-require('lsp_signature').setup({
-	bind = true, -- This is mandatory, otherwise border config won't get registered.
-  handler_opts = {
-    border = "none"
-  }
-})
+
 -- Rust Tools
+-- TODO: Automatically download codelldb and put it in the corresponding folder
 local extension_path = '/home/fabiocaruso/.vscode/extensions/vadimcn.vscode-lldb-1.6.10/'
 local codelldb_path = extension_path .. 'adapter/codelldb'
 local liblldb_path = extension_path .. 'lldb/lib/liblldb.so'
-require('dapui').setup({})
+vim.fn.sign_define('DapBreakpoint', {text='', texthl='red', linehl='', numhl=''})
+vim.fn.sign_define('DapBreakpointCondition', {text='ᶜ', texthl='red', linehl='', numhl=''})
+vim.fn.sign_define('DapLogPoint', {text='ᶫ', texthl='red', linehl='', numhl=''})
+vim.fn.sign_define('DapBreakpointRejected', {text='', texthl='red', linehl='', numhl=''})
 require('rust-tools').setup({
 	tools = { -- rust-tools options
 		autoSetHints = true,
@@ -192,7 +317,7 @@ require('rust-tools').setup({
 	},
 	server = {
 		on_attach = lsp_status.on_attach,
-		capabilities = lsp_status.capabilities,
+		capabilities = capabilities,
 		settings = {
 			["rust-analyzer"] = {
 				-- enable clippy on save
@@ -221,98 +346,14 @@ require('rust-tools').setup({
 		},
 	},
 })
-require('litee').setup({})
-require('crates').setup({})
-require("trouble").setup({
-	auto_open = true,
-	auto_close = true,
-})
-EOF
-
-lua << EOF
-require('nvim-tree').setup({
-	open_on_setup = true,
-	auto_close = true,
-  open_on_tab = true,
-	diagnostics = {
-		enable = true,
-	},
-	filters = {
-    dotfiles = true,
-	},
-	view = {
-		auto_resize = true,
-	}
-})
-EOF
-
-lua << EOF
-local cmp = require('cmp')
-local lspkind = require('lspkind')
-
-cmp.setup({
-	snippet = {
-		-- REQUIRED - you must specify a snippet engine
-		expand = function(args)
-			-- vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
-			-- require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
-			-- require('snippy').expand_snippet(args.body) -- For `snippy` users.
-			vim.fn["UltiSnips#Anon"](args.body) -- For `ultisnips` users.
-		end,
-	},
-	mapping = {
-		['<C-j>'] = cmp.mapping.select_next_item(),
-		['<C-k>'] = cmp.mapping.select_prev_item(),
-		['<S-Tab>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
-		--['<C-y>'] = cmp.config.disable, -- Specify `cmp.config.disable` if you want to remove the default `<C-y>` mapping.
-		--[[['<C-e>'] = cmp.mapping({
-			i = cmp.mapping.abort(),
-			c = cmp.mapping.close(),
-		}),]]--
-		['<Tab>'] = cmp.mapping.confirm({
-			behavior = cmp.ConfirmBehavior.Replace,
-			select = true,
-		}), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
-	},
-	sources = cmp.config.sources({
-		{ name = 'nvim_lsp' },
-		-- { name = 'vsnip' }, -- For vsnip users.
-		-- { name = 'luasnip' }, -- For luasnip users.
-		{ name = 'ultisnips' }, -- For ultisnips users.
-		-- { name = 'snippy' }, -- For snippy users.
-		{ name = "crates" },
-	}, {
-		{ name = 'buffer' },
-	}),
-	formatting = {
-    format = lspkind.cmp_format(),
-  },
-})
-
--- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
-cmp.setup.cmdline('/', {
-	sources = {
-		{ name = 'buffer' }
-	}
-})
-
--- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
-cmp.setup.cmdline(':', {
-	sources = cmp.config.sources({
-		{ name = 'path' }
-	}, {
-		{ name = 'cmdline' }
-	})
-})
-EOF
-
-lua << EOF
-vim.lsp.handlers["textDocument/references"] = require 'nice-reference'.reference_handler
+vim.lsp.handlers["textDocument/definition"] = goto_definition('vsplit')
+vim.lsp.handlers["textDocument/implementation"] = goto_definition('vsplit')
+vim.lsp.handlers["textDocument/references"] = require('nice-reference').reference_handler
 EOF
 endif
 
 lua << EOF
-require('lualine').setup ({
+require('lualine').setup({
 	sections = {
 		lualine_b = {
 			'branch',
@@ -326,17 +367,5 @@ require('lualine').setup ({
 		lualine_z = { function() return vim.fn.ObsessionStatus('S', 'X') end, 'location' },
 	}
 })
-require('bufferline').setup({
-	diagnostics = "nvim_lsp",
-	diagnostics_update_in_insert = true,
-	diagnostics_indicator = function(count, level, diagnostics_dict, context)
-		local s = " "
-		for e, n in pairs(diagnostics_dict) do
-			local sym = e == "error" and " "
-				or (e == "warning" and " " or "" )
-			s = s .. n .. sym
-		end
-		return s
-	end
-})
+require('tabby').setup()
 EOF

@@ -7,7 +7,8 @@ call plug#begin('~/.vim/plugged')
 "Themeing
 Plug 'morhetz/gruvbox'
 if has("nvim")
-	Plug 'akinsho/bufferline.nvim'
+	"Plug 'akinsho/bufferline.nvim'
+	Plug 'nanozuki/tabby.nvim'
 	Plug 'nvim-lua/lsp-status.nvim'
 	Plug 'nvim-lualine/lualine.nvim'
 	Plug 'kyazdani42/nvim-web-devicons'
@@ -31,7 +32,9 @@ if has("nvim")
 endif
 Plug 'ojroques/vim-oscyank'
 "Debugger
+if has("nvim") == 0
 Plug 'puremourning/vimspector'
+endif
 "Fuzzy finder
 Plug 'airblade/vim-rooter'
 if has("nvim")
@@ -66,8 +69,9 @@ if has("nvim")
 	Plug 'hrsh7th/cmp-path'
 	Plug 'hrsh7th/cmp-cmdline'
 	Plug 'hrsh7th/nvim-cmp'
-	Plug 'SirVer/ultisnips'
-	Plug 'quangnguyen30192/cmp-nvim-ultisnips'
+	Plug 'rafamadriz/friendly-snippets'
+	Plug 'L3MON4D3/LuaSnip'
+	Plug 'saadparwaiz1/cmp_luasnip'
 	Plug 'onsails/lspkind-nvim'
 	Plug 'wiliamks/nice-reference.nvim'
 	Plug 'nvim-telescope/telescope-ui-select.nvim'
