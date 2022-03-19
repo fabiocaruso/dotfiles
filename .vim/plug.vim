@@ -6,12 +6,14 @@ endif
 call plug#begin('~/.vim/plugged')
 "Themeing
 Plug 'morhetz/gruvbox'
+Plug 'rebelot/kanagawa.nvim'
 if has("nvim")
 	"Plug 'akinsho/bufferline.nvim'
 	Plug 'nanozuki/tabby.nvim'
 	Plug 'nvim-lua/lsp-status.nvim'
 	Plug 'nvim-lualine/lualine.nvim'
 	Plug 'kyazdani42/nvim-web-devicons'
+	Plug 'mortepau/codicons.nvim'
 else
 	Plug 'vim-airline/vim-airline'
 	Plug 'ryanoasis/vim-devicons'
@@ -26,6 +28,7 @@ Plug 'lifepillar/vim-cheat40'
 Plug 'fadein/vim-FIGlet'
 Plug 'tpope/vim-obsession'
 if has("nvim")
+	Plug 'theHamsta/nvim_rocks', {'do': 'pip3 install --user hererocks && python3 -mhererocks . -j2.1.0-beta3 -r3.0.0 && cp nvim_rocks.lua lua'}
 	Plug 'nvim-lua/popup.nvim'
 	Plug 'nvim-lua/plenary.nvim'
 	Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
@@ -58,12 +61,15 @@ endif
 if has("nvim")
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'neovim/nvim-lspconfig'
+	Plug 'williamboman/nvim-lsp-installer'
 	Plug 'alexaandru/nvim-lspupdate'
 	Plug 'ray-x/lsp_signature.nvim'
 	Plug 'simrat39/rust-tools.nvim'
 	Plug 'mfussenegger/nvim-dap'
 	Plug 'rcarriga/nvim-dap-ui'
 	Plug 'ldelossa/litee.nvim'
+	Plug 'ldelossa/litee-symboltree.nvim'
+	Plug 'ldelossa/litee-calltree.nvim'
 	Plug 'hrsh7th/cmp-nvim-lsp'
 	Plug 'hrsh7th/cmp-buffer'
 	Plug 'hrsh7th/cmp-path'
@@ -81,6 +87,9 @@ endif
 "Git
 Plug 'tpope/vim-fugitive'
 Plug 'https://github.com/airblade/vim-gitgutter.git'
+if has("nvim")
+	Plug 'lewis6991/gitsigns.nvim'
+endif
 "For better workflow
 Plug 'wellle/context.vim'
 Plug 'wellle/targets.vim'

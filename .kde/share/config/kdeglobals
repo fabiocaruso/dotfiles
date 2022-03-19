@@ -137,7 +137,7 @@ ColorScheme=MateriaDark
 Name[de_CH]=Breeze Hell
 Name=Materia Dark
 shadeSortColumn=true
-widgetStyle=Breeze
+widgetStyle=kvantum
 
 [Icons]
 Theme=Papirus-Dark

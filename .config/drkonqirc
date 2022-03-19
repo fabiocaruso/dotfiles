@@ -1,10 +1,10 @@
 [General]
-DP-0 DP-2 Height 3840x2160=459
-DP-0 DP-2 Width 3840x2160=816
+DP-0 DP-2 Height 3840x2160=574
+DP-0 DP-2 Width 3840x2160=1020
 DP-2 DP-0 Height 3840x2160=459
 DP-2 DP-0 Width 3840x2160=816
-DP-2 Height 3840x2160=587
-DP-2 Width 3840x2160=1043
+DP-2 Height 3840x2160=459
+DP-2 Width 3840x2160=816
 
 [SystemInformation]
 CompiledSources=false

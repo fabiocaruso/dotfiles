@@ -105,6 +105,10 @@ Word Completion Remove Tail=true
 DP-0 DP-2 Height 3840x2160=2077
 DP-0 DP-2 Width 3840x2160=3840
 DP-0 DP-2 Window-Maximized 3840x2160=true
+DP-2 DP-0 Window-Maximized 3840x2160=true
+
+[UiSettings]
+ColorScheme=
 
 [filetree]
 editShade=10,65,93

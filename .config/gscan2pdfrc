@@ -3,7 +3,7 @@
    "Dark threshold" : 0.12,
    "OCR on scan" : 1,
    "OCR output" : "replace",
-   "Page range" : "all",
+   "Page range" : "selected",
    "Paper" : {
       "A3" : {
          "l" : 0,
@@ -48,7 +48,7 @@
    "convert whitespace to underscores" : "",
    "current_psh" : null,
    "current_udt" : "gimp %i",
-   "cwd" : "/home/fabiocaruso/Downloads",
+   "cwd" : "/home/fabiocaruso/Downloads/HS2021 (Semester 5)/PA/Solar Terminator Parts CAD/Rechnungen/Effektiv Bezahlt",
    "cycle sane handle" : "",
    "datetime offset" : [
       0,
@@ -116,6 +116,15 @@
    "threshold-before-ocr" : "",
    "thumb panel" : 212,
    "tiff compression" : null,
+   "timezone offset" : [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+   ],
    "title" : "",
    "title-suggestions" : [],
    "to_png" : 1,
@@ -162,9 +171,9 @@
       "x" : 1,
       "y" : 1
    },
-   "window_height" : 2067,
+   "window_height" : 2066,
    "window_maximize" : 1,
    "window_width" : 3840,
-   "window_x" : 0,
+   "window_x" : 3840,
    "window_y" : 0
 }

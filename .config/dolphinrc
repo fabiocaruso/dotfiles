@@ -1,6 +1,9 @@
 [CompactMode]
 FontWeight=50
 
+[CreateDialog]
+LastMimeType=application/x-7z-compressed
+
 [DetailsMode]
 FontWeight=50
 
@@ -16,34 +19,34 @@ ViewPropsTimestamp=2021,6,15,16,13,8.036
 FontWeight=50
 
 [KPropertiesDialog]
-DP-0 DP-2 Height 3840x2160=692
+DP-0 DP-2 Height 3840x2160=600
 DP-0 DP-2 Width 3840x2160=803
 DP-2 DP-0 Height 3840x2160=668
 DP-2 DP-0 Width 3840x2160=803
 
 [MainWindow]
-DP-0 DP-2 Height 3840x2160=1306
+DP-0 DP-2 Height 3840x2160=1299
 DP-0 DP-2 Width 3840x2160=2079
-DP-0 DP-2 XPosition 3840x2160=5102
-DP-0 DP-2 YPosition 3840x2160=657
+DP-0 DP-2 XPosition 3840x2160=5455
+DP-0 DP-2 YPosition 3840x2160=499
 DP-0 Height 3840x2160=1015
 DP-0 Width 3840x2160=1920
 DP-0 XPosition 3840x2160=0
 DP-0 YPosition 3840x2160=1089
-DP-2 DP-0 Height 3840x2160=1150
-DP-2 DP-0 Width 3840x2160=2398
+DP-2 DP-0 Height 3840x2160=1299
+DP-2 DP-0 Width 3840x2160=2079
 DP-2 DP-0 XPosition 3840x2160=5597
-DP-2 DP-0 YPosition 3840x2160=603
-DP-2 Height 3840x2160=1150
-DP-2 Width 3840x2160=2398
-DP-2 XPosition 3840x2160=4891
-DP-2 YPosition 3840x2160=632
+DP-2 DP-0 YPosition 3840x2160=499
+DP-2 Height 3840x2160=1299
+DP-2 Width 3840x2160=2079
+DP-2 XPosition 3840x2160=5597
+DP-2 YPosition 3840x2160=649
 MenuBar=Disabled
 ToolBarsMovable=Disabled
 
 [Open-with settings]
 CompletionMode=1
-History=draw,vlc,vis,ala
+History=fire,draw,vlc,vis,ala
 
 [PreviewSettings]
 Plugins=audiothumbnail,windowsexethumbnail,imagethumbnail,blenderthumbnail,comicbookthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,jpegthumbnail,kraorathumbnail,windowsimagethumbnail,mobithumbnail,opendocumentthumbnail,directorythumbnail,gsthumbnail,rawthumbnail,fontthumbnail,svgthumbnail,ffmpegthumbs

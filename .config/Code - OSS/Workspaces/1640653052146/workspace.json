@@ -8,6 +8,9 @@
 		},
 		{
 			"path": "../../../../Projekte/Rust/telegram-gateway"
+		},
+		{
+			"path": "../../../../Zusammenfassungen"
 		}
 	],
 	"settings": {}

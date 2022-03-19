@@ -22,142 +22,64 @@ nnoremap <leader>pa <Cmd>lua require'nvim-treesitter.textobjects.select'.select_
 nnoremap <leader>fn <Cmd>lua require'nvim-treesitter.textobjects.select'.select_textobject('@function.name', 'o')<CR>
 
 lua << EOF
+-- For plugin development
+-- Add current root directory to the runtimepath
+print(vim.api.nvim_command [[
+autocmd VimEnter * let &rtp.=','.FindRootDirectory()
+]])
+
+
+local config = require('config')
 -- Utils
+local utils = require('utils')
 require('nvim-web-devicons').setup({})
+require('codicons').setup({})
+require('gitsigns').setup({})
+require('litee.lib').setup({
+	tree = {
+		icons = require('litee.lib.icons').nerd,
+		icon_set = "nerd",
+	},
+	panel = {
+		orientation = "right",
+	},
+})
+require('litee.symboltree').setup({
+	on_open = "panel",
+	icon_set = "nerd",
+})
+require('litee.calltree').setup({
+	on_open = "panel",
+	icon_set = "nerd",
+})
 
 -- Tree-sitter
-require("nvim-treesitter.configs").setup {
-	--[[indent = {
-    enable = true
-  },]]
-	playground = {
-		enable = true,
-		disable = {},
-	},
-	textobjects = {
-		--[[
-    select = {
-      enable = true,
-      lookahead = true,
-      keymaps = {
-        ["<space>n"] = "@function.inner",
-        ["if"] = "@function.inner",
-        ["ac"] = "@class.outer",
-        ["ic"] = "@class.inner",
-      },
-    },
-		]]--
-    select = {
-      enable = true,
-      lookahead = false,
-			lookbehind = true,
-		},
-		swap = {
-      enable = true,
-      swap_next = {
-        ["<leader>>"] = "@parameter.inner",
-      },
-      swap_previous = {
-        ["<space><"] = "@parameter.inner",
-      },
-    },
-		move = {
-      enable = true,
-      set_jumps = true, -- whether to set jumps in the jumplist
-      goto_next_start = {
-        ["]m"] = "@function.outer",
-        ["]]"] = "@class.outer",
-      },
-      goto_next_end = {
-        ["]M"] = "@function.outer",
-        ["]["] = "@class.outer",
-      },
-      goto_previous_start = {
-        ["[m"] = "@function.outer",
-        ["[["] = "@class.outer",
-      },
-      goto_previous_end = {
-        ["[M"] = "@function.outer",
-        ["[]"] = "@class.outer",
-      },
-    },
-  },
-}
-
+require("nvim-treesitter.configs").setup(config.tree_sitter) 
 -- Telescope
-local actions = require('telescope.actions')
-require('telescope').setup {
-	defaults = {
-		color_devicons = true,
-		file_sorter = require('telescope.sorters').get_fzy_sorter,
-		file_previewer = require('telescope.previewers').vim_buffer_cat.new,
-		mappings = {
-			i = {
-				["<C-n>"] = false,
-				["<C-p>"] = false,
-				["<C-k>"] = actions.move_selection_previous,
-				["<C-j>"] = actions.move_selection_next,
-			}
-		}
-	},
-	extensions = {
-		fzy_native = {
-			override_generic_sorter = false,
-			override_file_sorter = true,
-		},
-		["ui-select"] = {
-      require("telescope.themes").get_dropdown {
-        -- even more opts
-      }
-    }
-	}
-}
+require('telescope').setup(config.telescope)
 require('telescope').load_extension('fzy_native')
-require("telescope").load_extension("ui-select")
-EOF
+require("telescope").load_extension('ui-select')
 
-" Native LSP
-if g:native_lsp == 1
-lua << EOF
+if vim.g.native_lsp == 1 then
 -- Icons
-local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
+--local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
+local signs = { Error = " ", Warn = "⚠️ ", Hint = " ", Info = "ℹ️ " }
 for type, icon in pairs(signs) do
   local hl = "DiagnosticSign" .. type
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 end
 vim.diagnostic.config({
-  virtual_text = {
+  --[[virtual_text = {
     prefix = '●', -- Could be '■', '▎', 'x'
-  }
+  }]]--
+	virtual_text = false,
+	signs = true,
+	underline = true,
+	float = { border = "none" },
 })
--- Go to definition in split window
-local function goto_definition(split_cmd)
-  local util = vim.lsp.util
-  local log = require("vim.lsp.log")
-  local api = vim.api
-  -- note, this handler style is for neovim 0.5.1/0.6, if on 0.5, call with function(_, method, result)
-  local handler = function(_, result, ctx)
-    if result == nil or vim.tbl_isempty(result) then
-      local _ = log.info() and log.info(ctx.method, "No location found")
-      return nil
-    end
-    if split_cmd then
-      vim.cmd(split_cmd)
-    end
-    if vim.tbl_islist(result) then
-      util.jump_to_location(result[1])
+vim.o.updatetime = 250
+vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false, scope="cursor"})]]
 
-      if #result > 1 then
-        util.set_qflist(util.locations_to_items(result))
-        api.nvim_command("copen")
-        api.nvim_command("wincmd p")
-      end
-    else
-      util.jump_to_location(result)
-    end
-  end
-  return handler
-end
 -- Lsp Signature
 require('lsp_signature').setup({
 	bind = true, -- This is mandatory, otherwise border config won't get registered.
@@ -166,7 +88,16 @@ require('lsp_signature').setup({
   }
 })
 require('dapui').setup({})
-require('litee').setup({})
+local dap, dapui = require("dap"), require("dapui")
+dap.listeners.after.event_initialized["dapui_config"] = function()
+  dapui.open()
+end
+dap.listeners.before.event_terminated["dapui_config"] = function()
+  dapui.close()
+end
+dap.listeners.before.event_exited["dapui_config"] = function()
+  dapui.close()
+end
 require('crates').setup({})
 require("trouble").setup({
 	auto_open = true,
@@ -184,7 +115,7 @@ require('nvim-tree').setup({
 		enable = true,
 	},
 	filters = {
-    dotfiles = true,
+    dotfiles = false,
 	},
 	git = {
     ignore = false,
@@ -346,13 +277,25 @@ require('rust-tools').setup({
 		},
 	},
 })
-vim.lsp.handlers["textDocument/definition"] = goto_definition('vsplit')
-vim.lsp.handlers["textDocument/implementation"] = goto_definition('vsplit')
-vim.lsp.handlers["textDocument/references"] = require('nice-reference').reference_handler
-EOF
-endif
 
-lua << EOF
+vim.lsp.handlers["textDocument/definition"] = utils.goto_definition('vsplit')
+vim.lsp.handlers["textDocument/implementation"] = utils.goto_definition('vsplit')
+vim.lsp.handlers["textDocument/references"] = require('nice-reference').reference_handler
+
+-- lsp-installer
+local lsp_installer = require("nvim-lsp-installer")
+lsp_installer.on_server_ready(function(server)
+    local opts = {}
+
+    -- (optional) Customize the options passed to the server
+    -- if server.name == "tsserver" then
+    --     opts.root_dir = function() ... end
+    -- end
+
+    server:setup(opts)
+end)
+end
+
 require('lualine').setup({
 	sections = {
 		lualine_b = {
@@ -360,7 +303,7 @@ require('lualine').setup({
 			'diff',
 			{
 				'diagnostics',
-				symbols = {error = ' ', warn = ' ', info = ' ', hint = ' '},
+				symbols = {error = ' ', warn = '⚠️ ', info = 'ℹ️ ', hint = ' '},
 			}
 		},
 		lualine_c = { 'filename', 'g:coc_status', 'require("lsp-status").status()' },
