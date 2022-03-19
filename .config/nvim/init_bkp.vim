@@ -166,7 +166,6 @@ require('lsp_signature').setup({
   }
 })
 require('dapui').setup({})
-require('litee').setup({})
 require('crates').setup({})
 require("trouble").setup({
 	auto_open = true,
