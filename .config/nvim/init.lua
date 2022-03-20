@@ -3,7 +3,7 @@ vim.opt.runtimepath:append('~/.vim runtimepath', '~/.vim/after')
 vim.cmd([[
 let &packpath = &runtimepath
 source ~/.vimrc
-set laststatus=3
+set laststatus=2
 highlight WinSeparator guibg=None
 ]])
 

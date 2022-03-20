@@ -232,7 +232,7 @@ _G.packer_plugins = {
     url = "https://github.com/alexaandru/nvim-lspupdate"
   },
   ["nvim-tree.lua"] = {
-    config = { "\27LJ\2\2†\2\0\0\3\0\14\0\0176\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0005\2\4\0=\2\5\0015\2\6\0=\2\a\0015\2\b\0=\2\t\0015\2\n\0=\2\v\0015\2\f\0=\2\r\1B\0\2\1K\0\1\0\tview\1\0\1\16auto_resize\2\bgit\1\0\1\vignore\1\ffilters\1\0\1\rdotfiles\1\16diagnostics\1\0\1\venable\2\22update_to_buf_dir\1\0\2\14auto_open\2\venable\1\1\0\3\16open_on_tab\2\15auto_close\2\18open_on_setup\2\nsetup\14nvim-tree\frequire\0" },
+    config = { "\27LJ\2\2ª\2\0\0\3\0\14\0\0176\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0005\2\4\0=\2\5\0015\2\6\0=\2\a\0015\2\b\0=\2\t\0015\2\n\0=\2\v\0015\2\f\0=\2\r\1B\0\2\1K\0\1\0\tview\1\0\1\16auto_resize\2\bgit\1\0\1\vignore\1\ffilters\1\0\1\rdotfiles\1\16diagnostics\1\0\1\venable\2\22update_to_buf_dir\1\0\2\14auto_open\2\venable\1\1\0\4\15auto_close\2\18open_on_setup\2'hijack_unnamed_buffer_when_opening\2\16open_on_tab\2\nsetup\14nvim-tree\frequire\0" },
     loaded = true,
     path = "/home/fabiocaruso/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/kyazdani42/nvim-tree.lua"
@@ -405,7 +405,7 @@ try_loadstring("\27LJ\2\2ë\4\0\0\v\0\27\00046\0\0\0'\1\1\0B\0\2\0025\1\2\0006\2\
 time([[Config for nvim-lspconfig]], false)
 -- Config for: nvim-tree.lua
 time([[Config for nvim-tree.lua]], true)
-try_loadstring("\27LJ\2\2†\2\0\0\3\0\14\0\0176\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0005\2\4\0=\2\5\0015\2\6\0=\2\a\0015\2\b\0=\2\t\0015\2\n\0=\2\v\0015\2\f\0=\2\r\1B\0\2\1K\0\1\0\tview\1\0\1\16auto_resize\2\bgit\1\0\1\vignore\1\ffilters\1\0\1\rdotfiles\1\16diagnostics\1\0\1\venable\2\22update_to_buf_dir\1\0\2\14auto_open\2\venable\1\1\0\3\16open_on_tab\2\15auto_close\2\18open_on_setup\2\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
+try_loadstring("\27LJ\2\2ª\2\0\0\3\0\14\0\0176\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0005\2\4\0=\2\5\0015\2\6\0=\2\a\0015\2\b\0=\2\t\0015\2\n\0=\2\v\0015\2\f\0=\2\r\1B\0\2\1K\0\1\0\tview\1\0\1\16auto_resize\2\bgit\1\0\1\vignore\1\ffilters\1\0\1\rdotfiles\1\16diagnostics\1\0\1\venable\2\22update_to_buf_dir\1\0\2\14auto_open\2\venable\1\1\0\4\15auto_close\2\18open_on_setup\2'hijack_unnamed_buffer_when_opening\2\16open_on_tab\2\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
 time([[Config for nvim-tree.lua]], false)
 if should_profile then save_profiles() end
 

@@ -12,7 +12,7 @@ _G._config = {
 local paths = vim.split(vim.fn.glob('~/.config/nvim/lua/config/plugin/**/*lua'), '\n')
 --print(vim.inspect(vim.fn.fnamemodify(vim.fn.expand('%:h'), ':p:~:.')))
 
-for i, file in pairs(paths) do
+for _, file in pairs(paths) do
 	file = file:gsub('.-/%.config/nvim/lua/', '')
 	file = file:gsub('%.lua', '')
 	if file ~= 'config/plugin/init' then

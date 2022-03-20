@@ -1,5 +1,6 @@
 local config = function()
 	require('nvim-tree').setup({
+		hijack_unnamed_buffer_when_opening = true,
 		open_on_setup = true,
 		auto_close = true,
 		open_on_tab = true,

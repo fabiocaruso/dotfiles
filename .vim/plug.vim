@@ -36,9 +36,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "Git
 Plug 'tpope/vim-fugitive'
 Plug 'https://github.com/airblade/vim-gitgutter.git'
-if has("nvim")
-	Plug 'lewis6991/gitsigns.nvim'
-endif
 "For better workflow
 Plug 'wellle/context.vim'
 Plug 'wellle/targets.vim'
