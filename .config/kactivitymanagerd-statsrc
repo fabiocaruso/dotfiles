@@ -41,10 +41,16 @@ ordering=preferred://browser,systemsettings.desktop,org.kde.dolphin.desktop,org.
 ordering=preferred://browser,systemsettings.desktop,org.kde.dolphin.desktop,org.kde.konversation.desktop,org.kde.kate.desktop,solus-sc.desktop
 
 [Favorites-org.kde.plasma.kicker.favorites.instance-165-8dc134ab-a14b-4fbd-9376-f4ae3488037c]
-ordering=preferred://browser,systemsettings.desktop,org.kde.dolphin.desktop,org.kde.konversation.desktop,org.kde.kate.desktop,solus-sc.desktop
+ordering=
 
 [Favorites-org.kde.plasma.kicker.favorites.instance-165-global]
-ordering=preferred://browser,systemsettings.desktop,org.kde.dolphin.desktop,org.kde.konversation.desktop,org.kde.kate.desktop,solus-sc.desktop
+ordering=
+
+[Favorites-org.kde.plasma.kicker.favorites.instance-167-8dc134ab-a14b-4fbd-9376-f4ae3488037c]
+ordering=
+
+[Favorites-org.kde.plasma.kicker.favorites.instance-167-global]
+ordering=
 
 [Favorites-org.kde.plasma.kicker.favorites.instance-3-8dc134ab-a14b-4fbd-9376-f4ae3488037c]
 ordering=preferred://browser,systemsettings.desktop,org.kde.dolphin.desktop,org.kde.konversation.desktop,org.kde.kate.desktop,solus-sc.desktop

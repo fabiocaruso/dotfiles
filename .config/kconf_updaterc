@@ -1,5 +1,15 @@
 updateInfoAdded=true
 
+[breezehighcontrasttobreezedark.upd]
+ctime=1646425708
+done=BreezeHighContrastToBreezeDark
+mtime=1645531384
+
+[breezetobreezeclassic.upd]
+ctime=1646425708
+done=BreezeToBreezeClassic
+mtime=1645531384
+
 [breezetobreezelight.upd]
 ctime=1623763570
 done=BreezeToBreezeLight
@@ -41,9 +51,9 @@ done=Plasma_Fonts_Kate
 mtime=1630410470
 
 [gtkconfig.upd]
-ctime=1623763577
-done=gtk_theme,dont_use_gtk_css_for_window_decorations
-mtime=1620129307
+ctime=1646425647
+done=gtk_theme,dont_use_gtk_css_for_window_decorations,remove_deprecated_gtk4_option
+mtime=1645531629
 
 [gwenview.upd]
 ctime=1623763560
@@ -59,15 +69,20 @@ mtime=1623751819
 ctime=1623763556
 mtime=1620411800
 
+[kcm_rename_plasma_desktop.upd]
+ctime=1647613164
+done=5.24PlasmaDesktopKCMRename
+mtime=1645532265
+
 [kcminputrc_fix_botched_5_21_0.upd]
-ctime=1632663000
+ctime=1647613164
 done=kcminputrc_fix_botched_5_21_0_pre,kcminputrc_fix_botched_5_21_0
-mtime=1630410327
+mtime=1645532265
 
 [kcminputrc_repeat.upd]
-ctime=1632663000
+ctime=1647613164
 done=kcminputrc_migrate_key_repeat
-mtime=1630410327
+mtime=1645532265
 
 [kde4breeze.upd]
 ctime=1623763570
@@ -104,24 +119,29 @@ done=0.1-autolock
 mtime=1620130146
 
 [ksmserver_update_loginMode_value.upd]
-ctime=1632663000
+ctime=1647613164
 done=ksmserver_update_loginMode_value_default_enum
-mtime=1630410327
+mtime=1645532265
 
 [kwin.upd]
-ctime=1634984964
-done=replace-scalein-with-scale,port-minimizeanimation-effect-to-js,port-scale-effect-to-js,port-dimscreen-effect-to-js,auto-bordersize,animation-speed,desktop-grid-click-behavior,no-swap-encourage,make-translucency-effect-disabled-by-default,remove-flip-switch-effect,remove-cover-switch-effect,remove-cubeslide-effect,remove-xrender-backend
-mtime=1634647898
+ctime=1646425686
+done=replace-scalein-with-scale,port-minimizeanimation-effect-to-js,port-scale-effect-to-js,port-dimscreen-effect-to-js,auto-bordersize,animation-speed,desktop-grid-click-behavior,no-swap-encourage,make-translucency-effect-disabled-by-default,remove-flip-switch-effect,remove-cover-switch-effect,remove-cubeslide-effect,remove-xrender-backend,enable-scale-effect-by-default
+mtime=1645532029
 
 [kwinrules.upd]
 ctime=1634984964
 done=replace-placement-string-to-enum,use-virtual-desktop-ids
 mtime=1634647898
 
+[kxkb.upd]
+ctime=1647613164
+done=remove-empty-lists,add-back-resetoptions
+mtime=1645532265
+
 [kxkb_variants.upd]
-ctime=1632663000
+ctime=1647613164
 done=split-variants
-mtime=1630410327
+mtime=1645532265
 
 [okular.upd]
 ctime=1623763576

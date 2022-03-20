@@ -108,11 +108,12 @@ ForegroundPositive=76,175,80
 ForegroundVisited=173,101,175
 
 [DirSelect Dialog]
-DirSelectDialog Size=940,580
+DirSelectDialog Size=956,610
 History Items[$e]=file:$HOME/Downloads/MateriaDark
 
 [General]
 BrowserApplication=firefox.desktop
+ColorSchemeHash=3b17c5d56f8f372f0b0b9f709c4579c23e51fe6a
 Name[de_CH]=Breeze-Hell
 Name=SolusDark
 TerminalApplication=alacritty

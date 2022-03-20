@@ -106,6 +106,11 @@ _G.packer_plugins = {
     path = "/home/fabiocaruso/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["codicons.nvim"] = {
+    loaded = true,
+    path = "/home/fabiocaruso/.local/share/nvim/site/pack/packer/start/codicons.nvim",
+    url = "https://github.com/mortepau/codicons.nvim"
+  },
   ["crates.nvim"] = {
     config = { "\27LJ\2\0024\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\vcrates\frequire\0" },
     loaded = true,
@@ -121,6 +126,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/fabiocaruso/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
+  },
+  ["gitsigns.nvim"] = {
+    config = { "\27LJ\2\2:\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\rgitsigns\frequire\0" },
+    loaded = true,
+    path = "/home/fabiocaruso/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   ["impatient.nvim"] = {
     loaded = true,
@@ -138,6 +149,24 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/fabiocaruso/.local/share/nvim/site/pack/packer/start/legendary.nvim",
     url = "https://github.com/mrjones2014/legendary.nvim"
+  },
+  ["litee-calltree.nvim"] = {
+    config = { "\27LJ\2\2_\0\0\2\0\4\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\1K\0\1\0\1\0\2\fon_open\npanel\ricon_set\tnerd\nsetup\19litee.calltree\frequire\0" },
+    loaded = true,
+    path = "/home/fabiocaruso/.local/share/nvim/site/pack/packer/start/litee-calltree.nvim",
+    url = "https://github.com/ldelossa/litee-calltree.nvim"
+  },
+  ["litee-symboltree.nvim"] = {
+    config = { "\27LJ\2\2a\0\0\2\0\4\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\1K\0\1\0\1\0\2\fon_open\npanel\ricon_set\tnerd\nsetup\21litee.symboltree\frequire\0" },
+    loaded = true,
+    path = "/home/fabiocaruso/.local/share/nvim/site/pack/packer/start/litee-symboltree.nvim",
+    url = "https://github.com/ldelossa/litee-symboltree.nvim"
+  },
+  ["litee.nvim"] = {
+    config = { "\27LJ\2\2œ\1\0\0\5\0\f\0\0226\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\0016\0\0\0'\1\3\0B\0\2\0029\0\2\0005\1\b\0005\2\6\0006\3\0\0'\4\4\0B\3\2\0029\3\5\3=\3\a\2=\2\t\0015\2\n\0=\2\v\1B\0\2\1K\0\1\0\npanel\1\0\1\16orientation\nright\ttree\1\0\0\nicons\1\0\1\ricon_set\tnerd\tnerd\20litee.lib.icons\14litee.lib\nsetup\rcodicons\frequire\0" },
+    loaded = true,
+    path = "/home/fabiocaruso/.local/share/nvim/site/pack/packer/start/litee.nvim",
+    url = "https://github.com/ldelossa/litee.nvim"
   },
   ["lsp-status.nvim"] = {
     config = { "\27LJ\2\2Œ\1\0\0\5\0\v\0\0176\0\0\0009\0\1\0006\1\2\0'\2\3\0B\1\2\0029\2\4\1B\2\1\0019\2\5\0015\3\6\0B\2\2\0016\2\a\0009\2\b\0029\3\t\0009\3\n\0039\4\n\1B\2\3\1K\0\1\0\14on_attach\blsp\vinsert\ntable\1\0\3\16diagnostics\1\21current_function\1\18show_filename\1\vconfig\22register_progress\15lsp-status\frequire\f_config\a_G\0" },
@@ -175,12 +204,12 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-dap"] = {
+    config = { "\27LJ\2\2\30\0\0\1\1\1\0\4-\0\0\0009\0\0\0B\0\1\1K\0\1\0\1¿\topen\31\0\0\1\1\1\0\4-\0\0\0009\0\0\0B\0\1\1K\0\1\0\1¿\nclose\31\0\0\1\1\1\0\4-\0\0\0009\0\0\0B\0\1\1K\0\1\0\1¿\ncloseÃ\1\1\0\4\0\r\0\0236\0\0\0'\1\1\0B\0\2\0026\1\0\0'\2\2\0B\1\2\0029\2\3\0009\2\4\0029\2\5\0023\3\a\0=\3\6\0029\2\3\0009\2\b\0029\2\t\0023\3\n\0=\3\6\0029\2\3\0009\2\b\0029\2\v\0023\3\f\0=\3\6\0022\0\0ÄK\0\1\0\0\17event_exited\0\21event_terminated\vbefore\0\17dapui_config\22event_initialized\nafter\14listeners\ndapui\bdap\frequire\0" },
     loaded = true,
     path = "/home/fabiocaruso/.local/share/nvim/site/pack/packer/start/nvim-dap",
     url = "https://github.com/mfussenegger/nvim-dap"
   },
   ["nvim-dap-ui"] = {
-    config = { "\27LJ\2\0023\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\ndapui\frequire\0" },
     loaded = true,
     path = "/home/fabiocaruso/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
     url = "https://github.com/rcarriga/nvim-dap-ui"
@@ -192,7 +221,7 @@ _G.packer_plugins = {
     url = "https://github.com/williamboman/nvim-lsp-installer"
   },
   ["nvim-lspconfig"] = {
-    config = { "\27LJ\2\2Ω\3\0\0\v\0\23\0,6\0\0\0'\1\1\0B\0\2\0025\1\2\0006\2\3\0\18\3\1\0B\2\2\4H\5\fÄ'\a\4\0\18\b\5\0&\a\b\a6\b\5\0009\b\6\b9\b\a\b\18\t\a\0005\n\b\0=\6\t\n=\a\n\n=\a\v\nB\b\3\1F\5\3\3R\5Ú6\2\5\0009\2\f\0029\2\r\0025\3\15\0005\4\14\0=\4\16\3B\2\2\0016\2\5\0009\2\17\0029\2\18\0029\3\20\0'\4\21\0B\3\2\2=\3\19\0026\2\5\0009\2\17\0029\2\18\0029\3\20\0'\4\21\0B\3\2\2=\3\22\2K\0\1\0 textDocument/implementation\vvsplit\20goto_definition\28textDocument/definition\rhandlers\blsp\17virtual_text\1\0\0\1\0\1\vprefix\b‚óè\vconfig\15diagnostic\nnumhl\vtexthl\ttext\1\0\0\16sign_define\afn\bvim\19DiagnosticSign\npairs\1\0\4\tInfo\tÔëâ \tHint\tÔ†µ \nError\tÔëß \tWarn\tÔî© \17config.utils\frequire\0" },
+    config = { "\27LJ\2\2Î\4\0\0\v\0\27\00046\0\0\0'\1\1\0B\0\2\0025\1\2\0006\2\3\0\18\3\1\0B\2\2\4H\5\fÄ'\a\4\0\18\b\5\0&\a\b\a6\b\5\0009\b\6\b9\b\a\b\18\t\a\0005\n\b\0=\6\t\n=\a\n\n=\a\v\nB\b\3\1F\5\3\3R\5Ú6\2\5\0009\2\f\0029\2\r\0025\3\14\0005\4\15\0=\4\16\3B\2\2\0016\2\5\0009\2\17\2)\3˙\0=\3\18\0026\2\5\0009\2\19\2'\3\20\0B\2\2\0016\2\5\0009\2\21\0029\2\22\0029\3\24\0'\4\25\0B\3\2\2=\3\23\0026\2\5\0009\2\21\0029\2\22\0029\3\24\0'\4\25\0B\3\2\2=\3\26\2K\0\1\0 textDocument/implementation\vvsplit\20goto_definition\28textDocument/definition\rhandlers\blspgautocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false, scope=\"cursor\"})\bcmd\15updatetime\6o\nfloat\1\0\1\vborder\tnone\1\0\3\14underline\2\nsigns\2\17virtual_text\1\vconfig\15diagnostic\nnumhl\vtexthl\ttext\1\0\0\16sign_define\afn\bvim\19DiagnosticSign\npairs\1\0\4\tInfo\tÔëâ \tHint\tÔ†µ \nError\tÔëß \tWarn\tÔî© \17config.utils\frequire\0" },
     loaded = true,
     path = "/home/fabiocaruso/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
@@ -203,7 +232,7 @@ _G.packer_plugins = {
     url = "https://github.com/alexaandru/nvim-lspupdate"
   },
   ["nvim-tree.lua"] = {
-    config = { "\27LJ\2\2˙\1\0\0\3\0\f\0\0156\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0005\2\4\0=\2\5\0015\2\6\0=\2\a\0015\2\b\0=\2\t\0015\2\n\0=\2\v\1B\0\2\1K\0\1\0\tview\1\0\1\16auto_resize\2\bgit\1\0\1\vignore\1\ffilters\1\0\1\rdotfiles\1\16diagnostics\1\0\1\venable\2\1\0\4\16open_on_tab\2\15auto_close\2\18open_on_setup\2'hijack_unnamed_buffer_when_opening\2\nsetup\14nvim-tree\frequire\0" },
+    config = { "\27LJ\2\2Ü\2\0\0\3\0\14\0\0176\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0005\2\4\0=\2\5\0015\2\6\0=\2\a\0015\2\b\0=\2\t\0015\2\n\0=\2\v\0015\2\f\0=\2\r\1B\0\2\1K\0\1\0\tview\1\0\1\16auto_resize\2\bgit\1\0\1\vignore\1\ffilters\1\0\1\rdotfiles\1\16diagnostics\1\0\1\venable\2\22update_to_buf_dir\1\0\2\14auto_open\2\venable\1\1\0\3\16open_on_tab\2\15auto_close\2\18open_on_setup\2\nsetup\14nvim-tree\frequire\0" },
     loaded = true,
     path = "/home/fabiocaruso/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/kyazdani42/nvim-tree.lua"
@@ -215,7 +244,6 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-treesitter-textobjects"] = {
-    config = { "\27LJ\2\0023\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\ndapui\frequire\0" },
     loaded = true,
     path = "/home/fabiocaruso/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects",
     url = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
@@ -303,6 +331,10 @@ time([[Config for DAPInstall.nvim]], false)
 time([[Config for indent-blankline.nvim]], true)
 try_loadstring("\27LJ\2\2[\0\0\2\0\4\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\1K\0\1\0\1\0\1\25show_current_context\2\nsetup\21indent_blankline\frequire\0", "config", "indent-blankline.nvim")
 time([[Config for indent-blankline.nvim]], false)
+-- Config for: litee-symboltree.nvim
+time([[Config for litee-symboltree.nvim]], true)
+try_loadstring("\27LJ\2\2a\0\0\2\0\4\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\1K\0\1\0\1\0\2\fon_open\npanel\ricon_set\tnerd\nsetup\21litee.symboltree\frequire\0", "config", "litee-symboltree.nvim")
+time([[Config for litee-symboltree.nvim]], false)
 -- Config for: nice-reference.nvim
 time([[Config for nice-reference.nvim]], true)
 try_loadstring("\27LJ\2\2}\0\0\3\0\a\0\t6\0\0\0009\0\1\0009\0\2\0006\1\4\0'\2\5\0B\1\2\0029\1\6\1=\1\3\0K\0\1\0\22reference_handler\19nice-reference\frequire\28textDocument/references\rhandlers\blsp\bvim\0", "config", "nice-reference.nvim")
@@ -315,10 +347,6 @@ time([[Config for lualine.nvim]], false)
 time([[Config for rust-tools.nvim]], true)
 try_loadstring("\27LJ\2\2g\0\0\4\0\a\0\f6\0\0\0009\0\1\0009\0\2\0'\1\3\0006\2\0\0009\2\1\0029\2\4\2B\2\1\2'\3\5\0&\2\3\2'\3\6\0D\0\4\0\tfile\6/\vgetcwd\25Path to executable: \ninput\afn\bvimª\b\1\0\f\0001\0S6\0\0\0009\0\1\0006\1\2\0'\2\3\0B\1\2\2'\2\4\0\18\3\2\0'\4\5\0&\3\4\3\18\4\2\0'\5\6\0&\4\5\0046\5\a\0009\5\b\0059\5\t\5'\6\n\0005\a\v\0B\5\3\0016\5\a\0009\5\b\0059\5\t\5'\6\f\0005\a\r\0B\5\3\0016\5\a\0009\5\b\0059\5\t\5'\6\14\0005\a\15\0B\5\3\0016\5\a\0009\5\b\0059\5\t\5'\6\16\0005\a\17\0B\5\3\0016\5\2\0'\6\18\0B\5\2\0029\5\19\0055\6\23\0005\a\20\0005\b\21\0=\b\22\a=\a\24\0065\a\28\0009\b\25\0019\t\26\0009\t\27\tB\b\2\2=\b\27\a9\b\26\0009\b\29\b=\b\29\a5\b!\0005\t\31\0005\n\30\0=\n \t=\t\"\b=\b#\a=\a$\0065\a'\0006\b\2\0'\t%\0B\b\2\0029\b&\b\18\t\3\0\18\n\4\0B\b\3\2=\b(\a5\b-\0004\t\3\0005\n)\0003\v*\0=\v+\n4\v\0\0=\v,\n>\n\1\t=\t.\b=\b/\a=\a0\6B\5\2\1K\0\1\0\bdap\19configurations\trust\1\0\0\targs\fprogram\0\1\0\5\16stopOnEntry\1\tname\vLaunch\ttype\tlldb\frequest\vlaunch\bcwd\23${workspaceFolder}\fadapter\1\0\0\25get_codelldb_adapter\19rust-tools.dap\vserver\rsettings\18rust-analyzer\1\0\0\16checkOnSave\1\0\0\1\0\1\fcommand\vclippy\17capabilities\1\0\0\14on_attach\blsp\14merge_fns\ntools\1\0\0\18hover_actions\1\0\1\15auto_focus\2\1\0\2\23hover_with_actions\2\17autoSetHints\2\nsetup\15rust-tools\1\0\4\vtexthl\bred\ttext\bÔÅû\vlinehl\5\nnumhl\5\26DapBreakpointRejected\1\0\4\vtexthl\bred\ttext\vÔëÑ·∂´\vlinehl\5\nnumhl\5\16DapLogPoint\1\0\4\vtexthl\bred\ttext\vÔëÑ·∂ú\vlinehl\5\nnumhl\5\27DapBreakpointCondition\1\0\4\vtexthl\bred\ttext\bÔëÑ\vlinehl\5\nnumhl\5\18DapBreakpoint\16sign_define\afn\bvim\24lldb/lib/liblldb.so\21adapter/codelldbE/home/fabiocaruso/.vscode/extensions/vadimcn.vscode-lldb-1.6.10/\17config.utils\frequire\f_config\a_G\0", "config", "rust-tools.nvim")
 time([[Config for rust-tools.nvim]], false)
--- Config for: nvim-treesitter-textobjects
-time([[Config for nvim-treesitter-textobjects]], true)
-try_loadstring("\27LJ\2\0023\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\ndapui\frequire\0", "config", "nvim-treesitter-textobjects")
-time([[Config for nvim-treesitter-textobjects]], false)
 -- Config for: crates.nvim
 time([[Config for crates.nvim]], true)
 try_loadstring("\27LJ\2\0024\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\vcrates\frequire\0", "config", "crates.nvim")
@@ -335,38 +363,50 @@ time([[Config for telescope.nvim]], false)
 time([[Config for nvim-web-devicons]], true)
 try_loadstring("\27LJ\2\2C\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\22nvim-web-devicons\frequire\0", "config", "nvim-web-devicons")
 time([[Config for nvim-web-devicons]], false)
+-- Config for: nvim-dap
+time([[Config for nvim-dap]], true)
+try_loadstring("\27LJ\2\2\30\0\0\1\1\1\0\4-\0\0\0009\0\0\0B\0\1\1K\0\1\0\1¿\topen\31\0\0\1\1\1\0\4-\0\0\0009\0\0\0B\0\1\1K\0\1\0\1¿\nclose\31\0\0\1\1\1\0\4-\0\0\0009\0\0\0B\0\1\1K\0\1\0\1¿\ncloseÃ\1\1\0\4\0\r\0\0236\0\0\0'\1\1\0B\0\2\0026\1\0\0'\2\2\0B\1\2\0029\2\3\0009\2\4\0029\2\5\0023\3\a\0=\3\6\0029\2\3\0009\2\b\0029\2\t\0023\3\n\0=\3\6\0029\2\3\0009\2\b\0029\2\v\0023\3\f\0=\3\6\0022\0\0ÄK\0\1\0\0\17event_exited\0\21event_terminated\vbefore\0\17dapui_config\22event_initialized\nafter\14listeners\ndapui\bdap\frequire\0", "config", "nvim-dap")
+time([[Config for nvim-dap]], false)
 -- Config for: lsp-status.nvim
 time([[Config for lsp-status.nvim]], true)
 try_loadstring("\27LJ\2\2Œ\1\0\0\5\0\v\0\0176\0\0\0009\0\1\0006\1\2\0'\2\3\0B\1\2\0029\2\4\1B\2\1\0019\2\5\0015\3\6\0B\2\2\0016\2\a\0009\2\b\0029\3\t\0009\3\n\0039\4\n\1B\2\3\1K\0\1\0\14on_attach\blsp\vinsert\ntable\1\0\3\16diagnostics\1\21current_function\1\18show_filename\1\vconfig\22register_progress\15lsp-status\frequire\f_config\a_G\0", "config", "lsp-status.nvim")
 time([[Config for lsp-status.nvim]], false)
--- Config for: nvim-dap-ui
-time([[Config for nvim-dap-ui]], true)
-try_loadstring("\27LJ\2\0023\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\ndapui\frequire\0", "config", "nvim-dap-ui")
-time([[Config for nvim-dap-ui]], false)
--- Config for: nvim-lspconfig
-time([[Config for nvim-lspconfig]], true)
-try_loadstring("\27LJ\2\2Ω\3\0\0\v\0\23\0,6\0\0\0'\1\1\0B\0\2\0025\1\2\0006\2\3\0\18\3\1\0B\2\2\4H\5\fÄ'\a\4\0\18\b\5\0&\a\b\a6\b\5\0009\b\6\b9\b\a\b\18\t\a\0005\n\b\0=\6\t\n=\a\n\n=\a\v\nB\b\3\1F\5\3\3R\5Ú6\2\5\0009\2\f\0029\2\r\0025\3\15\0005\4\14\0=\4\16\3B\2\2\0016\2\5\0009\2\17\0029\2\18\0029\3\20\0'\4\21\0B\3\2\2=\3\19\0026\2\5\0009\2\17\0029\2\18\0029\3\20\0'\4\21\0B\3\2\2=\3\22\2K\0\1\0 textDocument/implementation\vvsplit\20goto_definition\28textDocument/definition\rhandlers\blsp\17virtual_text\1\0\0\1\0\1\vprefix\b‚óè\vconfig\15diagnostic\nnumhl\vtexthl\ttext\1\0\0\16sign_define\afn\bvim\19DiagnosticSign\npairs\1\0\4\tInfo\tÔëâ \tHint\tÔ†µ \nError\tÔëß \tWarn\tÔî© \17config.utils\frequire\0", "config", "nvim-lspconfig")
-time([[Config for nvim-lspconfig]], false)
 -- Config for: trouble.nvim
 time([[Config for trouble.nvim]], true)
 try_loadstring("\27LJ\2\2S\0\0\2\0\4\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\1K\0\1\0\1\0\2\14auto_open\2\15auto_close\2\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
 time([[Config for trouble.nvim]], false)
--- Config for: nvim-lsp-installer
-time([[Config for nvim-lsp-installer]], true)
-try_loadstring("\27LJ\2\2z\0\1\5\2\5\0\0174\1\0\0-\2\0\0009\2\1\2-\3\1\0009\3\2\0039\3\0\3B\2\2\2=\2\0\1-\2\1\0009\2\2\0029\2\3\2=\2\3\1\18\3\0\0009\2\4\0\18\4\1\0B\2\3\1K\0\1\0\1¿\0¿\nsetup\17capabilities\blsp\14merge_fns\14on_attach\1\0\5\0\a\0\r6\0\0\0009\0\1\0006\1\2\0'\2\3\0B\1\2\0026\2\2\0'\3\4\0B\2\2\0029\3\5\0023\4\6\0B\3\2\0012\0\0ÄK\0\1\0\0\20on_server_ready\23nvim-lsp-installer\17config.utils\frequire\f_config\a_G\0", "config", "nvim-lsp-installer")
-time([[Config for nvim-lsp-installer]], false)
--- Config for: nvim-tree.lua
-time([[Config for nvim-tree.lua]], true)
-try_loadstring("\27LJ\2\2˙\1\0\0\3\0\f\0\0156\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0005\2\4\0=\2\5\0015\2\6\0=\2\a\0015\2\b\0=\2\t\0015\2\n\0=\2\v\1B\0\2\1K\0\1\0\tview\1\0\1\16auto_resize\2\bgit\1\0\1\vignore\1\ffilters\1\0\1\rdotfiles\1\16diagnostics\1\0\1\venable\2\1\0\4\16open_on_tab\2\15auto_close\2\18open_on_setup\2'hijack_unnamed_buffer_when_opening\2\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
-time([[Config for nvim-tree.lua]], false)
+-- Config for: litee.nvim
+time([[Config for litee.nvim]], true)
+try_loadstring("\27LJ\2\2œ\1\0\0\5\0\f\0\0226\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\0016\0\0\0'\1\3\0B\0\2\0029\0\2\0005\1\b\0005\2\6\0006\3\0\0'\4\4\0B\3\2\0029\3\5\3=\3\a\2=\2\t\0015\2\n\0=\2\v\1B\0\2\1K\0\1\0\npanel\1\0\1\16orientation\nright\ttree\1\0\0\nicons\1\0\1\ricon_set\tnerd\tnerd\20litee.lib.icons\14litee.lib\nsetup\rcodicons\frequire\0", "config", "litee.nvim")
+time([[Config for litee.nvim]], false)
 -- Config for: tabby.nvim
 time([[Config for tabby.nvim]], true)
 try_loadstring("\27LJ\2\0023\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\ntabby\frequire\0", "config", "tabby.nvim")
 time([[Config for tabby.nvim]], false)
+-- Config for: gitsigns.nvim
+time([[Config for gitsigns.nvim]], true)
+try_loadstring("\27LJ\2\2:\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
+time([[Config for gitsigns.nvim]], false)
+-- Config for: litee-calltree.nvim
+time([[Config for litee-calltree.nvim]], true)
+try_loadstring("\27LJ\2\2_\0\0\2\0\4\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0B\0\2\1K\0\1\0\1\0\2\fon_open\npanel\ricon_set\tnerd\nsetup\19litee.calltree\frequire\0", "config", "litee-calltree.nvim")
+time([[Config for litee-calltree.nvim]], false)
+-- Config for: nvim-lsp-installer
+time([[Config for nvim-lsp-installer]], true)
+try_loadstring("\27LJ\2\2z\0\1\5\2\5\0\0174\1\0\0-\2\0\0009\2\1\2-\3\1\0009\3\2\0039\3\0\3B\2\2\2=\2\0\1-\2\1\0009\2\2\0029\2\3\2=\2\3\1\18\3\0\0009\2\4\0\18\4\1\0B\2\3\1K\0\1\0\1¿\0¿\nsetup\17capabilities\blsp\14merge_fns\14on_attach\1\0\5\0\a\0\r6\0\0\0009\0\1\0006\1\2\0'\2\3\0B\1\2\0026\2\2\0'\3\4\0B\2\2\0029\3\5\0023\4\6\0B\3\2\0012\0\0ÄK\0\1\0\0\20on_server_ready\23nvim-lsp-installer\17config.utils\frequire\f_config\a_G\0", "config", "nvim-lsp-installer")
+time([[Config for nvim-lsp-installer]], false)
 -- Config for: LuaSnip
 time([[Config for LuaSnip]], true)
 try_loadstring("\27LJ\2\2M\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\14lazy_load luasnip.loaders.from_vscode\frequire\0", "config", "LuaSnip")
 time([[Config for LuaSnip]], false)
+-- Config for: nvim-lspconfig
+time([[Config for nvim-lspconfig]], true)
+try_loadstring("\27LJ\2\2Î\4\0\0\v\0\27\00046\0\0\0'\1\1\0B\0\2\0025\1\2\0006\2\3\0\18\3\1\0B\2\2\4H\5\fÄ'\a\4\0\18\b\5\0&\a\b\a6\b\5\0009\b\6\b9\b\a\b\18\t\a\0005\n\b\0=\6\t\n=\a\n\n=\a\v\nB\b\3\1F\5\3\3R\5Ú6\2\5\0009\2\f\0029\2\r\0025\3\14\0005\4\15\0=\4\16\3B\2\2\0016\2\5\0009\2\17\2)\3˙\0=\3\18\0026\2\5\0009\2\19\2'\3\20\0B\2\2\0016\2\5\0009\2\21\0029\2\22\0029\3\24\0'\4\25\0B\3\2\2=\3\23\0026\2\5\0009\2\21\0029\2\22\0029\3\24\0'\4\25\0B\3\2\2=\3\26\2K\0\1\0 textDocument/implementation\vvsplit\20goto_definition\28textDocument/definition\rhandlers\blspgautocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false, scope=\"cursor\"})\bcmd\15updatetime\6o\nfloat\1\0\1\vborder\tnone\1\0\3\14underline\2\nsigns\2\17virtual_text\1\vconfig\15diagnostic\nnumhl\vtexthl\ttext\1\0\0\16sign_define\afn\bvim\19DiagnosticSign\npairs\1\0\4\tInfo\tÔëâ \tHint\tÔ†µ \nError\tÔëß \tWarn\tÔî© \17config.utils\frequire\0", "config", "nvim-lspconfig")
+time([[Config for nvim-lspconfig]], false)
+-- Config for: nvim-tree.lua
+time([[Config for nvim-tree.lua]], true)
+try_loadstring("\27LJ\2\2Ü\2\0\0\3\0\14\0\0176\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0005\2\4\0=\2\5\0015\2\6\0=\2\a\0015\2\b\0=\2\t\0015\2\n\0=\2\v\0015\2\f\0=\2\r\1B\0\2\1K\0\1\0\tview\1\0\1\16auto_resize\2\bgit\1\0\1\vignore\1\ffilters\1\0\1\rdotfiles\1\16diagnostics\1\0\1\venable\2\22update_to_buf_dir\1\0\2\14auto_open\2\venable\1\1\0\3\16open_on_tab\2\15auto_close\2\18open_on_setup\2\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
+time([[Config for nvim-tree.lua]], false)
 if should_profile then save_profiles() end
 
 end)

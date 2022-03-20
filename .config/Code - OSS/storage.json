@@ -817,7 +817,8 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location"
+                        "label": "&&Last Edit Location",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1014,18 +1015,21 @@
                     },
                     {
                         "id": "workbench.action.debug.stop",
-                        "label": "&&Stop Debugging"
+                        "label": "&&Stop Debugging",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.debug.restart",
-                        "label": "&&Restart Debugging"
+                        "label": "&&Restart Debugging",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
                     },
                     {
                         "id": "workbench.action.debug.configure",
-                        "label": "Open &&Configurations"
+                        "label": "Open &&Configurations",
+                        "enabled": false
                     },
                     {
                         "id": "debug.addConfiguration",
@@ -1036,19 +1040,23 @@
                     },
                     {
                         "id": "workbench.action.debug.stepOver",
-                        "label": "Step &&Over"
+                        "label": "Step &&Over",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.debug.stepInto",
-                        "label": "Step &&Into"
+                        "label": "Step &&Into",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.debug.stepOut",
-                        "label": "Step O&&ut"
+                        "label": "Step O&&ut",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.debug.continue",
-                        "label": "&&Continue"
+                        "label": "&&Continue",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1683,8 +1691,8 @@
                 "mode": 0,
                 "x": 0,
                 "y": 0,
-                "width": 3072,
-                "height": 1656
+                "width": 2049,
+                "height": 1095
             }
         },
         "openedWindows": []

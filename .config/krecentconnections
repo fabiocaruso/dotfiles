@@ -1,6 +1,6 @@
 [CarusoNAS]
 Type=SMB
-URL=smb://192.168.1.209/
+URL=smb://192.168.50.138/
 
 [General]
 Index=CarusoNAS

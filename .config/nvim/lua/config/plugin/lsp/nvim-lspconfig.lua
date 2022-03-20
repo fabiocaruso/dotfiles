@@ -6,13 +6,18 @@ local config = function()
 		local hl = "DiagnosticSign" .. type
 		vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 	end
-	vim.diagnostic.config({
-		virtual_text = {
-			prefix = '●', -- Could be '■', '▎', 'x'
-		}
-	})
 	-- Options
-	
+	vim.diagnostic.config({
+		--[[virtual_text = {
+		prefix = '●', -- Could be '■', '▎', 'x'
+		}]]--
+		virtual_text = false,
+		signs = true,
+		underline = true,
+		float = { border = "none" },
+	})
+	vim.o.updatetime = 250
+	vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false, scope="cursor"})]]
 	-- Handlers
 	vim.lsp.handlers["textDocument/definition"] = utils.goto_definition('vsplit')
 	vim.lsp.handlers["textDocument/implementation"] = utils.goto_definition('vsplit')

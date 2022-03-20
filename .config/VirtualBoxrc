@@ -1,4 +1,4 @@
 [KFileDialog Settings]
-Recent Files[$e]=archlinux-2021.12.01-x86_64.iso,file:$HOME/Downloads/archlinux-2021.12.01-x86_64.iso
-Recent URLs[$e]=file:$HOME/Downloads/,file:$HOME/
+Recent Files[$e]=archlinux-2021.12.01-x86_64.iso,file:$HOME/Downloads/Fedora-Silverblue-ostree-x86_64-35-1.2.iso,file:$HOME/Downloads/nixos-plasma5-21.11.335481.604c44137d9-x86_64-linux.iso,file:$HOME/Downloads/archlinux-2021.12.01-x86_64.iso
+Recent URLs[$e]=file:$HOME/Downloads/,file:$HOME/,file:$HOME/.ftba/instances/56f55b00-5636-487d-9177-3391c8b69e86/saves/New World/computercraft/computer/5/,file:$HOME/Dokumente/
 detailViewIconSize=16
