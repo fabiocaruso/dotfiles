@@ -1,3 +1,4 @@
+-- Note: requires ripgrep to work well
 local config = function()
 	local actions = require('telescope.actions')
 	require('telescope').setup {

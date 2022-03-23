@@ -3,6 +3,7 @@ local config = function()
 		hijack_unnamed_buffer_when_opening = true,
 		open_on_setup = true,
 		auto_close = true,
+		auto_reload_on_write = true,
 		open_on_tab = true,
 		update_to_buf_dir   = {
 			enable = false,
@@ -19,6 +20,13 @@ local config = function()
 		},
 		view = {
 			auto_resize = true,
+			mappings = {
+			}
+		},
+		actions = {
+			open_file = {
+				resize_window = true,
+			},
 		}
 	})
 end

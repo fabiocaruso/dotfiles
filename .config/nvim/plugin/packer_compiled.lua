@@ -232,7 +232,7 @@ _G.packer_plugins = {
     url = "https://github.com/alexaandru/nvim-lspupdate"
   },
   ["nvim-tree.lua"] = {
-    config = { "\27LJ\2\2ª\2\0\0\3\0\14\0\0176\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0005\2\4\0=\2\5\0015\2\6\0=\2\a\0015\2\b\0=\2\t\0015\2\n\0=\2\v\0015\2\f\0=\2\r\1B\0\2\1K\0\1\0\tview\1\0\1\16auto_resize\2\bgit\1\0\1\vignore\1\ffilters\1\0\1\rdotfiles\1\16diagnostics\1\0\1\venable\2\22update_to_buf_dir\1\0\2\14auto_open\2\venable\1\1\0\4\15auto_close\2\18open_on_setup\2'hijack_unnamed_buffer_when_opening\2\16open_on_tab\2\nsetup\14nvim-tree\frequire\0" },
+    config = { "\27LJ\2\2ˆ\3\0\0\4\0\19\0\0236\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0005\2\4\0=\2\5\0015\2\6\0=\2\a\0015\2\b\0=\2\t\0015\2\n\0=\2\v\0015\2\f\0004\3\0\0=\3\r\2=\2\14\0015\2\16\0005\3\15\0=\3\17\2=\2\18\1B\0\2\1K\0\1\0\factions\14open_file\1\0\0\1\0\1\18resize_window\2\tview\rmappings\1\0\1\16auto_resize\2\bgit\1\0\1\vignore\1\ffilters\1\0\1\rdotfiles\1\16diagnostics\1\0\1\venable\2\22update_to_buf_dir\1\0\2\14auto_open\2\venable\1\1\0\5\16open_on_tab\2\18open_on_setup\2\15auto_close\2\25auto_reload_on_write\2'hijack_unnamed_buffer_when_opening\2\nsetup\14nvim-tree\frequire\0" },
     loaded = true,
     path = "/home/fabiocaruso/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/kyazdani42/nvim-tree.lua"
@@ -281,7 +281,7 @@ _G.packer_plugins = {
     url = "https://github.com/simrat39/rust-tools.nvim"
   },
   ["tabby.nvim"] = {
-    config = { "\27LJ\2\0023\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\ntabby\frequire\0" },
+    config = { "\27LJ\2\0027\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\ntabby\frequire\0" },
     loaded = true,
     path = "/home/fabiocaruso/.local/share/nvim/site/pack/packer/start/tabby.nvim",
     url = "https://github.com/nanozuki/tabby.nvim"
@@ -381,7 +381,7 @@ try_loadstring("\27LJ\2\2Ï\1\0\0\5\0\f\0\0226\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\
 time([[Config for litee.nvim]], false)
 -- Config for: tabby.nvim
 time([[Config for tabby.nvim]], true)
-try_loadstring("\27LJ\2\0023\0\0\2\0\3\0\0066\0\0\0'\1\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\ntabby\frequire\0", "config", "tabby.nvim")
+try_loadstring("\27LJ\2\0027\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B\0\2\1K\0\1\0\nsetup\ntabby\frequire\0", "config", "tabby.nvim")
 time([[Config for tabby.nvim]], false)
 -- Config for: gitsigns.nvim
 time([[Config for gitsigns.nvim]], true)
@@ -405,7 +405,7 @@ try_loadstring("\27LJ\2\2ë\4\0\0\v\0\27\00046\0\0\0'\1\1\0B\0\2\0025\1\2\0006\2\
 time([[Config for nvim-lspconfig]], false)
 -- Config for: nvim-tree.lua
 time([[Config for nvim-tree.lua]], true)
-try_loadstring("\27LJ\2\2ª\2\0\0\3\0\14\0\0176\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0005\2\4\0=\2\5\0015\2\6\0=\2\a\0015\2\b\0=\2\t\0015\2\n\0=\2\v\0015\2\f\0=\2\r\1B\0\2\1K\0\1\0\tview\1\0\1\16auto_resize\2\bgit\1\0\1\vignore\1\ffilters\1\0\1\rdotfiles\1\16diagnostics\1\0\1\venable\2\22update_to_buf_dir\1\0\2\14auto_open\2\venable\1\1\0\4\15auto_close\2\18open_on_setup\2'hijack_unnamed_buffer_when_opening\2\16open_on_tab\2\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
+try_loadstring("\27LJ\2\2ˆ\3\0\0\4\0\19\0\0236\0\0\0'\1\1\0B\0\2\0029\0\2\0005\1\3\0005\2\4\0=\2\5\0015\2\6\0=\2\a\0015\2\b\0=\2\t\0015\2\n\0=\2\v\0015\2\f\0004\3\0\0=\3\r\2=\2\14\0015\2\16\0005\3\15\0=\3\17\2=\2\18\1B\0\2\1K\0\1\0\factions\14open_file\1\0\0\1\0\1\18resize_window\2\tview\rmappings\1\0\1\16auto_resize\2\bgit\1\0\1\vignore\1\ffilters\1\0\1\rdotfiles\1\16diagnostics\1\0\1\venable\2\22update_to_buf_dir\1\0\2\14auto_open\2\venable\1\1\0\5\16open_on_tab\2\18open_on_setup\2\15auto_close\2\25auto_reload_on_write\2'hijack_unnamed_buffer_when_opening\2\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
 time([[Config for nvim-tree.lua]], false)
 if should_profile then save_profiles() end
 

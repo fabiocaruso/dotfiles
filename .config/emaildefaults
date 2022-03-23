@@ -1,7 +1,0 @@
-[Defaults]
-Profile=Standard
-
-[PROFILE_Standard]
-EmailClient[$e]=thunderbird.desktop
-ServerType=
-TerminalClient=false

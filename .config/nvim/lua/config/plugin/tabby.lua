@@ -1,5 +1,5 @@
 local config = function()
-	require('tabby').setup()
+	require('tabby').setup({})
 end
 
 local M = {
