@@ -35,9 +35,22 @@ local function merge_fns(fns)
 	end
 end
 
+local function is_fn(fn)
+	return type(fn)=='function' or (type(fn)=='table' and getmetatable(fn).__call ~= nil)
+end
+
+local function in_list(list, x)
+	for _, v in pairs(list) do
+		if v == x then return true end
+	end
+	return false
+end
+
 local M = {
 	goto_definition = goto_definition,
 	merge_fns = merge_fns,
+	is_fn = is_fn,
+	in_list = in_list,
 };
 
 return M;

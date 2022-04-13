@@ -1,12 +1,38 @@
+local utils = require('config.utils');
+
 local M = {
 	packages = {}
 }
+
+local lua_rtp = vim.split(package.path, ';')
+table.insert(lua_rtp, "lua/?.lua")
+table.insert(lua_rtp, "lua/?/init.lua")
 
 _G._config = {
 	lsp = {
 		on_attach = {},
 		capabilities = vim.lsp.protocol.make_client_capabilities(),
+		ls = {
+			sumneko_lua = {
+				settings = {
+					Lua = {
+						runtime = {
+							version = 'LuaJIT',
+							path = lua_rtp,
+						},
+						workspace = {
+							-- Exclude packages installed by packer
+							library = vim.api.nvim_get_runtime_file("!.local/*", true),
+						},
+						diagnostics = {
+							globals = {'vim'},
+						},
+					},
+				},
+			},
+		},
 	},
+	keymaps = {},
 }
 
 local paths = vim.split(vim.fn.glob('~/.config/nvim/lua/config/plugin/**/*lua'), '\n')
@@ -17,11 +43,16 @@ for _, file in pairs(paths) do
 	file = file:gsub('%.lua', '')
 	if file ~= 'config/plugin/init' then
 		local pkg = require(file)
-		if pkg.isPkgMngr then
-			--TODO: Look which pkgmgr is configured or select one intelligently
-			M.packageMngr = pkg
-		else
-			table.insert(M.packages, pkg)
+		if pkg.keymaps ~= nil then
+			vim.list_extend(_G._config.keymaps, pkg.keymaps)
+		end
+		if pkg.enabled ~= false then
+			if pkg.isPkgMngr then
+				--TODO: Look which pkgmgr is configured or select one intelligently
+				M.packageMngr = pkg
+			else
+				table.insert(M.packages, pkg)
+			end
 		end
 	end
 end
@@ -29,6 +60,13 @@ end
 M.setup = function()
 	if M.packageMngr == nil or M.packages == {} then
 		return "No packagemanager or packages found!"
+	end
+	for i, keymap in ipairs(_G._config.keymaps) do
+		local rhs = keymap[3]
+		if utils.is_fn(rhs) then
+			rhs = ":lua _G._config.keymaps["..i.."][3]()<cr>"
+		end
+		vim.api.nvim_set_keymap(keymap[1], keymap[2], rhs, keymap[4])
 	end
 	M.packageMngr.setup(M.packages)
 end

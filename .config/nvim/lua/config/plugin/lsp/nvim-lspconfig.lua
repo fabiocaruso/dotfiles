@@ -26,6 +26,64 @@ end
 local M = {
 	'neovim/nvim-lspconfig',
 	config = config,
+	keymaps = {
+		{
+			'n',
+			'<leader>rn',
+			vim.lsp.buf.rename,
+			{ noremap = true },
+			description = "Lsp rename",
+		},
+		{
+			'n',
+			'<leader>a',
+			vim.lsp.buf.code_action,
+			{ noremap = true },
+			description = "Lsp toggle code action",
+		},
+		{
+			'n',
+			'<leader>h',
+			vim.lsp.buf.hover,
+			{ noremap = true },
+			description = "Lsp toggle hover",
+		},
+		{
+			'n',
+			'<leader>gd',
+			vim.lsp.buf.definition,
+			{ noremap = true },
+			description = "Lsp go to definition",
+		},
+		{
+			'n',
+			'<leader>gi',
+			function ()
+				vim.cmd([[
+					TroubleClose
+				]])
+				vim.lsp.buf.implementation()
+			end,
+			{ noremap = true },
+			description = "Lsp go to implementation",
+		},
+		{
+			'i',
+			'<C-s>',
+			vim.lsp.buf.signature_help,
+			{ noremap = true },
+			description = "Lsp show signature help",
+		},
+		{
+			'n',
+			'<leader>gr',
+			function ()
+				vim.cmd('NiceReference')
+			end,
+			{ noremap = true },
+			description = "Lsp show references",
+		},
+	},
 };
 
 return M;

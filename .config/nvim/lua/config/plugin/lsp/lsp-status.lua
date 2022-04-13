@@ -6,6 +6,7 @@ local config = function()
 		current_function = false,
 		show_filename = false,
 		diagnostics = false,
+		status_symbol = '',
 	})
 	--gc.lsp.capabilities = vim.tbl_extend('keep', gc.lsp.capabilities, lsp_status.capabilities)
 	table.insert(gc.lsp.on_attach, lsp_status.on_attach)

@@ -17,6 +17,9 @@ local config = function()
 			'fugitive',
 			'quickfix',
 		},
+		options = {
+			globalstatus = true, -- Sets laststatus = 3
+		},
 	})
 end
 

@@ -1,7 +1,8 @@
 local config = function()
 	local gc = _G._config
 	local utils = require('config.utils')
-	local extension_path = '/home/fabiocaruso/.vscode/extensions/vadimcn.vscode-lldb-1.6.10/'
+	-- TODO: Download and install vscode-lldb in the install script
+	local extension_path = vim.fn.stdpath('data') .. '/dapinstall/codelldb/extension/'
 	local codelldb_path = extension_path .. 'adapter/codelldb'
 	local liblldb_path = extension_path .. 'lldb/lib/liblldb.so'
 	vim.fn.sign_define('DapBreakpoint', {text='', texthl='red', linehl='', numhl=''})
@@ -17,6 +18,8 @@ local config = function()
 			},
 		},
 		server = {
+			-- TODO: Do this better
+			cmd = { vim.fn.stdpath('data') .. '/lsp_servers/rust/rust-analyzer' },
 			on_attach = utils.merge_fns(gc.lsp.on_attach),
 			capabilities = gc.lsp.capabilities,
 			settings = {
@@ -50,8 +53,12 @@ local config = function()
 end
 
 local M = {
-	'simrat39/rust-tools.nvim',
+	'fabiocaruso/rust-tools.nvim',
 	config = config,
+	requires = {
+		{'mfussenegger/nvim-dap'},
+		{'nvim-lua/plenary.nvim'},
+	},
 };
 
 return M;

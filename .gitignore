@@ -5,34 +5,72 @@
 !.kde/
 !.kde/**/*
 !.vim/
-!.vim/**/*
+!.vim/coc-settings.json
+!.vim/plug.vim
+!.vim/autoload/
+!.vim/autoload/*
 !.config/
-!.config/*
+!.config/rustfmt/
+!.config/rustfmt/rustfmt.toml
+!.config/plasma-org.kde.plasma.desktop-appletsrc
+!.config/plasmarc
+!.config/kwinrc
+!.config/kglobalshortcutsrc
+!.config/kwinrulesrc
+!.config/khotkeysrc
+!.config/kded5rc
+!.config/krunnerrc
+!.config/baloofilerc
+!.config/plasmanotifyrc
+!.config/plasma-localerc
+!.config/ktimezonedrc
+!.config/kaccessrc
+!.config/kdeglobals
+!.config/kcminputrc
+!.config/kxkbrc
+!.config/kgammarc
+!.config/powermanagementprofilesrc
+!.config/konsolerc
+!.config/alacritty/
 !.config/alacritty/**/*
-!.config/coc/**/*
-!.config/Code/**/*
-!.config/Code\ -\ OSS/**/*
+!.config/Code/
+!.config/Code/User/
+!.config/Code/User/settings.json
+!.config/cura/
 !.config/cura/**/*
-!.config/dim/**/*
-!.config/discord/**/*
+!.local/
+!.local/share/
+!.local/share/cura/
+!.local/share/cura/**/*
+!.config/dim/
+!.config/dim/config.toml
+!.config/discord/
+!.config/discord/settings.json
+!.config/dolphin-emu/
 !.config/dolphin-emu/**/*
+!.config/flameshot/
 !.config/flameshot/**/*
-!.config/google-chrome/**/*
-!.config/gtk-3.0/**/*
-!.config/gtk-4.0/**/*
-!.config/helix/**/*
+!.config/gtk-3.0/
+!.config/gtk-3.0/settings.ini
+!.config/gtk-4.0/
+!.config/gtk-4.0/settings.ini
+!.config/helix/
+!.config/helix/config.toml
+!.config/kde.org/
 !.config/kde.org/**/*
-!.config/kdeconnect/**/*
-!.config/KeeWeb/**/*
-!.config/libreoffice/**/*
+!.config/kdeconnect/
+!.config/kdeconnect/config
+!.config/KeeWeb/
+!.config/KeeWeb/window-position.json
+!.config/nvim/
 !.config/nvim/**/*
+!.config/plasma-workspace/
 !.config/plasma-workspace/**/*
-!.config/smplayer/**/*
-!.config/Ultimaker\ B.V./**/*
+!.config/VirtualBox/
 !.config/VirtualBox/**/*
-!.config/vivaldi/**/*
+!.config/vlc/
 !.config/vlc/**/*
-!.config/wal/**/*
+!.config/xsettingsd/
 !.config/xsettingsd/**/*
 !.bashrc
 !.bash_profile
@@ -62,34 +100,3 @@
 *.log
 *.log.*
 node_modules/
-# Vim plugged
-.vim/plugged/
-# Vivaldi Webbrowser
-CertificateRevocation/
-ClientSidePhishing/
-Crash\ Reports/
-GrShaderCache/
-ShaderCache/
-Safe\ Browsing/
-ZxcvbnData/
-Default/
-# VSCode
-Backups/
-Cache/
-CachedData/
-CachedExtensions/
-CachedExtensionVSIXs/
-Code\ Cache/
-exthost\ Crash\ Reports/
-GPUCache/
-Local\ Storage/
-logs/
-Session\ Storage/
-User/
-Cookies
-# Discord
-shared_proto_db/
-TransportSecurity
-# KeeWeb
-OfflineFiles/
-temp/

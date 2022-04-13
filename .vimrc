@@ -1,5 +1,4 @@
 let mapleader = " "
-let g:native_lsp = 1
 filetype plugin on
 source ~/.vim/plug.vim
 
@@ -27,6 +26,7 @@ set colorcolumn=80
 set splitright
 set wildmenu
 set wildmode=longest,list,full
+set clipboard^=unnamed,unnamedplus
 
  "_  __                                      _                 
 "| |/ /___ _   _ _ __ ___   __ _ _ __  _ __ (_)_ __   __ _ ___ 
@@ -61,66 +61,27 @@ let g:fzf_action = {
   \ 'ctrl-v': 'vsplit' }
 ""Ack.vim
 nnoremap , :Ag<cr>
-""Coc + Native LSP
-let g:coc_start_at_startup = v:false
-if g:native_lsp == 1
-	nnoremap <leader>a <cmd>lua vim.lsp.buf.code_action()<cr>
-	nnoremap <leader>h <cmd>lua vim.lsp.buf.hover()<cr>
-	nnoremap <leader>gd <cmd>lua vim.lsp.buf.definition()<cr>
-	nnoremap <leader>gi <cmd>TroubleClose<cr> <cmd>lua vim.lsp.buf.implementation()<cr>
-	inoremap <C-s> <cmd>lua vim.lsp.buf.signature_help()<CR>
-	nnoremap <leader>gr <cmd>NiceReference<cr>
-else
-	let g:coc_start_at_startup = v:true
-	nnoremap <leader>a :CocAction<cr>
-	nnoremap <leader>t :call ToggleRustTypeHints()<cr>
-	nnoremap <leader>gd :call CocAction('jumpDefinition')<cr>
-	inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
-	inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
-	nmap <leader>rn <Plug>(coc-rename)
-	"inoremap <silent> <leader>a <C-r>=CocActionAsync('showSignatureHelp')<CR>
-	""Coc-Explorer
-	nnoremap <F2> :CocCommand explorer<CR>
-endif
+""Coc + Native LSP TODO
+let g:coc_start_at_startup = has('nvim') ? (v:false) : (v:true)
+nnoremap <leader>a :CocAction<cr>
+nnoremap <leader>t :call ToggleRustTypeHints()<cr>
+nnoremap <leader>gd :call CocAction('jumpDefinition')<cr>
+inoremap <expr> <C-j> pumvisible() ? "\<C-n>" : "\<C-j>"
+inoremap <expr> <C-k> pumvisible() ? "\<C-p>" : "\<C-k>"
+nmap <leader>rn <Plug>(coc-rename)
+"inoremap <silent> <leader>a <C-r>=CocActionAsync('showSignatureHelp')<CR>
+""Coc-Explorer
+nnoremap <F2> :CocCommand explorer<CR>
 ""Obsession
 noremap <leader>s :Obsess<cr>
 ""Gitgutter
 nnoremap <leader>gg :GitGutterToggle<cr>
 ""Vimspector
-if g:native_lsp == 1
-	function ActivateDebugMode()
-		NvimTreeClose
-		TroubleClose
-		lua require('dapui').open()
-		RustDebuggables
-	endfunction
-	function DeactivateDebugMode()
-		lua require('dapui').close()
-		NvimTreeOpen
-		Trouble
-	endfunction
-	nnoremap <leader>dd :call ActivateDebugMode()<cr>
-	nnoremap <leader>dx :call DeactivateDebugMode()<CR>
-	nnoremap <leader>dc :lua require('dap').continue()<cr>
-	nnoremap <leader>di :lua require('dap').step_into()<cr>
-	nnoremap <leader>dv :lua require('dap').step_over()<cr>
-	nnoremap <leader>do :lua require('dap').step_out()<cr>
-	nnoremap <leader>db :lua require('dap').toggle_breakpoint()<cr>
-	nnoremap <leader>dr :lua require('dap').repl.open()<cr>
-	nnoremap <F5> :lua require('dap').continue()<cr>
-	nnoremap <F6> :lua require('dap').step_into()<cr>
-	nnoremap <F7> :lua require('dap').step_over()<cr>
-	nnoremap <F8> :lua require('dap').step_out()<cr>
-	nnoremap <F9> :lua require('dap').toggle_breakpoint()<cr>
-	nnoremap <F10> :lua require('dap').set_breakpoint(vim.fn.input("Breakpoint condition: "))<cr>
-	nnoremap <F11> :lua require('dap').set_breakpoint(nil, nil, vim.fn.input("Log point message: "))<cr>
-else
-	nmap <leader>dd :!cargo build<cr> <bar> :call vimspector#Launch()<cr>
-	nmap <leader>dx :VimspectorReset<CR>
-	"nmap <leader>de :VimspectorEval
-	nmap <leader>dw :VimspectorWatch
-	nmap <leader>do :VimspectorShowOutput
-endif
+nmap <leader>dd :!cargo build<cr> <bar> :call vimspector#Launch()<cr>
+nmap <leader>dx :VimspectorReset<CR>
+"nmap <leader>de :VimspectorEval
+nmap <leader>dw :VimspectorWatch
+nmap <leader>do :VimspectorShowOutput
 ""Function Keymappings
 nnoremap <leader>fl :call WordToFiglet()<cr>
 nnoremap <leader>de :call TranslateToGerman()<cr>
@@ -136,18 +97,18 @@ noremap <S-j> 10j
 noremap <S-h> 10h
 noremap <S-l> 10l
 ""Easy Brackets
-inoremap { {}<Left><Cr><ESC><S-O>
-inoremap {<CR> {}<Left><Cr><ESC><S-O>
-inoremap {} {}
-inoremap ( ()<Left>
-inoremap () ()
-inoremap [ []<Left>
-inoremap [] []
-autocmd FileType html          inoremap <buffer> < <
-inoremap < <><Left>
-inoremap <<space> <<space>
-inoremap <= <=
-inoremap <> <>
+"inoremap { {}<Left><Cr><ESC><S-O>
+"inoremap {<CR> {}<Left><Cr><ESC><S-O>
+"inoremap {} {}
+"inoremap ( ()<Left>
+"inoremap () ()
+"inoremap [ []<Left>
+"inoremap [] []
+"autocmd FileType html          inoremap <buffer> < <
+"inoremap < <><Left>
+"inoremap <<space> <<space>
+"inoremap <= <=
+"inoremap <> <>
 
  "____  _             _           
 "|  _ \| |_   _  __ _(_)_ __  ___ 

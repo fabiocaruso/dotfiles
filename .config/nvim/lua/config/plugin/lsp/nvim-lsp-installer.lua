@@ -7,8 +7,15 @@ local config = function()
 
 		opts.on_attach = utils.merge_fns(gc.lsp.on_attach)
 		opts.capabilities = gc.lsp.capabilities
+		local ls_config = gc.lsp.ls[server.name]
+		if ls_config ~= nil then
+			opts = vim.tbl_deep_extend("keep", opts, ls_config)
+		end
 
-		-- TODO: Blacklist rust-analyzer dynamically
+		-- TODO: Make this dynamic
+		if server.name == 'rust_analyzer' then
+			return
+		end
 
 		-- (optional) Customize the options passed to the server
 		-- if server.name == "tsserver" then
