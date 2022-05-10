@@ -5,7 +5,7 @@ vim.api.nvim_set_keymap(
 	":lua require('telescope.builtin').live_grep{ vimgrep_arguments = {'ag', '-i', '--vimgrep', '--noheading', '--hidden', '--smart-case'} }<cr>",
 	{ noremap = true }
 )
-vim.api.nvim_set_keymap("n", "<leader>fb", ":lua require('telescope.builtin').buffers{}<cr>", { noremap = true })
+vim.api.nvim_set_keymap("n", "-", ":lua require('telescope.builtin').buffers{}<cr>", { noremap = true })
 vim.api.nvim_set_keymap("n", "<leader>fgb", ":lua require('telescope.builtin').git_branches{}<cr>", { noremap = true })
 vim.api.nvim_set_keymap("n", "<leader>fgc", ":lua require('telescope.builtin').git_commits{}<cr>", { noremap = true })
 vim.api.nvim_set_keymap("n", "<leader>fgs", ":lua require('telescope.builtin').git_status{}<cr>", { noremap = true })

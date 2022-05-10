@@ -2,6 +2,7 @@ local config = function()
 	local gc = _G._config
 	local utils = require('config.utils')
 	local lsp_installer = require("nvim-lsp-installer")
+	--lsp_installer.setup({})
 	lsp_installer.on_server_ready(function(server)
 		local opts = {}
 

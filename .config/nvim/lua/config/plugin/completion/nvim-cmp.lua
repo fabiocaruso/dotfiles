@@ -68,6 +68,7 @@ local cmp_config = function()
 		},
 		sources = cmp.config.sources({
 			{ name = 'nvim_lsp' },
+			{ name = 'nvim_lua' },
 			{ name = 'luasnip' },
 			{ name = 'crates' },
 		}, {
@@ -82,7 +83,7 @@ local cmp_config = function()
 					luasnip = "[LuaSnip]",
 					crates = "[Crates]",
 					cmdline = "[CmdLine]",
-					--nvim_lua = "[Lua]",
+					nvim_lua = "[Lua]",
 				})
 			}),
 		},
@@ -114,6 +115,7 @@ local M = {
 		{'onsails/lspkind-nvim'},
 		{'saecki/crates.nvim'},
 		{'hrsh7th/cmp-nvim-lsp'},
+		{'hrsh7th/cmp-nvim-lua'},
 		{
 			'L3MON4D3/LuaSnip',
 			config = luasnip_config,

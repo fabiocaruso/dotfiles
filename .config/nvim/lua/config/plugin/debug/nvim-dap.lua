@@ -23,7 +23,9 @@ local M = {
 			'n',
 			'<leader>dd',
 			function ()
-				require('dapui').open()
+				-- TODO: Make this lang/plugin independent
+				vim.cmd("RustDebuggables")
+				--require('dapui').open()
 			end,
 			{ noremap = true },
 			description = "Open the debugger",

@@ -53,8 +53,9 @@ local config = function()
 end
 
 local M = {
-	'fabiocaruso/rust-tools.nvim',
+	'Freyskeyd/rust-tools.nvim',
 	config = config,
+	branch = 'dap_fix',
 	requires = {
 		{'mfussenegger/nvim-dap'},
 		{'nvim-lua/plenary.nvim'},

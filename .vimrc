@@ -13,7 +13,6 @@ set mouse=nv
 set number
 set relativenumber
 set scrolloff=8
-set nu
 set shiftwidth=2
 set tabstop=2
 set cursorcolumn
@@ -27,6 +26,8 @@ set splitright
 set wildmenu
 set wildmode=longest,list,full
 set clipboard^=unnamed,unnamedplus
+set hidden
+set switchbuf=useopen,usetab
 
  "_  __                                      _                 
 "| |/ /___ _   _ _ __ ___   __ _ _ __  _ __ (_)_ __   __ _ ___ 
@@ -209,7 +210,9 @@ let g:airline_symbols.readonly = ''
 let g:airline_symbols.linenr = ''
 
 "vim-oscyank
-autocmd TextYankPost * if v:event.operator is 'y' && v:event.regname is '' | OSCYankReg " | endif
+if !has('nvim')
+	autocmd TextYankPost * if v:event.operator is 'y' && v:event.regname is '' | OSCYankReg " | endif
+endif
 
 "Rust
 let g:rust_recommended_style = 0
@@ -218,6 +221,11 @@ autocmd BufNewFile,BufRead *.rs set filetype=rust
 "" Rusty-tags (this causes the buffer to redraw)
 autocmd BufRead *.rs :setlocal tags=./rusty-tags.vi;/,$RUST_SRC_PATH/rusty-tags.vi
 autocmd BufWritePost *.rs :silent! exec "!rusty-tags vi --quiet --start-dir=" . expand('%:p:h') . "&" | redraw!
+
+"vim-header
+let g:header_field_author = 'Fabio Caruso'
+let g:header_field_author_email = 'fabio.caruso@hotmail.com'
+let g:header_auto_update_header = 1
 
   "__                  _   _                 
  "/ _|_   _ _ __   ___| |_(_) ___  _ __  ___ 

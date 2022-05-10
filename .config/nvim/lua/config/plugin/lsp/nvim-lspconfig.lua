@@ -1,5 +1,8 @@
 local config = function()
 	local utils = require('config.utils');
+	--local lsp_config = require('lspconfig');
+	-- LS init
+	--for _, server in ipairs(lsp)
 	-- Icons
 	local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
 	for type, icon in pairs(signs) do

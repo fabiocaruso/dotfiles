@@ -17,6 +17,7 @@ local config = function()
 				hide_dotfiles = false,
 				hide_gitignored = false,
 			},
+			follow_current_file = true,
 			use_libuv_file_watcher = true,
 		},
 	})

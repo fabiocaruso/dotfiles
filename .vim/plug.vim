@@ -16,10 +16,13 @@ Plug 'leafOfTree/vim-vue-plugin'
 Plug 'rust-lang/rust.vim'
 Plug 'mattn/emmet-vim'
 "Utility
+Plug 'alpertuna/vim-header'
 Plug 'lifepillar/vim-cheat40'
 Plug 'fadein/vim-FIGlet'
 Plug 'tpope/vim-obsession'
-Plug 'ojroques/vim-oscyank'
+if !has("nvim")
+	Plug 'ojroques/vim-oscyank'
+endif
 "Debugger
 if !has("nvim")
 	Plug 'puremourning/vimspector'

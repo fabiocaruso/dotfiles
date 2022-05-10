@@ -35,7 +35,8 @@ alias nvim='nvim -u ~/.config/nvim/init.lua'
 
 #WSL
 #export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
-export DISPLAY=$(route.exe print | grep 0.0.0.0 | head -1 | awk '{print $4}'):0.0
+#export DISPLAY=$(route.exe print | grep 0.0.0.0 | head -1 | awk '{print $4}'):0.0
+export DISPLAY=:0
 export LIBGL_ALWAYS_INDIRECT=1
 
 # Rusty-tags to generate ctags from rust src (https://github.com/dan-t/rusty-tags)

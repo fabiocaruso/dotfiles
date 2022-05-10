@@ -5,6 +5,7 @@ end
 local M = {
 	'nanozuki/tabby.nvim',
 	config = config,
+	enabled = false,
 }
 
 return M
