@@ -49,7 +49,7 @@ install_deps() {
 		sudo add-apt-repository ppa:neovim-ppa/unstable
 		sudo apt-get update
 		sudo apt-get install build-essential cmake libc-dev -y
-		sudo apt-get install rsync neovim python3-dev python3-pip python3-neovim curl npm fzf silversearcher-ag ripgrep bat figlet translate-shell tmux selene -y
+		sudo apt-get install rsync neovim python3-dev python3-pip python3-neovim curl npm fzf silversearcher-ag ripgrep bat figlet translate-shell tmux -y
 	fi
 }
 
@@ -118,7 +118,7 @@ rust_setup() {
 		curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --default-toolchain=nightly -y
 		source "$HOME/.cargo/env"
 	fi
-	cargo install git-delta rusty-tags
+	cargo install git-delta rusty-tags selene
 	git config --global core.pager "delta --line-numbers --dark"
 	rustup component add clippy rust-src
 	nvim "+CocInstall coc-rust-analyzer coc-rls" "+VimspectorInstall CodeLLDB --enable-rust" +qall
