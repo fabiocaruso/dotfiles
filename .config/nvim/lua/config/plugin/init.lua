@@ -9,9 +9,26 @@ table.insert(lua_rtp, "lua/?.lua")
 table.insert(lua_rtp, "lua/?/init.lua")
 
 _G._config = {
+	general = {
+		appearance = {
+			session_store = "",
+		},
+	},
 	lsp = {
 		on_attach = {},
 		capabilities = vim.lsp.protocol.make_client_capabilities(),
+		blacklist = { 'rust_analyzer' },
+		initialized_servers = { 'rust_analyzer' },
+		init_server = nil,
+		appearance = {
+			signs = {
+				error = "",
+				warning = "",
+				hint = "",
+				information = "",
+				success = ""
+			},
+		},
 		ls = {
 			sumneko_lua = {
 				settings = {
@@ -32,12 +49,35 @@ _G._config = {
 			},
 		},
 	},
-	keymaps = {},
+	keymaps = {
+		{
+			'n',
+			'<s-l>',
+			'<Cmd>bn<cr>',
+			{ noremap = true },
+			description = "Fast switch to next buffer",
+		},
+		{
+			'n',
+			'<s-h>',
+			'<Cmd>bp<cr>',
+			{ noremap = true },
+			description = "Fast switch to prev buffer",
+		},
+		{
+			'n',
+			'<s-x>',
+			'<Cmd>bd<cr>',
+			{ noremap = true },
+			description = "Fast delete buffer",
+		},
+	},
 }
 
 local paths = vim.split(vim.fn.glob('~/.config/nvim/lua/config/plugin/**/*lua'), '\n')
 --print(vim.inspect(vim.fn.fnamemodify(vim.fn.expand('%:h'), ':p:~:.')))
 
+-- Load all package definitions and detect packages managers
 for _, file in pairs(paths) do
 	file = file:gsub('.-/%.config/nvim/lua/', '')
 	file = file:gsub('%.lua', '')
@@ -46,7 +86,7 @@ for _, file in pairs(paths) do
 		if pkg.keymaps ~= nil then
 			vim.list_extend(_G._config.keymaps, pkg.keymaps)
 		end
-		if pkg.enabled ~= false then
+		if pkg.enabled or pkg.enabled == nil then
 			if pkg.isPkgMngr then
 				--TODO: Look which pkgmgr is configured or select one intelligently
 				M.packageMngr = pkg

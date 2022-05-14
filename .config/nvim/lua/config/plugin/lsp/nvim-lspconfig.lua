@@ -1,10 +1,30 @@
 local config = function()
+	local gc = _G._config
 	local utils = require('config.utils');
 	--local lsp_config = require('lspconfig');
-	-- LS init
-	--for _, server in ipairs(lsp)
+	-- Generates a default config for all lsp servers
+	local generate_config = function(server_name)
+		local opts = {}
+		opts.on_attach = utils.merge_fns(gc.lsp.on_attach)
+		opts.capabilities = gc.lsp.capabilities
+		local ls_config = gc.lsp.ls[server_name]
+		if ls_config ~= nil then
+			opts = vim.tbl_deep_extend("keep", opts, ls_config)
+		end
+		return opts
+	end
+	-- Register an init function for other plugins
+	gc.lsp.init_server = function(server_name)
+		require('lspconfig')[server_name].setup(generate_config(server_name))
+	end
 	-- Icons
-	local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
+	local config_signs = gc.lsp.appearance.signs
+	local signs = {
+		Error = config_signs.error.." ",
+		Warn = config_signs.warning.." ",
+		Hint = config_signs.hint.." ",
+		Info = config_signs.information.." "
+	}
 	for type, icon in pairs(signs) do
 		local hl = "DiagnosticSign" .. type
 		vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
