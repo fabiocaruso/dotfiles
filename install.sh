@@ -46,9 +46,10 @@ install_deps() {
 		sudo eopkg it cmake rsync tmux vim neovim python3 python3-devel curl nodejs fzf ripgrep silver-searcher bat rlwrap translate-shell
 		sudo snap install figlet
 	elif [ "$OS" = "Ubuntu" ] || [ "$OS" = "Linux Mint" ]; then
+		sudo add-apt-repository ppa:neovim-ppa/unstable
 		sudo apt-get update
 		sudo apt-get install build-essential cmake libc-dev -y
-		sudo apt-get install rsync neovim python3-dev python3-pip python3-neovim curl npm fzf silversearcher-ag ripgrep bat figlet translate-shell tmux -y
+		sudo apt-get install rsync neovim python3-dev python3-pip python3-neovim curl npm fzf silversearcher-ag ripgrep bat figlet translate-shell tmux selene -y
 	fi
 }
 
@@ -64,20 +65,24 @@ if [ "$OSTYPE" = "linux-gnu" ] ; then
 	# Check if dependencies installed correctly
 	nvim +checkhealth
 	# Clone dotfiles if it's missing
-	git clone https://github.com/fabiocaruso/dotfiles.git
+	git clone https://github.com/fabiocaruso/dotfiles ~/dotfiles
 	rsync -va ~/dotfiles/ ~/
 	rm -Rf ~/dotfiles/
 	git config --global core.excludesfile ~/.gitignore_global
-	# Clone Vundle if it's missing
+	# Clone Plug
 	mkdir ~/.vim/plugged/
 	sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 	curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	# Clone Packer
+	git clone --depth 1 https://github.com/wbthomason/packer.nvim \
+ 		~/.local/share/nvim/site/pack/packer/start/packer.nvim
 	# Clone tmux plugin manager (tpm)
 	git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 	# Install plugins
 	nvim -u ~/.vim/plug.vim +PlugInstall +qall
+	nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 	nvim "+CocInstall coc-explorer" +qall
 	~/.tmux/plugins/tpm/scripts/install_plugins.sh
 elif [ "$OSTYPE" = "darwin" ] ; then
