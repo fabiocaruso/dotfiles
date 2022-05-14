@@ -15,6 +15,7 @@ end
 local M = {
 	'nvim-lua/lsp-status.nvim',
 	config = config,
+	enabled = false,
 };
 
 return M;

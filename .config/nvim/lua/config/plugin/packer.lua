@@ -1,5 +1,5 @@
 local packerAdapter = function(config)
-	return config;
+	return config
 end;
 
 local setup = function(pkgsConfig)
