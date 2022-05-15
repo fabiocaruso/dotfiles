@@ -37,7 +37,9 @@ local M = {
 		{
 			'n',
 			'<leader>km',
-			require('legendary').find,
+			function()
+				require('legendary').find()
+			end,
 			{ noremap = true },
 			description = "Opens keymap legend",
 		},

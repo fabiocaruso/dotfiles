@@ -3,11 +3,12 @@ local config = function()
 	local utils = require('config.utils')
 	local lsp_installer = require("nvim-lsp-installer")
 	lsp_installer.setup({
-		automatic_installation = true,
+		automatic_installation = false,
 	})
 	local installed_servers = lsp_installer.get_installed_servers()
 	vim.api.nvim_create_autocmd({"BufRead"}, {
 		callback = function()
+			-- TODO: Exclude certain filetypes from showing the context menu
 			local available_servers = lsp_installer.get_available_servers()
 			local ft_servers = {}
 			local installed_ft_servers = {}

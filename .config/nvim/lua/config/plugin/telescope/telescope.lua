@@ -28,12 +28,21 @@ local config = function()
 		}
 	}
 	require('telescope').load_extension('fzy_native')
-	require("telescope").load_extension("ui-select")
+	require('telescope').load_extension('ui-select')
+	require('telescope').load_extension('notify')
 end
 
 local M = {
 	'nvim-telescope/telescope.nvim',
 	config = config,
+	requires = {
+		'nvim-telescope/telescope-fzy-native.nvim',
+		'nvim-telescope/telescope-ui-select.nvim',
+		'rcarriga/nvim-notify',
+	},
+	after = {
+		'nvim-notify',
+	},
 };
 
 return M;

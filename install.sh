@@ -43,13 +43,13 @@ install_deps() {
 	# Install dependencies
 	if [ "$OS" = "Solus" ]; then
 		sudo eopkg it -c system.devel
-		sudo eopkg it cmake rsync tmux vim neovim python3 python3-devel curl nodejs fzf ripgrep silver-searcher bat rlwrap translate-shell
+		sudo eopkg it cmake rsync tmux vim neovim python3 python3-devel curl nodejs fzf ripgrep silver-searcher bat rlwrap translate-shell xclip
 		sudo snap install figlet
 	elif [ "$OS" = "Ubuntu" ] || [ "$OS" = "Linux Mint" ]; then
 		sudo add-apt-repository ppa:neovim-ppa/unstable
 		sudo apt-get update
 		sudo apt-get install build-essential cmake libc-dev -y
-		sudo apt-get install rsync neovim python3-dev python3-pip python3-neovim curl npm fzf silversearcher-ag ripgrep bat figlet translate-shell tmux -y
+		sudo apt-get install rsync neovim python3-dev python3-pip python3-neovim curl npm fzf silversearcher-ag ripgrep bat figlet translate-shell tmux xclip -y
 	fi
 }
 

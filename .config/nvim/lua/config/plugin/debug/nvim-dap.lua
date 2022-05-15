@@ -51,70 +51,90 @@ local M = {
 		{
 			'n',
 			'<leader>di',
-			require('dap').step_into,
+			function()
+				require('dap').step_into()
+			end,
 			{ noremap = true },
 			description = "Debugger step (i)nto",
 		},
 		{
 			'n',
 			'<leader>dv',
-			require('dap').step_over,
+			function()
+				require('dap').step_over()
+			end,
 			{ noremap = true },
 			description = "Debugger step o(v)er",
 		},
 		{
 			'n',
 			'<leader>do',
-			require('dap').step_out,
+			function()
+				require('dap').step_out()
+			end,
 			{ noremap = true },
 			description = "Debugger step (o)ut",
 		},
 		{
 			'n',
 			'<leader>db',
-			require('dap').toggle_breakpoint,
+			function()
+				require('dap').toggle_breakpoint()
+			end,
 			{ noremap = true },
 			description = "Debugger toggle (b)reakpoint",
 		},
 		{
 			'n',
 			'<leader>dr',
-			require('dap').repl.open,
+			function()
+				require('dap').repl.open()
+			end,
 			{ noremap = true },
 			description = "Debugger open (r)epl",
 		},
 		{
 			'n',
 			'<F5>',
-			require('dap').continue,
+			function()
+				require('dap').continue()
+			end,
 			{ noremap = true },
 			description = "Debugger (c)ontinue",
 		},
 		{
 			'n',
 			'<F6>',
-			require('dap').step_into,
+			function()
+				require('dap').step_into()
+			end,
 			{ noremap = true },
 			description = "Debugger step (i)nto",
 		},
 		{
 			'n',
 			'<F7>',
-			require('dap').step_over,
+			function()
+				require('dap').step_over()
+			end,
 			{ noremap = true },
 			description = "Debugger step o(v)er",
 		},
 		{
 			'n',
 			'<F8>',
-			require('dap').step_out,
+			function()
+				require('dap').step_out()
+			end,
 			{ noremap = true },
 			description = "Debugger step (o)ut",
 		},
 		{
 			'n',
 			'<F9>',
-			require('dap').toggle_breakpoint,
+			function()
+				require('dap').toggle_breakpoint()
+			end,
 			{ noremap = true },
 			description = "Debugger toggle (b)reakpoint",
 		},
