@@ -49,7 +49,7 @@ install_deps() {
 		sudo add-apt-repository ppa:neovim-ppa/unstable
 		sudo apt-get update
 		sudo apt-get install build-essential cmake libc-dev -y
-		sudo apt-get install rsync neovim python3-dev python3-pip python3-neovim curl npm fzf silversearcher-ag ripgrep bat figlet translate-shell tmux xclip -y
+		sudo apt-get install rsync neovim python3-dev python3-pip python3-neovim curl npm fzf silversearcher-ag ripgrep bat figlet translate-shell tmux xclip libssl-dev -y
 	fi
 }
 
