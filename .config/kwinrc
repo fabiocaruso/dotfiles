@@ -4,7 +4,7 @@ update_info=kwin.upd:replace-scalein-with-scale,kwin.upd:port-minimizeanimation-
 [Compositing]
 HiddenPreviews=6
 LatencyPolicy=Low
-OpenGLIsUnsafe=false
+OpenGLIsUnsafe=true
 
 [Desktops]
 Id_1=1817dcf3-4b79-4eca-bd17-410d06cacae0
@@ -28,6 +28,3 @@ screenGapLeft=10
 screenGapRight=10
 screenGapTop=10
 tileLayoutGap=10
-
-[org.kde.kdecoration2]
-theme=__aurorae__svg__Fluent-round-dark

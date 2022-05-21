@@ -9,8 +9,8 @@
   <Global>
     <ExtraData>
       <ExtraDataItem name="GUI/Details/Elements" value="general,system,preview,display,storage,audio,network,usb,sharedFolders,description"/>
-      <ExtraDataItem name="GUI/LastItemSelected" value="m=Fedora Silverblue"/>
-      <ExtraDataItem name="GUI/LastWindowPosition" value="4093,360,1920,1199"/>
+      <ExtraDataItem name="GUI/LastItemSelected" value="m=MC2-ubuntu20.04lts_V1.2"/>
+      <ExtraDataItem name="GUI/LastWindowPosition" value="3987,364,1920,1199"/>
       <ExtraDataItem name="GUI/RecentFolderCD" value="/home/fabiocaruso/Downloads"/>
       <ExtraDataItem name="GUI/RecentListCD" value="/home/fabiocaruso/Downloads/Fedora-Silverblue-ostree-x86_64-35-1.2.iso,/home/fabiocaruso/Downloads/nixos-plasma5-21.11.335481.604c44137d9-x86_64-linux.iso,/home/fabiocaruso/Downloads/archlinux-2021.12.01-x86_64.iso,--"/>
       <ExtraDataItem name="GUI/SplitterSizes" value="640,1279"/>

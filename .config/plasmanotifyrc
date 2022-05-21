@@ -1,3 +1,6 @@
+[Applications][com.valvesoftware.Steam]
+Seen=true
+
 [Applications][com.valvesoftware.steam]
 Seen=true
 
@@ -12,9 +15,6 @@ Seen=true
 
 [Applications][thunderbird]
 Seen=true
-
-[DoNotDisturb]
-Until=2022,3,19,22,47,0.049
 
 [Notifications]
 PopupPosition=BottomRight

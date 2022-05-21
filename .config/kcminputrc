@@ -10,7 +10,6 @@ RepeatRate=25
 [Mouse]
 XLbInptPointerAcceleration=0.4
 cursorSize=30
-cursorTheme=Fluent-dark-cursors
 
 [Tmp]
 update_info=delete_cursor_old_default_size.upd:DeleteCursorOldDefaultSize

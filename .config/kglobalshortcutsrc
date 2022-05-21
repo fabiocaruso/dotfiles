@@ -1,5 +1,6 @@
 [ActivityManager]
 _k_friendly_name=Aktivitätenverwaltung
+switch-to-activity-5424de9b-76df-4252-bbcb-40d04e672805=none,none,Zu Aktivität „Standard“ wechseln
 switch-to-activity-8dc134ab-a14b-4fbd-9376-f4ae3488037c=none,none,Zu Aktivität „Standard“ wechseln
 
 [KDE Keyboard Layout Switcher]
@@ -32,7 +33,6 @@ display=Display\tMeta+P,Display\tMeta+P,Anzeige wechseln
 
 [khotkeys]
 _k_friendly_name=Dienst für eigene Kurzbefehle
-{74be0381-f714-4b61-9885-ad0275442665}=Ctrl+Alt+T,none,Launch Konsole
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none,none,Suchen
 
 [kmix]
@@ -241,6 +241,12 @@ stopmedia=Media Stop,Media Stop,Medienwiedergabe anhalten
 _k_friendly_name=Dolphin
 _launch=Meta+E,Meta+E,Dolphin
 
+[org.kde.konsole.desktop]
+NewTab=none,none,Ein neues Unterfenster öffnen
+NewWindow=none,none,Ein neues Fenster öffnen
+_k_friendly_name=Konsole
+_launch=Ctrl+Alt+T,none,Konsole
+
 [org.kde.krunner.desktop]
 RunClipboard=Alt+Shift+F2,Alt+Shift+F2,Befehl mit dem Inhalt der Zwischenablage ausführen
 _k_friendly_name=KRunner
@@ -273,7 +279,7 @@ Turn Off Screen=none,none,Bildschirm ausschalten
 _k_friendly_name=Energieverwaltung
 
 [plasmashell]
-_k_friendly_name=Systemeinstellungen
+_k_friendly_name=Plasma
 activate task manager entry 1=Meta+1,Meta+1,Fensterleisteneintrag 1 aktivieren
 activate task manager entry 10=Meta+0,Meta+0,Fensterleisteneintrag 10 aktivieren
 activate task manager entry 2=Meta+2,Meta+2,Fensterleisteneintrag 2 aktivieren
@@ -287,6 +293,7 @@ activate task manager entry 9=Meta+9,Meta+9,Fensterleisteneintrag 9 aktivieren
 activate widget 161=none,none,Miniprogramm Anwendungsmenü aktivieren
 activate widget 165=none,none,Miniprogramm Anwendungsmenü aktivieren
 activate widget 168=Alt+F1,none,Miniprogramm Anwendungs-Starter aktivieren
+activate widget 174=none,none,Miniprogramm Anwendungs-Starter aktivieren
 activate widget 68=none,none,Miniprogramm Anwendungs-Starter aktivieren
 activate widget 79=none,none,Miniprogramm Anwendungsmenü aktivieren
 clear-history=none,,Bisherigen Inhalt der Zwischenablage löschen
