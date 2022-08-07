@@ -9,6 +9,7 @@ local M = {
 	'Pocco81/DAPInstall.nvim',
 	config = config,
 	branch = 'dev',
+	enabled = false,
 };
 
 return M;

@@ -87,6 +87,7 @@ if [ "$OSTYPE" = "linux-gnu" ] ; then
 	~/.tmux/plugins/tpm/scripts/install_plugins.sh
 elif [ "$OSTYPE" = "darwin" ] ; then
         # Mac OSX
+				# Needs a symlink from file ~/.config/rustfmt/rustfmt.toml to ~/Library/Application\ Support/rustfmt/rustfmt.toml
 	true
 elif [ "$OSTYPE" = "cygwin" ] ; then
         # POSIX compatibility layer and Linux environment emulation for Windows

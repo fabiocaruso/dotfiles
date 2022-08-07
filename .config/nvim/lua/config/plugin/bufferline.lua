@@ -8,8 +8,8 @@ local config = function()
 			diagnostics_indicator = function(count, level, diagnostics_dict, context)
 				local s = ""
 				for e, n in pairs(diagnostics_dict) do
-					local sym = e == "error" and config_signs.error.." "
-					or (e == "warning" and config_signs.warning.." " or config_signs.hint )
+					local sym = e == "error" and config_signs.error .. " "
+							or (e == "warning" and config_signs.warning .. " " or config_signs.hint .. " ")
 					s = s .. n .. sym
 				end
 				return s

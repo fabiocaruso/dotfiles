@@ -42,7 +42,7 @@ _G._config = {
 							library = vim.api.nvim_get_runtime_file("!.local/*", true),
 						},
 						diagnostics = {
-							globals = {'vim'},
+							globals = { 'vim' },
 						},
 					},
 				},
@@ -104,7 +104,7 @@ M.setup = function()
 	for i, keymap in ipairs(_G._config.keymaps) do
 		local rhs = keymap[3]
 		if utils.is_fn(rhs) then
-			rhs = ":lua _G._config.keymaps["..i.."][3]()<cr>"
+			rhs = ":lua _G._config.keymaps[" .. i .. "][3]()<cr>"
 		end
 		vim.api.nvim_set_keymap(keymap[1], keymap[2], rhs, keymap[4])
 	end

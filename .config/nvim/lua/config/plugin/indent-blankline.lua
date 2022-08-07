@@ -3,8 +3,10 @@ local config = function()
 	vim.g.indent_blankline_bufname_exclude = {
 		'neo-tree filesystem .*',
 	}
+
 	require("indent_blankline").setup {
 		show_current_context = true,
+		--max_indent_increase = 1,
 	}
 end
 

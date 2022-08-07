@@ -1,4 +1,18 @@
 local config = function()
+	local queries = require("nvim-treesitter.query")
+	require('nvim-treesitter').define_modules {
+		wrapping = {
+			attach = function(bufnr, lang)
+				-- Do cool stuff here
+			end,
+			detach = function(bufnr)
+				-- Undo cool stuff here
+			end,
+			is_supported = function(lang)
+				return queries.get_query(lang, 'wrapping') ~= nil
+			end
+		}
+	}
 	require('nvim-treesitter.configs').setup {
 		--[[indent = {
 		enable = true
@@ -19,7 +33,7 @@ local config = function()
 			["ic"] = "@class.inner",
 			},
 			},
-			]]--
+			]] --
 			select = {
 				enable = true,
 				lookahead = false,
@@ -59,9 +73,9 @@ local config = function()
 end
 
 local M = {
-	 'nvim-treesitter/nvim-treesitter',
-	 run = ':TSUpdate',
-	 config = config,
+	'nvim-treesitter/nvim-treesitter',
+	run = ':TSUpdate',
+	config = config,
 };
 
 return M;

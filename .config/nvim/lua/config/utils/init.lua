@@ -46,11 +46,25 @@ local function in_list(list, x)
 	return false
 end
 
+local function filter_table(arr, func)
+    local new_index = 1
+    local size_orig = #arr
+    for old_index, v in ipairs(arr) do
+        if func(v, old_index) then
+            arr[new_index] = v
+            new_index = new_index + 1
+        end
+    end
+    for i = new_index, size_orig do arr[i] = nil end
+		return arr
+end
+
 local M = {
 	goto_definition = goto_definition,
 	merge_fns = merge_fns,
 	is_fn = is_fn,
 	in_list = in_list,
+	filter_table = filter_table,
 };
 
 return M;

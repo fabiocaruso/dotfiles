@@ -2,13 +2,9 @@ local config = function()
 	local gc = _G._config
 	local utils = require('config.utils')
 	-- TODO: Download and install vscode-lldb in the install script
-	local extension_path = vim.fn.stdpath('data') .. '/dapinstall/codelldb/extension/'
+	local extension_path = vim.fn.stdpath('data') .. '/mason/packages/codelldb/extension/'
 	local codelldb_path = extension_path .. 'adapter/codelldb'
-	local liblldb_path = extension_path .. 'lldb/lib/liblldb.so'
-	vim.fn.sign_define('DapBreakpoint', {text='', texthl='red', linehl='', numhl=''})
-	vim.fn.sign_define('DapBreakpointCondition', {text='ᶜ', texthl='red', linehl='', numhl=''})
-	vim.fn.sign_define('DapLogPoint', {text='ᶫ', texthl='red', linehl='', numhl=''})
-	vim.fn.sign_define('DapBreakpointRejected', {text='', texthl='red', linehl='', numhl=''})
+	local liblldb_path = extension_path .. 'lldb/lib/liblldb.dylib'
 	require('rust-tools').setup({
 		tools = { -- rust-tools options
 			autoSetHints = true,
@@ -18,8 +14,6 @@ local config = function()
 			},
 		},
 		server = {
-			-- TODO: Do this better
-			cmd = { vim.fn.stdpath('data') .. '/lsp_servers/rust/rust-analyzer' },
 			on_attach = utils.merge_fns(gc.lsp.on_attach),
 			capabilities = gc.lsp.capabilities,
 			settings = {
@@ -57,8 +51,8 @@ local M = {
 	config = config,
 	branch = 'dap_fix',
 	requires = {
-		{'mfussenegger/nvim-dap'},
-		{'nvim-lua/plenary.nvim'},
+		{ 'mfussenegger/nvim-dap' },
+		{ 'nvim-lua/plenary.nvim' },
 	},
 };
 
