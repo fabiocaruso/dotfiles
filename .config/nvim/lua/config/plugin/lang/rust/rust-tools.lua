@@ -47,9 +47,8 @@ local config = function()
 end
 
 local M = {
-	'Freyskeyd/rust-tools.nvim',
+	'simrat39/rust-tools.nvim',
 	config = config,
-	branch = 'dap_fix',
 	requires = {
 		{ 'mfussenegger/nvim-dap' },
 		{ 'nvim-lua/plenary.nvim' },
