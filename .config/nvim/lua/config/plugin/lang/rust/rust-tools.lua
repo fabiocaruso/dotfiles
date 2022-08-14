@@ -5,16 +5,20 @@ local config = function()
 	local extension_path = vim.fn.stdpath('data') .. '/mason/packages/codelldb/extension/'
 	local codelldb_path = extension_path .. 'adapter/codelldb'
 	local liblldb_path = extension_path .. 'lldb/lib/liblldb.dylib'
-	require('rust-tools').setup({
+	local rt = require('rust-tools')
+	rt.setup({
 		tools = { -- rust-tools options
 			autoSetHints = true,
-			hover_with_actions = true,
 			hover_actions = {
 				auto_focus = true,
 			},
 		},
 		server = {
-			on_attach = utils.merge_fns(gc.lsp.on_attach),
+			on_attach = function(pass, bufnr)
+				-- TODO: Good enough for now
+				vim.keymap.set("n", "<leader>ha", rt.hover_actions.hover_actions, { buffer = bufnr })
+				utils.merge_fns(gc.lsp.on_attach)(pass, bufnr)
+			end,
 			capabilities = gc.lsp.capabilities,
 			settings = {
 				["rust-analyzer"] = {

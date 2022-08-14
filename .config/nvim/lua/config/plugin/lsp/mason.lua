@@ -12,13 +12,16 @@ local config = function()
 		callback = function()
 			-- TODO: Exclude certain filetypes from showing the context menu
 			--local available_servers = utils.filter_table(
-				--mason_registry.get_all_packages(),
-				--function(x)
-					--return utils.in_list(x.spec.categories, "LSP")
-				--end
+			--mason_registry.get_all_packages(),
+			--function(x)
+			--return utils.in_list(x.spec.categories, "LSP")
+			--end
 			--)
 			--print(vim.inspect(available_servers))
 			local ft_servers = mason_mapping_filetype[vim.bo.filetype]
+			if ft_servers == nil then
+				return
+			end
 			local installed_ft_servers = 0
 			for _, v in ipairs(ft_servers) do
 				local package_name = mason_mapping_server.lspconfig_to_package[v]

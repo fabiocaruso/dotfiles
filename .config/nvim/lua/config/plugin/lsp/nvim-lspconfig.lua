@@ -101,15 +101,6 @@ local M = {
 			{ noremap = true },
 			description = "Lsp show signature help",
 		},
-		{
-			'n',
-			'<leader>gr',
-			function()
-				vim.cmd('NiceReference')
-			end,
-			{ noremap = true },
-			description = "Lsp show references",
-		},
 	},
 };
 

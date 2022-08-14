@@ -10,7 +10,12 @@ local M = {
 		{
 			'n',
 			'<leader>l',
-			require("lsp_lines").toggle,
+			function()
+				local ok, lsp_lines = pcall(require, "lsp_lines")
+				if ok then
+					lsp_lines.toggle()
+				end
+			end,
 			{ noremap = true },
 			description = "Toggle lsp_lines",
 		},

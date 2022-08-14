@@ -76,6 +76,9 @@ local M = {
 	'nvim-treesitter/nvim-treesitter',
 	run = ':TSUpdate',
 	config = config,
+	requires = {
+		'nvim-treesitter/nvim-treesitter-textobjects',
+	}
 };
 
 return M;

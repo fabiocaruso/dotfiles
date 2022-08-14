@@ -64,6 +64,8 @@
 !.config/KeeWeb/window-position.json
 !.config/nvim/
 !.config/nvim/init.lua
+!.config/nvim/selene.toml
+!.config/nvim/neovim.yml
 !.config/nvim/coc-settings.json
 !.config/nvim/after/
 !.config/nvim/after/**/*

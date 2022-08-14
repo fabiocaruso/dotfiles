@@ -1,5 +1,6 @@
 local config = function()
 	local null_ls = require("null-ls")
+	local helpers = require("null-ls.helpers")
 	null_ls.setup({
 		on_init = function(new_client, _)
 			new_client.offset_encoding = 'utf-16'
@@ -15,7 +16,26 @@ local config = function()
 			null_ls.builtins.diagnostics.hadolint,
 			null_ls.builtins.diagnostics.jsonlint,
 			null_ls.builtins.diagnostics.markdownlint,
-			null_ls.builtins.diagnostics.selene,
+			-- TODO: tracking issue: https://github.com/Kampfkarren/selene/issues/339
+			--null_ls.builtins.diagnostics.selene.with({
+			--cwd = function(_params)
+			--return vim.fn.expand("~/.config/nvim/")
+			--end,
+			--generator_opts = {
+			--command = "selene",
+			--args = { "--config", "~/.config/nvim/selene.toml", "--display-style", "quiet", "-" },
+			--to_stdin = true,
+			--format = "line",
+			--check_exit_code = function(code)
+			--return code <= 1
+			--end,
+			--on_output = helpers.diagnostics.from_pattern(
+			-- [[(%d+):(%d+): (%w+)%[([%w_]+)%]: ([`]*([%w_]+)[`]*.*)]],
+			--{ "row", "col", "severity", "code", "message", "_quote" },
+			--{ adapters = { helpers.diagnostics.adapters.end_col.from_quote } }
+			--),
+			--},
+			--}),
 			null_ls.builtins.diagnostics.sqlfluff,
 			null_ls.builtins.diagnostics.vint,
 			null_ls.builtins.diagnostics.yamllint,

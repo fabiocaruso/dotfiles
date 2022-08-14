@@ -39,9 +39,6 @@ alias nvim='nvim -u ~/.config/nvim/init.lua'
 export DISPLAY=:0
 export LIBGL_ALWAYS_INDIRECT=1
 
-# Rusty-tags to generate ctags from rust src (https://github.com/dan-t/rusty-tags)
-export RUST_SRC_PATH=$(rustc --print sysroot)/lib/rustlib/src/rust/library/
-
 export TERM=screen-256color
 export PS1="[\[$(tput sgr0)\]\[\033[38;5;118m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\H]->{\[$(tput sgr0)\]\[\033[38;5;226m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]}:\[$(tput sgr0)\]"
 source "$HOME/.cargo/env"
@@ -49,7 +46,6 @@ source "$HOME/.cargo/env"
 export PATH=$PATH:~/.local/bin
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-. "$HOME/.cargo/env"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
