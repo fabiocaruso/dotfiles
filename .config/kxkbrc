@@ -1,0 +1,17 @@
+[$Version]
+update_info=kxkb_variants.upd:split-variants,kxkb.upd:remove-empty-lists,kxkb.upd:add-back-resetoptions
+
+[Layout]
+DisplayNames=,
+LayoutList=ch,de
+LayoutLoopCount=-1
+Model=pc104
+Options=lv3:ralt_switch,altwin:meta_win
+ResetOldOptions=true
+ShowFlag=false
+ShowLabel=true
+ShowLayoutIndicator=true
+ShowSingle=false
+SwitchMode=Global
+Use=true
+VariantList=,us

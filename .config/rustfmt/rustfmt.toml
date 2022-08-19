@@ -1,0 +1,11 @@
+tab_spaces = 2
+format_strings = true
+hard_tabs = true
+hex_literal_case = "Upper"
+unstable_features = true
+imports_granularity = "One"
+normalize_comments = true
+normalize_doc_attributes = true
+overflow_delimited_expr = true
+reorder_impl_items = true
+group_imports = "StdExternalCrate"

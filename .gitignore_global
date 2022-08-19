@@ -1,0 +1,6 @@
+# This file applies git ignorerules to every git tracked folder you use on this machine
+# It helps if you have files needed by vim or a vim plugin that you dont want to track.
+
+.vimspector.json
+rusty-tags.vi
+Session.vim
