@@ -17,6 +17,12 @@ local config = function()
 			vimgrep_arguments = { "rg", "--vimgrep", "--color=never", "--no-heading", "--with-filename", "--line-number",
 				"--column", "--smart-case", "--hidden", "--glob", "!.git/*" },
 		},
+		pickers = {
+			find_files = {
+				find_command = { "rg", "--files", "--vimgrep", "--color=never", "--no-heading", "--with-filename", "--line-number",
+				"--column", "--smart-case", "--hidden", "--glob", "!.git/*" },
+			},
+		},
 		extensions = {
 			fzy_native = {
 				override_generic_sorter = false,

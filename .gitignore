@@ -71,6 +71,10 @@
 !.config/nvim/after/**/*
 !.config/nvim/lua/
 !.config/nvim/lua/**/*
+!.config/nixpkgs/
+!.config/nixpkgs/home.nix
+!.config/nixos/
+!.config/nixos/**/*
 !.config/plasma-workspace/
 !.config/plasma-workspace/**/*
 !.config/VirtualBox/

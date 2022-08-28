@@ -11,7 +11,7 @@ local config = function()
 		if ls_config ~= nil then
 			opts = vim.tbl_deep_extend("keep", opts, ls_config)
 		end
-		-- TODO: temporary fix for clangd
+		-- TODO: temporary fix for clangd and rnix
 		if server_name == "clangd" then
 			opts.capabilities.offsetEncoding = "utf-16"
 		end
