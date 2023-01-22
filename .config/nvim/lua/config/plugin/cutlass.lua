@@ -7,6 +7,7 @@ end
 
 local M = {
 	'gbprod/cutlass.nvim',
+	enabled = false,
 	config = config,
 }
 

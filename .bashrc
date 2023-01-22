@@ -28,10 +28,11 @@ up ()
 		cd ../;
 	done
 }
+
 # Needed to load .vimrc from ~ and not nvim's init.vim from ~/.config/nvim/
 # Normally it needs to be -u but for some reason only -S works.
-alias vim='vim -S ~/.vimrc'
-alias nvim='nvim -u ~/.config/nvim/init.lua'
+# alias vim='vim -S ~/.vimrc'
+# alias nvim='nvim -u ~/.config/nvim/init.lua'
 
 #WSL
 #export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0

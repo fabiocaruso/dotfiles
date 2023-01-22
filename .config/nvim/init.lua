@@ -1,4 +1,4 @@
-vim.opt.runtimepath:append('~/.vim runtimepath', '~/.vim/after')
+--vim.opt.runtimepath:append('~/.vim runtimepath', '~/.vim/after')
 -- highlight WinSep..: Just for now until gruvbox supports lastatatus=3
 vim.cmd([[
 let &packpath = &runtimepath

@@ -1,6 +1,7 @@
 local config = function()
 	local gc = _G._config
 	local config_signs = gc.lsp.appearance.signs
+	--local custom_everforest = require('lualine.themes.everforest')
 	require('lualine').setup({
 		sections = {
 			lualine_b = {
@@ -9,10 +10,10 @@ local config = function()
 				{
 					'diagnostics',
 					symbols = {
-						error = config_signs.error..' ',
-						warn = config_signs.warning..' ',
-						info = config_signs.information..' ',
-						hint = config_signs.hint..' ',
+						error = config_signs.error.sym..' ',
+						warn = config_signs.warning.sym..' ',
+						info = config_signs.information.sym..' ',
+						hint = config_signs.hint.sym..' ',
 					},
 				}
 			},
@@ -26,6 +27,8 @@ local config = function()
 		},
 		options = {
 			globalstatus = true, -- Sets laststatus = 3
+			--theme = custom_everforest,
+			theme = 'gruvbox',
 		},
 	})
 end

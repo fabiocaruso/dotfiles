@@ -166,10 +166,10 @@ if !has("nvim")
 	set t_Co=256
 endif
 set termguicolors
-autocmd vimenter * ++nested colorscheme gruvbox
+"autocmd vimenter * ++nested colorscheme gruvbox
 set background=dark
 let g:gruvbox_termcolors = '256'
-colorscheme gruvbox
+"colorscheme gruvbox
 
 "Airline
 let g:airline#extensions#tabline#enabled = 1
@@ -226,6 +226,9 @@ autocmd BufWritePost *.rs :silent! exec "!rusty-tags vi --quiet --start-dir=" . 
 let g:header_field_author = 'Fabio Caruso'
 let g:header_field_author_email = 'fabio.caruso@hotmail.com'
 let g:header_auto_update_header = 1
+
+"vim-context
+let g:context_filetype_blacklist = [ 'neo-tree' ]
 
   "__                  _   _                 
  "/ _|_   _ _ __   ___| |_(_) ___  _ __  ___ 

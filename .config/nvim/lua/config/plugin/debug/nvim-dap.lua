@@ -18,6 +18,7 @@ local config = function()
 		dapui.close()
 	end
 	-- CodeLLDB autostart
+	-- TODO: Check for debug adapter installation
 	local extension_path = vim.fn.stdpath('data') .. '/mason/packages/codelldb/extension/'
 	dap.adapters.codelldb = {
 		type = 'server',
@@ -56,11 +57,10 @@ local M = {
 			'<leader>dd',
 			function()
 				-- TODO: Make this lang/plugin independent
-				vim.cmd("RustDebuggables")
-				--require('dapui').open()
+				--vim.cmd("RustDebuggables")
 			end,
 			{ noremap = true },
-			description = "Open the debugger",
+			description = "Open the debugger and start debug the function under cursor",
 		},
 		{
 			'n',
