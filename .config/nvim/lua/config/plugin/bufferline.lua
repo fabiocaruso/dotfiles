@@ -8,10 +8,19 @@ local config = function()
 			diagnostics_indicator = function(count, level, diagnostics_dict, context)
 				local s = ""
 				for e, n in pairs(diagnostics_dict) do
-					local sym = e == "error" and config_signs.error .. " "
-							or (e == "warning" and config_signs.warning .. " " or config_signs.hint .. " ")
-					s = s .. n .. sym
+					local sym = ""
+					if e == "error" then
+						sym = config_signs.error.sym
+					elseif e == "warning" then
+						sym = config_signs.warning.sym
+					elseif e == "hint" then
+						sym = config_signs.hint.sym
+					elseif e == "info" then
+						sym = config_signs.information.sym
+					end
+					s = s .. sym .. n .. " "
 				end
+				s = s:gsub("^%s*(.-)%s*$", "%1")
 				return s
 			end
 		},

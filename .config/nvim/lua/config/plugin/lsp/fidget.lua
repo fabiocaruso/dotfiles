@@ -4,7 +4,7 @@ local config = function()
 	require("fidget").setup({
 		text = {
 			spinner = "arc",         -- animation shown when tasks are ongoing
-			done = config_signs.success,               -- character shown when all tasks are complete
+			done = config_signs.success.sym,               -- character shown when all tasks are complete
 			commenced = "Started",    -- message shown when task starts
 			completed = "Completed",  -- message shown when task completes
 		},

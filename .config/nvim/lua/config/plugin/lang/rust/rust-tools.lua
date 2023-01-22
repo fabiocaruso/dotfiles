@@ -20,11 +20,17 @@ local config = function()
 				utils.merge_fns(gc.lsp.on_attach)(pass, bufnr)
 			end,
 			capabilities = gc.lsp.capabilities,
+			standalone = true,
 			settings = {
 				["rust-analyzer"] = {
 					-- enable clippy on save
 					checkOnSave = {
 						command = "clippy"
+					},
+					completion = {
+						callable = {
+							snippets = "fill_arguments",
+						}
 					},
 				}
 			}
@@ -53,6 +59,7 @@ end
 local M = {
 	'simrat39/rust-tools.nvim',
 	config = config,
+	enabled = false,
 	requires = {
 		{ 'mfussenegger/nvim-dap' },
 		{ 'nvim-lua/plenary.nvim' },

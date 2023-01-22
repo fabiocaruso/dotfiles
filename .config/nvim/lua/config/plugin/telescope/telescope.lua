@@ -1,6 +1,35 @@
 -- Note: requires ripgrep to work well
 local config = function()
 	local actions = require('telescope.actions')
+	local find_files = { "rg", "--files", "--hidden" }
+	local live_grep = { "rg", "--vimgrep", "--color=never", "--no-heading", "--with-filename", "--line-number",
+		"--column", "--smart-case", "--hidden" }
+	local home_dir_filter_list = {
+		'/*',
+		'/.config/**/*',
+		'/.vim/**/*',
+		'!.vim/plugged/**/*',
+	}
+	local git_repo_filter_list = {
+		'!target/**/*'
+	}
+	local generate_filtered_list = function(list, filtered_list)
+		for _, file in ipairs(filtered_list) do
+			table.insert(list, '--glob')
+			table.insert(list, file)
+		end
+		table.insert(list, '--glob')
+		table.insert(list, '!.git/*')
+	end
+	local home_dir = vim.fn.fnamemodify('~', ':p')
+	local cwd = vim.fn.fnamemodify(vim.fn.getcwd(), ':p')
+	if cwd == home_dir then
+		generate_filtered_list(find_files, home_dir_filter_list)
+		generate_filtered_list(live_grep, home_dir_filter_list)
+	else
+		generate_filtered_list(find_files, git_repo_filter_list)
+		generate_filtered_list(live_grep, git_repo_filter_list)
+	end
 	require('telescope').setup {
 		defaults = {
 			color_devicons = true,
@@ -14,8 +43,14 @@ local config = function()
 					["<C-j>"] = actions.move_selection_next,
 				}
 			},
-			vimgrep_arguments = { "rg", "--vimgrep", "--color=never", "--no-heading", "--with-filename", "--line-number",
-				"--column", "--smart-case", "--hidden", "--glob", "!.git/*" },
+			--vimgrep_arguments = { "rg", "--vimgrep", "--color=never", "--no-heading", "--with-filename", "--line-number",
+			--"--column", "--smart-case", "--hidden", "--glob", "!.git/*" },
+			vimgrep_arguments = live_grep,
+		},
+		pickers = {
+			find_files = {
+				find_command = find_files,
+			}
 		},
 		extensions = {
 			fzy_native = {

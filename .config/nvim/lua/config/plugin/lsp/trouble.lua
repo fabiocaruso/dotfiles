@@ -1,6 +1,5 @@
 local config = function()
 	local gc = _G._config
-	local config_signs = gc.lsp.appearance.signs
 	require('trouble').setup({
 		auto_open = true,
 		auto_close = true,
@@ -8,19 +7,26 @@ local config = function()
 		action_keys = {
 			hover = "h",
 		},
-		signs = {
-			-- icons / text used for a diagnostic
-			error = config_signs.error,
-			warning = config_signs.warning,
-			hint = config_signs.hint,
-			information = config_signs.information,
-			other = config_signs.success,
-		},
+		use_diagnostic_signs = true,
 	})
+	-- TODO: Make this better
+	vim.api.nvim_create_autocmd({ "FileType" }, {
+		callback = function(args)
+			local bufnr = args.buf
+			if vim.bo[bufnr].filetype == "Trouble" then
+				vim.o.cc = ""
+				vim.wo.cursorcolumn = false
+			end
+		end,
+	})
+	vim.api.nvim_set_hl(0, "TroubleText", { bg = "NONE" })
 end
 
 local M = {
 	'folke/trouble.nvim',
+	after = {
+		'themer.lua'
+	},
 	config = config,
 };
 
