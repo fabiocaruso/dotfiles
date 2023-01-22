@@ -136,12 +136,12 @@ ForegroundPositive=39,174,96
 ForegroundVisited=155,89,182
 
 [DirSelect Dialog]
-DirSelectDialog Size=956,610
-History Items[$e]=file:$HOME/Downloads/MateriaDark
+DirSelectDialog Size=913,610
+History Items[$e]=file:$HOME/VM,file:$HOME/Downloads/MateriaDark
 
 [General]
 BrowserApplication=firefox.desktop
-ColorSchemeHash=d0b3d2da363261958945ede41bfed4e1744dd286
+ColorSchemeHash=78952f1103f6f2c59b78c6ed5fa382c3f5ec18e7
 Name[de_CH]=Breeze-Hell
 Name=SolusDark
 TerminalApplication=alacritty
@@ -177,8 +177,8 @@ Speedbar Width=244
 View Style=DetailTree
 
 [KScreen]
-ScaleFactor=1.25
-ScreenScaleFactors=DVI-D-0=1.25;HDMI-0=1.25;HDMI-1=1.25;DP-0=1.25;DP-1=1.25;DP-2=1.25;DP-3=1.25;
+ScaleFactor=1
+ScreenScaleFactors=DVI-D-0=1;HDMI-0=1;HDMI-1=1;DP-0=1;DP-1=1;DP-2=1;DP-3=1;
 
 [KShortcutsDialog Settings]
 Dialog Size=747,480

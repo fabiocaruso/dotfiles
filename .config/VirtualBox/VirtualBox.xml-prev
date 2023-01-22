@@ -9,19 +9,16 @@
   <Global>
     <ExtraData>
       <ExtraDataItem name="GUI/Details/Elements" value="general,system,preview,display,storage,audio,network,usb,sharedFolders,description"/>
-      <ExtraDataItem name="GUI/LastItemSelected" value="m=MC2-ubuntu20.04lts_V1.2"/>
-      <ExtraDataItem name="GUI/LastWindowPosition" value="3987,364,1920,1199"/>
-      <ExtraDataItem name="GUI/RecentFolderCD" value="/home/fabiocaruso/Downloads"/>
-      <ExtraDataItem name="GUI/RecentListCD" value="/home/fabiocaruso/Downloads/Fedora-Silverblue-ostree-x86_64-35-1.2.iso,/home/fabiocaruso/Downloads/nixos-plasma5-21.11.335481.604c44137d9-x86_64-linux.iso,/home/fabiocaruso/Downloads/archlinux-2021.12.01-x86_64.iso,--"/>
+      <ExtraDataItem name="GUI/LastItemSelected" value="m=Ubuntu"/>
+      <ExtraDataItem name="GUI/LastWindowPosition" value="1152,486,1920,1199"/>
+      <ExtraDataItem name="GUI/RecentFolderCD" value="/home/fabio/Downloads"/>
+      <ExtraDataItem name="GUI/RecentListCD" value="/home/fabio/Downloads/ubuntu-22.04.1-desktop-amd64.iso,/home/fabiocaruso/Downloads/Fedora-Silverblue-ostree-x86_64-35-1.2.iso,/home/fabiocaruso/Downloads/nixos-plasma5-21.11.335481.604c44137d9-x86_64-linux.iso,/home/fabiocaruso/Downloads/archlinux-2021.12.01-x86_64.iso,--"/>
       <ExtraDataItem name="GUI/SplitterSizes" value="640,1279"/>
       <ExtraDataItem name="GUI/Toolbar" value="false"/>
       <ExtraDataItem name="GUI/Tools/LastItemsSelected" value="Welcome,Snapshots"/>
     </ExtraData>
     <MachineRegistry>
-      <MachineEntry uuid="{25a7a8b4-03ae-4ada-ac64-14d1be772161}" src="/home/fabiocaruso/VirtualBox VMs/Arch/Arch.vbox"/>
-      <MachineEntry uuid="{ca5d214b-1159-40aa-a555-a476be629c42}" src="/home/fabiocaruso/VirtualBox VMs/NixOS/NixOS.vbox"/>
-      <MachineEntry uuid="{7ce07569-ce7e-47dc-b713-f24133820017}" src="/run/media/fabiocaruso/T7/MC2/VM/MC2-ubuntu20.04lts_V1.2/MC2-ubuntu20.04lts_V1.2.vbox"/>
-      <MachineEntry uuid="{6f869ece-81a7-457f-a72c-49e694352b49}" src="/home/fabiocaruso/VirtualBox VMs/Fedora Silverblue/Fedora Silverblue.vbox"/>
+      <MachineEntry uuid="{ca61097d-0a27-4b79-b8eb-4845da7b65db}" src="/home/fabio/VM/Ubuntu/Ubuntu.vbox"/>
     </MachineRegistry>
     <NetserviceRegistry>
       <DHCPServers>

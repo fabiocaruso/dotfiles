@@ -1,5 +1,8 @@
 { config, pkgs, ... }:
 
+let
+  pkgsUnstable = import <nixpkgs-unstable> { };
+in
 {
   # Home Manager needs a bit of information about you and the
   # paths it should manage.
@@ -12,44 +15,49 @@
   xsession.enable = true;
 
   nixpkgs.config.allowUnfree = true;
+  #nixpkgs.overlays = [ (pkgs.callPackage ./packages/prober-rs-udev-rules.nix { }) ];
   #services.gnome-keyring.enable = true;
-  home.packages = with pkgs; [
-    gcc
-    rsync
-    neovim
-    fzf
-    silver-searcher
-    ripgrep
-    bat
-    figlet
-    translate-shell
-    tmux
-    xclip
-    unzip
-    delta
-    python39Full
-    python39Packages.pip
-    python39Packages.pynvim
-    nodejs-16_x
-    nerdfonts
-    steam
-    gnome.gnome-keyring
-    keeweb
-    cider
-    cargo
-    rustc
-    vlc
-    rnix-lsp
-    deadnix
-    statix
-    alejandra
-    sumneko-lua-language-server
-    stylua
-    vulnix
-    vscode-with-extensions
-    vscode-extensions.matklad.rust-analyzer
-    vscode-extensions.vadimcn.vscode-lldb
-  ];
+  services.home-manager.autoUpgrade.enable = true;
+  services.home-manager.autoUpgrade.frequency = "daily";
+  home.packages = with pkgs;
+    [
+      gcc
+      rsync
+      pkgsUnstable.neovim
+      fzf
+      silver-searcher
+      ripgrep
+      bat
+      figlet
+      translate-shell
+      tmux
+      xclip
+      unzip
+      delta
+      python39Full
+      python39Packages.pip
+      python39Packages.pynvim
+      python39Packages.pydantic
+      nodejs-16_x
+      nerdfonts
+      steam
+      gnome.gnome-keyring
+      keeweb
+      cider
+      cargo
+      rustc
+      vlc
+      rnix-lsp
+      deadnix
+      statix
+      alejandra
+      sumneko-lua-language-server
+      stylua
+      vulnix
+      vscode-with-extensions
+      vscode-extensions.matklad.rust-analyzer
+      vscode-extensions.vadimcn.vscode-lldb
+    ];
 
   programs.kitty = {
     enable = true;

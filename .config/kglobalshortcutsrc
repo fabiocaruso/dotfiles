@@ -49,21 +49,22 @@ mute=Volume Mute,Volume Mute,Stummschalten
 
 [ksmserver]
 Halt Without Confirmation=none,,Ohne Rückfrage herunterfahren
-Lock Session=Meta+L\tCtrl+Alt+L\tScreensaver,Meta+L\tCtrl+Alt+L\tScreensaver,Sitzung sperren
+Lock Session=Meta+L\tCtrl+Alt+L\tScreensaver,Meta+L\tScreensaver,Sitzung sperren
 Log Out=Ctrl+Alt+Del,Ctrl+Alt+Del,Abmelden
 Log Out Without Confirmation=none,,Ohne Rückfrage abmelden
 Reboot Without Confirmation=none,,Ohne Rückfrage neu starten
 _k_friendly_name=Sitzungsverwaltung
 
 [kwin]
-Activate Window Demanding Attention=Ctrl+Alt+A,Ctrl+Alt+A,Fenster aktivieren\\, das Aufmerksamkeit erfordert
+Activate Window Demanding Attention=Ctrl+Alt+A,Meta+Ctrl+A,Fenster aktivieren\\, das Aufmerksamkeit erfordert
 Decrease Opacity=none,,Die Deckkraft des aktiven Fensters um 5 % verringern
 Expose=Ctrl+F9,Ctrl+F9,Fenster der aktuellen Arbeitsfläche anzeigen
 ExposeAll=Ctrl+F10\tLaunch (C),Ctrl+F10\tLaunch (C),Fenster aller Arbeitsflächen anzeigen
 ExposeClass=Ctrl+F7,Ctrl+F7,Fenster zeigen umschalten (Fensterklasse)
+ExposeClassCurrentDesktop=none,none,Toggle Present Windows (Window class on current desktop)
 Increase Opacity=none,,Die Deckkraft des aktiven Fensters um 5 % erhöhen
 Invert Screen Colors=none,,Bildschirmfarben umkehren
-Kill Window=Ctrl+Alt+Esc,Ctrl+Alt+Esc,Fenster beseitigen
+Kill Window=Ctrl+Alt+Esc,Meta+Ctrl+Esc,Fenster beseitigen
 Krohnkite: Cycle Layout=none,none,
 Krohnkite: Decrease=none,none,
 Krohnkite: Down/Next=Meta+J,none,
@@ -97,9 +98,10 @@ MoveZoomDown=none,none,Vergrößerten Bereich nach unten verschieben
 MoveZoomLeft=none,none,Vergrößerten Bereich nach links verschieben
 MoveZoomRight=none,none,Vergrößerten Bereich nach rechts verschieben
 MoveZoomUp=none,none,Vergrößerten Bereich nach oben verschieben
+Overview=Meta+W,Meta+W,Übersicht umschalten
 Setup Window Shortcut=none,,Kurzbefehl für Fenster einrichten
-Show Desktop=Meta+D,Meta+D,Arbeitsfläche anzeigen
-ShowDesktopGrid=Ctrl+F8,Ctrl+F8,Arbeitsflächen-Raster anzeigen
+Show Desktop=Meta+D,Meta+D,Peek at Desktop
+ShowDesktopGrid=Ctrl+F8,Meta+F8,Arbeitsflächen-Raster anzeigen
 Suspend Compositing=Alt+Shift+F12,Alt+Shift+F12,Compositing aussetzen
 Switch One Desktop Down=none,Meta+Ctrl+Down,Eine Arbeitsfläche nach unten
 Switch One Desktop Up=none,Meta+Ctrl+Up,Eine Arbeitsfläche nach oben
@@ -159,15 +161,15 @@ Window Above Other Windows=none,,Fenster im Vordergrund halten
 Window Below Other Windows=none,,Fenster im Hintergrund halten
 Window Close=Alt+F4,Alt+F4,Fenster schließen
 Window Fullscreen=none,,Fenster auf Vollbildgröße
-Window Grow Horizontal=none,,Expand Window Horizontally
-Window Grow Vertical=none,,Expand Window Vertically
+Window Grow Horizontal=none,,Fenster waagerecht maximieren
+Window Grow Vertical=none,,Fenster senkrecht maximieren
 Window Lower=none,,Fenster nach hinten
 Window Maximize=Meta+PgUp,Meta+PgUp,Fenster maximieren
 Window Maximize Horizontal=none,,Fenster waagerecht maximieren
 Window Maximize Vertical=none,,Fenster senkrecht maximieren
 Window Minimize=Meta+PgDown,Meta+PgDown,Fenster minimieren
 Window Move=none,,Fenster verschieben
-Window Move Center=none,,Move Window to the Center
+Window Move Center=none,,Fenster zentrieren
 Window No Border=none,,Fensterumrandung ausblenden
 Window On All Desktops=none,,Fenster auf allen Arbeitsflächen anzeigen
 Window One Desktop Down=Meta+Ctrl+Shift+Down,Meta+Ctrl+Shift+Down,Fenster eine Arbeitsfläche nach unten
@@ -175,10 +177,10 @@ Window One Desktop Up=Meta+Ctrl+Shift+Up,Meta+Ctrl+Shift+Up,Fenster eine Arbeits
 Window One Desktop to the Left=Meta+Ctrl+Shift+Left,Meta+Ctrl+Shift+Left,Fenster eine Arbeitsfläche nach links
 Window One Desktop to the Right=Meta+Ctrl+Shift+Right,Meta+Ctrl+Shift+Right,Fenster eine Arbeitsfläche nach rechts
 Window Operations Menu=Alt+F3,Alt+F3,Fensteraktionen-Menü
-Window Pack Down=none,,Move Window Down
-Window Pack Left=none,,Move Window Left
-Window Pack Right=none,,Move Window Right
-Window Pack Up=none,,Move Window Up
+Window Pack Down=none,,Fenster nach unten verschieben
+Window Pack Left=none,,Fenster nach links verschieben
+Window Pack Right=none,,Fenster nach rechts verschieben
+Window Pack Up=none,,Fenster nach oben verschieben
 Window Quick Tile Bottom=Meta+Down,Meta+Down,Fenster am unteren Bildschirmrand anordnen
 Window Quick Tile Bottom Left=none,,Fenster am linken unteren Bildschirmrand anordnen
 Window Quick Tile Bottom Right=none,,Fenster am rechten unteren Bildschirmrand anordnen
@@ -225,8 +227,8 @@ Window to Screen 5=none,,Fenster auf Bildschirm 5
 Window to Screen 6=none,,Fenster auf Bildschirm 6
 Window to Screen 7=none,,Fenster auf Bildschirm 7
 _k_friendly_name=KWin
-view_actual_size=Meta+0,Meta+0,Originalgröße
-view_zoom_in=Meta+=,Meta+=,Vergrößern
+view_actual_size=Meta+0,Meta+0,Auf Originalgröße zoomen
+view_zoom_in=Meta+=,Meta++,Vergrößern
 view_zoom_out=Meta+-,Meta+-,Verkleinern
 
 [mediacontrol]
@@ -302,21 +304,33 @@ activate widget 4=none,none,Miniprogramm Anwendungs-Starter aktivieren
 activate widget 68=none,none,Miniprogramm Anwendungs-Starter aktivieren
 activate widget 79=none,none,Miniprogramm Anwendungsmenü aktivieren
 clear-history=none,,Bisherigen Inhalt der Zwischenablage löschen
-clipboard_action=Ctrl+Alt+X,Ctrl+Alt+X,Zwischenablageaktionen aktivieren
-cycleNextAction=none,,Nächstes Element im Verlauf
-cyclePrevAction=none,,Vorheriges Element im Verlauf
-edit_clipboard=none,,Inhalt bearbeiten …
+clipboard_action=Ctrl+Alt+X,Meta+Ctrl+X,Automatic Action Popup Menu
+cycle-panels=Meta+Alt+P,Meta+Alt+P,Tastaturfokus zwischen Kontrollleisten umschalten
+cycleNextAction=none,,Next History Item
+cyclePrevAction=none,,Previous History Item
+edit_clipboard=none,,Inhalt bearbeiten ...
 manage activities=Meta+Q,Meta+Q,Aktivitätenwechsler anzeigen
 next activity=Meta+Tab,Meta+Tab,Zwischen Aktivitäten wechseln
 previous activity=Meta+Shift+Tab,Meta+Shift+Tab,Zwischen Aktivitäten wechseln (Gegenrichtung)
-repeat_action=Ctrl+Alt+R,Ctrl+Alt+R,Aktionen der aktuellen Zwischenablage manuell aufrufen
+repeat_action=Ctrl+Alt+R,Meta+Ctrl+R,Manually Invoke Action on Current Clipboard
 show dashboard=Ctrl+F12,Ctrl+F12,Arbeitsfläche anzeigen
 show-barcode=none,,Strichcode anzeigen ...
-show-on-mouse-pos=Meta+V,Meta+V,Klipper an Mausposition öffnen
+show-on-mouse-pos=Meta+V,Meta+V,Open Klipper at Mouse Position
 stop current activity=Meta+S,Meta+S,Aktuelle Aktivität anhalten
 switch to next activity=none,,Zur nächsten Aktivität wechseln
 switch to previous activity=none,,Zur vorherigen Aktivität wechseln
 toggle do not disturb=none,,Nicht stören umschalten
+
+[plasmawindowed]
+_k_friendly_name=plasmawindowed
+clear-history=none,none,Bisherigen Inhalt der Zwischenablage löschen
+clipboard_action=none,Ctrl+Alt+X,Zwischenablageaktionen aktivieren
+cycleNextAction=none,none,Nächstes Element im Verlauf
+cyclePrevAction=none,none,Vorheriges Element im Verlauf
+edit_clipboard=none,none,Inhalt bearbeiten …
+repeat_action=none,Ctrl+Alt+R,Aktionen der aktuellen Zwischenablage manuell aufrufen
+show-barcode=none,none,Strichcode anzeigen ...
+show-on-mouse-pos=none,Meta+V,Klipper an Mausposition öffnen
 
 [systemsettings.desktop]
 _k_friendly_name=Systemeinstellungen
