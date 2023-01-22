@@ -29,6 +29,11 @@ up ()
 	done
 }
 
+# Needed to load .vimrc from ~ and not nvim's init.vim from ~/.config/nvim/
+# Normally it needs to be -u but for some reason only -S works.
+# alias vim='vim -S ~/.vimrc'
+# alias nvim='nvim -u ~/.config/nvim/init.lua'
+
 #WSL
 #export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2; exit;}'):0.0
 #export DISPLAY=$(route.exe print | grep 0.0.0.0 | head -1 | awk '{print $4}'):0.0
@@ -38,6 +43,8 @@ export LIBGL_ALWAYS_INDIRECT=1
 export TERM=screen-256color
 export PS1="[\[$(tput sgr0)\]\[\033[38;5;118m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\H]->{\[$(tput sgr0)\]\[\033[38;5;226m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]}:\[$(tput sgr0)\]"
 source "$HOME/.cargo/env"
+
+source "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
 
 export PATH=$PATH:~/.local/bin
 

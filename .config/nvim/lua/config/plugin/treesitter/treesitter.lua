@@ -38,8 +38,7 @@ local config = function()
 			["ic"] = "@class.inner",
 			},
 			},
-			]]
-			--
+			]]--
 			select = {
 				enable = true,
 				lookahead = false,

@@ -227,7 +227,7 @@ TriggersCount=1
 [Data_2_1Triggers0]
 Key=Ctrl+Alt+I
 Type=SHORTCUT
-Uuid={ab40d6d8-b35c-49f0-87ed-401230567dd1}
+Uuid={02b80bb5-677a-4d07-8c06-34cf6ef9f1f4}
 
 [Data_2_2]
 Comment=Wenn Sie Strg+Alt+H drücken wird die Tastatureingabe des Wortes „Hello“ simuliert. Dies kann nützlich sein, wenn Sie bestimmte Wörter immer wieder eingeben müssen (z. B. muss ein Programmierer öfters „unsigned“ eingeben). Jeder Tastendruck in der Eingabe wird durch einen Doppelpunkt („:“) getrennt. Bitte beachten Sie: hier ist wirklich von gedrückten Tasten die Rede; Sie müssen das eingeben, was Sie tatsächlich auf der Tastatur eingeben würden. In der folgenden Tabelle sehen Sie in der linken Spalte den auszugebenden Text und zur Rechten die zu drückenden Tasten:\n\n„Eingabe“ (neue Zeile)                Eingabetaste\na (ein kleines a)                       A\nA (ein großes a)                        Umschalt+A\n: (Doppelpunkt)                         Umschalt+:\n„ “ (Leerzeichen)                       Leertaste
@@ -254,7 +254,7 @@ TriggersCount=1
 [Data_2_2Triggers0]
 Key=Ctrl+Alt+H
 Type=SHORTCUT
-Uuid={8533a7a3-a01e-489a-ba97-4e810348233b}
+Uuid={50d06cde-19e4-4638-b294-c4e530434e20}
 
 [Data_2_3]
 Comment=Nach dem Drücken von Strg+Alt+T wird das Terminalprogramm „Konsole“ gestartet.
@@ -280,7 +280,7 @@ TriggersCount=1
 [Data_2_3Triggers0]
 Key=Ctrl+Alt+T
 Type=SHORTCUT
-Uuid={33e8f8c0-a6b7-464f-a833-b41c411c6b41}
+Uuid={d66c926d-27f0-4250-9aa3-3c81d49724af}
 
 [Data_2_4]
 Comment=Lesen Sie bitte zunächst den Kommentar zu der Aktion „Hello ausgeben“.\n\nQt-Designer benutzt die Tastenkombination Strg+F4 zum Schließen von Fenstern (vermutlich, weil dies so auch in Windows üblich ist). In KDE wiederum ist dies die übliche Tastenkombination, um auf die Arbeitsfläche 4 zu wechseln. Das in KDE übliche Strg+W zum Schließen eines Fensters funktioniert ebenfalls nicht in Qt-Designer. Das Problem kann aber umgangen werden: Dazu muss Strg+W auf Strg+F4 umgelegt werden, wenn Qt-Designer das aktive Fenster ist. Immer wenn Sie dann in Qt-Designer Strg+W drücken, wird in Wirklichkeit Strg+F4 an das Programm gemeldet. In anderen Programmen wird Strg+W natürlich wie gewohnt weiter funktionieren.\n\nEs müssen drei Dinge eingestellt werden: Eine neue Tastenkombination für „Strg+W“, eine neue Tastaturaktion, die Strg+F4 sendet, und eine neue Bedingung für das aktive Qt-Designer-Fenster.\nDer Fenstertitel von Qt-Designer scheint grundsätzlich „Qt Designer by Trolltech“ zu lauten, also wird die Bedingung auf diesen Fenstertitel prüfen.
@@ -325,7 +325,7 @@ TriggersCount=1
 [Data_2_4Triggers0]
 Key=Ctrl+W
 Type=SHORTCUT
-Uuid={dcd77ef3-cc86-4927-ae7a-ce4966cb5495}
+Uuid={2401d3b5-0eed-4360-88da-af5e5533c75f}
 
 [Data_2_5]
 Comment=Durch Drücken von Strg+Alt+W wird ein D-Bus-Aufruf getätigt, der das Fenster „Befehl ausführen“ anzeigt. Natürlich können Sie jede Art von D-Bus-Aufruf verwenden, genauso als würden Sie das Befehlszeilenprogramm „qdbus“ verwenden.
@@ -354,7 +354,7 @@ TriggersCount=1
 [Data_2_5Triggers0]
 Key=Ctrl+Alt+W
 Type=SHORTCUT
-Uuid={3f9093d4-9595-455a-b80c-aac24c78c1b0}
+Uuid={676178a8-b187-49b9-ad0f-59066cfaf858}
 
 [Data_2_6]
 Comment=Bitte lesen Sie zunächst die Kommentare zu der Aktion „Hello ausgeben“.\n\nGenau wie in „Hello ausgeben“ wird auch hier eine Tastatureingabe simuliert. Wenn Sie Strg+Alt+B drücken, wird B an das XMMS-Fenster übergeben (B bewirkt in XMMS einen Wechsel zum nächsten Stück). Das Ankreuzfeld „Eingabe übergeben an ... spezielles Fenster“ ist markiert und als Fensterklasse ist „XMMS_Player“ eingestellt. Dadurch wird die Eingabe immer nur an dieses Fenster übergeben. Auf diese Weise können Sie XMMS bedienen, selbst dann, wenn es sich auf einer anderen Arbeitsfläche befindet.\n\nDie Fensterklasse finden Sie übrigens mit „xprop“ und einem Klick auf das XMMS-Fenster heraus, oder indem Sie auf die Schaltfläche „Automatisch feststellen“ drücken und danach das XMMS-Fenster anklicken.
@@ -396,7 +396,7 @@ TriggersCount=1
 [Data_2_6Triggers0]
 Key=Ctrl+Alt+B
 Type=SHORTCUT
-Uuid={1dd4391d-f54d-4e66-973e-5e91b4bff262}
+Uuid={53c8e7d2-4611-4812-b2ec-4ccf9f7d97a0}
 
 [Data_2_7]
 Comment=Konqueror hat seit KDE 3.1 Unterfenster und nun werden auch Gesten unterstützt. Drücken Sie die mittlere Maustaste und ziehen mit der Maus eine der Gesten. Wenn Sie fertig sind, lassen Sie die mittlere Maustaste wieder los. Falls Sie mit der mittleren Maustaste nur eine Auswahl einfügen möchten, funktioniert dies selbstverständlich weiterhin indem Sie die mittlere Maustaste drücken ohne eine Geste nachzuziehen. (Der Mausknopf für Gesten kann aber in den Globalen Einstellungen auch anderweitig festgelegt werden.)\n\nDie folgenden Gesten sind zurzeit verfügbar:\nnach rechts und nach links -> Vorwärts (Alt+Rechts)\nnach links und nach rechts -> Zurück (Alt+Links)\nnach oben und nach unten -> Eine Ebene höher (Alt+Hoch)\nKreis gegen den Uhrzeigersinn -> Dokument erneut laden (F5)\n\n\nDie Gesten können eingegeben werden, indem Sie die Geste im Einrichtungsdialog ausführen. Es kann hilfreich sein, wenn Sie sich das Zahlenfeld Ihrer Tastatur ansehen; Gesten werden in einem Raster von 3×3 Feldern dargestellt die von 1 bis 9 durchnummeriert sind.\n\nEs muss immer die genau passende Geste ausgeführt werden, um die zugewiesene Aktion zu starten. Es ist möglich, einer Aktion mehrere Gesten zuzuordnen. Vermeiden Sie nach Möglichkeit zu komplizierte Gesten, die mehr als eine Richtungsänderung beinhalten. (Ein gutes Beispiel wäre 45654 oder 74123, weil diese einfach sind. 1236987 hingegen könnte bereits zu kompliziert sein.)\n\nDie Bedingung für alle Gesten wird in dieser Gruppe festgelegt. Alle Gesten sind nur im Konqueror-Fenster gültig (weil die Fensterklasse „konqueror“ enthält).
@@ -588,7 +588,7 @@ TriggersCount=1
 [Data_2_8Triggers0]
 Key=Meta+E
 Type=SHORTCUT
-Uuid={5b40e9a3-d1d8-4234-889a-d7bd7c18d4a0}
+Uuid={fb16dfe6-197c-4dce-838b-756a22ae18c0}
 
 [Data_3]
 Comment=Grundlegende Gesten für Konqueror
@@ -1059,7 +1059,7 @@ ScreenScaleFactors[$d]
 Dialog Size[$d]
 
 [Main]
-AlreadyImported=defaults,kde32b1,konqueror_gestures_kde321,konsole
+AlreadyImported=defaults,kde32b1,konqueror_gestures_kde321
 Disabled=false
 Version=2
 
