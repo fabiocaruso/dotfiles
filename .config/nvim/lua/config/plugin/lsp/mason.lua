@@ -1,6 +1,6 @@
 local config = function()
 	local gc = _G._config
-	local utils = require('config.utils')
+	local utils = require("config.utils")
 	local mason = require("mason")
 	local mason_lspconfig = require("mason-lspconfig")
 	local mason_mapping_filetype = require("mason-lspconfig.mappings.filetype")
@@ -31,8 +31,10 @@ local config = function()
 			end
 			if installed_ft_servers < 1 then
 				vim.ui.select(ft_servers, {
-					prompt = 'Choose a ls for filetype ' .. vim.bo.filetype,
-					format_item = function(server) return server end
+					prompt = "Choose a ls for filetype " .. vim.bo.filetype,
+					format_item = function(server)
+						return server
+					end,
 				}, function(server, _)
 					local package_name = mason_mapping_server.lspconfig_to_package[server]
 					mason_registry.get_package(package_name):install()
@@ -58,12 +60,13 @@ local config = function()
 end
 
 local M = {
-	'williamboman/mason.nvim',
+	"williamboman/mason.nvim",
 	config = config,
+	run = ":MasonUpdate", -- :MasonUpdate updates registry contents
 	requires = {
-		'williamboman/mason-lspconfig.nvim',
+		"williamboman/mason-lspconfig.nvim",
 	},
-	after = { 'nvim-lspconfig' },
-};
+	after = { "nvim-lspconfig" },
+}
 
-return M;
+return M

@@ -18,13 +18,14 @@ _G._config = {
 		on_attach = {},
 		capabilities = vim.lsp.protocol.make_client_capabilities(),
 		blacklist = {}, --{ 'rust_analyzer' },
+		-- TODO: Move state info into _G.states
 		initialized_servers = {}, --{ 'rust_analyzer' },
 		init_server = nil,
 		appearance = {
 			signs = {
 				error = { sym = "", color = "red" }, --"",
 				warning = { sym = "", color = "yellow" },
-				hint = { sym = "", color = "blue" },
+				hint = { sym = "󰌶", color = "blue" },
 				information = { sym = "", color = "orange" },
 				success = { sym = "", color = "green" },
 				fail = { sym = "", color = "red" },
@@ -87,7 +88,7 @@ _G._config = {
 					},
 				},
 			},
-			sumneko_lua = {
+			lua_ls = {
 				settings = {
 					Lua = {
 						runtime = {
@@ -116,6 +117,10 @@ _G._config = {
 							--indent_size = "2",
 							--}
 						},
+						-- Do not send telemetry data containing a randomized but unique identifier
+						telemetry = {
+							enable = false,
+						},
 					},
 				},
 			},
@@ -136,6 +141,12 @@ _G._config = {
 			{ noremap = true },
 			description = "Fast switch to prev buffer",
 		},
+	},
+}
+
+_G._states = {
+	dap = {
+		initialized_adapters = {},
 	},
 }
 

@@ -5,7 +5,7 @@ local run_nearest_codelens = function(client_side, command)
 	for _, lens in ipairs(vim.lsp.codelens.get(bufnr)) do
 		local lens_range = lens.range
 		local lens_start = lens_range.start
-		local _ = lens_range['end']
+		local _ = lens_range["end"]
 		local lens_node = vim.treesitter.get_node_at_pos(bufnr, lens_start.line, 0)
 		local row_start, _, row_end, _ = lens_node:range()
 		local cusor_row, cursor_col = unpack(vim.api.nvim_win_get_cursor(0))
@@ -29,8 +29,8 @@ end
 
 local config = function()
 	local gc = _G._config
-	local utils = require('config.utils');
-	local lsp_config = require('lspconfig');
+	local utils = require("config.utils")
+	local lsp_config = require("lspconfig")
 	-- InlayHints
 	require("lsp-inlayhints").setup({
 		inlay_hints = {
@@ -60,7 +60,7 @@ local config = function()
 			--print(vim.inspect(client.server_capabilities))
 			vim.api.nvim_set_hl(0, "LspCodeLens", { link = "Comment" })
 			vim.api.nvim_set_hl(0, "LspCodeLensSeparator", { link = "Comment" })
-			if client.server_capabilities['codeLensProvider'] ~= nil then
+			if client.server_capabilities["codeLensProvider"] ~= nil then
 				vim.api.nvim_create_augroup("codelens", {})
 				vim.api.nvim_create_autocmd({ "BufEnter", "CursorHold", "InsertLeave" }, {
 					group = "codelens",
@@ -104,6 +104,8 @@ local config = function()
 		opts.capabilities = gc.lsp.capabilities
 		opts.capabilities.textDocument.completion.completionItem.snippetSupport = true
 		opts.capabilities.textDocument.codeLens = { dynamicRegistration = true }
+		-- TODO: Introduced in 0.9. Could be default in the future. Recheck
+		opts.capabilities.workspace.didChangeWatchedFiles = { dynamicRegistration = true }
 		--print(vim.inspect(opts.capabilities))
 		local ls_config = gc.lsp.ls[server_name]
 		if ls_config ~= nil then
@@ -126,7 +128,7 @@ local config = function()
 		Error = config_signs.error.sym .. " ",
 		Warn = config_signs.warning.sym .. " ",
 		Hint = config_signs.hint.sym .. " ",
-		Info = config_signs.information.sym .. " "
+		Info = config_signs.information.sym .. " ",
 	}
 	for type, icon in pairs(signs) do
 		local hl = "DiagnosticSign" .. type
@@ -144,25 +146,26 @@ local config = function()
 	vim.diagnostic.config({
 		--[[virtual_text = {
 		prefix = '●', -- Could be '■', '▎', 'x'
-		}]] --
+		}]]
+		--
 		virtual_text = false,
 		signs = true,
 		underline = true,
 		float = { border = "none" },
 	})
 	vim.o.updatetime = 250
-	vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false, scope="cursor"})]]
+	vim.cmd([[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false, scope="cursor"})]])
 	-- Handlers
-	vim.lsp.handlers["textDocument/definition"] = utils.goto_definition('vsplit')
-	vim.lsp.handlers["textDocument/implementation"] = utils.goto_definition('vsplit')
+	vim.lsp.handlers["textDocument/definition"] = utils.goto_definition("vsplit")
+	vim.lsp.handlers["textDocument/implementation"] = utils.goto_definition("vsplit")
 end
 
 local M = {
-	'neovim/nvim-lspconfig',
+	"neovim/nvim-lspconfig",
 	config = config,
 	requires = {
 		{
-			'lvimuser/lsp-inlayhints.nvim',
+			"lvimuser/lsp-inlayhints.nvim",
 			--branch = 'anticonceal',
 		},
 		--{
@@ -171,56 +174,56 @@ local M = {
 	},
 	keymaps = {
 		{
-			'n',
-			'<leader>rn',
+			"n",
+			"<leader>rn",
 			vim.lsp.buf.rename,
 			{ noremap = true },
 			description = "Lsp rename",
 		},
+		--{
+			--"n",
+			--"<leader>a",
+			--vim.lsp.buf.code_action,
+			--{ noremap = true },
+			--description = "Lsp toggle code action",
+		--},
 		{
-			'n',
-			'<leader>a',
-			vim.lsp.buf.code_action,
-			{ noremap = true },
-			description = "Lsp toggle code action",
-		},
-		{
-			'n',
-			'<leader>h',
+			"n",
+			"<leader>h",
 			vim.lsp.buf.hover,
 			{ noremap = true },
 			description = "Lsp toggle hover",
 		},
 		{
-			'n',
-			'<leader>gd',
+			"n",
+			"<leader>gd",
 			vim.lsp.buf.definition,
 			{ noremap = true },
 			description = "Lsp go to definition",
 		},
 		{
-			'n',
-			'<leader>cr',
+			"n",
+			"<leader>cr",
 			vim.lsp.codelens.run,
 			{ noremap = true },
 			description = "Lsp run codelens",
 		},
 		{
-			'n',
-			'<leader>rt',
+			"n",
+			"<leader>rt",
 			function()
-				if vim.bo.filetype == 'go' then
-					run_nearest_codelens(false, 'gopls.test')
-				elseif vim.bo.filetype == 'rust' then
-					run_nearest_codelens(true, 'rust-analyzer.runSingle')
+				if vim.bo.filetype == "go" then
+					run_nearest_codelens(false, "gopls.test")
+				elseif vim.bo.filetype == "rust" then
+					run_nearest_codelens(true, "rust-analyzer.runSingle")
 				end
 			end,
 			{ noremap = true },
 			description = "Lsp run nearest test",
 		},
 		{
-			'n',
-			'<leader>gi',
+			"n",
+			"<leader>gi",
 			function()
 				vim.cmd([[
 					TroubleClose
@@ -231,13 +234,13 @@ local M = {
 			description = "Lsp go to implementation",
 		},
 		{
-			'i',
-			'<C-s>',
+			"i",
+			"<C-s>",
 			vim.lsp.buf.signature_help,
 			{ noremap = true },
 			description = "Lsp show signature help",
 		},
 	},
-};
+}
 
-return M;
+return M

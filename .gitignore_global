@@ -4,3 +4,4 @@
 .vimspector.json
 rusty-tags.vi
 Session.vim
+.DS_Store

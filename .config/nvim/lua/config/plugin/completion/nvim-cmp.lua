@@ -1,5 +1,5 @@
 local luasnip_config = function()
-	require('luasnip.loaders.from_vscode').lazy_load();
+	require("luasnip.loaders.from_vscode").lazy_load()
 end
 
 local has_words_before = function()
@@ -9,11 +9,11 @@ end
 
 local cmp_config = function()
 	local gc = _G._config
-	local cmp = require('cmp')
-	local lspkind = require('lspkind')
-	local luasnip = require('luasnip')
-	vim.api.nvim_set_option('pumheight', 20)
-	vim.api.nvim_set_option('pumwidth', 80)
+	local cmp = require("cmp")
+	local lspkind = require("lspkind")
+	local luasnip = require("luasnip")
+	vim.api.nvim_set_option("pumheight", 20)
+	vim.api.nvim_set_option("pumwidth", 80)
 	cmp.setup({
 		snippet = {
 			expand = function(args)
@@ -21,19 +21,21 @@ local cmp_config = function()
 			end,
 		},
 		mapping = {
-			['<C-j>'] = cmp.mapping(cmp.mapping.select_next_item(), { 'i', 'c' }),
-			['<C-k>'] = cmp.mapping(cmp.mapping.select_prev_item(), { 'i', 'c' }),
-			['<C-y>'] = cmp.config.disable, -- Specify `cmp.config.disable` if you want to remove the default `<C-y>` mapping.
+			["<C-j>"] = cmp.mapping(cmp.mapping.select_next_item(), { "i", "c" }),
+			["<C-k>"] = cmp.mapping(cmp.mapping.select_prev_item(), { "i", "c" }),
+			["<C-y>"] = cmp.config.disable, -- Specify `cmp.config.disable` if you want to remove the default `<C-y>` mapping.
 			--[[['<C-e>'] = cmp.mapping({
 			i = cmp.mapping.abort(),
 			c = cmp.mapping.close(),
-			}),]] --
+			}),]]
+			--
 			--[[['<S-Tab>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
 			['<Tab>'] = cmp.mapping.confirm({
 			behavior = cmp.ConfirmBehavior.Replace,
 			select = true,
-			}),]] -- -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
-			['<S-Tab>'] = cmp.mapping(function(fallback)
+			}),]]
+			-- -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+			["<S-Tab>"] = cmp.mapping(function(fallback)
 				if luasnip.jumpable(-1) then
 					luasnip.jump(-1)
 				elseif cmp.visible() == false then
@@ -41,8 +43,8 @@ local cmp_config = function()
 				else
 					fallback()
 				end
-			end, { 'i', 'c' }),
-			['<Tab>'] = cmp.mapping({
+			end, { "i", "c" }),
+			["<Tab>"] = cmp.mapping({
 				i = function(fallback)
 					if cmp.visible() then
 						cmp.confirm({
@@ -70,25 +72,28 @@ local cmp_config = function()
 					end
 				end,
 			}),
-			['<CR>'] = cmp.mapping.confirm({
+			["<CR>"] = cmp.mapping.confirm({
 				behavior = cmp.ConfirmBehavior.Replace,
 				select = false,
 			}),
 		},
 		sources = cmp.config.sources({
-			{ name = 'luasnip' },
-			{ name = 'nvim_lsp' },
-			{ name = 'nvim_lua' },
+			{ name = "codeium" },
+			{ name = "luasnip" },
+			{ name = "nvim_lsp" },
+			{ name = "nvim_lua" },
 			--{ name = 'luasnip', option = { use_show_condition = false } },
-			{ name = 'crates' },
-			{ name = 'doxygen' },
+			{ name = "crates" },
+			{ name = "doxygen" },
 		}, {
-			{ name = 'buffer', keyword_length = 5 },
+			{ name = "buffer", keyword_length = 5 },
 		}),
 		formatting = {
 			format = lspkind.cmp_format({
-				with_text = true,
-				menu = ({
+				--with_text = true,
+				maxwidth = 50,
+				ellipsis_char = '...',
+				menu = {
 					buffer = "[Buffer]",
 					nvim_lsp = "[LSP]",
 					luasnip = "[LuaSnip]",
@@ -96,7 +101,9 @@ local cmp_config = function()
 					doxygen = "[Doxygen]",
 					cmdline = "[CmdLine]",
 					nvim_lua = "[Lua]",
-				})
+					codeium = "[Codeium]",
+				},
+				symbol_map = { Codeium = "", }
 			}),
 		},
 		experimental = {
@@ -104,41 +111,41 @@ local cmp_config = function()
 		},
 	})
 	-- Use buffer source for `/` (if you enabled `native_menu`, this won't work anymore).
-	cmp.setup.cmdline('/', {
+	cmp.setup.cmdline("/", {
 		sources = {
-			{ name = 'buffer' }
+			{ name = "buffer" },
 		},
 	})
 	-- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
-	cmp.setup.cmdline(':', {
+	cmp.setup.cmdline(":", {
 		sources = cmp.config.sources({
-			{ name = 'path' }
+			{ name = "path" },
 		}, {
-			{ name = 'cmdline' }
+			{ name = "cmdline" },
 		}),
 	})
 	--gc.lsp.capabilities = require('cmp_nvim_lsp').update_capabilities(gc.lsp.capabilities)
-	local cmp_lsp_cap = require('cmp_nvim_lsp').default_capabilities()
-	gc.lsp.capabilities = vim.tbl_deep_extend('keep', gc.lsp.capabilities, cmp_lsp_cap)
+	local cmp_lsp_cap = require("cmp_nvim_lsp").default_capabilities()
+	gc.lsp.capabilities = vim.tbl_deep_extend("keep", gc.lsp.capabilities, cmp_lsp_cap)
 end
 
 local M = {
-	'hrsh7th/nvim-cmp',
+	"hrsh7th/nvim-cmp",
 	config = cmp_config,
 	requires = {
-		{ 'nvim-treesitter/nvim-treesitter' },
-		{ 'onsails/lspkind-nvim' },
-		{ 'saecki/crates.nvim' },
-		{ 'hrsh7th/cmp-nvim-lsp' },
-		{ 'hrsh7th/cmp-nvim-lua' },
-		{ 'paopaol/cmp-doxygen' },
-		{ 'saadparwaiz1/cmp_luasnip' },
+		{ "nvim-treesitter/nvim-treesitter" },
+		{ "onsails/lspkind-nvim" },
+		{ "saecki/crates.nvim" },
+		{ "hrsh7th/cmp-nvim-lsp" },
+		{ "hrsh7th/cmp-nvim-lua" },
+		{ "paopaol/cmp-doxygen" },
+		{ "saadparwaiz1/cmp_luasnip" },
 		{
-			'L3MON4D3/LuaSnip',
+			"L3MON4D3/LuaSnip",
 			tag = "v1.*",
 			config = luasnip_config,
 		},
 	},
-};
+}
 
-return M;
+return M

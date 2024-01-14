@@ -6,6 +6,7 @@ local M = {
 	'miversen33/netman.nvim',
 	branch = 'v1.1',
 	config = config,
+	enabled = false,
 };
 
 return M;
