@@ -4,8 +4,8 @@ Generated File. Do not edit.
 Version,0,5
 
 [COMPONENTS]
-rel:VBoxSVCM.so,1651963146000
-rel:VBoxC.so,1651963147000
+rel:VBoxSVCM.so,1000
+rel:VBoxC.so,1000
 rel:VBoxXPCOMIPCC.so,1624630916000
 
 [CLASSIDS]

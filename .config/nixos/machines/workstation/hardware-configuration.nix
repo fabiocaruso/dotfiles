@@ -5,7 +5,8 @@
 
 {
   imports =
-    [ (modulesPath + "/installer/scan/not-detected.nix")
+    [
+      (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
   boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "nvme" "usb_storage" "usbhid" "sd_mod" "sr_mod" ];
@@ -14,7 +15,8 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/fd127006-c511-4adf-9cd5-4949bd2947e8";
+    {
+      device = "/dev/disk/by-uuid/fd127006-c511-4adf-9cd5-4949bd2947e8";
       fsType = "ext4";
     };
 
@@ -34,5 +36,8 @@
   hardware.video.hidpi.enable = lib.mkDefault true;
   hardware.bluetooth.enable = lib.mkDefault true;
   hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.stable;
-	hardware.opengl.driSupport32Bit = true;
+  hardware.nvidia.powerManagement.enable = true;
+  #hardware.nvidia.modesetting.enable = true;
+  hardware.opengl.enable = true;
+  hardware.opengl.driSupport32Bit = true;
 }
