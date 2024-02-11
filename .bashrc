@@ -7,7 +7,9 @@
 
 # You may uncomment the following lines if you want `ls' to be colorized:
 export LS_OPTIONS='--color=auto'
-eval "`dircolors`"
+case "$OSTYPE" in
+  linux*)   eval "`dircolors`" ;;
+esac
 alias ls='ls $LS_OPTIONS'
 alias ll='ls $LS_OPTIONS -l'
 alias l='ls $LS_OPTIONS -lA'
@@ -29,6 +31,11 @@ up ()
 	done
 }
 
+# Git aliases
+alias ga='git add .'
+alias gc='git commit -m '
+alias gp='git push'
+
 # Needed to load .vimrc from ~ and not nvim's init.vim from ~/.config/nvim/
 # Normally it needs to be -u but for some reason only -S works.
 # alias vim='vim -S ~/.vimrc'
@@ -44,7 +51,10 @@ export TERM=screen-256color
 export PS1="[\[$(tput sgr0)\]\[\033[38;5;118m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]@\H]->{\[$(tput sgr0)\]\[\033[38;5;226m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\]}:\[$(tput sgr0)\]"
 source "$HOME/.cargo/env"
 
-source "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
+HM_SESSION_VARS="$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
+if [ -f "$HM_SESSION_VARS" ]; then
+	source $HM_SESSION_VARS
+fi
 
 export PATH=$PATH:~/.local/bin
 
