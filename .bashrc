@@ -32,9 +32,14 @@ up ()
 }
 
 # Git aliases
-alias ga='git add .'
+alias ga='git add '
 alias gc='git commit -m '
 alias gp='git push'
+alias gs='git status'
+alias gl='git log'
+alias gr='git rebase -i '
+alias gsu='git submodule update --recursive'
+alias gsa='git submodule add '
 
 # Needed to load .vimrc from ~ and not nvim's init.vim from ~/.config/nvim/
 # Normally it needs to be -u but for some reason only -S works.
