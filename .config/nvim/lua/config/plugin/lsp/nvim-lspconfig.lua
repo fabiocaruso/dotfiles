@@ -181,11 +181,11 @@ local M = {
 			description = "Lsp rename",
 		},
 		--{
-			--"n",
-			--"<leader>a",
-			--vim.lsp.buf.code_action,
-			--{ noremap = true },
-			--description = "Lsp toggle code action",
+		--"n",
+		--"<leader>a",
+		--vim.lsp.buf.code_action,
+		--{ noremap = true },
+		--description = "Lsp toggle code action",
 		--},
 		{
 			"n",

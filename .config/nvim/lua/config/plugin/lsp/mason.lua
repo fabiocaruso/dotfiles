@@ -36,9 +36,18 @@ local config = function()
 						return server
 					end,
 				}, function(server, _)
+					if server == nil then
+						return
+					end
 					local package_name = mason_mapping_server.lspconfig_to_package[server]
 					mason_registry.get_package(package_name):install()
-					gc.lsp.init_server(server)
+					mason_registry:on("package:install:success", function(pkg)
+						vim.schedule(function()
+							gc.lsp.init_server(server)
+							-- TODO: Find out why lspconfig doesn't start the lsp automatically, even if opts.autostart is true by default
+							vim.cmd("LspStart")
+						end)
+					end)
 				end)
 			end
 		end,

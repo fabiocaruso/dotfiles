@@ -40,7 +40,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'tpope/vim-fugitive'
 Plug 'https://github.com/airblade/vim-gitgutter.git'
 "For better workflow
-Plug 'wellle/context.vim'
+"Plug 'wellle/context.vim'
 Plug 'wellle/targets.vim'
 Plug 'https://github.com/tpope/vim-surround.git'
 Plug 'preservim/nerdcommenter'
