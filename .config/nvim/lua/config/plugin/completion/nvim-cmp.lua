@@ -2,11 +2,6 @@ local luasnip_config = function()
 	require("luasnip.loaders.from_vscode").lazy_load()
 end
 
-local has_words_before = function()
-	local line, col = unpack(vim.api.nvim_win_get_cursor(0))
-	return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
-end
-
 local cmp_config = function()
 	local gc = _G._config
 	local cmp = require("cmp")
@@ -46,27 +41,25 @@ local cmp_config = function()
 			end, { "i", "c" }),
 			["<Tab>"] = cmp.mapping({
 				i = function(fallback)
-					if cmp.visible() then
+					if luasnip.expand_or_locally_jumpable() then
+						luasnip.expand_or_jump()
+					elseif cmp.visible() then
 						cmp.confirm({
 							behavior = cmp.ConfirmBehavior.Replace,
 							select = false,
 						})
-					elseif luasnip.expand_or_jumpable() then
-						luasnip.expand_or_jump()
-					elseif has_words_before() then
-						cmp.complete()
 					else
 						fallback()
 					end
 				end,
 				c = function(fallback)
-					if cmp.visible() then
+					if luasnip.expand_or_jumpable() then
+						luasnip.expand_or_jump()
+					elseif cmp.visible() then
 						cmp.confirm({
 							behavior = cmp.ConfirmBehavior.Replace,
 							select = true,
 						})
-					elseif luasnip.expand_or_jumpable() then
-						luasnip.expand_or_jump()
 					else
 						fallback()
 					end
@@ -92,7 +85,7 @@ local cmp_config = function()
 			format = lspkind.cmp_format({
 				--with_text = true,
 				maxwidth = 50,
-				ellipsis_char = '...',
+				ellipsis_char = "...",
 				menu = {
 					buffer = "[Buffer]",
 					nvim_lsp = "[LSP]",
@@ -103,7 +96,7 @@ local cmp_config = function()
 					nvim_lua = "[Lua]",
 					codeium = "[Codeium]",
 				},
-				symbol_map = { Codeium = "", }
+				symbol_map = { Codeium = "" },
 			}),
 		},
 		experimental = {
