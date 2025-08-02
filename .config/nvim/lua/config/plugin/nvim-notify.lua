@@ -1,11 +1,11 @@
 local config = function()
-	require('notify').setup()
-	vim.notify = require('notify')
+	vim.notify = require("notify")
 end
 
 local M = {
-	'rcarriga/nvim-notify',
+	"rcarriga/nvim-notify",
 	config = config,
-};
+	--enabled = false,
+}
 
-return M;
+return M

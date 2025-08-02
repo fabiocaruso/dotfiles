@@ -21,9 +21,9 @@ local config = function()
 						if not registry.is_installed(mason_package_name) then
 							registry.get_package(mason_package_name):install()
 						end
-						print("Debug adapter: " .. debug_adapter)
-						print("Adapter config: " .. vim.inspect(adapter_config))
-						print("DAP config: " .. vim.inspect(dap.adapters))
+						--print("Debug adapter: " .. debug_adapter)
+						--print("Adapter config: " .. vim.inspect(adapter_config))
+						--print("DAP config: " .. vim.inspect(dap.adapters))
 						-- BUG: On first install the binary can't be loaded
 						dap.adapters[debug_adapter] = adapter_config
 						table.insert(_G._states.dap.initialized_adapters, debug_adapter)

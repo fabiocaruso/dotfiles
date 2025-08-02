@@ -31,24 +31,6 @@ local config = function()
 	local gc = _G._config
 	local utils = require("config.utils")
 	local lsp_config = require("lspconfig")
-	-- InlayHints
-	require("lsp-inlayhints").setup({
-		inlay_hints = {
-			highlight = "Comment",
-		},
-	})
-	vim.api.nvim_create_augroup("LspAttach_inlayhints", {})
-	vim.api.nvim_create_autocmd("LspAttach", {
-		group = "LspAttach_inlayhints",
-		callback = function(args)
-			if not (args.data and args.data.client_id) then
-				return
-			end
-			local bufnr = args.buf
-			local client = vim.lsp.get_client_by_id(args.data.client_id)
-			require("lsp-inlayhints").on_attach(client, bufnr)
-		end,
-	})
 	-- CodeLens
 	vim.api.nvim_create_augroup("LspAttach_codelens", {})
 	vim.api.nvim_create_autocmd("LspAttach", {
@@ -70,6 +52,7 @@ local config = function()
 					end,
 				})
 			end
+			vim.lsp.inlay_hint.enable()
 		end,
 	})
 	-- Semantic Tokens
@@ -122,34 +105,28 @@ local config = function()
 		lsp_config[server_name].setup(generate_config(server_name))
 	end
 	-- Icons
-	--local set_signs = function()
-	local config_signs = gc.lsp.appearance.signs
-	local signs = {
-		Error = config_signs.error.sym .. " ",
-		Warn = config_signs.warning.sym .. " ",
-		Hint = config_signs.hint.sym .. " ",
-		Info = config_signs.information.sym .. " ",
-	}
-	for type, icon in pairs(signs) do
-		local hl = "DiagnosticSign" .. type
-		-- FIXME: Hacky solution
-		--local col_bg = "#" .. string.format("%06x", vim.api.nvim_get_hl_by_name("SignColumn", true).background)
-		--local col_fg = "#" .. string.format("%06x", vim.api.nvim_get_hl_by_name("Diagnostic" .. type, true).foreground)
-		-- TODO: Needs a neo-tree filter
-		--vim.api.nvim_set_hl(0, "DiagnosticSign" .. type, { fg = col_fg, bg = col_bg })
-		vim.fn.sign_define(hl, { text = icon, texthl = hl })
-	end
-	--end
-	-- TODO: Check which plugin sets these globally ffs
-	--vim.schedule(set_signs)
 	-- Options
+	local config_signs = gc.lsp.appearance.signs
 	vim.diagnostic.config({
 		--[[virtual_text = {
 		prefix = '●', -- Could be '■', '▎', 'x'
 		}]]
 		--
 		virtual_text = false,
-		signs = true,
+		signs = {
+			text = {
+				[vim.diagnostic.severity.ERROR] = config_signs.error.sym .. " ",
+				[vim.diagnostic.severity.WARN] = config_signs.warning.sym .. " ",
+				[vim.diagnostic.severity.HINT] = config_signs.hint.sym .. " ",
+				[vim.diagnostic.severity.INFO] = config_signs.information.sym .. " ",
+			},
+			numhl = {
+				[vim.diagnostic.severity.ERROR] = "DiagnosticSignError",
+				[vim.diagnostic.severity.WARN] = "DiagnosticSignWarn",
+				[vim.diagnostic.severity.HINT] = "DiagnosticSignHint",
+				[vim.diagnostic.severity.INFO] = "DiagnosticSignInfo",
+			},
+		},
 		underline = true,
 		float = { border = "none" },
 	})
@@ -164,10 +141,6 @@ local M = {
 	"neovim/nvim-lspconfig",
 	config = config,
 	requires = {
-		{
-			"lvimuser/lsp-inlayhints.nvim",
-			--branch = 'anticonceal',
-		},
 		--{
 		--'theHamsta/nvim-semantic-tokens',
 		--}
@@ -180,13 +153,13 @@ local M = {
 			{ noremap = true },
 			description = "Lsp rename",
 		},
-		--{
-		--"n",
-		--"<leader>a",
-		--vim.lsp.buf.code_action,
-		--{ noremap = true },
-		--description = "Lsp toggle code action",
-		--},
+		{
+			"n",
+			"<leader>a",
+			vim.lsp.buf.code_action,
+			{ noremap = true },
+			description = "Lsp toggle code action",
+		},
 		{
 			"n",
 			"<leader>h",

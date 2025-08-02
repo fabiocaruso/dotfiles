@@ -32,7 +32,7 @@ local config = function()
 			null_ls.builtins.diagnostics.checkmake,
 			null_ls.builtins.diagnostics.cue_fmt,
 			null_ls.builtins.diagnostics.hadolint,
-			null_ls.builtins.diagnostics.jsonlint,
+			--null_ls.builtins.diagnostics.jsonlint, # Not working in none-ls
 			null_ls.builtins.diagnostics.markdownlint,
 			-- TODO: tracking issue: https://github.com/Kampfkarren/selene/issues/339
 			--null_ls.builtins.diagnostics.selene.with({
@@ -61,7 +61,7 @@ local config = function()
 			null_ls.builtins.formatting.asmfmt,
 			null_ls.builtins.formatting.cue_fmt,
 			null_ls.builtins.formatting.djlint,
-			null_ls.builtins.formatting.fixjson,
+			--null_ls.builtins.formatting.fixjson, # Not working in none-ls
 			--null_ls.builtins.formatting.lua_format,
 			null_ls.builtins.formatting.tidy,
 		},
@@ -70,7 +70,7 @@ end
 
 -- TODO: This plugin is archived. Successor is: https://github.com/nvimtools/none-ls.nvim use it if null-ls breaks
 local M = {
-	"jose-elias-alvarez/null-ls.nvim",
+	"nvimtools/none-ls.nvim",
 	requires = {
 		"nvim-lua/plenary.nvim",
 	},

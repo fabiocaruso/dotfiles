@@ -25,7 +25,7 @@ _G._config = {
 			signs = {
 				error = { sym = "", color = "red" }, --"",
 				warning = { sym = "", color = "yellow" },
-				hint = { sym = "󰌶", color = "blue" },
+				hint = { sym = "󰌵", color = "blue" }, -- 󰌶
 				information = { sym = "", color = "orange" },
 				success = { sym = "", color = "green" },
 				fail = { sym = "", color = "red" },

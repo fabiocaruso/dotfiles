@@ -72,8 +72,9 @@ local M = {
 	"williamboman/mason.nvim",
 	config = config,
 	run = ":MasonUpdate", -- :MasonUpdate updates registry contents
+	branch = "v1.x",
 	requires = {
-		"williamboman/mason-lspconfig.nvim",
+		{"williamboman/mason-lspconfig.nvim", branch = "v1.x"},
 	},
 	after = { "nvim-lspconfig" },
 }

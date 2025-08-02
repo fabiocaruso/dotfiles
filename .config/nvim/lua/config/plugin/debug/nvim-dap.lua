@@ -73,6 +73,7 @@ local M = {
 	"mfussenegger/nvim-dap",
 	config = config,
 	requires = {
+		{ "nvim-neotest/nvim-nio" },
 		{ "rcarriga/nvim-dap-ui" },
 	},
 	after = {

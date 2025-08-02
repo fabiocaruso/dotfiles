@@ -35,7 +35,7 @@ end
 
 local config = function()
 	require("debugprint").setup({
-		create_keymaps = false,
+		keymaps = {},
 	})
 end
 

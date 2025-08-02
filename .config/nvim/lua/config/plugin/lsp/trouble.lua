@@ -1,13 +1,18 @@
 local config = function()
 	local gc = _G._config
-	require('trouble').setup({
-		auto_open = true,
+	require("trouble").setup({
 		auto_close = true,
 		padding = false,
 		action_keys = {
 			hover = "h",
 		},
 		use_diagnostic_signs = true,
+		modes = {
+			diagnostics = {
+				source = "diagnostics",
+				auto_open = true,
+			},
+		},
 	})
 	-- TODO: Make this better
 	vim.api.nvim_create_autocmd({ "FileType" }, {
@@ -23,11 +28,11 @@ local config = function()
 end
 
 local M = {
-	'folke/trouble.nvim',
+	"folke/trouble.nvim",
 	after = {
-		'themer.lua'
+		"themer.lua",
 	},
 	config = config,
-};
+}
 
-return M;
+return M
